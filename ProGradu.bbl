@@ -1,4 +1,4 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
   \providebibliographyfont{name}{}%
   \providebibliographyfont{lastname}{}%
   \providebibliographyfont{title}{\emph}%
@@ -11,5 +11,14 @@
   \providebibliographyfont{url}{\url}%
   \providebibliographyfont{numeral}{}%
   \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+
+\expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem {ArpaciDusseau14-Book}
+\btxnamefont {\btxlastnamefont {Arpaci-Dusseau}, Remzi\btxfnamespacelong H.}
+  \btxandlong {}\ \btxnamefont {\btxlastnamefont {Arpaci-Dusseau},
+  Andrea\btxfnamespacelong C.}\btxauthorcolon\ \btxtitlefont {{Operating
+  Systems: Three Easy Pieces}}.
+\newblock \btxpublisherfont {Arpaci-Dusseau Books}, \btxeditionnumlong
+  {0.91}{}, \btxprintmonthyear{.}{May}{2015}{long}.
 
 \end{thebibliography}
