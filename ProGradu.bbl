@@ -21,6 +21,19 @@
 \newblock \btxpublisherfont {Arpaci-Dusseau Books}, \btxeditionnumlong
   {0.91}{}, \btxprintmonthyear{.}{May}{2015}{long}.
 
+\bibitem {Clark05livemigration}
+\btxnamefont {\btxlastnamefont {Clark}, Christopher}, \btxnamefont
+  {\btxlastnamefont {Fraser}, Keir}, \btxnamefont {\btxlastnamefont {H},
+  Steven}, \btxnamefont {\btxlastnamefont {Hansen}, Jacob\btxfnamespacelong
+  Gorm}, \btxnamefont {\btxlastnamefont {Jul}, Eric}, \btxnamefont
+  {\btxlastnamefont {Limpach}, Christian}, \btxnamefont {\btxlastnamefont
+  {Pratt}, Ian}\btxandcomma {} \btxandlong {}\ \btxnamefont {\btxlastnamefont
+  {Warfield}, Andrew}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Live
+  migration of virtual machines}{Live Migration of Virtual Machines}}.
+\newblock \Btxinlong {}\ \btxtitlefont {In Proceedings of the 2nd ACM/USENIX
+  Symposium on Networked Systems Design and Implementation (NSDI},
+  \btxpageslong {}\ 273--286, 2005.
+
 \bibitem {Mell:2011:SND:2206223}
 \btxnamefont {\btxlastnamefont {Mell}, Peter\btxfnamespacelong M.} \btxandlong
   {}\ \btxnamefont {\btxlastnamefont {Grance}, Timothy}\btxauthorcolon\
