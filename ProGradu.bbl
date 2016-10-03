@@ -21,4 +21,11 @@
 \newblock \btxpublisherfont {Arpaci-Dusseau Books}, \btxeditionnumlong
   {0.91}{}, \btxprintmonthyear{.}{May}{2015}{long}.
 
+\bibitem {Mell:2011:SND:2206223}
+\btxnamefont {\btxlastnamefont {Mell}, Peter\btxfnamespacelong M.} \btxandlong
+  {}\ \btxnamefont {\btxlastnamefont {Grance}, Timothy}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Sp 800-145. the nist definition of cloud
+  computing}{SP 800-145. The NIST Definition of Cloud Computing}}.
+\newblock \btxtechreplong {}, Gaithersburg, MD, United States, 2011.
+
 \end{thebibliography}
