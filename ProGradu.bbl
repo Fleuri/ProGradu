@@ -34,6 +34,19 @@
   Symposium on Networked Systems Design and Implementation (NSDI},
   \btxpageslong {}\ 273--286, 2005.
 
+\bibitem {XaaS}
+\btxnamefont {\btxlastnamefont {Duan}, Y.}, \btxnamefont {\btxlastnamefont
+  {Fu}, G.}, \btxnamefont {\btxlastnamefont {Zhou}, N.}, \btxnamefont
+  {\btxlastnamefont {Sun}, X.}, \btxnamefont {\btxlastnamefont {Narendra},
+  N.\btxfnamespacelong C.}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Hu}, B.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase
+  {Everything as a service (xaas) on the cloud: Origins, current and future
+  trends}{Everything as a Service (XaaS) on the Cloud: Origins, Current and
+  Future Trends}}.
+\newblock \Btxinlong {}\ \btxtitlefont {2015 IEEE 8th International Conference
+  on Cloud Computing}, \btxpageslong {}\ 621--628,
+  \btxprintmonthyear{.}{June}{2015}{long}.
+
 \bibitem {Mell:2011:SND:2206223}
 \btxnamefont {\btxlastnamefont {Mell}, Peter\btxfnamespacelong M.} \btxandlong
   {}\ \btxnamefont {\btxlastnamefont {Grance}, Timothy}\btxauthorcolon\

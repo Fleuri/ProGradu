@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.22)  3 OCT 2016 17:56
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.22)  17 OCT 2016 18:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -872,22 +872,22 @@ Package rerunfilecheck Info: File `ProGradu.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 160.
  ) 
 Here is how much of TeX's memory you used:
- 9605 strings out of 493304
- 141610 string characters out of 6139871
- 277822 words of memory out of 5000000
- 12852 multiletter control sequences out of 15000+600000
- 32636 words of font info for 53 fonts, out of 8000000 for 9000
+ 9611 strings out of 493304
+ 141667 string characters out of 6139871
+ 277848 words of memory out of 5000000
+ 12853 multiletter control sequences out of 15000+600000
+ 32849 words of font info for 55 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 31i,8n,35p,1513b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 31i,8n,35p,1887b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
 public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public
 /lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texm
 f/fonts/type1/public/lm/lmri10.pfb>
-Output written on ProGradu.pdf (5 pages, 174594 bytes).
+Output written on ProGradu.pdf (5 pages, 176171 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
- 17 named destinations out of 1000 (max. 500000)
+ 108 PDF objects out of 1000 (max. 8388607)
+ 94 compressed objects within 1 object stream
+ 18 named destinations out of 1000 (max. 500000)
  10305 words of extra memory for PDF output out of 12000 (max. 10000000)
 
