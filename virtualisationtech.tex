@@ -1,3 +1,21 @@
 \subsection{Virtualisation Techniques}
 
-This gon be da bomb yo
+Traditionally virtualisation has referred to a software abstraction layer residing between the computer hardware and the operating system. \cite{taxonomy} This layer has been called Virtual Machine Monitor (VMM) or more recently a hypervisor and it hides and abstracts the computing resources from the OS, allowing multiple OSs to run simultaneously on the same hardware. There are multiple ways to run hypervisor-based virtualisation. Lately a technology called container-based virtualisation has been gaining popularity. Instead of emulating whole hardware, containers make use of features provided by the host operating system to isolate processes from each other and other containers \cite{eder2016hypervisor}.
+
+\subsubsection{Full virtualisation}
+
+In full virtualisation, the hypervisor runs on top of the host OS. The guest OSs run on top of the hypervisor which in turn emulates the underlying real hardware to them. The guest OSs can be arbitrary. The main advantage of full virtualisation is that it is easy to deploy and should not pose problems to an average user. 
+
+\subsubsection{OS-Layer virtualisation}
+
+\subsubsection{Hardware-Layer virtualisation}
+
+\subsubsection{Paravirtualisation}
+
+\subsubsection{Container-based virtualisation}
+
+\begin{figure}
+\centering
+  \includegraphics[width=8cm,height=5cm]{myPictureName.png}%
+  \caption{My Picture}
+\end{figure}

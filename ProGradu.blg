@@ -6,45 +6,45 @@ Database file #1: references-en.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty language in ArpaciDusseau14-Book
 Warning--empty institution in Mell:2011:SND:2206223
-You've used 4 entries,
+You've used 6 entries,
             2783 wiz_defined-function locations,
-            660 strings with 6794 characters,
-and the built_in function-call counts, 2156 in all, are:
-= -- 171
-> -- 102
-< -- 2
-+ -- 40
-- -- 36
-* -- 244
-:= -- 293
-add.period$ -- 8
-call.type$ -- 4
-change.case$ -- 30
+            672 strings with 7182 characters,
+and the built_in function-call counts, 2973 in all, are:
+= -- 244
+> -- 127
+< -- 3
++ -- 50
+- -- 44
+* -- 319
+:= -- 405
+add.period$ -- 12
+call.type$ -- 6
+change.case$ -- 40
 chr.to.int$ -- 0
-cite$ -- 6
-duplicate$ -- 116
-empty$ -- 186
-format.name$ -- 58
-if$ -- 442
+cite$ -- 8
+duplicate$ -- 164
+empty$ -- 267
+format.name$ -- 71
+if$ -- 625
 int.to.chr$ -- 0
-int.to.str$ -- 4
-missing$ -- 4
-newline$ -- 32
-num.names$ -- 8
-pop$ -- 48
+int.to.str$ -- 6
+missing$ -- 7
+newline$ -- 40
+num.names$ -- 12
+pop$ -- 64
 preamble$ -- 1
-purify$ -- 26
+purify$ -- 34
 quote$ -- 0
-skip$ -- 60
+skip$ -- 92
 stack$ -- 0
-substring$ -- 80
-swap$ -- 64
-text.length$ -- 2
+substring$ -- 118
+swap$ -- 86
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 14
+type$ -- 22
 warning$ -- 2
-while$ -- 13
-width$ -- 5
-write$ -- 55
+while$ -- 19
+width$ -- 7
+write$ -- 75
 (There were 2 warnings)
