@@ -13,6 +13,16 @@
   \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
 
 \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem {VirtualBox}
+\btxtitlefont {\btxifchangecase {{Oracle} virtualbox}{{Oracle} VirtualBox}}.
+\newblock \url{https://www.virtualbox.org/}.
+\newblock Accessed: 1.11.2016.
+
+\bibitem {WorkStation}
+\btxtitlefont {\btxifchangecase {{VMware} workstation}{{VMware} Workstation}}.
+\newblock \url{http://www.vmware.com/products/workstation.html}.
+\newblock Accessed: 1.11.2016.
+
 \bibitem {ArpaciDusseau14-Book}
 \btxnamefont {\btxlastnamefont {Arpaci-Dusseau}, Remzi\btxfnamespacelong H.}
   \btxandlong {}\ \btxnamefont {\btxlastnamefont {Arpaci-Dusseau},

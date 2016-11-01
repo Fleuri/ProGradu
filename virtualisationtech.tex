@@ -4,7 +4,7 @@ Traditionally virtualisation has referred to a software abstraction layer residi
 
 \subsubsection{Full virtualisation}
 
-In full virtualisation, the hypervisor runs on top of the host OS. The guest OSs run on top of the hypervisor which in turn emulates the underlying real hardware to them. The guest OSs can be arbitrary. The main advantage of full virtualisation is that it is easy to deploy and should not pose problems to an average user. 
+In full virtualisation, the hypervisor runs on top of the host OS. The guest OSs run on top of the hypervisor which in turn emulates the underlying real hardware to them. The guest OSs can be arbitrary. Figure ~\ref{fig:full} shows the full virtualisation architecture with the hypervisor running on top of the Host OS and Guest OSs on top of the hypervisor using their emulated hardware. The main advantage of full virtualisation is that it is easy to deploy and should not pose problems to an average user but the virtualisation overhead results in significantly reduced performance when compared to running directly on hardware. Popular examples of full virtualisation applications are Oracle's \textit{VirtualBox}\cite{VirtualBox} and \textit{VMware Workstation}\cite{WorkStation}. 
 
 \subsubsection{OS-Layer virtualisation}
 
@@ -18,4 +18,5 @@ In full virtualisation, the hypervisor runs on top of the host OS. The guest OSs
 \centering
   \includegraphics[width=8cm,height=5cm]{myPictureName.png}%
   \caption{My Picture}
+  \label{fig:full}
 \end{figure}

@@ -3,48 +3,50 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ProGradu.aux
 The style file: babplain-lf.bst
 Database file #1: references-en.bib
+Warning--to sort, need author or key in VirtualBox
+Warning--to sort, need author or key in WorkStation
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Warning--empty language in ArpaciDusseau14-Book
+Warning--empty language in VirtualBox
 Warning--empty institution in Mell:2011:SND:2206223
-You've used 6 entries,
+You've used 8 entries,
             2783 wiz_defined-function locations,
-            672 strings with 7182 characters,
-and the built_in function-call counts, 2973 in all, are:
-= -- 244
-> -- 127
+            681 strings with 7368 characters,
+and the built_in function-call counts, 3397 in all, are:
+= -- 282
+> -- 129
 < -- 3
-+ -- 50
++ -- 52
 - -- 44
-* -- 319
-:= -- 405
-add.period$ -- 12
-call.type$ -- 6
-change.case$ -- 40
+* -- 341
+:= -- 455
+add.period$ -- 18
+call.type$ -- 8
+change.case$ -- 46
 chr.to.int$ -- 0
-cite$ -- 8
-duplicate$ -- 164
-empty$ -- 267
+cite$ -- 12
+duplicate$ -- 186
+empty$ -- 331
 format.name$ -- 71
-if$ -- 625
+if$ -- 731
 int.to.chr$ -- 0
-int.to.str$ -- 6
+int.to.str$ -- 8
 missing$ -- 7
-newline$ -- 40
+newline$ -- 50
 num.names$ -- 12
-pop$ -- 64
+pop$ -- 90
 preamble$ -- 1
-purify$ -- 34
+purify$ -- 38
 quote$ -- 0
-skip$ -- 92
+skip$ -- 106
 stack$ -- 0
-substring$ -- 118
-swap$ -- 86
+substring$ -- 128
+swap$ -- 90
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 22
-warning$ -- 2
+type$ -- 30
+warning$ -- 4
 while$ -- 19
-width$ -- 7
-write$ -- 75
-(There were 2 warnings)
+width$ -- 9
+write$ -- 93
+(There were 4 warnings)
