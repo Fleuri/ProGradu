@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
   \providebibliographyfont{name}{}%
   \providebibliographyfont{lastname}{}%
   \providebibliographyfont{title}{\emph}%
@@ -13,6 +13,11 @@
   \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
 
 \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem {docker}
+\btxtitlefont {\btxifchangecase {Docker}{Docker}}.
+\newblock \url{https://www.docker.com}.
+\newblock Accessed: 3.11.2016.
+
 \bibitem {VirtualBox}
 \btxtitlefont {\btxifchangecase {{Oracle} virtualbox}{{Oracle} VirtualBox}}.
 \newblock \url{https://www.virtualbox.org/}.
@@ -81,5 +86,20 @@
 \newblock \Btxinlong {}\ \btxtitlefont {Computer and Network Technology
   (ICCNT), 2010 Second International Conference on}, \btxpageslong {}\
   222--226, \btxprintmonthyear{.}{April}{2010}{long}.
+
+\bibitem {Xaviercontainer}
+\btxnamefont {\btxlastnamefont {Xavier}, M.\btxfnamespacelong G.}, \btxnamefont
+  {\btxlastnamefont {Neves}, M.\btxfnamespacelong V.}, \btxnamefont
+  {\btxlastnamefont {Rossi}, F.\btxfnamespacelong D.}, \btxnamefont
+  {\btxlastnamefont {Ferreto}, T.\btxfnamespacelong C.}, \btxnamefont
+  {\btxlastnamefont {Lange}, T.}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Rose}, C.\btxfnamespacelong A.\btxfnamespacelong
+  F.\btxfnamespacelong De}\btxauthorcolon\ \btxtitlefont {\btxifchangecase
+  {Performance evaluation of container-based virtualization for high
+  performance computing environments}{Performance Evaluation of Container-Based
+  Virtualization for High Performance Computing Environments}}.
+\newblock \Btxinlong {}\ \btxtitlefont {2013 21st Euromicro International
+  Conference on Parallel, Distributed, and Network-Based Processing},
+  \btxpageslong {}\ 233--240, \btxprintmonthyear{.}{Feb}{2013}{long}.
 
 \end{thebibliography}

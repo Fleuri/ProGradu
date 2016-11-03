@@ -2,13 +2,12 @@
 \BOOKMARK [1][-]{section.2}{Background}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{Virtualisation Techniques}{section.2}% 3
 \BOOKMARK [3][-]{subsubsection.2.1.1}{Full virtualisation}{subsection.2.1}% 4
-\BOOKMARK [3][-]{subsubsection.2.1.2}{OS-Layer virtualisation}{subsection.2.1}% 5
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Container-based virtualisation}{subsection.2.1}% 5
 \BOOKMARK [3][-]{subsubsection.2.1.3}{Hardware-Layer virtualisation}{subsection.2.1}% 6
 \BOOKMARK [3][-]{subsubsection.2.1.4}{Paravirtualisation}{subsection.2.1}% 7
-\BOOKMARK [3][-]{subsubsection.2.1.5}{Container-based virtualisation}{subsection.2.1}% 8
-\BOOKMARK [1][-]{section.3}{System design and implementation}{}% 9
-\BOOKMARK [1][-]{section.4}{Experiments and measurements}{}% 10
-\BOOKMARK [1][-]{section.5}{Related work}{}% 11
-\BOOKMARK [1][-]{section.6}{Future research}{}% 12
-\BOOKMARK [1][-]{section.7}{Conclusions}{}% 13
-\BOOKMARK [1][-]{section*.2}{Sources}{}% 14
+\BOOKMARK [1][-]{section.3}{System design and implementation}{}% 8
+\BOOKMARK [1][-]{section.4}{Experiments and measurements}{}% 9
+\BOOKMARK [1][-]{section.5}{Related work}{}% 10
+\BOOKMARK [1][-]{section.6}{Future research}{}% 11
+\BOOKMARK [1][-]{section.7}{Conclusions}{}% 12
+\BOOKMARK [1][-]{section*.2}{Sources}{}% 13

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.6.12)  1 NOV 2016 15:46
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.6.12)  3 NOV 2016 16:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -890,32 +890,20 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ]
 (./background.tex [1
 
-]) (./virtualisationtech.tex [2]
+]) (./virtualisationtech.tex
+<fullvirt.jpeg, id=106, 485.815pt x 576.1525pt>
+File: fullvirt.jpeg Graphic file (type jpg)
+ <use fullvirt.jpeg>
+Package pdftex.def Info: fullvirt.jpeg used on input line 11.
+(pdftex.def)             Requested size: 239.9195pt x 284.53261pt.
+ [2]
+<containers.png, id=121, 683.02235pt x 646.17882pt>
+File: containers.png Graphic file (type png)
+ <use containers.png>
+Package pdftex.def Info: containers.png used on input line 24.
+(pdftex.def)             Requested size: 284.53288pt x 269.18463pt.
 
-LaTeX Warning: File `myPictureName.png' not found on input line 19.
-
-
-! Package pdftex.def Error: File `myPictureName.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.19 ...s[width=8cm,height=5cm]{myPictureName.png}
-                                                  %
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 19.
-(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic settings for font family
-(microtype)             `lmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-) (./ProGradu.bbl
+[3 <./fullvirt.jpeg>]) (./ProGradu.bbl
 babelbib: Using the BibTeX style's default font for `name'.
 babelbib: Using the BibTeX style's default font for `lastname'.
 babelbib: Using the BibTeX style's default font for `title'.
@@ -927,41 +915,56 @@ babelbib: Using the BibTeX style's default font for `ISBN'.
 babelbib: Using the BibTeX style's default font for `ISSN'.
 babelbib: Using the BibTeX style's default font for `url'.
 babelbib: Using the BibTeX style's default font for `numeral'.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 18.
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [4 <./containers.png>]
+Underfull \hbox (badness 3078) in paragraph at lines 22--25
+[]\T1/lmr/m/it/10.95 (+20) Oracle vir-tu-al-box\T1/lmr/m/n/10.95 (+20) .  []$\T
+1/lmtt/m/n/10.95 https : / / www . virtualbox . org/$[]\T1/lmr/m/n/10.95 (+20) 
+.  Ac-cessed:
+ []
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--25
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--30
 []\T1/lmr/m/it/10.95 (+20) VMware work-sta-tion\T1/lmr/m/n/10.95 (+20) .  []$\T
 1/lmtt/m/n/10.95 http : / / www . vmware . com / products /
  []
 
-[3])
+[5])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 163.
- [4]
+ [6]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 163.
  (./ProGradu.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 163.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 163.
 Package rerunfilecheck Info: File `ProGradu.out' has not changed.
-(rerunfilecheck)             Checksum: C5D704F58EC31F24F45A5F82F00EDDEF;901.
+(rerunfilecheck)             Checksum: 7F3F0983D7A5ECFFFA7BAB7644B12C1E;818.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 163.
  ) 
 Here is how much of TeX's memory you used:
- 9834 strings out of 493304
- 145966 string characters out of 6139871
- 281021 words of memory out of 5000000
- 12993 multiletter control sequences out of 15000+600000
- 49086 words of font info for 81 fonts, out of 8000000 for 9000
+ 9858 strings out of 493304
+ 146269 string characters out of 6139871
+ 281159 words of memory out of 5000000
+ 13003 multiletter control sequences out of 15000+600000
+ 49512 words of font info for 85 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 31i,8n,35p,1912b,608s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 31i,8n,35p,1912b,606s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
 public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public
 /lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texm
 f/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt
 10.pfb>
-Output written on ProGradu.pdf (7 pages, 207783 bytes).
+Output written on ProGradu.pdf (9 pages, 260105 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
- 153 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 14449 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 187 PDF objects out of 1000 (max. 8388607)
+ 165 compressed objects within 2 object streams
+ 35 named destinations out of 1000 (max. 500000)
+ 14451 words of extra memory for PDF output out of 17280 (max. 10000000)
 
