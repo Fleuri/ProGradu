@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.6.12)  3 NOV 2016 16:10
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.6.12)  7 NOV 2016 11:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -897,13 +897,18 @@ File: fullvirt.jpeg Graphic file (type jpg)
 Package pdftex.def Info: fullvirt.jpeg used on input line 11.
 (pdftex.def)             Requested size: 239.9195pt x 284.53261pt.
  [2]
-<containers.png, id=121, 683.02235pt x 646.17882pt>
+<hwlayer.jpeg, id=119, 485.815pt x 403.5075pt>
+File: hwlayer.jpeg Graphic file (type jpg)
+ <use hwlayer.jpeg>
+Package pdftex.def Info: hwlayer.jpeg used on input line 24.
+(pdftex.def)             Requested size: 284.52309pt x 236.31877pt.
+ [3 <./fullvirt.jpeg>] <containers.png, id=134, 683.02235pt x 646.17882pt>
 File: containers.png Graphic file (type png)
- <use containers.png>
-Package pdftex.def Info: containers.png used on input line 24.
-(pdftex.def)             Requested size: 284.53288pt x 269.18463pt.
 
-[3 <./fullvirt.jpeg>]) (./ProGradu.bbl
+<use containers.png>
+Package pdftex.def Info: containers.png used on input line 37.
+(pdftex.def)             Requested size: 284.53288pt x 269.18463pt.
+ [4 <./hwlayer.jpeg>]) (./ProGradu.bbl
 babelbib: Using the BibTeX style's default font for `name'.
 babelbib: Using the BibTeX style's default font for `lastname'.
 babelbib: Using the BibTeX style's default font for `title'.
@@ -923,36 +928,48 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [4 <./containers.png>]
-Underfull \hbox (badness 3078) in paragraph at lines 22--25
+ [5 <./containers.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 22--26
+[]\T1/lmr/m/it/10.95 (+20) Microsoft hyper-v\T1/lmr/m/n/10.95 (+20) .  []$\T1/l
+mtt/m/n/10.95 https : / / technet . microsoft . com / en-[]us /
+ []
+
+
+Underfull \hbox (badness 3078) in paragraph at lines 28--31
 []\T1/lmr/m/it/10.95 (+20) Oracle vir-tu-al-box\T1/lmr/m/n/10.95 (+20) .  []$\T
 1/lmtt/m/n/10.95 https : / / www . virtualbox . org/$[]\T1/lmr/m/n/10.95 (+20) 
 .  Ac-cessed:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--30
+Underfull \hbox (badness 1242) in paragraph at lines 34--37
+[]\T1/lmr/m/it/10.95 (+20) Vmware vsphere hy-per-vi-sor\T1/lmr/m/n/10.95 (+20) 
+.  []$\T1/lmtt/m/n/10.95 http : / / www . vmware . com / products /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--42
 []\T1/lmr/m/it/10.95 (+20) VMware work-sta-tion\T1/lmr/m/n/10.95 (+20) .  []$\T
 1/lmtt/m/n/10.95 http : / / www . vmware . com / products /
  []
 
-[5])
+[6])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 163.
- [6]
+ [7]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 163.
  (./ProGradu.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 163.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 163.
 Package rerunfilecheck Info: File `ProGradu.out' has not changed.
-(rerunfilecheck)             Checksum: 7F3F0983D7A5ECFFFA7BAB7644B12C1E;818.
+(rerunfilecheck)             Checksum: A01CA1C128B3E62FAD4CE3028F4D9A79;818.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 163.
  ) 
 Here is how much of TeX's memory you used:
- 9858 strings out of 493304
- 146269 string characters out of 6139871
- 281159 words of memory out of 5000000
- 13003 multiletter control sequences out of 15000+600000
- 49512 words of font info for 85 fonts, out of 8000000 for 9000
+ 9880 strings out of 493304
+ 146514 string characters out of 6139871
+ 281308 words of memory out of 5000000
+ 13011 multiletter control sequences out of 15000+600000
+ 49891 words of font info for 89 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  31i,8n,35p,1912b,606s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
@@ -961,10 +978,10 @@ hare/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public
 /lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texm
 f/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt
 10.pfb>
-Output written on ProGradu.pdf (9 pages, 260105 bytes).
+Output written on ProGradu.pdf (10 pages, 292523 bytes).
 PDF statistics:
- 187 PDF objects out of 1000 (max. 8388607)
- 165 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 14451 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 208 PDF objects out of 1000 (max. 8388607)
+ 184 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 14456 words of extra memory for PDF output out of 17280 (max. 10000000)
 

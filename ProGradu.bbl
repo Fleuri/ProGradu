@@ -18,15 +18,32 @@
 \newblock \url{https://www.docker.com}.
 \newblock Accessed: 3.11.2016.
 
+\bibitem {hyperv}
+\btxtitlefont {\btxifchangecase {Microsoft hyper-v}{Microsoft Hyper-V}}.
+\newblock
+  \url{https://technet.microsoft.com/en-us/library/mt169373(v=ws.11).aspx}.
+\newblock Accessed: 7.11.2016.
+
 \bibitem {VirtualBox}
 \btxtitlefont {\btxifchangecase {{Oracle} virtualbox}{{Oracle} VirtualBox}}.
 \newblock \url{https://www.virtualbox.org/}.
 \newblock Accessed: 1.11.2016.
 
+\bibitem {vsphere}
+\btxtitlefont {\btxifchangecase {Vmware vsphere hypervisor}{VMware VSphere
+  Hypervisor}}.
+\newblock \url{http://www.vmware.com/products/vsphere-hypervisor.html}.
+\newblock Accessed: 7.11.2016.
+
 \bibitem {WorkStation}
 \btxtitlefont {\btxifchangecase {{VMware} workstation}{{VMware} Workstation}}.
 \newblock \url{http://www.vmware.com/products/workstation.html}.
 \newblock Accessed: 1.11.2016.
+
+\bibitem {xen}
+\btxtitlefont {\btxifchangecase {Xen project}{Xen Project}}.
+\newblock \url{https://www.xenproject.org/l}.
+\newblock Accessed: 7.11.2016.
 
 \bibitem {ArpaciDusseau14-Book}
 \btxnamefont {\btxlastnamefont {Arpaci-Dusseau}, Remzi\btxfnamespacelong H.}

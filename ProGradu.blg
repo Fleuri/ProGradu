@@ -5,49 +5,52 @@ The style file: babplain-lf.bst
 Database file #1: references-en.bib
 Warning--to sort, need author or key in VirtualBox
 Warning--to sort, need author or key in WorkStation
+Warning--to sort, need author or key in hyperv
+Warning--to sort, need author or key in vsphere
 Warning--to sort, need author or key in docker
+Warning--to sort, need author or key in xen
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty language in docker
 Warning--empty institution in Mell:2011:SND:2206223
-You've used 10 entries,
+You've used 13 entries,
             2783 wiz_defined-function locations,
-            694 strings with 7775 characters,
-and the built_in function-call counts, 4304 in all, are:
-= -- 356
-> -- 163
+            704 strings with 8029 characters,
+and the built_in function-call counts, 4940 in all, are:
+= -- 413
+> -- 166
 < -- 4
-+ -- 66
++ -- 69
 - -- 56
-* -- 433
-:= -- 569
-add.period$ -- 23
-call.type$ -- 10
-change.case$ -- 58
+* -- 466
+:= -- 644
+add.period$ -- 32
+call.type$ -- 13
+change.case$ -- 67
 chr.to.int$ -- 0
-cite$ -- 15
-duplicate$ -- 236
-empty$ -- 424
+cite$ -- 21
+duplicate$ -- 269
+empty$ -- 520
 format.name$ -- 90
-if$ -- 933
+if$ -- 1092
 int.to.chr$ -- 0
-int.to.str$ -- 10
+int.to.str$ -- 13
 missing$ -- 8
-newline$ -- 59
+newline$ -- 74
 num.names$ -- 14
-pop$ -- 118
+pop$ -- 157
 preamble$ -- 1
-purify$ -- 48
+purify$ -- 54
 quote$ -- 0
-skip$ -- 134
+skip$ -- 155
 stack$ -- 0
-substring$ -- 166
-swap$ -- 116
+substring$ -- 181
+swap$ -- 122
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 38
-warning$ -- 5
+type$ -- 50
+warning$ -- 8
 while$ -- 23
-width$ -- 12
-write$ -- 112
-(There were 5 warnings)
+width$ -- 15
+write$ -- 139
+(There were 8 warnings)
