@@ -45,6 +45,11 @@
 \newblock \url{https://www.xenproject.org/l}.
 \newblock Accessed: 7.11.2016.
 
+\bibitem {anderson2015technology}
+\btxnamefont {\btxlastnamefont {Anderson}, Monica}\btxauthorcolon\
+  \btxpublisherfont {\btxtitlefont {Technology Device Ownership, 2015}}.
+\newblock 2015.
+
 \bibitem {ArpaciDusseau14-Book}
 \btxnamefont {\btxlastnamefont {Arpaci-Dusseau}, Remzi\btxfnamespacelong H.}
   \btxandlong {}\ \btxnamefont {\btxlastnamefont {Arpaci-Dusseau},
