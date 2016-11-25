@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.6.12)  23 NOV 2016 16:27
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.6.12)  25 NOV 2016 15:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -896,19 +896,19 @@ File: fullvirt.jpeg Graphic file (type jpg)
  <use fullvirt.jpeg>
 Package pdftex.def Info: fullvirt.jpeg used on input line 11.
 (pdftex.def)             Requested size: 239.9195pt x 284.53261pt.
-
-<hwlayer.jpeg, id=120, 485.815pt x 403.5075pt>
+ [3 <./fullvirt.jpeg>] <hwlayer.jpeg, id=129, 485.815pt x 403.5075pt>
 File: hwlayer.jpeg Graphic file (type jpg)
  <use hwlayer.jpeg>
 Package pdftex.def Info: hwlayer.jpeg used on input line 24.
 (pdftex.def)             Requested size: 284.52309pt x 236.31877pt.
- [3 <./fullvirt.jpeg>] <containers.png, id=135, 683.02235pt x 646.17882pt>
-File: containers.png Graphic file (type png)
 
-<use containers.png>
+<containers.png, id=135, 683.02235pt x 646.17882pt>
+File: containers.png Graphic file (type png)
+ <use containers.png>
 Package pdftex.def Info: containers.png used on input line 37.
 (pdftex.def)             Requested size: 284.53288pt x 269.18463pt.
- [4 <./hwlayer.jpeg>]) (./ProGradu.bbl
+
+[4 <./hwlayer.jpeg>]) (./ProGradu.bbl
 babelbib: Using the BibTeX style's default font for `name'.
 babelbib: Using the BibTeX style's default font for `lastname'.
 babelbib: Using the BibTeX style's default font for `title'.
@@ -978,7 +978,7 @@ hare/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public
 /lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texm
 f/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10
 .pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on ProGradu.pdf (10 pages, 309716 bytes).
+Output written on ProGradu.pdf (10 pages, 309970 bytes).
 PDF statistics:
  214 PDF objects out of 1000 (max. 8388607)
  189 compressed objects within 2 object streams
