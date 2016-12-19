@@ -47,5 +47,13 @@ The obvious drawback of the technique is that the kernel of the virtualised OS h
 
 Paravirtualisation differs from full virtualisation by requiring the Guest OS to be modified in order to accomodate the virtual environment in which it is ran. Otherwise the architecture is similar to that of full virtualisation, but with thinner hypervisor allowing performance close to that of a non-virtualised environment. A well-known example of a paravirtualisation hypervisor is \textit{Xen}\cite{xen}.
 
+\subsection{Unikernels}
 
+Unikernels are a relatively recent take on virtualising services. Building on the notion that in cloud environments each VM usually specialises to provide only one service even if each VM contains a full-fledged general computer \cite{unikernels}. Unikernels are essentially minimal single-purpose library operating system (\textit{LibOS})\cite{libos} VMs with a single address space. They contain only the minimal set of services, implemented as libraries, built and sealed against modification to run the one application. Unlike the earlier LibOSes unikernels do not require a host OS to run but run directly on a VM hypervisor, such as Xen.
+
+Some benefits of unikernels are obvious. Constructing VMs with minimal set of service libraries results in small images and resource footprints as well as fast boot times. Other benefits include reduced attack surface due to smaller codebase and sealing preventing any code not compiled during the creation of the VM from running. Single-address space improves context switching and eliminates the need for privilege transitions making system calls as efficient as function calls \cite{osv}. Running directly on the hypervisor instead of a host OS eliminates superfluous levels of hardware abstraction.
+
+Optimisation and simplification are not without drawbacks. By definition, unikernels are not intended for general-purpose multi-user computing but for microservice cloud environments. Running multiple applications on a single VM is risky due single-address space does not offer any inherent resource isolation. As unikernels are sealed during compiling, it is not possible to do changes to them afterwards. User is instead required to compile and launch a completely new modified VM.
+
+Popular examples of unikernels are \textit{MirageOS}\cite{mirage} and \textit{OSv}\cite{osv}.
 

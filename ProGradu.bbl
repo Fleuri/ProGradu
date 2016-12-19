@@ -19,19 +19,24 @@
 \newblock Accessed: 3.11.2016.
 
 \bibitem {hyperv}
-\btxtitlefont {\btxifchangecase {Microsoft hyper-v}{Microsoft Hyper-V}}.
+\btxtitlefont {\btxifchangecase {{Microsoft Hyper-V}}{{Microsoft Hyper-V}}}.
 \newblock
   \url{https://technet.microsoft.com/en-us/library/mt169373(v=ws.11).aspx}.
 \newblock Accessed: 7.11.2016.
 
+\bibitem {mirage}
+\btxtitlefont {\btxifchangecase {Mirage{OS}}{Mirage{OS}}}.
+\newblock \url{https://mirage.io/}.
+\newblock Accessed: 19.12.2016.
+
 \bibitem {VirtualBox}
-\btxtitlefont {\btxifchangecase {{Oracle} virtualbox}{{Oracle} VirtualBox}}.
+\btxtitlefont {\btxifchangecase {{Oracle VirtualBox}}{{Oracle VirtualBox}}}.
 \newblock \url{https://www.virtualbox.org/}.
 \newblock Accessed: 1.11.2016.
 
 \bibitem {vsphere}
-\btxtitlefont {\btxifchangecase {Vmware vsphere hypervisor}{VMware VSphere
-  Hypervisor}}.
+\btxtitlefont {\btxifchangecase {{VMware VSphere Hypervisor}}{{VMware VSphere
+  Hypervisor}}}.
 \newblock \url{http://www.vmware.com/products/vsphere-hypervisor.html}.
 \newblock Accessed: 7.11.2016.
 
@@ -71,6 +76,19 @@
   Symposium on Networked Systems Design and Implementation (NSDI},
   \btxpageslong {}\ 273--286, 2005.
 
+\bibitem {libos}
+\btxnamefont {\btxlastnamefont {Donald E.~Porter},~Galen~Hunt,
+  Jon\btxfnamespacelong Howell\btxfnamespacelong Reuben\btxfnamespacelong
+  Olinsky\btxfnamespacelong Silas\btxfnamespacelong Boyd\btxfnamespacelong
+  Wickizer}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Rethinking the
+  library os from the top down}{Rethinking the Library OS from the Top Down}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the 16th International
+  Conference on Architectural Support for Programming Languages and Operating
+  Systems (ASPLOS)}. \btxpublisherfont {Association for Computing Machinery,
+  Inc.}, \btxprintmonthyear{.}{March}{2011}{long}.
+\newblock {\latintext
+  \btxurlfont{https://www.microsoft.com/en-us/research/publication/rethinking-the-library-os-from-the-top-down/}}.
+
 \bibitem {XaaS}
 \btxnamefont {\btxlastnamefont {Duan}, Y.}, \btxnamefont {\btxlastnamefont
   {Fu}, G.}, \btxnamefont {\btxlastnamefont {Zhou}, N.}, \btxnamefont
@@ -90,6 +108,40 @@
   virtualization}{Hypervisor-vs. Container-based Virtualization}}.
 \newblock \btxjournalfont {Future Internet (FI) and Innovative Internet
   Technologies and Mobile Communications (IITM)}, 1, 2016.
+
+\bibitem {osv}
+\btxnamefont {\btxlastnamefont {Kivity}, Avi}, \btxnamefont {\btxlastnamefont
+  {Laor}, Dor}, \btxnamefont {\btxlastnamefont {Costa}, Glauber}, \btxnamefont
+  {\btxlastnamefont {Enberg}, Pekka}, \btxnamefont {\btxlastnamefont
+  {Har{\textquoteright}El}, Nadav}, \btxnamefont {\btxlastnamefont {Marti},
+  Don}\btxandcomma {} \btxandlong {}\ \btxnamefont {\btxlastnamefont
+  {Zolotarov}, Vlad}\btxauthorcolon\ \btxtitlefont {\btxifchangecase
+  {{OSv}{\textemdash}optimizing the operating system for virtual
+  machines}{{OSv}{\textemdash}Optimizing the Operating System for Virtual
+  Machines}}.
+\newblock \Btxinlong {}\ \btxtitlefont {2014 USENIX Annual Technical Conference
+  (USENIX ATC 14)}, \btxpageslong {}\ 61--72, Philadelphia, PA,
+  \btxprintmonthyear{.}{6}{2014}{long}. \btxpublisherfont {USENIX
+  Association}\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont
+  {978-1-931971-10-2}}}.
+\newblock {\latintext
+  \btxurlfont{https://www.usenix.org/conference/atc14/technical-sessions/presentation/kivity}}.
+
+\bibitem {unikernels}
+\btxnamefont {\btxlastnamefont {Madhavapeddy}, Anil}, \btxnamefont
+  {\btxlastnamefont {Mortier}, Richard}, \btxnamefont {\btxlastnamefont
+  {Rotsos}, Charalampos}, \btxnamefont {\btxlastnamefont {Scott}, David},
+  \btxnamefont {\btxlastnamefont {Singh}, Balraj}, \btxnamefont
+  {\btxlastnamefont {Gazagnaire}, Thomas}, \btxnamefont {\btxlastnamefont
+  {Smith}, Steven}, \btxnamefont {\btxlastnamefont {Hand}, Steven}\btxandcomma
+  {} \btxandlong {}\ \btxnamefont {\btxlastnamefont {Crowcroft},
+  Jon}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Unikernels: Library
+  operating systems for the cloud}{Unikernels: Library Operating Systems for
+  the Cloud}}.
+\newblock \btxjournalfont {SIGPLAN Not.}, 48(4):461--472,
+  \btxprintmonthyear{.}{3}{2013}{long}\ifbtxprintISSN {,
+  \mbox{\btxISSN~\btxISSNfont {0362-1340}}}.
+\newblock {\latintext \btxurlfont{http://doi.acm.org/10.1145/2499368.2451167}}.
 
 \bibitem {Mell:2011:SND:2206223}
 \btxnamefont {\btxlastnamefont {Mell}, Peter\btxfnamespacelong M.} \btxandlong

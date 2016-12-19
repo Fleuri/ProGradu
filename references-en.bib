@@ -53,7 +53,7 @@ month={April},}
 }
 
 @misc{VirtualBox,
-  title = {{Oracle} VirtualBox},
+  title = {{Oracle VirtualBox}},
   howpublished = {\url{https://www.virtualbox.org/}},
   note = {Accessed: 1.11.2016}
 }
@@ -71,13 +71,13 @@ month={April},}
 }
 
 @misc{hyperv,
-  title = {Microsoft Hyper-V},
+  title = {{Microsoft Hyper-V}},
   howpublished = {\url{https://technet.microsoft.com/en-us/library/mt169373(v=ws.11).aspx}},
   note = {Accessed: 7.11.2016}
 }
 
 @misc{vsphere,
-  title = {VMware VSphere Hypervisor},
+  title = {{VMware VSphere Hypervisor}},
   howpublished = {\url{http://www.vmware.com/products/vsphere-hypervisor.html}},
   note = {Accessed: 7.11.2016}
 }
@@ -88,6 +88,7 @@ month={April},}
   howpublished = {\url{https://www.xenproject.org/l}},
   note = {Accessed: 7.11.2016}
 }
+
 @INPROCEEDINGS{xaviercontainer, 
 author={M. G. Xavier and M. V. Neves and F. D. Rossi and T. C. Ferreto and T. Lange and C. A. F. De Rose}, 
 booktitle={2013 21st Euromicro International Conference on Parallel, Distributed, and Network-Based Processing}, 
@@ -103,4 +104,62 @@ month={Feb},}
   title={Technology Device Ownership, 2015},
   author={Anderson, Monica},
   year={2015}
+}
+
+@article{unikernels,
+ author = {Madhavapeddy, Anil and Mortier, Richard and Rotsos, Charalampos and Scott, David and Singh, Balraj and Gazagnaire, Thomas and Smith, Steven and Hand, Steven and Crowcroft, Jon},
+ title = {Unikernels: Library Operating Systems for the Cloud},
+ journal = {SIGPLAN Not.},
+ issue_date = {April 2013},
+ volume = {48},
+ number = {4},
+ month = mar,
+ year = {2013},
+ issn = {0362-1340},
+ pages = {461--472},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/2499368.2451167},
+ doi = {10.1145/2499368.2451167},
+ acmid = {2451167},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {functional programming, hypervisor, microkernel},
+} 
+
+@inproceedings{libos,
+author = {Donald E. Porter, Galen Hunt, Jon Howell, Reuben Olinsky, Silas Boyd-Wickizer},
+title = {Rethinking the Library OS from the Top Down},
+booktitle = {Proceedings of the 16th International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)},
+year = {2011},
+month = {March},
+abstract = {This paper revisits an old approach to operating system construction, the library OS, in a new context. The idea of the library OS is that the personality of the OS on which an application depends runs in the address space of the application. A small, fixed set of abstractions connects the library OS to the host OS kernel, offering the promise of better system security and more rapid independent evolution of OS components.
+We describe a working prototype of a Windows 7 library OS that runs the latest releases of major applications such as Microsoft Excel, PowerPoint, and Internet Explorer. We demonstrate that desktop sharing across independent, securely isolated, library OS instances can be achieved through the pragmatic reuse of net-working protocols. Each instance has significantly lower overhead than a full VM bundled with an application: a typical application adds just 16MB of working set and 64MB of disk footprint. We contribute a new ABI below the library OS that enables application mobility. We also show that our library OS can address many of the current uses of hardware virtual machines at a fraction of the overheads. This paper describes the first working prototype of a full commercial OS redesigned as a library OS capable of running significant applications. Our experience shows that the long-promised benefits of the library OS approach—better protection of system integrity and rapid system evolution—are readily obtainable.
+},
+publisher = {Association for Computing Machinery, Inc.},
+url = {https://www.microsoft.com/en-us/research/publication/rethinking-the-library-os-from-the-top-down/},
+address = {},
+pages = {},
+journal = {},
+volume = {},
+chapter = {},
+isbn = {},
+}
+
+@inproceedings {osv,
+author = {Avi Kivity and Dor Laor and Glauber Costa and Pekka Enberg and Nadav Har{\textquoteright}El and Don Marti and Vlad Zolotarov},
+title = {{OSv}{\textemdash}Optimizing the Operating System for Virtual Machines},
+booktitle = {2014 USENIX Annual Technical Conference (USENIX ATC 14)},
+year = {2014},
+month = Jun,
+isbn = {978-1-931971-10-2},
+address = {Philadelphia, PA},
+pages = {61--72},
+url = {https://www.usenix.org/conference/atc14/technical-sessions/presentation/kivity},
+publisher = {USENIX Association},
+}
+
+@misc{mirage,
+  title = {Mirage{OS}},
+  howpublished = {\url{https://mirage.io/}},
+  note = {Accessed: 19.12.2016}
 }
