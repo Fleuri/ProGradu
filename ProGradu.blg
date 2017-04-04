@@ -3,48 +3,68 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ProGradu.aux
 The style file: babplain-lf.bst
 Database file #1: references-en.bib
+Warning--to sort, need author or key in VirtualBox
+Warning--to sort, need author or key in WorkStation
+Warning--to sort, need author or key in hyperv
+Warning--to sort, need author or key in vsphere
+Warning--to sort, need author or key in docker
+Warning--to sort, need author or key in xen
+Too many commas in name 1 of "Donald E. Porter, Galen Hunt, Jon Howell, Reuben Olinsky, Silas Boyd-Wickizer" for entry libos
+while executing---line 1324 of file babplain-lf.bst
+Too many commas in name 1 of "Donald E. Porter, Galen Hunt, Jon Howell, Reuben Olinsky, Silas Boyd-Wickizer" for entry libos
+while executing---line 1324 of file babplain-lf.bst
+Warning--to sort, need author or key in mirage
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Warning--empty language in ArpaciDusseau14-Book
+Warning--empty language in docker
+Warning--empty publisher in anderson2015technology
+Too many commas in name 1 of "Donald E. Porter, Galen Hunt, Jon Howell, Reuben Olinsky, Silas Boyd-Wickizer" for entry libos
+while executing---line 1379 of file babplain-lf.bst
+Too many commas in name 1 of "Donald E. Porter, Galen Hunt, Jon Howell, Reuben Olinsky, Silas Boyd-Wickizer" for entry libos
+while executing---line 1379 of file babplain-lf.bst
+Too many commas in name 1 of "Donald E. Porter, Galen Hunt, Jon Howell, Reuben Olinsky, Silas Boyd-Wickizer" for entry libos
+while executing---line 1379 of file babplain-lf.bst
+Too many commas in name 1 of "Donald E. Porter, Galen Hunt, Jon Howell, Reuben Olinsky, Silas Boyd-Wickizer" for entry libos
+while executing---line 1379 of file babplain-lf.bst
 Warning--empty institution in Mell:2011:SND:2206223
-You've used 6 entries,
+You've used 18 entries,
             2783 wiz_defined-function locations,
-            672 strings with 7182 characters,
-and the built_in function-call counts, 2973 in all, are:
-= -- 244
-> -- 127
-< -- 3
-+ -- 50
-- -- 44
-* -- 319
-:= -- 405
-add.period$ -- 12
-call.type$ -- 6
-change.case$ -- 40
+            738 strings with 9282 characters,
+and the built_in function-call counts, 7222 in all, are:
+= -- 604
+> -- 267
+< -- 5
++ -- 110
+- -- 92
+* -- 743
+:= -- 955
+add.period$ -- 48
+call.type$ -- 18
+change.case$ -- 99
 chr.to.int$ -- 0
-cite$ -- 8
-duplicate$ -- 164
-empty$ -- 267
-format.name$ -- 71
-if$ -- 625
+cite$ -- 28
+duplicate$ -- 388
+empty$ -- 734
+format.name$ -- 146
+if$ -- 1567
 int.to.chr$ -- 0
-int.to.str$ -- 6
-missing$ -- 7
-newline$ -- 40
-num.names$ -- 12
-pop$ -- 64
+int.to.str$ -- 18
+missing$ -- 14
+newline$ -- 98
+num.names$ -- 22
+pop$ -- 211
 preamble$ -- 1
-purify$ -- 34
+purify$ -- 82
 quote$ -- 0
-skip$ -- 92
+skip$ -- 204
 stack$ -- 0
-substring$ -- 118
-swap$ -- 86
-text.length$ -- 3
+substring$ -- 255
+swap$ -- 178
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 22
-warning$ -- 2
-while$ -- 19
-width$ -- 7
-write$ -- 75
-(There were 2 warnings)
+type$ -- 68
+warning$ -- 10
+while$ -- 36
+width$ -- 20
+write$ -- 196
+(There were 6 error messages)
