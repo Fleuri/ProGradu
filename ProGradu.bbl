@@ -13,6 +13,12 @@
   \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
 
 \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem {openstackpartners}
+\btxtitlefont {\btxifchangecase {Companies supporting the openstack
+  foundational}{Companies Supporting The OpenStack Foundational}}.
+\newblock \url{https://www.openstack.org/foundation/companies/}.
+\newblock Accessed: 9.4.2017.
+
 \bibitem {docker}
 \btxtitlefont {\btxifchangecase {Docker}{Docker}}.
 \newblock \url{https://www.docker.com}.
@@ -28,6 +34,11 @@
 \btxtitlefont {\btxifchangecase {Mirage{OS}}{Mirage{OS}}}.
 \newblock \url{https://mirage.io/}.
 \newblock Accessed: 19.12.2016.
+
+\bibitem {openstackproject}
+\btxtitlefont {\btxifchangecase {Openstack}{OpenStack}}.
+\newblock \url{https://www.openstack.org/}.
+\newblock Accessed: 9.4.2017.
 
 \bibitem {VirtualBox}
 \btxtitlefont {\btxifchangecase {{Oracle VirtualBox}}{{Oracle VirtualBox}}}.

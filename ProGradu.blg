@@ -1,6 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: ProGradu.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: ProGradu.aux
 The style file: babplain-lf.bst
 Database file #1: references-en.bib
 Warning--to sort, need author or key in VirtualBox
@@ -14,8 +12,9 @@ while executing---line 1324 of file babplain-lf.bst
 Too many commas in name 1 of "Donald E. Porter, Galen Hunt, Jon Howell, Reuben Olinsky, Silas Boyd-Wickizer" for entry libos
 while executing---line 1324 of file babplain-lf.bst
 Warning--to sort, need author or key in mirage
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Warning--empty language in docker
+Warning--to sort, need author or key in openstackproject
+Warning--to sort, need author or key in openstackpartners
+Warning--empty language in openstackpartners
 Warning--empty publisher in anderson2015technology
 Too many commas in name 1 of "Donald E. Porter, Galen Hunt, Jon Howell, Reuben Olinsky, Silas Boyd-Wickizer" for entry libos
 while executing---line 1379 of file babplain-lf.bst
@@ -26,45 +25,4 @@ while executing---line 1379 of file babplain-lf.bst
 Too many commas in name 1 of "Donald E. Porter, Galen Hunt, Jon Howell, Reuben Olinsky, Silas Boyd-Wickizer" for entry libos
 while executing---line 1379 of file babplain-lf.bst
 Warning--empty institution in Mell:2011:SND:2206223
-You've used 18 entries,
-            2783 wiz_defined-function locations,
-            738 strings with 9282 characters,
-and the built_in function-call counts, 7222 in all, are:
-= -- 604
-> -- 267
-< -- 5
-+ -- 110
-- -- 92
-* -- 743
-:= -- 955
-add.period$ -- 48
-call.type$ -- 18
-change.case$ -- 99
-chr.to.int$ -- 0
-cite$ -- 28
-duplicate$ -- 388
-empty$ -- 734
-format.name$ -- 146
-if$ -- 1567
-int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 14
-newline$ -- 98
-num.names$ -- 22
-pop$ -- 211
-preamble$ -- 1
-purify$ -- 82
-quote$ -- 0
-skip$ -- 204
-stack$ -- 0
-substring$ -- 255
-swap$ -- 178
-text.length$ -- 5
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 68
-warning$ -- 10
-while$ -- 36
-width$ -- 20
-write$ -- 196
 (There were 6 error messages)
