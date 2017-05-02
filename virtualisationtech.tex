@@ -70,6 +70,8 @@ Openstack \cite{openstackproject} is an open-source software platform for cloud 
 
 \subsubsection{Cloudify}
 
+Cloudify \cite{cloudify} is an open-source orchestration software aiming to provide a unified control and modelling layer for common cloud computing platforms. Cloudify can be used to uniformly orchestrate heterogeneous sets of both virtual and physical cloud resources such as networking, computing and storage resources. They can also be provided from different environments such as OpenStack, AWS, Google Cloud Platform, Kubernetes and even bare-metal clouds. Orchestrating different versions of the same underlying cloud environment is also possible. The applications, workflows and the cloud infrastructure itself is described with OASIS TOSCA \cite{Tosca} based Domain Specific Language (DSL) in configuration files called \textit{blueprints} in Cloudify jargon. Configuration files are vendor-agnostic, meaning the same configuration can be reused with different underlying infrastructure. Cloudify \textit{plugins} act as an abstraction layer between the generic blueprints and cloud environments' more speclialised APIs. The generalising approach makes cloudify suitable for hybrid clouds and allows seamless migration of resources between different environments.
+
 
 
 \subsubsection{Docker}
