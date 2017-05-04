@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.1.30)  2 MAY 2017 23:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.1.30)  4 MAY 2017 16:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1016,7 +1016,10 @@ LaTeX Warning: Citation `cloudify' on page 7 undefined on input line 73.
 
 LaTeX Warning: Citation `Tosca' on page 7 undefined on input line 73.
 
-) (./ProGradu.bbl
+
+LaTeX Warning: Citation `heat' on page 7 undefined on input line 77.
+
+[7]) (./ProGradu.bbl
 babelbib: Using the BibTeX style's default font for `name'.
 babelbib: Using the BibTeX style's default font for `lastname'.
 babelbib: Using the BibTeX style's default font for `title'.
@@ -1036,7 +1039,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [7]
+
 Underfull \hbox (badness 10000) in paragraph at lines 28--32
 []\T1/lmr/m/it/10.95 (+20) Microsoft Hyper-V\T1/lmr/m/n/10.95 (+20) .  []$\T1/l
 mtt/m/n/10.95 https : / / technet . microsoft . com / en-[]us /
@@ -1080,20 +1083,26 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 161.
  (./ProGradu.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 161.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 161.
-Package rerunfilecheck Info: File `ProGradu.out' has not changed.
-(rerunfilecheck)             Checksum: 24C73BDF7C741598A4E6C644465B96CB;1353.
 
+
+Package rerunfilecheck Warning: File `ProGradu.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `ProGradu.out':
+(rerunfilecheck)             Before: 24C73BDF7C741598A4E6C644465B96CB;1353
+(rerunfilecheck)             After:  4D005FDFEF7D9C1B2B20194DA40040C5;1449.
 
 LaTeX Warning: There were undefined references.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 161.
  ) 
 Here is how much of TeX's memory you used:
- 10055 strings out of 493029
- 148212 string characters out of 6136234
- 283486 words of memory out of 5000000
- 13225 multiletter control sequences out of 15000+600000
- 53594 words of font info for 98 fonts, out of 8000000 for 9000
+ 10061 strings out of 493029
+ 148285 string characters out of 6136234
+ 284486 words of memory out of 5000000
+ 13226 multiletter control sequences out of 15000+600000
+ 53854 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  31i,8n,35p,1912b,604s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
@@ -1102,10 +1111,10 @@ hare/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public
 /lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texm
 f/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10
 .pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on ProGradu.pdf (13 pages, 322926 bytes).
+Output written on ProGradu.pdf (13 pages, 324600 bytes).
 PDF statistics:
- 294 PDF objects out of 1000 (max. 8388607)
- 265 compressed objects within 3 object streams
- 58 named destinations out of 1000 (max. 500000)
+ 295 PDF objects out of 1000 (max. 8388607)
+ 266 compressed objects within 3 object streams
+ 59 named destinations out of 1000 (max. 500000)
  15032 words of extra memory for PDF output out of 17280 (max. 10000000)
 

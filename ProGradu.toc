@@ -10,10 +10,11 @@
 \contentsline {subsection}{\numberline {2.2}Experiment technologies}{6}{subsection.2.2}
 \contentsline {subsubsection}{\numberline {2.2.1}Openstack}{6}{subsubsection.2.2.1}
 \contentsline {subsubsection}{\numberline {2.2.2}Cloudify}{7}{subsubsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.3}Docker}{8}{subsubsection.2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.4}Xen}{8}{subsubsection.2.2.4}
-\contentsline {subsubsection}{\numberline {2.2.5}KVM}{8}{subsubsection.2.2.5}
-\contentsline {subsubsection}{\numberline {2.2.6}OSv}{8}{subsubsection.2.2.6}
+\contentsline {subsubsection}{\numberline {2.2.3}Comparison of Openstack and Cloudify}{7}{subsubsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.4}Docker}{8}{subsubsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.5}Xen}{8}{subsubsection.2.2.5}
+\contentsline {subsubsection}{\numberline {2.2.6}KVM}{8}{subsubsection.2.2.6}
+\contentsline {subsubsection}{\numberline {2.2.7}OSv}{8}{subsubsection.2.2.7}
 \contentsline {section}{\numberline {3}System design and implementation}{8}{section.3}
 \contentsline {section}{\numberline {4}Experiments and measurements}{8}{section.4}
 \contentsline {section}{\numberline {5}Related work}{8}{section.5}
