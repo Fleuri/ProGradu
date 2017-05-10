@@ -1,6 +1,12 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: ProGradu.aux
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: ProGradu.aux
 The style file: babplain-lf.bst
 Database file #1: references-en.bib
+Warning--I didn't find a database entry for "cloudify"
+Warning--I didn't find a database entry for "Tosca"
+Warning--I didn't find a database entry for "heat"
+Warning--I didn't find a database entry for "Kubernetes"
 Warning--to sort, need author or key in VirtualBox
 Warning--to sort, need author or key in WorkStation
 Warning--to sort, need author or key in hyperv
@@ -14,6 +20,9 @@ while executing---line 1324 of file babplain-lf.bst
 Warning--to sort, need author or key in mirage
 Warning--to sort, need author or key in openstackproject
 Warning--to sort, need author or key in openstackpartners
+Warning--to sort, need author or key in openstackfeatures
+Warning--to sort, need author or key in dockerdocumentation
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty language in openstackpartners
 Warning--empty publisher in anderson2015technology
 Too many commas in name 1 of "Donald E. Porter, Galen Hunt, Jon Howell, Reuben Olinsky, Silas Boyd-Wickizer" for entry libos
@@ -25,4 +34,45 @@ while executing---line 1379 of file babplain-lf.bst
 Too many commas in name 1 of "Donald E. Porter, Galen Hunt, Jon Howell, Reuben Olinsky, Silas Boyd-Wickizer" for entry libos
 while executing---line 1379 of file babplain-lf.bst
 Warning--empty institution in Mell:2011:SND:2206223
+You've used 24 entries,
+            2783 wiz_defined-function locations,
+            772 strings with 10184 characters,
+and the built_in function-call counts, 8801 in all, are:
+= -- 737
+> -- 306
+< -- 5
++ -- 128
+- -- 104
+* -- 877
+:= -- 1162
+add.period$ -- 64
+call.type$ -- 24
+change.case$ -- 123
+chr.to.int$ -- 0
+cite$ -- 38
+duplicate$ -- 468
+empty$ -- 931
+format.name$ -- 165
+if$ -- 1927
+int.to.chr$ -- 0
+int.to.str$ -- 24
+missing$ -- 16
+newline$ -- 126
+num.names$ -- 26
+pop$ -- 281
+preamble$ -- 1
+purify$ -- 100
+quote$ -- 0
+skip$ -- 252
+stack$ -- 0
+substring$ -- 285
+swap$ -- 202
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 92
+warning$ -- 14
+while$ -- 40
+width$ -- 26
+write$ -- 252
 (There were 6 error messages)

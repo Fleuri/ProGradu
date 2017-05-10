@@ -24,6 +24,12 @@
 \newblock \url{https://www.docker.com}.
 \newblock Accessed: 3.11.2016.
 
+\bibitem {dockerdocumentation}
+\btxtitlefont {\btxifchangecase {Docker documentation}{Docker Documentation}}.
+\newblock
+  \url{https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/#container-and-layers}.
+\newblock Accessed: 10.4.2017.
+
 \bibitem {hyperv}
 \btxtitlefont {\btxifchangecase {{Microsoft Hyper-V}}{{Microsoft Hyper-V}}}.
 \newblock
@@ -38,6 +44,13 @@
 \bibitem {openstackproject}
 \btxtitlefont {\btxifchangecase {Openstack}{OpenStack}}.
 \newblock \url{https://www.openstack.org/}.
+\newblock Accessed: 9.4.2017.
+
+\bibitem {openstackfeatures}
+\btxtitlefont {\btxifchangecase {Openstack: Features and benefits}{Openstack:
+  Features and benefits}}.
+\newblock
+  \url{https://docs.openstack.org/admin-guide/objectstorage-features.html}.
 \newblock Accessed: 9.4.2017.
 
 \bibitem {VirtualBox}
@@ -161,6 +174,17 @@
   computing}{SP 800-145. The NIST Definition of Cloud Computing}}.
 \newblock \btxtechreplong {}, Gaithersburg, MD, United States, 2011.
 
+\bibitem {Merkeldocker}
+\btxnamefont {\btxlastnamefont {Merkel}, Dirk}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Docker: Lightweight linux containers for consistent
+  development and deployment}{Docker: Lightweight Linux Containers for
+  Consistent Development and Deployment}}.
+\newblock \btxjournalfont {Linux J.}, 2014(239),
+  \btxprintmonthyear{.}{3}{2014}{long}\ifbtxprintISSN {,
+  \mbox{\btxISSN~\btxISSNfont {1075-3583}}}.
+\newblock {\latintext
+  \btxurlfont{http://dl.acm.org/citation.cfm?id=2600239.2600241}}.
+
 \bibitem {taxonomy}
 \btxnamefont {\btxlastnamefont {Sahoo}, J.}, \btxnamefont {\btxlastnamefont
   {Mohapatra}, S.}\btxandcomma {} \btxandlong {}\ \btxnamefont
@@ -171,6 +195,16 @@
 \newblock \Btxinlong {}\ \btxtitlefont {Computer and Network Technology
   (ICCNT), 2010 Second International Conference on}, \btxpageslong {}\
   222--226, \btxprintmonthyear{.}{April}{2010}{long}.
+
+\bibitem {openstack}
+\btxnamefont {\btxlastnamefont {Sefraoui}, Omar}, \btxnamefont
+  {\btxlastnamefont {Aissaoui}, Mohammed}, \btxnamefont {\btxlastnamefont
+  {Eleuldj}, Mohsine}, \btxnamefont {\btxlastnamefont {Iaas},
+  Openstack}\btxandcomma {} \btxandlong {}\ \btxnamefont {\btxlastnamefont
+  {Scalableifx}, Virtualization}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Openstack: Toward an open-source solution for cloud
+  computing}{OpenStack: Toward an Open-Source Solution for Cloud Computing}},
+  2012.
 
 \bibitem {Xaviercontainer}
 \btxnamefont {\btxlastnamefont {Xavier}, M.\btxfnamespacelong G.}, \btxnamefont
