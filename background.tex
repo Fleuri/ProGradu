@@ -9,7 +9,11 @@ There are several reasons as to why would one prefer a virtualised environment t
 
 \subsection{Heterogeneous clouds, bare-metal and hybrid}
 
-One of the most common assumptions of the current cloud computing paradigm is that the cloud environment is built on commodity hardware \cite{Heterogeneous}. Even if that was not the case, virtualisation and orchestration techniques more often than not abstract the underlying hardware making it virtually invisible to users. Naturally, this can cause problems if the cluster's devices' capabilities differ from each other drastically.In a multitenant cloud the use cases, workloads and resource need
+One of the most common assumptions of the current cloud computing paradigm is that the cloud environment is built on commodity hardware \cite{Heterogeneous}. Even if that was not the case, virtualisation and orchestration techniques more often than not abstract the underlying hardware making it invisible to users. Naturally, this can cause problems if the cluster's devices' capabilities differ from each other drastically. In a multitenant cloud the use cases, workloads and resource needs differ between users, but the cloud is only capable of offering generic solutions for everyone. 
+
+Other motivations to deploy heterogeneous hardware to data centers relating to different use cases and needs stem from bare-metal solutions and green computing movement \cite{Kurp2008}. For example, if a user is running mainly computationally light applications that perhaps only run for a short time, it is wasteful to keep full-fledged rack servers running if the same task could be accomplished with hardware requiring less power and outputting less heat and e.g. a Raspberry PI \cite{raspberry}. In addition, such machines are magnitudes cheaper than traditional rack servers. Virtualisation techniques deployed in current clouds have wide range of benefits but they incur overheads making them undesirable for certain high-performance computing tasks like Big Data analysis and graphical processing. Such tasks may also require speclialised hardware to optimise the performance and thus in the best scenario user should have information of the hardware capabilities and be able to control on which nodes their tasks are run.
+
+Ability to know and control nodes and their capabilities are also relevant in the so-called \textit{hybrid clouds}.
 
 
 	

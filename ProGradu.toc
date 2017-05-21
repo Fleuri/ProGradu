@@ -1,26 +1,27 @@
 \select@language {english}
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}
 \contentsline {section}{\numberline {2}Background}{1}{section.2}
-\contentsline {subsection}{\numberline {2.1}Virtualisation Techniques}{2}{subsection.2.1}
-\contentsline {subsubsection}{\numberline {2.1.1}Full virtualisation}{3}{subsubsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.2}Hardware-Layer virtualisation}{4}{subsubsection.2.1.2}
-\contentsline {subsubsection}{\numberline {2.1.3}Container-based virtualisation}{4}{subsubsection.2.1.3}
-\contentsline {subsubsection}{\numberline {2.1.4}Paravirtualisation}{5}{subsubsection.2.1.4}
-\contentsline {subsubsection}{\numberline {2.1.5}Unikernels}{6}{subsubsection.2.1.5}
-\contentsline {subsection}{\numberline {2.2}Experiment technologies}{6}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}OpenStack}{6}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Cloudify}{7}{subsubsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.3}Comparison of OpenStack and Cloudify}{7}{subsubsection.2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.4}Docker}{8}{subsubsection.2.2.4}
-\contentsline {subsubsection}{\numberline {2.2.5}Xen}{9}{subsubsection.2.2.5}
-\contentsline {subsubsection}{\numberline {2.2.6}KVM}{9}{subsubsection.2.2.6}
-\contentsline {subsubsection}{\numberline {2.2.7}OSv}{9}{subsubsection.2.2.7}
-\contentsline {section}{\numberline {3}System design and implementation}{9}{section.3}
-\contentsline {section}{\numberline {4}Experiments and measurements}{9}{section.4}
-\contentsline {section}{\numberline {5}Related work}{9}{section.5}
-\contentsline {section}{\numberline {6}Future research}{9}{section.6}
-\contentsline {section}{\numberline {7}Conclusions}{9}{section.7}
-\contentsline {section}{Sources}{9}{section*.2}
+\contentsline {subsection}{\numberline {2.1}Heterogeneous clouds, bare-metal and hybrid}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Virtualisation Techniques}{3}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Full virtualisation}{3}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Hardware-Layer virtualisation}{4}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Container-based virtualisation}{5}{subsubsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.4}Paravirtualisation}{6}{subsubsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.5}Unikernels}{6}{subsubsection.2.2.5}
+\contentsline {subsection}{\numberline {2.3}Experiment technologies}{7}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}OpenStack}{7}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Cloudify}{8}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Comparison of OpenStack and Cloudify}{8}{subsubsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.4}Docker}{9}{subsubsection.2.3.4}
+\contentsline {subsubsection}{\numberline {2.3.5}Xen}{10}{subsubsection.2.3.5}
+\contentsline {subsubsection}{\numberline {2.3.6}KVM}{10}{subsubsection.2.3.6}
+\contentsline {subsubsection}{\numberline {2.3.7}OSv}{10}{subsubsection.2.3.7}
+\contentsline {section}{\numberline {3}System design and implementation}{10}{section.3}
+\contentsline {section}{\numberline {4}Experiments and measurements}{10}{section.4}
+\contentsline {section}{\numberline {5}Related work}{10}{section.5}
+\contentsline {section}{\numberline {6}Future research}{10}{section.6}
+\contentsline {section}{\numberline {7}Conclusions}{10}{section.7}
+\contentsline {section}{Sources}{10}{section*.2}
 \select@language {english}
 \select@language {english}
 \select@language {english}
