@@ -58,6 +58,11 @@
 \newblock \url{https://www.virtualbox.org/}.
 \newblock Accessed: 1.11.2016.
 
+\bibitem {raspberry}
+\btxtitlefont {\btxifchangecase {Raspberry pi}{Raspberry PI}}.
+\newblock \url{https://www.raspberrypi.org/}.
+\newblock Accessed: 21.5.2017.
+
 \bibitem {vsphere}
 \btxtitlefont {\btxifchangecase {{VMware VSphere Hypervisor}}{{VMware VSphere
   Hypervisor}}}.
@@ -100,6 +105,20 @@
   Symposium on Networked Systems Design and Implementation (NSDI},
   \btxpageslong {}\ 273--286, 2005.
 
+\bibitem {Heterogeneous}
+\btxnamefont {\btxlastnamefont {Crago}, S.}, \btxnamefont {\btxlastnamefont
+  {Dunn}, K.}, \btxnamefont {\btxlastnamefont {Eads}, P.}, \btxnamefont
+  {\btxlastnamefont {Hochstein}, L.}, \btxnamefont {\btxlastnamefont {Kang},
+  D.\btxfnamespacelong I.}, \btxnamefont {\btxlastnamefont {Kang}, M.},
+  \btxnamefont {\btxlastnamefont {Modium}, D.}, \btxnamefont {\btxlastnamefont
+  {Singh}, K.}, \btxnamefont {\btxlastnamefont {Suh}, J.}\btxandcomma {}
+  \btxandlong {}\ \btxnamefont {\btxlastnamefont {Walters},
+  J.\btxfnamespacelong P.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase
+  {Heterogeneous cloud computing}{Heterogeneous Cloud Computing}}.
+\newblock \Btxinlong {}\ \btxtitlefont {2011 IEEE International Conference on
+  Cluster Computing}, \btxpageslong {}\ 378--385,
+  \btxprintmonthyear{.}{Sept}{2011}{long}.
+
 \bibitem {libos}
 \btxnamefont {\btxlastnamefont {Donald E.~Porter},~Galen~Hunt,
   Jon\btxfnamespacelong Howell\btxfnamespacelong Reuben\btxfnamespacelong
@@ -133,6 +152,15 @@
 \newblock \btxjournalfont {Future Internet (FI) and Innovative Internet
   Technologies and Mobile Communications (IITM)}, 1, 2016.
 
+\bibitem {cloudcomputingconcepts}
+\btxnamefont {\btxlastnamefont {Jadeja}, Y.} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Modi}, K.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase
+  {Cloud computing - concepts, architecture and challenges}{Cloud computing -
+  concepts, architecture and challenges}}.
+\newblock \Btxinlong {}\ \btxtitlefont {2012 International Conference on
+  Computing, Electronics and Electrical Technologies (ICCEET)}, \btxpageslong
+  {}\ 877--880, \btxprintmonthyear{.}{March}{2012}{long}.
+
 \bibitem {osv}
 \btxnamefont {\btxlastnamefont {Kivity}, Avi}, \btxnamefont {\btxlastnamefont
   {Laor}, Dor}, \btxnamefont {\btxlastnamefont {Costa}, Glauber}, \btxnamefont
@@ -150,6 +178,14 @@
   {978-1-931971-10-2}}}.
 \newblock {\latintext
   \btxurlfont{https://www.usenix.org/conference/atc14/technical-sessions/presentation/kivity}}.
+
+\bibitem {Kurp2008}
+\btxnamefont {\btxlastnamefont {Kurp}, Patrick}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Green computing}{Green Computing}}.
+\newblock \btxjournalfont {Commun. ACM}, 51(10):11--13,
+  \btxprintmonthyear{.}{10}{2008}{long}\ifbtxprintISSN {,
+  \mbox{\btxISSN~\btxISSNfont {0001-0782}}}.
+\newblock {\latintext \btxurlfont{http://doi.acm.org/10.1145/1400181.1400186}}.
 
 \bibitem {unikernels}
 \btxnamefont {\btxlastnamefont {Madhavapeddy}, Anil}, \btxnamefont

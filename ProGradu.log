@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.1.30)  21 MAY 2017 22:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.1.30)  24 MAY 2017 16:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -983,44 +983,32 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ]
 (./introduction.tex) (./background.tex [1
 
-]
-
-LaTeX Warning: Citation `Heterogeneous' on page 2 undefined on input line 12.
-
-[2]
-
-LaTeX Warning: Citation `Kurp2008' on page 3 undefined on input line 14.
-
-
-LaTeX Warning: Citation `raspberry' on page 3 undefined on input line 14.
-
-) (./virtualisationtech.tex <fullvirt.jpeg, id=159, 485.815pt x 576.1525pt>
+] [2]) (./virtualisationtech.tex
+[3] <fullvirt.jpeg, id=179, 485.815pt x 576.1525pt>
 File: fullvirt.jpeg Graphic file (type jpg)
-
-<use fullvirt.jpeg>
+ <use fullvirt.jpeg>
 Package pdftex.def Info: fullvirt.jpeg used on input line 11.
 (pdftex.def)             Requested size: 239.9195pt x 284.53261pt.
- [3] <hwlayer.jpeg, id=171, 485.815pt x 403.5075pt>
+
+[4 <./fullvirt.jpeg>] <hwlayer.jpeg, id=192, 485.815pt x 403.5075pt>
 File: hwlayer.jpeg Graphic file (type jpg)
 
 <use hwlayer.jpeg>
 Package pdftex.def Info: hwlayer.jpeg used on input line 24.
 (pdftex.def)             Requested size: 284.52309pt x 236.31877pt.
- [4 <./fullvirt.jpeg>]
-<containers.png, id=187, 683.02235pt x 646.17882pt>
+ <containers.png, id=198, 683.02235pt x 646.17882pt>
 File: containers.png Graphic file (type png)
- <use containers.png>
+
+<use containers.png>
 Package pdftex.def Info: containers.png used on input line 37.
 (pdftex.def)             Requested size: 284.53288pt x 269.18463pt.
+ [5 <./hwlayer.jpeg>] [6 <./containers.png>] [7]
 
-[5 <./hwlayer.jpeg>] [6 <./containers.png>]
-
-LaTeX Warning: Citation `cloudify' on page 7 undefined on input line 73.
+LaTeX Warning: Citation `cloudify' on page 8 undefined on input line 73.
 
 
-LaTeX Warning: Citation `Tosca' on page 7 undefined on input line 73.
+LaTeX Warning: Citation `Tosca' on page 8 undefined on input line 73.
 
-[7]
 
 LaTeX Warning: Citation `heat' on page 8 undefined on input line 77.
 
@@ -1073,98 +1061,68 @@ Underfull \hbox (badness 1867) in paragraph at lines 57--60
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--71
+Underfull \hbox (badness 10000) in paragraph at lines 73--76
 []\T1/lmr/m/it/10.95 (+20) VMware work-sta-tion\T1/lmr/m/n/10.95 (+20) .  []$\T
 1/lmtt/m/n/10.95 http : / / www . vmware . com / products /
  []
 
 [10]
-Underfull \hbox (badness 2582) in paragraph at lines 104--115
+Underfull \hbox (badness 2582) in paragraph at lines 123--134
 \T1/lmr/m/n/10.95 (+20) Boyd Wick-izer: \T1/lmr/m/it/10.95 (+20) Re-think-ing t
 he li-brary os from the top down\T1/lmr/m/n/10.95 (+20) .
  []
 
 
-Underfull \hbox (badness 1755) in paragraph at lines 104--115
+Underfull \hbox (badness 1755) in paragraph at lines 123--134
 \T1/lmr/m/it/10.95 (+20) (AS-P-LOS)\T1/lmr/m/n/10.95 (+20) . As-so-ci-a-tion fo
 r Com-put-ing Ma-chin-ery, Inc., March
  []
 
 
-Underfull \hbox (badness 1931) in paragraph at lines 137--153
+Underfull \hbox (badness 1931) in paragraph at lines 165--181
 \T1/lmr/m/n/10.95 (+20) As-so-ci-a-tion, [].  []$\T1/lmtt/m/n/10.95 https : / /
  www . usenix . org /
  []
 
-
-Underfull \hbox (badness 2875) in paragraph at lines 178--187
+[11]
+Underfull \hbox (badness 2875) in paragraph at lines 214--223
 []\T1/lmr/m/n/10.95 (+20) .  []$\T1/lmtt/m/n/10.95 http : / / dl . acm . org / 
 citation . cfm ? id = 2600239 .
  []
 
-[11])
+)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 161.
  [12]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 161.
  (./ProGradu.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 161.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 161.
+Package rerunfilecheck Info: File `ProGradu.out' has not changed.
+(rerunfilecheck)             Checksum: 89CC071CF5E7FB8FCF52E239B38D5A79;1542.
 
-
-Package rerunfilecheck Warning: File `ProGradu.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `ProGradu.out':
-(rerunfilecheck)             Before: 39CD11CBAA4BEBD46ABDA34A25AEEF93;1449
-(rerunfilecheck)             After:  89CC071CF5E7FB8FCF52E239B38D5A79;1542.
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 161.
  ) 
 Here is how much of TeX's memory you used:
- 10082 strings out of 493029
- 148625 string characters out of 6136234
- 284635 words of memory out of 5000000
- 13233 multiletter control sequences out of 15000+600000
- 53807 words of font info for 100 fonts, out of 8000000 for 9000
+ 10085 strings out of 493029
+ 148648 string characters out of 6136234
+ 284779 words of memory out of 5000000
+ 13235 multiletter control sequences out of 15000+600000
+ 54067 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  31i,8n,35p,1912b,604s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsubsection.2.2.7} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.2.2.6} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.2.1.5} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.2.1.4} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.2.1.3} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.2.1.2} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.2.1.1} has been referenced but does n
-ot exist, replaced by a fixed one
-
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/pu
-blic/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/sha
-re/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/l
-m/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/
-fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.p
-fb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on ProGradu.pdf (15 pages, 331992 bytes).
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
+public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
+Output written on ProGradu.pdf (15 pages, 334236 bytes).
 PDF statistics:
- 336 PDF objects out of 1000 (max. 8388607)
- 304 compressed objects within 4 object streams
- 73 named destinations out of 1000 (max. 500000)
- 15040 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 342 PDF objects out of 1000 (max. 8388607)
+ 310 compressed objects within 4 object streams
+ 70 named destinations out of 1000 (max. 500000)
+ 15048 words of extra memory for PDF output out of 17280 (max. 10000000)
 

@@ -3,11 +3,11 @@
 \contentsline {section}{\numberline {2}Background}{1}{section.2}
 \contentsline {subsection}{\numberline {2.1}Heterogeneous clouds, bare-metal and hybrid}{2}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Virtualisation Techniques}{3}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Full virtualisation}{3}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.1}Full virtualisation}{4}{subsubsection.2.2.1}
 \contentsline {subsubsection}{\numberline {2.2.2}Hardware-Layer virtualisation}{4}{subsubsection.2.2.2}
 \contentsline {subsubsection}{\numberline {2.2.3}Container-based virtualisation}{5}{subsubsection.2.2.3}
 \contentsline {subsubsection}{\numberline {2.2.4}Paravirtualisation}{6}{subsubsection.2.2.4}
-\contentsline {subsubsection}{\numberline {2.2.5}Unikernels}{6}{subsubsection.2.2.5}
+\contentsline {subsubsection}{\numberline {2.2.5}Unikernels}{7}{subsubsection.2.2.5}
 \contentsline {subsection}{\numberline {2.3}Experiment technologies}{7}{subsection.2.3}
 \contentsline {subsubsection}{\numberline {2.3.1}OpenStack}{7}{subsubsection.2.3.1}
 \contentsline {subsubsection}{\numberline {2.3.2}Cloudify}{8}{subsubsection.2.3.2}
