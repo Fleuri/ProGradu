@@ -16,12 +16,12 @@
 \contentsline {subsubsection}{\numberline {2.3.5}Xen}{10}{subsubsection.2.3.5}
 \contentsline {subsubsection}{\numberline {2.3.6}KVM}{10}{subsubsection.2.3.6}
 \contentsline {subsubsection}{\numberline {2.3.7}OSv}{10}{subsubsection.2.3.7}
-\contentsline {section}{\numberline {3}System design and implementation}{10}{section.3}
-\contentsline {section}{\numberline {4}Experiments and measurements}{10}{section.4}
-\contentsline {section}{\numberline {5}Related work}{10}{section.5}
-\contentsline {section}{\numberline {6}Future research}{10}{section.6}
-\contentsline {section}{\numberline {7}Conclusions}{10}{section.7}
-\contentsline {section}{Sources}{10}{section*.2}
+\contentsline {section}{\numberline {3}System Design and Implementation}{10}{section.3}
+\contentsline {section}{\numberline {4}Experiments and measurements}{11}{section.4}
+\contentsline {section}{\numberline {5}Related work}{11}{section.5}
+\contentsline {section}{\numberline {6}Future research}{11}{section.6}
+\contentsline {section}{\numberline {7}Conclusions}{11}{section.7}
+\contentsline {section}{Sources}{11}{section*.2}
 \select@language {english}
 \select@language {english}
 \select@language {english}
