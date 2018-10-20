@@ -11,13 +11,13 @@ In order to leverage on bare-metal nodes in a heterogeneous and possibly even in
 \begin{enumerate}
 \item \textit{Allow the Manager to gain information about the nodes' hardware capabilities, a feature that is currently lacking from the project.}
 \item \textit{Enable node discovery in the cluster.}
-\end{enumerate}
+wa\end{enumerate}
 
 Currently managing the composition of the host-pool is a manual effort. The hosts nodes in the cluster can either be configured before launching the cluster using a host pool YAML file or with REST API calls. Therefore monitoring for failing nodes and adding new ones, especially en masse, is an arduous task. A discovery mechanism for new nodes in the cluster would ameliorate if not solve the problem, even if replacing faulty hardware is more often than not a manual task. Additionally discovery mechanism would allow \textit{Bring-your-own-host} kind of functionality.
 
  \subsection{Design overview}
  
- Centrepiece in Cloudify's architecture for achieving the set goals for more detailed information and node discovery is the \textit{Host-pool service} \cite{host-pool-service}. Host-pool service is a RESTful service to which Cloudify Manager can make calls via Host-pool plugin to gain information about cluster's available hosts and also allocate hosts for jobs run by the manager. One major feature host-pool service provides is adding hosts to the pool during runtime. It can also remove hosts from the pool and both operations are performed with a similar API call. A Cloudify cluster without host-pool service has a static pool of hosts defined with a YAML file at the cluster startup. The relationships between different Cloudify components are illustrated in figure ~\ref{fig:cloudify_roles}.
+ Centrepiece in Cloudify's architecture for achieving the set goals for more detailed information and node discovery is the \textit{Host-pool service} \cite{host-pool-service}. Host-pool service is a RESTful service to which Cloudify Manager can make calls via Host-pool plugin to gain information about nodes that compose the cluster. It can also allocate hosts for jobs run by the manager as well as deallocate them. One major feature host-pool service provides is adding hosts to the pool during runtime. It can also remove hosts from the pool and both operations are performed with a similar REST API call. A Cloudify setup without host-pool service can not make use of generic cluster comprising of different bare-metal nodes. The relationships between different Cloudify components are illustrated in figure ~\ref{fig:cloudify_roles}.
  
  \begin{figure}[ht!]
 \centering
@@ -26,10 +26,10 @@ Currently managing the composition of the host-pool is a manual effort. The host
   \label{fig:cloudify_roles}
 \end{figure}
 
-The goal for retrieving more hardware information from hosts requires adding a script to the host. Currently the information host-pool service provides is concise, providing information like the operating system of the host, available endpoints and login credentials. It does not in fact query the host themselves. In order to get any performance information, host-pool service when adding the host to the logical pool, should run a script querying for the hardware data and storing the results. Host-pool service already has SSH access to all hosts so implementing this feature should be straightforward especially in a restricted use-case.
+The goal for retrieving more hardware information from hosts requires running a script on the hosts. Currently the information host-pool service provides is concise, providing information like the operating system of the host, available endpoints and login credentials. It does not in fact query the host themselves. In order to get any performance information, host-pool service should run a script querying for the hardware data and storing the results when adding the host to the logical pool. This requires extendending  the host-pool service.
 
 The goal for host discovery and automated host pool management will be implemented as an additional Discovery Service.
-The role of Discovery service is twofold as seen on figure ~\ref{fig:discovery_service}.
+The role of the Discovery service is twofold as seen on figure ~\ref{fig:discovery_service}.
 
 
 \begin{figure}[ht!]
@@ -39,4 +39,4 @@ The role of Discovery service is twofold as seen on figure ~\ref{fig:discovery_s
   \label{fig:discovery_service}
 \end{figure}
 
-It constantly monitors the network for new and unreachable hosts. As host-pool service requires ssh connectivity for hosts and Discovery service could leverage on that, sending API requests to host-pool service for host addition when a new host joins the cluster network and sending deletion request if node becomes unreachable. [NOTE TO ASHWIN. THIS REQUIRES SOME SORT OF CREDENTIALS EXCHANGE BUT HOW SHOULD IT BE DONE?]. The service could also generate ssh credentials or keys to replace default credentials required to join the cluster.
+It constantly monitors the network and its devices and keeps track of discovered devices and their health. When a new device is detected in the network its details are added to Discovery Service's local memory and a REST API call to add the device to the logical pool of hosts is made to Host-pool Service. Device health is monitored periodically and after a set number of failed health checks are detected, the device is removed from Discovery Service's memory and a REST API call to remove the host from the logical pool is made.
