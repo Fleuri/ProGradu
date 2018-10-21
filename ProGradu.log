@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6530) (preloaded format=pdflatex 2017.11.20)  11 MAR 2018 20:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2018.10.21)  21 OCT 2018 18:40
 entering extended mode
 **./ProGradu.tex
 (ProGradu.tex
 LaTeX2e <2017-04-15>
-Babel <3.15> and hyphenation patterns for 1 language(s) loaded.
+Babel <3.15> and hyphenation patterns for 0 language(s) loaded.
 (tktltiki2.cls
 Document Class: tktltiki2 2013/04/28 v1.04 Template for theses and seminar pape
 rs at University of Helsinki CS department
@@ -942,8 +942,8 @@ Package hyperref Info: Option `pageanchor' set `false' on input line 118.
 \lowerspace=\skip58
 
 Overfull \hbox (14.78304pt too wide) in paragraph at lines 118--118
-[]\T1/lmr/bx/n/14.4 Comparison of Vir-tu-al-iza-tion Tech-niques in Dis-tribute
-d Cloud
+[]\T1/lmr/bx/n/14.4 Comparison of Virtualization Techniques in Distributed Clou
+d
  []
 
 [1
@@ -1038,7 +1038,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 (introduction.tex) (background.tex [1
 
 ] [2]) (virtualisationtech.tex [3]
-<fullvirt.jpeg, id=182, 485.815pt x 576.1525pt>
+<fullvirt.jpeg, id=187, 485.815pt x 576.1525pt>
 File: fullvirt.jpeg Graphic file (type jpg)
 <use fullvirt.jpeg>
 Package pdftex.def Info: fullvirt.jpeg  used on input line 11. on input line 11
@@ -1047,14 +1047,14 @@ Package pdftex.def Info: Requested size: 239.9195pt x 284.53261pt on input line
  11.
 
 [4 <./fullvirt.jpeg>]
-<hwlayer.jpeg, id=195, 485.815pt x 403.5075pt>
+<hwlayer.jpeg, id=200, 485.815pt x 403.5075pt>
 File: hwlayer.jpeg Graphic file (type jpg)
 <use hwlayer.jpeg>
 Package pdftex.def Info: hwlayer.jpeg  used on input line 24. on input line 24.
 
 Package pdftex.def Info: Requested size: 284.52309pt x 236.31877pt on input lin
 e 24.
-<containers.png, id=201, 683.02235pt x 646.17882pt>
+<containers.png, id=206, 683.02235pt x 646.17882pt>
 File: containers.png Graphic file (type png)
 <use containers.png>
 Package pdftex.def Info: containers.png  used on input line 37. on input line 3
@@ -1069,11 +1069,28 @@ LaTeX Warning: Citation `Tosca' on page 8 undefined on input line 73.
 LaTeX Warning: Citation `heat' on page 8 undefined on input line 77.
 
 [8]
+Overfull \hbox (6.0313pt too wide) in paragraph at lines 82--83
+\T1/lmr/m/n/10.95 (-20) hypervisor layer on top of the host operating system. I
+nstead, the environments,
+ []
+
+
+Overfull \hbox (7.51021pt too wide) in paragraph at lines 84--85
+\T1/lmr/m/n/10.95 (-20) Therefore it can be used to deploy application across d
+ifferent host environments
+ []
+
 
 LaTeX Warning: Citation `Kubernetes' on page 9 undefined on input line 86.
 
-) (systemdesign.tex [9] [10]
-<Cloudify_roles.png, id=268, 442.65375pt x 364.9635pt>
+) (systemdesign.tex [9]
+Overfull \hbox (8.55888pt too wide) in paragraph at lines 5--6
+\T1/lmr/m/n/10.95 (-20) cluster should consist of the so-called bare-metal comp
+uting nodes. Furthermore
+ []
+
+[10]
+<Cloudify_roles.png, id=273, 442.65375pt x 364.9635pt>
 File: Cloudify_roles.png Graphic file (type png)
 <use Cloudify_roles.png>
 Package pdftex.def Info: Cloudify_roles.png  used on input line 24. on input li
@@ -1081,7 +1098,7 @@ ne 24.
 Package pdftex.def Info: Requested size: 284.54022pt x 234.60051pt on input lin
 e 24.
  [11 <./Cloudify_roles.png>]
-<Discovery_service.png, id=277, 731.28206pt x 338.31393pt>
+<Discovery_service.png, id=282, 731.28206pt x 338.31393pt>
 File: Discovery_service.png Graphic file (type png)
 <use Discovery_service.png>
 Package pdftex.def Info: Discovery_service.png  used on input line 37. on input
@@ -1093,7 +1110,13 @@ Overfull \hbox (66.7996pt too wide) in paragraph at lines 37--38
  [][] 
  []
 
-) (ProGradu.bbl
+) (systemimplementation.tex [12 <./Discovery_service.png>])
+Overfull \hbox (11.5843pt too wide) in paragraph at lines 8--133
+[]\T1/lmr/m/n/10.95 (-20) On the source code level, Discovery Service consists 
+of two major components:
+ []
+
+(ProGradu.bbl
 babelbib: Using the BibTeX style's default font for `name'.
 babelbib: Using the BibTeX style's default font for `lastname'.
 babelbib: Using the BibTeX style's default font for `title'.
@@ -1113,10 +1136,10 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [12 <./Discovery_service.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 39--43
-[]\T1/lmr/m/it/10.95 (+20) Docker doc-u-men-ta-tion\T1/lmr/m/n/10.95 (+20) .  [
-]$\T1/lmtt/m/n/10.95 https : / / docs . docker . com /
+[]\T1/lmr/m/it/10.95 (+20) Docker documentation\T1/lmr/m/n/10.95 (+20) .  []$\T
+1/lmtt/m/n/10.95 https : / / docs . docker . com /
  []
 
 
@@ -1130,68 +1153,104 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--49
 mtt/m/n/10.95 https : / / technet . microsoft . com / en-[]us /
  []
 
-
-Underfull \hbox (badness 1867) in paragraph at lines 68--71
-[]\T1/lmr/m/it/10.95 (+20) Oracle Vir-tu-al-Box\T1/lmr/m/n/10.95 (+20) .  []$\T
-1/lmtt/m/n/10.95 https : / / www . virtualbox . org/$[]\T1/lmr/m/n/10.95 (+20) 
-.  Ac-cessed:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--87
-[]\T1/lmr/m/it/10.95 (+20) VMware work-sta-tion\T1/lmr/m/n/10.95 (+20) .  []$\T
-1/lmtt/m/n/10.95 http : / / www . vmware . com / products /
- []
-
 [13]
-Underfull \hbox (badness 2582) in paragraph at lines 134--145
-\T1/lmr/m/n/10.95 (+20) Boyd Wick-izer: \T1/lmr/m/it/10.95 (+20) Re-think-ing t
-he li-brary os from the top down\T1/lmr/m/n/10.95 (+20) .
+Underfull \hbox (badness 1867) in paragraph at lines 68--71
+[]\T1/lmr/m/it/10.95 (+20) Oracle VirtualBox\T1/lmr/m/n/10.95 (+20) .  []$\T1/l
+mtt/m/n/10.95 https : / / www . virtualbox . org/$[]\T1/lmr/m/n/10.95 (+20) .  
+Accessed:
  []
 
 
-Underfull \hbox (badness 1755) in paragraph at lines 134--145
-\T1/lmr/m/it/10.95 (+20) (AS-P-LOS)\T1/lmr/m/n/10.95 (+20) . As-so-ci-a-tion fo
-r Com-put-ing Ma-chin-ery, Inc., March
+Underfull \hbox (badness 10000) in paragraph at lines 89--92
+[]\T1/lmr/m/it/10.95 (+20) VMware workstation\T1/lmr/m/n/10.95 (+20) .  []$\T1/
+lmtt/m/n/10.95 http : / / www . vmware . com / products /
  []
 
 
-Underfull \hbox (badness 1931) in paragraph at lines 176--192
-\T1/lmr/m/n/10.95 (+20) As-so-ci-a-tion, [].  []$\T1/lmtt/m/n/10.95 https : / /
- www . usenix . org /
+Underfull \hbox (badness 1383) in paragraph at lines 112--123
+\T1/lmr/m/it/10.95 (+20) Live migration of virtual machines\T1/lmr/m/n/10.95 (+
+20) .  In \T1/lmr/m/it/10.95 (+20) In Proceedings of the
+ []
+
+
+Underfull \hbox (badness 3179) in paragraph at lines 139--150
+[]\T1/lmr/m/n/10.95 (+20) Donald E. Porter, Galen Hunt, Jon Howell Reuben Olins
+ky
+ []
+
+
+Underfull \hbox (badness 3229) in paragraph at lines 139--150
+\T1/lmr/m/n/10.95 (+20) Silas Boyd Wickizer: \T1/lmr/m/it/10.95 (+20) Rethinkin
+g the library os from the top
+ []
+
+
+Underfull \hbox (badness 1048) in paragraph at lines 139--150
+\T1/lmr/m/it/10.95 (+20) down\T1/lmr/m/n/10.95 (+20) .  In \T1/lmr/m/it/10.95 (
++20) Proceedings of the 16th International Conference on
  []
 
 [14]
-Underfull \hbox (badness 2875) in paragraph at lines 225--234
+Underfull \hbox (badness 1622) in paragraph at lines 165--170
+\T1/lmr/m/n/10.95 (+20) Internet (FI) and Innovative Internet Technologies and 
+Mobile
+ []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 181--197
+\T1/lmr/m/n/10.95 (+20) Association, [].  []$\T1/lmtt/m/n/10.95 https : / / www
+ . usenix . org /
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 199--205
+[]\T1/lmr/m/n/10.95 (+20) Kurp, Patrick: \T1/lmr/m/it/10.95 (+20) Green computi
+ng\T1/lmr/m/n/10.95 (+20) .  Commun. ACM, 51(10):11--
+ []
+
+
+Underfull \hbox (badness 2875) in paragraph at lines 230--239
 []\T1/lmr/m/n/10.95 (+20) .  []$\T1/lmtt/m/n/10.95 http : / / dl . acm . org / 
 citation . cfm ? id = 2600239 .
  []
 
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 163.
- [15]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 163.
- (ProGradu.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 163.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 163.
-Package rerunfilecheck Info: File `ProGradu.out' has not changed.
-(rerunfilecheck)             Checksum: 385433CD4958E3EA799C52361C998814;1607.
 
+Underfull \hbox (badness 1661) in paragraph at lines 252--260
+[]\T1/lmr/m/n/10.95 (+20) Sefraoui, Omar, Aissaoui, Mohammed, Eleuldj, Mohsine,
+ Iaas,
+ []
+
+[15])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 164.
+ [16]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 164.
+ (ProGradu.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 164.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 164.
+
+
+Package rerunfilecheck Warning: File `ProGradu.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `ProGradu.out':
+(rerunfilecheck)             Before: 3F8AF70B4F8A897E42784B5896AAD342;1664
+(rerunfilecheck)             After:  7A482954EDC2CD23CDC963B33B783CF7;1667.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 163.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 164.
  ) 
 Here is how much of TeX's memory you used:
- 10385 strings out of 495212
- 155193 string characters out of 3181293
- 284148 words of memory out of 3000000
- 13268 multiletter control sequences out of 15000+200000
- 54280 words of font info for 104 fonts, out of 3000000 for 9000
- 14 hyphenation exceptions out of 8191
+ 10386 strings out of 495226
+ 155255 string characters out of 3181677
+ 285154 words of memory out of 3000000
+ 13270 multiletter control sequences out of 15000+200000
+ 53854 words of font info for 100 fonts, out of 3000000 for 9000
+ 0 hyphenation exceptions out of 8191
  33i,8n,38p,1914b,614s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/home/fleuri/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-ec.enc}</home/fleu
 ri/.miktex/texmfs/install/fonts/type1/public/lm/lmbx10.pfb></home/fleuri/.mikte
@@ -1201,9 +1260,9 @@ nts/type1/public/lm/lmr12.pfb></home/fleuri/.miktex/texmfs/install/fonts/type1/
 public/lm/lmr6.pfb></home/fleuri/.miktex/texmfs/install/fonts/type1/public/lm/l
 mr8.pfb></home/fleuri/.miktex/texmfs/install/fonts/type1/public/lm/lmri10.pfb><
 /home/fleuri/.miktex/texmfs/install/fonts/type1/public/lm/lmtt10.pfb>
-Output written on ProGradu.pdf (18 pages, 433726 bytes).
+Output written on ProGradu.pdf (19 pages, 437428 bytes).
 PDF statistics:
- 375 PDF objects out of 1000 (max. 8388607)
- 80 named destinations out of 1000 (max. 500000)
- 15066 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 388 PDF objects out of 1000 (max. 8388607)
+ 83 named destinations out of 1000 (max. 500000)
+ 15074 words of extra memory for PDF output out of 17280 (max. 10000000)
 

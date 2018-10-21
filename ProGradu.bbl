@@ -14,7 +14,7 @@
 
 \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
 \bibitem {cloudify}
-\btxtitlefont {\btxifchangecase {cloudify}{cloudify}}.
+\btxtitlefont {\btxifchangecase {Cloudify}{Cloudify}}.
 \newblock \url{https://cloudify.co/}.
 \newblock Accessed: 11.3.2018.
 
@@ -73,6 +73,11 @@
 \btxtitlefont {\btxifchangecase {Raspberry pi}{Raspberry PI}}.
 \newblock \url{https://www.raspberrypi.org/}.
 \newblock Accessed: 21.5.2017.
+
+\bibitem {Redis}
+\btxtitlefont {\btxifchangecase {Redis}{Redis}}.
+\newblock \url{https://redis.io/}.
+\newblock Accessed 21.10.2018.
 
 \bibitem {vsphere}
 \btxtitlefont {\btxifchangecase {{VMware VSphere Hypervisor}}{{VMware VSphere
