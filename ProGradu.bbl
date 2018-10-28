@@ -108,6 +108,13 @@
 \newblock \btxpublisherfont {Arpaci-Dusseau Books}, \btxeditionnumlong
   {0.91}{}, \btxprintmonthyear{.}{May}{2015}{long}.
 
+\bibitem {rfc5227}
+\btxnamefont {\btxlastnamefont {Cheshire}, Dr.\btxfnamespacelong
+  Stuart\btxfnamespacelong D.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase
+  {{IPv4 Address Conflict Detection}}{{IPv4 Address Conflict Detection}}}.
+\newblock RFC 5227, \btxprintmonthyear{.}{7}{2008}{long}.
+\newblock {\latintext \btxurlfont{https://rfc-editor.org/rfc/rfc5227.txt}}.
+
 \bibitem {Clark05livemigration}
 \btxnamefont {\btxlastnamefont {Clark}, Christopher}, \btxnamefont
   {\btxlastnamefont {Fraser}, Keir}, \btxnamefont {\btxlastnamefont {H},

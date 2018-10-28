@@ -22,7 +22,23 @@ The Network Scanner has two main functions, sniffer and pinger, and they run con
 
 \subsubsection{Sniffer}
 
+Sniffer is started in its own thread during the start up sequence of the Discovery Service. It uses \textit{Scapy} library \cite{scapy} for Python. Sniffer function is given three arguments: 
+
+\begin{enumerate}
+\item \textbf{The network interface} which the Sniffer listens to for incoming packets.
+\item \textbf{The callback function} which details further instructions to perform when a packet is caught.
+\item \textbf{The filter} which restricts the type of packets caught.
+\end{enumerate}
+
+Only the interface can be set by the user of the Discovery Service. The callback function is the core application logic of the sniffer and the Discovery Service itself relies on sniffing ARP packets and therefore the filter is set accordingly.
+
+When it comes to programming logic, the callback function is the most interesting part of the sniffer. Its purpose is to evaluate whether an ARP request comes from a new or know device and store details about them. When the function receives an ARP packet it first filters out packets that are not standard ARP requests. There are two such cases: ARP Probe \cite{rfc5227}, in which the source IP address or hardware address of the ARP request is \textit{0.0.0.0} or \textit{00:00:00:00:00:00} respectively, and gratuitous ARP in which the hardware address is \textit{ff:ff:ff:ff:ff:ff}. The user can also define a list of IP and hardware addresses which the Discovery Service should ignore i.e. devices on which Cloudify should not run workloads. Such devices include the host on which Cloudify manager runs and network devices such as routers.
+
+Next the function checks whether the packet's origin is an already known host by querying Redis. If the host is not previously known, the function starts a new thread to add the host to the Host-pool service. See section \ref{requestservice}.
+
+Whether the packet's
+
 \subsubsection{Pinger}
 
-\subsection{Request Service}
+\subsection{Request Service} \label{requestservice}
 

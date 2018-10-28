@@ -11,7 +11,7 @@ In order to leverage on bare-metal nodes in a heterogeneous and possibly even in
 \begin{enumerate}
 \item \textit{Allow the Manager to gain information about the nodes' hardware capabilities, a feature that is currently lacking from the project.}
 \item \textit{Enable node discovery in the cluster.}
-wa\end{enumerate}
+\end{enumerate}
 
 Currently managing the composition of the host-pool is a manual effort. The hosts nodes in the cluster can either be configured before launching the cluster using a host pool YAML file or with REST API calls. Therefore monitoring for failing nodes and adding new ones, especially en masse, is an arduous task. A discovery mechanism for new nodes in the cluster would ameliorate if not solve the problem, even if replacing faulty hardware is more often than not a manual task. Additionally discovery mechanism would allow \textit{Bring-your-own-host} kind of functionality.
 
