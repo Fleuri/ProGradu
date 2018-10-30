@@ -1,10 +1,11 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: ProGradu.aux
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: ProGradu.aux
 The style file: babplain-lf.bst
 Database file #1: references-en.bib
 Warning--I didn't find a database entry for "Tosca"
 Warning--I didn't find a database entry for "heat"
 Warning--I didn't find a database entry for "Kubernetes"
-Warning--I didn't find a database entry for "scapy"
 Warning--to sort, need author or key in raspberry
 Warning--to sort, need author or key in VirtualBox
 Warning--to sort, need author or key in WorkStation
@@ -24,6 +25,8 @@ Warning--to sort, need author or key in cloudify
 Warning--to sort, need author or key in dockerdocumentation
 Warning--to sort, need author or key in host-pool-service
 Warning--to sort, need author or key in Redis
+Warning--to sort, need author or key in scapy
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty language in cloudify
 Warning--empty publisher in anderson2015technology
 Too many commas in name 1 of "Donald E. Porter, Galen Hunt, Jon Howell, Reuben Olinsky, Silas Boyd-Wickizer" for entry libos
@@ -35,4 +38,45 @@ while executing---line 1379 of file babplain-lf.bst
 Too many commas in name 1 of "Donald E. Porter, Galen Hunt, Jon Howell, Reuben Olinsky, Silas Boyd-Wickizer" for entry libos
 while executing---line 1379 of file babplain-lf.bst
 Warning--empty institution in Mell:2011:SND:2206223
+You've used 33 entries,
+            2783 wiz_defined-function locations,
+            821 strings with 11244 characters,
+and the built_in function-call counts, 11886 in all, are:
+= -- 1004
+> -- 391
+< -- 7
++ -- 165
+- -- 132
+* -- 1160
+:= -- 1556
+add.period$ -- 89
+call.type$ -- 33
+change.case$ -- 164
+chr.to.int$ -- 0
+cite$ -- 52
+duplicate$ -- 630
+empty$ -- 1282
+format.name$ -- 209
+if$ -- 2628
+int.to.chr$ -- 0
+int.to.str$ -- 33
+missing$ -- 20
+newline$ -- 169
+num.names$ -- 34
+pop$ -- 388
+preamble$ -- 1
+purify$ -- 132
+quote$ -- 0
+skip$ -- 350
+stack$ -- 0
+substring$ -- 405
+swap$ -- 268
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 128
+warning$ -- 19
+while$ -- 54
+width$ -- 35
+write$ -- 341
 (There were 6 error messages)

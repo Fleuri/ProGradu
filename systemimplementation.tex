@@ -34,11 +34,29 @@ Only the interface can be set by the user of the Discovery Service. The callback
 
 When it comes to programming logic, the callback function is the most interesting part of the sniffer. Its purpose is to evaluate whether an ARP request comes from a new or know device and store details about them. When the function receives an ARP packet it first filters out packets that are not standard ARP requests. There are two such cases: ARP Probe \cite{rfc5227}, in which the source IP address or hardware address of the ARP request is \textit{0.0.0.0} or \textit{00:00:00:00:00:00} respectively, and gratuitous ARP in which the hardware address is \textit{ff:ff:ff:ff:ff:ff}. The user can also define a list of IP and hardware addresses which the Discovery Service should ignore i.e. devices on which Cloudify should not run workloads. Such devices include the host on which Cloudify manager runs and network devices such as routers.
 
-Next the function checks whether the packet's origin is an already known host by querying Redis. If the host is not previously known, the function starts a new thread to add the host to the Host-pool service. See section \ref{requestservice}.
+Next the function checks whether the packet's origin is an already known host by querying Redis. If the host is not previously known or if it is a known device with a changed IP address, the function starts a new thread to add or patch the host to the Host-pool service. See section \ref{requestservice}.
 
-Whether the packet's
+Whether the packet's origin host is known or not,    the next step in the function is to insert values extracted from the packet to Redis. The data structure Discovery service uses is simple, being a hash table with the devices' hardware address being a key and value being a dictionary object consisting of the given device's IP address and the number of failed ping attempts. See section \ref{pinger} for more details. If the packet's origin is a new host, its key and values are inserted to the data store with number of failed pings always being zero. If a device is already known, its hardware address is already stored to Redis and therefore its values are modified: in most cases only the failed ping count is reset to zero but there could be cases in which the device's IP address has changed and it is updated here accordingly. Algorithm \ref{fig:snifferalgo} details the structure of the function.
 
-\subsubsection{Pinger}
+\begin{algorithm}[H]
+\label{fig:snifferalgo}
+\begin{center}
+\end{center}
+\KwIn{Packet}
+\If{Packet is an ARP packet}{
+	\If{Packet is not an ARP Probe or Gratuitous ARP}{
+	 	\If{Hardware adress not found in Redis}{
+	 	RequestService.Register\_a\_new\_host()
+	 	}
+	 	\ElseIf{IP address not found in Redis}{
+	 	RequestService.Patch\_an\_existing\_host()
+		}
+		Redis.store(Packet.HardwareAddress: \{ip\_address: Packet.IPAddress, ping\_timeouts: 0\})
+	}
+}
+\caption{Sniffer Callback Function}
+\end{algorithm}
+\subsubsection{Pinger} \label{pinger}
 
 \subsection{Request Service} \label{requestservice}
 
