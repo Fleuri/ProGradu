@@ -56,7 +56,14 @@ Whether the packet's origin host is known or not,    the next step in the functi
 }
 \caption{Sniffer Callback Function}
 \end{algorithm}
+
 \subsubsection{Pinger} \label{pinger}
+
+Pinger function is started in its own thread in the Network Scanner. Its responsibility is to keep track of the health of the nodes in the network. If Pinger discovers an unreachable node, it is removed from both Redis' and Host-pool service's storage.
+
+Pinger periodically works through a list of known hosts in the network sending an ARP ping to each host. Upon receiving a response it resets the corresponding host's ping timeout counter to zero. If Pinger does not receive a response, it increments the given hosts' ping timeout by one. If after this operation the timeout crosses the given ping timeout threshold, the host is assumed to have disconnected from the network and is removed from the storage. After Pinger has pinged every host in the network, the process waits for a given ping interval after which it restarts the process.
+
+The user gives inputs two parameters in a configuration file for Pinger to use: \textit{ping\_timeout\_threshold} and \textit{ping\_interval}. Ping\_timeout\_threshold specifies the maximum consecutive ping failures that can occur before a host is marked unreachable and removed from storage. Ping\_interval is the duration in seconds of which Pinger waits after each round of pinging the network. The more detailed presentation of the function is presented in the algorithm ~\ref{fig:pingeralgo}
 
 \subsection{Request Service} \label{requestservice}
 
