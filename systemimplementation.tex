@@ -46,12 +46,12 @@ Whether the packet's origin host is known or not,    the next step in the functi
 \If{Packet is an ARP packet}{
 	\If{Packet is not an ARP Probe or Gratuitous ARP}{
 	 	\If{Hardware adress not found in Redis}{
-	 	RequestService.Register\_a\_new\_host()
+	 	RequestService.Register\_a\_new\_host()\;
 	 	}
 	 	\ElseIf{IP address not found in Redis}{
-	 	RequestService.Patch\_an\_existing\_host()
+	 	RequestService.Patch\_an\_existing\_host()\;
 		}
-		Redis.store(Packet.HardwareAddress: \{ip\_address: Packet.IPAddress, ping\_timeouts: 0\})
+		Redis.store(Packet.HardwareAddress: \{ip\_address: Packet.IPAddress, ping\_timeouts: 0\})\;
 	}
 }
 \caption{Sniffer Callback Function}
@@ -63,7 +63,36 @@ Pinger function is started in its own thread in the Network Scanner. Its respons
 
 Pinger periodically works through a list of known hosts in the network sending an ARP ping to each host. Upon receiving a response it resets the corresponding host's ping timeout counter to zero. If Pinger does not receive a response, it increments the given hosts' ping timeout by one. If after this operation the timeout crosses the given ping timeout threshold, the host is assumed to have disconnected from the network and is removed from the storage. After Pinger has pinged every host in the network, the process waits for a given ping interval after which it restarts the process.
 
-The user gives inputs two parameters in a configuration file for Pinger to use: \textit{ping\_timeout\_threshold} and \textit{ping\_interval}. Ping\_timeout\_threshold specifies the maximum consecutive ping failures that can occur before a host is marked unreachable and removed from storage. Ping\_interval is the duration in seconds of which Pinger waits after each round of pinging the network. The more detailed presentation of the function is presented in the algorithm ~\ref{fig:pingeralgo}
+The user gives inputs two parameters in a configuration file for Pinger to use: \textit{ping\_timeout\_threshold} and \textit{ping\_interval}. Ping\_timeout\_threshold specifies the maximum consecutive ping failures that can occur before a host is marked unreachable and removed from storage. Ping\_interval is the duration in seconds of which Pinger waits after each round of pinging the network. The more detailed presentation of the function is presented in the algorithm ~\ref{fig:pingeralgo}.
+
+\begin{algorithm}[H]
+\label{fig:pingeralgo}
+\begin{center}
+\end{center}
+
+\While{True}{
+	\ForEach{host in Redis}{
+		timeouts = host.ping\_timeouts\;
+		response = Ping(host)\;
+	 	\If{response}{
+	 		Redis.patch(host, \{ping\_timeouts: 0\})\;
+	 	}
+	 	\Else{
+	 		timeouts++\;
+	 		\If{timeouts >= ping\_timeout\_threshold}{
+	 			RequestService.delete(host)\;
+	 			Redis.delete(host)\;
+		} \Else {
+			Redis.patch(host, \{ping\_timeouts: timeouts\}\;		
+		}		
+	}
+}
+Sleep(ping\_interval)\;
+}
+
+\caption{Pinger Algorithm}
+
+\end{algorithm}
 
 \subsection{Request Service} \label{requestservice}
 
