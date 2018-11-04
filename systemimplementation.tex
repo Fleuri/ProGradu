@@ -96,3 +96,31 @@ Sleep(ping\_interval)\;
 
 \subsection{Request Service} \label{requestservice}
 
+Request Service is responsible of communication between the Discovery Service and Host-pool Service. As seen on figure ~\ref{fig:communications}, it is called by Network Scanner and it makes requests to Host-pool Service. The REST API Host-pool Service provides is quite succint but provides a typical CRUD interface for handling nodes in the network. The methods are as follows\footnote{\textit{Note: Paths are relative to Host-pool service base URL e.g. localhost:8081/hosts}} 
+
+\begin{description}
+
+\item[\textbf{[GET] /hosts}] \hfill \\
+GET request to /hosts returns a JSON list of hosts and their details. Also accepts certain filters.
+
+\item[\textbf{[POST] /hosts}] \hfill \\
+POST request to /hosts with a valid JSON array will add one or more hosts to Host-Pool service's storage See section ~\ref{JSONformat} for the JSON schema definition. Returns ID's of the new host or hosts.
+
+\item[\textbf{[GET] /host/{id}}] \hfill \\
+Returns details of a single host corresponding to the ID number.
+
+\item[\textbf{[PATCH] /host/{id}}] \hfill \\
+PATH request allows updating specified fields of a host with the given ID.
+
+\item[\textbf{[DELETE] /host/{id}}] \hfill \\
+Removes the host with given ID from Host-pool service's storage.
+
+\item[\textbf{[POST] /host/allocate}] \hfill \\
+This API call allocates a host to be used by the Cloudify Manager.
+
+\item[\textbf{[DELETE] /host/{id}/deallocate}] \hfill \\
+This returns a previously allocated host back to the hostpool to be reallocated again.
+
+\end{description}
+
+\subsubsection{JSON format} \label{JSONformat} 

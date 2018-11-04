@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.30)  2 NOV 2018 21:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.30)  4 NOV 2018 22:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1050,19 +1050,19 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 (./introduction.tex) (./background.tex [1
 
 ] [2]) (./virtualisationtech.tex
-[3] <fullvirt.jpeg, id=209, 485.815pt x 576.1525pt>
+[3] <fullvirt.jpeg, id=214, 485.815pt x 576.1525pt>
 File: fullvirt.jpeg Graphic file (type jpg)
  <use fullvirt.jpeg>
 Package pdftex.def Info: fullvirt.jpeg used on input line 11.
 (pdftex.def)             Requested size: 239.9195pt x 284.53261pt.
 
-[4 <./fullvirt.jpeg>] <hwlayer.jpeg, id=222, 485.815pt x 403.5075pt>
+[4 <./fullvirt.jpeg>] <hwlayer.jpeg, id=227, 485.815pt x 403.5075pt>
 File: hwlayer.jpeg Graphic file (type jpg)
 
 <use hwlayer.jpeg>
 Package pdftex.def Info: hwlayer.jpeg used on input line 24.
 (pdftex.def)             Requested size: 284.52309pt x 236.31877pt.
- <containers.png, id=228, 683.02235pt x 646.17882pt>
+ <containers.png, id=233, 683.02235pt x 646.17882pt>
 File: containers.png Graphic file (type png)
 
 <use containers.png>
@@ -1080,14 +1080,14 @@ LaTeX Warning: Citation `heat' on page 8 undefined on input line 77.
 LaTeX Warning: Citation `Kubernetes' on page 9 undefined on input line 86.
 
 ) (./systemdesign.tex [9] [10]
-<Cloudify_roles.png, id=295, 442.65375pt x 364.9635pt>
+<Cloudify_roles.png, id=300, 442.65375pt x 364.9635pt>
 File: Cloudify_roles.png Graphic file (type png)
 
 <use Cloudify_roles.png>
 Package pdftex.def Info: Cloudify_roles.png used on input line 24.
 (pdftex.def)             Requested size: 284.54022pt x 234.60051pt.
  [11 <./Cloudify_roles.png>]
-<Discovery_service.png, id=305, 731.28206pt x 338.31393pt>
+<Discovery_service.png, id=310, 731.28206pt x 338.31393pt>
 File: Discovery_service.png Graphic file (type png)
 
 <use Discovery_service.png>
@@ -1099,7 +1099,7 @@ Overfull \hbox (66.7996pt too wide) in paragraph at lines 37--38
  []
 
 ) (./systemimplementation.tex [12 <./Discovery_service.png>]
-<Discovery-service-communication.png, id=313, 723.70375pt x 723.70375pt>
+<Discovery-service-communication.png, id=318, 723.70375pt x 723.70375pt>
 File: Discovery-service-communication.png Graphic file (type png)
 
 <use Discovery-service-communication.png>
@@ -1115,7 +1115,16 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [14] [15]) (./ProGradu.bbl
+ [14] [15]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 99.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 99.
+ [16]
+
+LaTeX Warning: Reference `JSONformat' on page 17 undefined on input line 107.
+
+) (./ProGradu.bbl
 babelbib: Using the BibTeX style's default font for `name'.
 babelbib: Using the BibTeX style's default font for `lastname'.
 babelbib: Using the BibTeX style's default font for `title'.
@@ -1127,7 +1136,7 @@ babelbib: Using the BibTeX style's default font for `ISBN'.
 babelbib: Using the BibTeX style's default font for `ISSN'.
 babelbib: Using the BibTeX style's default font for `url'.
 babelbib: Using the BibTeX style's default font for `numeral'.
-[16]
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 39--43
 []\T1/lmr/m/it/10.95 (+20) Docker doc-u-men-ta-tion\T1/lmr/m/n/10.95 (+20) .  [
 ]$\T1/lmtt/m/n/10.95 https : / / docs . docker . com /
@@ -1157,7 +1166,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--97
 1/lmtt/m/n/10.95 http : / / www . vmware . com / products /
  []
 
-[17]
+[18]
 Underfull \hbox (badness 2582) in paragraph at lines 151--162
 \T1/lmr/m/n/10.95 (+20) Boyd Wick-izer: \T1/lmr/m/it/10.95 (+20) Re-think-ing t
 he li-brary os from the top down\T1/lmr/m/n/10.95 (+20) .
@@ -1175,7 +1184,7 @@ Underfull \hbox (badness 1931) in paragraph at lines 193--209
  www . usenix . org /
  []
 
-[18]
+[19]
 Underfull \hbox (badness 2875) in paragraph at lines 242--251
 []\T1/lmr/m/n/10.95 (+20) .  []$\T1/lmtt/m/n/10.95 http : / / dl . acm . org / 
 citation . cfm ? id = 2600239 .
@@ -1183,37 +1192,41 @@ citation . cfm ? id = 2600239 .
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 164.
- [19]
+ [20]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 164.
  (./ProGradu.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 164.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 164.
 Package rerunfilecheck Info: File `ProGradu.out' has not changed.
-(rerunfilecheck)             Checksum: 61947FA51F5CF595D36D59002B011004;1930.
+(rerunfilecheck)             Checksum: 6F3A1045C2954C57E01E83E9AB7C37B9;2001.
 
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 164.
  ) 
 Here is how much of TeX's memory you used:
- 11214 strings out of 493029
- 166631 string characters out of 6136233
- 312238 words of memory out of 5000000
- 14293 multiletter control sequences out of 15000+600000
- 54670 words of font info for 107 fonts, out of 8000000 for 9000
+ 11273 strings out of 493029
+ 167443 string characters out of 6136233
+ 313290 words of memory out of 5000000
+ 14327 multiletter control sequences out of 15000+600000
+ 70553 words of font info for 125 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 31i,18n,35p,1912b,605s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,18n,35p,1912b,605s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
 public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public
 /lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texm
 f/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on ProGradu.pdf (22 pages, 459254 bytes).
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmri9.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmtt10.pfb>
+Output written on ProGradu.pdf (23 pages, 478760 bytes).
 PDF statistics:
- 453 PDF objects out of 1000 (max. 8388607)
- 407 compressed objects within 5 object streams
- 100 named destinations out of 1000 (max. 500000)
- 15111 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 470 PDF objects out of 1000 (max. 8388607)
+ 422 compressed objects within 5 object streams
+ 103 named destinations out of 1000 (max. 500000)
+ 21775 words of extra memory for PDF output out of 24883 (max. 10000000)
 
