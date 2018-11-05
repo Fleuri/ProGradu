@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.30)  4 NOV 2018 22:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.30)  5 NOV 2018 09:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -787,9 +787,234 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \c@algocf=\count128
 \algocf@algoframe=\box36
 \algocf@algobox=\box37
-) (/usr/share/texlive/texmf-dist/tex/latex/babelbib/babelbib.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/bera/bera.sty
+Package: bera 2004/01/31 (WaS)
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+))
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/bera/beraserif.sty
+Package: beraserif 2004/01/30 (WaS)
+LaTeX Font Info:    Try loading font information for T1+fve on input line 30.
+
+(/usr/share/texlive/texmf-dist/tex/latex/bera/t1fve.fd
+File: t1fve.fd 2004/09/07 scalable font definitions for T1/fve.
+)
+LaTeX Font Info:    Font shape `T1/fve/m/n' will be
+(Font)              scaled to size 9.85492pt on input line 30.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/bera/berasans.sty
+Package: berasans 2004/01/30 (WaS)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/bera/beramono.sty
+Package: beramono 2004/01/31 (WaS)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count129
+\lst@gtempboxa=\box38
+\lst@token=\toks33
+\lst@length=\count130
+\lst@currlwidth=\dimen150
+\lst@column=\count131
+\lst@pos=\count132
+\lst@lostspace=\dimen151
+\lst@width=\dimen152
+\lst@newlines=\count133
+\lst@lineno=\count134
+\lst@maxwidth=\dimen153
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count135
+\lst@skipnumbers=\count136
+\lst@framebox=\box39
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 702.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/babelbib/babelbib.sty
 Package: babelbib 2012/01/03 v1.31 babelbib: multilingual bibliographies (HH)
-\c@btxromaniannumeral=\count129
+\c@btxromaniannumeral=\count137
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tocbibind/tocbibind.sty
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
@@ -799,29 +1024,33 @@ Package tocbibind Info: The document has section divisions on input line 50.
 Package tocbibind Note: Using section or other style headings.
 
 )
-\c@lau=\count130
-\c@ong=\count131
+\c@lau=\count138
+\c@ong=\count139
  (./ProGradu.aux)
 \openout1 = `ProGradu.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 112.
- (/usr/share/texmf/tex/latex/lm/t1lmr.fd
-File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 149.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 149.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
+LaTeX Font Info:    ... okay on input line 149.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -850,7 +1079,7 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 112.
+LaTeX Info: Redefining \microtypecontext on input line 149.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -860,23 +1089,23 @@ Package microtype Info: Using default expansion set `basictext'.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
-(RS)
-)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `fve' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count132
-\scratchdimen=\dimen150
-\scratchbox=\box38
-\nofMPsegments=\count133
-\nofMParguments=\count134
-\everyMPshowfont=\toks33
-\MPscratchCnt=\count135
-\MPscratchDim=\dimen151
-\MPnumerator=\count136
-\makeMPintoPDFobject=\count137
-\everyMPtoPDFconversion=\toks34
+\scratchcounter=\count140
+\scratchdimen=\dimen154
+\scratchbox=\box40
+\nofMPsegments=\count141
+\nofMParguments=\count142
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count143
+\MPscratchDim=\dimen155
+\MPnumerator=\count144
+\makeMPintoPDFobject=\count145
+\everyMPtoPDFconversion=\toks35
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -892,8 +1121,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box39
-Package hyperref Info: Link coloring OFF on input line 112.
+\AtBeginShipoutBox=\box41
+Package hyperref Info: Link coloring OFF on input line 149.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -901,16 +1130,17 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count138
+\c@section@level=\count146
 )
-LaTeX Info: Redefining \ref on input line 112.
-LaTeX Info: Redefining \pageref on input line 112.
-LaTeX Info: Redefining \nameref on input line 112.
+LaTeX Info: Redefining \ref on input line 149.
+LaTeX Info: Redefining \pageref on input line 149.
+LaTeX Info: Redefining \nameref on input line 149.
 
 (./ProGradu.out) (./ProGradu.out)
 \@outlinefile=\write3
 \openout3 = `ProGradu.out'.
 
+\c@lstlisting=\count147
 
 babelbib: Set bibliography fall-back language to english
 (/usr/share/texlive/texmf-dist/tex/latex/babelbib/english.bdf
@@ -921,7 +1151,7 @@ babelbib extension \btxifchangecaseon added to \extrasenglish
 babelbib: Load BibTeX extensions \bibsenglish for english
 babelbib: Set language for keywords in the bibliography fixed to english
 babelbib: Set language for keywords in the bibliography fixed to english
-Package hyperref Info: Option `pageanchor' set `false' on input line 118.
+Package hyperref Info: Option `pageanchor' set `false' on input line 155.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: <default>
@@ -958,11 +1188,17 @@ Package hyperref Info: Option `pageanchor' set `false' on input line 118.
 
 \sideindent=\skip75
 \lowerspace=\skip76
+LaTeX Font Info:    Font shape `T1/fve/m/n' will be
+(Font)              scaled to size 10.79993pt on input line 155.
+LaTeX Font Info:    Font shape `T1/fve/m/n' will be
+(Font)              scaled to size 12.9599pt on input line 155.
+LaTeX Font Info:    Font shape `T1/fve/b/n' will be
+(Font)              scaled to size 12.9599pt on input line 155.
 [1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Package hyperref Info: Option `pageanchor' set `true' on input line 118.
+Package hyperref Info: Option `pageanchor' set `true' on input line 155.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: <default>
@@ -995,14 +1231,24 @@ Package hyperref Info: Option `pageanchor' set `true' on input line 118.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+LaTeX Font Info:    Font shape `T1/fve/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 156.
+LaTeX Font Info:    Font shape `T1/fve/m/n' will be
+(Font)              scaled to size 5.39996pt on input line 156.
  [1
 
 
 ] (./ProGradu.toc
+LaTeX Font Info:    Font shape `T1/fve/b/n' will be
+(Font)              scaled to size 9.85492pt on input line 2.
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 4.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
 )
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 4.
 
@@ -1047,47 +1293,64 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
  [2
 
 ]
-(./introduction.tex) (./background.tex [1
+(./introduction.tex
+LaTeX Font Info:    Font shape `T1/fve/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 3.
+) (./background.tex [1
 
-] [2]) (./virtualisationtech.tex
-[3] <fullvirt.jpeg, id=214, 485.815pt x 576.1525pt>
+]
+LaTeX Font Info:    Font shape `T1/fve/b/n' will be
+(Font)              scaled to size 10.79993pt on input line 10.
+ [2]
+LaTeX Font Info:    Font shape `T1/fve/m/it' in size <10.95> not available
+(Font)              Font shape `T1/fve/m/sl' tried instead on input line 16.
+LaTeX Font Info:    Font shape `T1/fve/m/sl' will be
+(Font)              scaled to size 9.85492pt on input line 16.
+) (./virtualisationtech.tex
+[3] <fullvirt.jpeg, id=205, 485.815pt x 576.1525pt>
 File: fullvirt.jpeg Graphic file (type jpg)
  <use fullvirt.jpeg>
 Package pdftex.def Info: fullvirt.jpeg used on input line 11.
 (pdftex.def)             Requested size: 239.9195pt x 284.53261pt.
 
-[4 <./fullvirt.jpeg>] <hwlayer.jpeg, id=227, 485.815pt x 403.5075pt>
+[4 <./fullvirt.jpeg>] <hwlayer.jpeg, id=215, 485.815pt x 403.5075pt>
 File: hwlayer.jpeg Graphic file (type jpg)
 
 <use hwlayer.jpeg>
 Package pdftex.def Info: hwlayer.jpeg used on input line 24.
 (pdftex.def)             Requested size: 284.52309pt x 236.31877pt.
- <containers.png, id=233, 683.02235pt x 646.17882pt>
+ [5 <./hwlayer.jpeg>]
+<containers.png, id=230, 683.02235pt x 646.17882pt>
 File: containers.png Graphic file (type png)
-
-<use containers.png>
+ <use containers.png>
 Package pdftex.def Info: containers.png used on input line 37.
 (pdftex.def)             Requested size: 284.53288pt x 269.18463pt.
- [5 <./hwlayer.jpeg>] [6 <./containers.png>] [7]
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--44
+\T1/fve/m/n/10.95 (+20) tech-niques.
+ []
+
+[6 <./containers.png>] [7]
 
 LaTeX Warning: Citation `Tosca' on page 8 undefined on input line 73.
 
-
-LaTeX Warning: Citation `heat' on page 8 undefined on input line 77.
-
 [8]
 
-LaTeX Warning: Citation `Kubernetes' on page 9 undefined on input line 86.
+LaTeX Warning: Citation `heat' on page 9 undefined on input line 77.
 
-) (./systemdesign.tex [9] [10]
-<Cloudify_roles.png, id=300, 442.65375pt x 364.9635pt>
+[9]
+
+LaTeX Warning: Citation `Kubernetes' on page 10 undefined on input line 86.
+
+) (./systemdesign.tex [10] [11]
+<Cloudify_roles.png, id=296, 442.65375pt x 364.9635pt>
 File: Cloudify_roles.png Graphic file (type png)
 
 <use Cloudify_roles.png>
 Package pdftex.def Info: Cloudify_roles.png used on input line 24.
 (pdftex.def)             Requested size: 284.54022pt x 234.60051pt.
- [11 <./Cloudify_roles.png>]
-<Discovery_service.png, id=310, 731.28206pt x 338.31393pt>
+
+<Discovery_service.png, id=298, 731.28206pt x 338.31393pt>
 File: Discovery_service.png Graphic file (type png)
 
 <use Discovery_service.png>
@@ -1098,31 +1361,81 @@ Overfull \hbox (66.7996pt too wide) in paragraph at lines 37--38
  [][] 
  []
 
-) (./systemimplementation.tex [12 <./Discovery_service.png>]
-<Discovery-service-communication.png, id=318, 723.70375pt x 723.70375pt>
+) (./systemimplementation.tex [12 <./Cloudify_roles.png>]
+<Discovery-service-communication.png, id=308, 723.70375pt x 723.70375pt>
 File: Discovery-service-communication.png Graphic file (type png)
 
 <use Discovery-service-communication.png>
 Package pdftex.def Info: Discovery-service-communication.png used on input line
  10.
 (pdftex.def)             Requested size: 341.43282pt x 341.43282pt.
- [13 <./Discovery-service-communication.png>]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 17.
- (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+ [13 <./Discovery_service.png>]
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 17.
+
+(/usr/share/texlive/texmf-dist/tex/latex/bera/t1fvm.fd
+File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 9.85492pt on input line 17.
 Package microtype Info: Loading generic settings for font family
-(microtype)             `lmtt' (encoding: T1).
+(microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [14] [15]
+ [14 <./Discovery-service-communication.png>] [15] [16]
+Overfull \hbox (2.84242pt too wide) in paragraph at lines 66--67
+\T1/fve/m/n/10.95 (-20) to use: \T1/fve/m/sl/10.95 (-20) ping_timeout_threshold
+ \T1/fve/m/n/10.95 (-20) and \T1/fve/m/sl/10.95 (-20) ping_interval\T1/fve/m/n/
+10.95 (-20) . Ping_timeout_threshold
+ []
+
+LaTeX Font Info:    Font shape `T1/fve/m/n' will be
+(Font)              scaled to size 8.09995pt on input line 99.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 99.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 99.
- [16]
+LaTeX Font Info:    Font shape `T1/fve/m/it' in size <9> not available
+(Font)              Font shape `T1/fve/m/sl' tried instead on input line 99.
+LaTeX Font Info:    Font shape `T1/fve/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 99.
+[17]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 130.
+ [18]) (./futureresearch.tex
 
-LaTeX Warning: Reference `JSONformat' on page 17 undefined on input line 107.
+! Package enumitem Error: ht! undefined.
+
+See the enumitem package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \begin{itemize}[ht!]
+                        
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Try loading font information for TS1+fve on input line 4.
+(/usr/share/texlive/texmf-dist/tex/latex/bera/ts1fve.fd
+File: ts1fve.fd 2004/09/07 scalable font definitions for TS1/fve.
+)
+LaTeX Font Info:    Font shape `TS1/fve/m/n' will be
+(Font)              scaled to size 9.85492pt on input line 4.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `fve' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \caption
+            {Topics to be handled in this section}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 ) (./ProGradu.bbl
 babelbib: Using the BibTeX style's default font for `name'.
@@ -1136,97 +1449,105 @@ babelbib: Using the BibTeX style's default font for `ISBN'.
 babelbib: Using the BibTeX style's default font for `ISSN'.
 babelbib: Using the BibTeX style's default font for `url'.
 babelbib: Using the BibTeX style's default font for `numeral'.
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 39--43
-[]\T1/lmr/m/it/10.95 (+20) Docker doc-u-men-ta-tion\T1/lmr/m/n/10.95 (+20) .  [
-]$\T1/lmtt/m/n/10.95 https : / / docs . docker . com /
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 39--43
-\T1/lmtt/m/n/10.95 engine / userguide / storagedriver / imagesandcontainers /
+[]\T1/fve/m/sl/10.95 (+20) Docker doc-u-men-ta-tion\T1/fve/m/n/10.95 (+20) .  [
+]$\T1/fvm/m/n/10.95 https : / / docs . docker . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--49
-[]\T1/lmr/m/it/10.95 (+20) Microsoft Hyper-V\T1/lmr/m/n/10.95 (+20) .  []$\T1/l
-mtt/m/n/10.95 https : / / technet . microsoft . com / en-[]us /
+Underfull \hbox (badness 10000) in paragraph at lines 39--43
+\T1/fvm/m/n/10.95 engine / userguide / storagedriver / imagesandcontainers /
  []
 
 
-Underfull \hbox (badness 1867) in paragraph at lines 68--71
-[]\T1/lmr/m/it/10.95 (+20) Oracle Vir-tu-al-Box\T1/lmr/m/n/10.95 (+20) .  []$\T
-1/lmtt/m/n/10.95 https : / / www . virtualbox . org/$[]\T1/lmr/m/n/10.95 (+20) 
-.  Ac-cessed:
+Underfull \hbox (badness 2426) in paragraph at lines 45--49
+[]\T1/fve/m/sl/10.95 (+20) Microsoft Hyper-V\T1/fve/m/n/10.95 (+20) .  []$\T1/f
+vm/m/n/10.95 https : / / technet . microsoft . com / en-[]us /
+ []
+
+
+Underfull \hbox (badness 7740) in paragraph at lines 62--66
+\T1/fvm/m/n/10.95 org / admin-[]guide / objectstorage-[]features . html$[]\T1/f
+ve/m/n/10.95 (+20) .  Ac-cessed:
+ []
+
+[19]
+Underfull \hbox (badness 3209) in paragraph at lines 73--76
+[]\T1/fve/m/sl/10.95 (+20) Raspberry pi\T1/fve/m/n/10.95 (+20) .  []$\T1/fvm/m/
+n/10.95 https : / / www . raspberrypi . org/$[]\T1/fve/m/n/10.95 (+20) .  Ac-ce
+ssed:
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 94--97
-[]\T1/lmr/m/it/10.95 (+20) VMware work-sta-tion\T1/lmr/m/n/10.95 (+20) .  []$\T
-1/lmtt/m/n/10.95 http : / / www . vmware . com / products /
- []
-
-[18]
-Underfull \hbox (badness 2582) in paragraph at lines 151--162
-\T1/lmr/m/n/10.95 (+20) Boyd Wick-izer: \T1/lmr/m/it/10.95 (+20) Re-think-ing t
-he li-brary os from the top down\T1/lmr/m/n/10.95 (+20) .
+[]\T1/fve/m/sl/10.95 (+20) VMware work-sta-tion\T1/fve/m/n/10.95 (+20) .  []$\T
+1/fvm/m/n/10.95 http : / / www . vmware . com / products /
  []
 
 
-Underfull \hbox (badness 1755) in paragraph at lines 151--162
-\T1/lmr/m/it/10.95 (+20) (AS-P-LOS)\T1/lmr/m/n/10.95 (+20) . As-so-ci-a-tion fo
-r Com-put-ing Ma-chin-ery, Inc., March
+Underfull \hbox (badness 5316) in paragraph at lines 99--102
+[]\T1/fve/m/sl/10.95 (+20) Xen project\T1/fve/m/n/10.95 (+20) .  []$\T1/fvm/m/n
+/10.95 https : / / www . xenproject . org / l$[]\T1/fve/m/n/10.95 (+20) .  Ac-c
+essed:
  []
 
 
-Underfull \hbox (badness 1931) in paragraph at lines 193--209
-\T1/lmr/m/n/10.95 (+20) As-so-ci-a-tion, [].  []$\T1/lmtt/m/n/10.95 https : / /
- www . usenix . org /
+Underfull \hbox (badness 10000) in paragraph at lines 151--162
+[]$\T1/fvm/m/n/10.95 https : / / www . microsoft . com / en-[]us / research / p
+ublication /
  []
 
-[19]
-Underfull \hbox (badness 2875) in paragraph at lines 242--251
-[]\T1/lmr/m/n/10.95 (+20) .  []$\T1/lmtt/m/n/10.95 http : / / dl . acm . org / 
-citation . cfm ? id = 2600239 .
+[20]
+Underfull \hbox (badness 2503) in paragraph at lines 193--209
+\T1/fve/m/sl/10.95 (+20) op-er-at-ing sys-tem for vir-tual ma-chines\T1/fve/m/n
+/10.95 (+20) .  In \T1/fve/m/sl/10.95 (+20) 2014 USENIX
  []
 
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 164.
- [20]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 164.
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--209
+\T1/fve/m/sl/10.95 (+20) An-nual Tech-ni-cal Con-fer-ence (USENIX ATC 14)\T1/fv
+e/m/n/10.95 (+20) , pages
+ []
+
+
+Underfull \hbox (badness 4846) in paragraph at lines 193--209
+\T1/fve/m/n/10.95 (+20) 61--72, Philadel-phia, PA, June 2014. USENIX As-so-ci-a
+-tion,
+ []
+
+[21])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 201.
+ [22]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 201.
  (./ProGradu.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 164.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 164.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 201.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 201.
 Package rerunfilecheck Info: File `ProGradu.out' has not changed.
-(rerunfilecheck)             Checksum: 6F3A1045C2954C57E01E83E9AB7C37B9;2001.
+(rerunfilecheck)             Checksum: 2AD71091DF2C11283E7CEF6934047475;1930.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 164.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 201.
  ) 
 Here is how much of TeX's memory you used:
- 11273 strings out of 493029
- 167443 string characters out of 6136233
- 313290 words of memory out of 5000000
- 14327 multiletter control sequences out of 15000+600000
- 70553 words of font info for 125 fonts, out of 8000000 for 9000
+ 13919 strings out of 493029
+ 201743 string characters out of 6136233
+ 346453 words of memory out of 5000000
+ 16830 multiletter control sequences out of 15000+600000
+ 81031 words of font info for 207 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,18n,35p,1912b,605s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
-public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public
-/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmri9.pfb></usr/share/texmf/fonts/
-type1/public/lm/lmtt10.pfb>
-Output written on ProGradu.pdf (23 pages, 478760 bytes).
+ 32i,18n,37p,1912b,1163s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/bera/fveb8a.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/bera/fver8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/bera/fver8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fv
+mr8a.pfb>
+Output written on ProGradu.pdf (25 pages, 274127 bytes).
 PDF statistics:
- 470 PDF objects out of 1000 (max. 8388607)
- 422 compressed objects within 5 object streams
- 103 named destinations out of 1000 (max. 500000)
- 21775 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 462 PDF objects out of 1000 (max. 8388607)
+ 417 compressed objects within 5 object streams
+ 108 named destinations out of 1000 (max. 500000)
+ 29447 words of extra memory for PDF output out of 29859 (max. 10000000)
 
