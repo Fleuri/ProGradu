@@ -125,10 +125,15 @@ This returns a previously allocated host back to the hostpool to be reallocated 
 
 Request Service interracts with all of the REST API endpoints except for allocation and deallocation endpoints which are interracted by Cloudify Manager's Host-pool plugin.
 
-On source code level a typical Request Service function either makes an HTTP request to a certain endpoint, possibly with an ID corresponding to a host in the network, or constructs a JSON payload and sends that along with a POST request. Programmatic challenge in Request Service rises from the fact that the data format Host-pool service accepts is significantly more robust than that of the Discovery service, as can bee seen on listing ~\ref{lst:JSONformat}. If Discovery Service's data format as seen on listing ~\ref{lst:discoformat} was a subset of Host-pool service's, handling data in Request Service would be trivial. However
+On source code level a typical Request Service function either makes an HTTP request to a certain endpoint, possibly with an ID corresponding to a host in the network, or constructs a JSON payload and sends that along with a POST request. Programmatic challenge in Request Service rises from the fact that the data model Host-pool service accepts is significantly more robust than that of the Discovery service, as can be seen on listing ~\ref{lst:JSONformat}. If Discovery Service's data model as seen on listing ~\ref{lst:discoformat} was a subset of Host-pool service's, handling data in Request Service would be trivial. However as Discovery Service's data model uses hardware addresses as unique identifiers whereas Host-Pool Service attaches a running number to each host.  
 
 \begin{lstlisting}[language=json,firstnumber=1, caption={JSON schema accepted by the Host-pool Service for a single host}, captionpos=b, label=lst:JSONformat]
-json: {item1: place, item2: holder}
+hosts: {
+	os: String		(Has to be either 'linux' or 'windows')
+	endpoint {
+		ip : String 	(Has to be a valid IP address range with CIDR notation. If a range	
+	}
+}
 \end{lstlisting}
 
 \begin{lstlisting}[language=json,firstnumber=1, caption={Discovery Service data format for a single host}, captionpos=b, label=lst:discoformat]
