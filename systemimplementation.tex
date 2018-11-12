@@ -36,7 +36,7 @@ When it comes to programming logic, the callback function is the most interestin
 
 Next the function checks whether the packet's origin is an already known host by querying Redis. If the host is not previously known or if it is a known device with a changed IP address, the function starts a new thread to add or patch the host to the Host-pool service. See section \ref{requestservice}.
 
-Whether the packet's origin host is known or not,    the next step in the function is to insert values extracted from the packet to Redis. The data structure Discovery service uses is simple, being a hash table with the devices' hardware address being a key and value being a dictionary object consisting of the given device's IP address and the number of failed ping attempts. See section \ref{pinger} for more details. If the packet's origin is a new host, its key and values are inserted to the data store with number of failed pings always being zero. If a device is already known, its hardware address is already stored to Redis and therefore its values are modified: in most cases only the failed ping count is reset to zero but there could be cases in which the device's IP address has changed and it is updated here accordingly. Algorithm \ref{fig:snifferalgo} details the structure of the function.
+Whether the packet's origin host is known or not, the next step in the function is to insert values extracted from the packet to Redis. The data structure Discovery service uses is simple, being a hash table with the devices' hardware address being a key and value being a dictionary object consisting of the given device's IP address and the number of failed ping attempts. See section \ref{pinger} for more details. If the packet's origin is a new host, its key and values are inserted to the data store with number of failed pings always being zero. If a device is already known, its hardware address is already stored to Redis and therefore its values are modified: in most cases only the failed ping count is reset to zero but there could be cases in which the device's IP address has changed and it is updated here accordingly. Algorithm \ref{fig:snifferalgo} details the structure of the function. Note that both adding a new host and patching an already known host is done in the same Request Service function. See section ~\ref{addtohostpool} for details.
 
 \begin{algorithm}[H]
 \label{fig:snifferalgo}
@@ -45,12 +45,9 @@ Whether the packet's origin host is known or not,    the next step in the functi
 \KwIn{Packet}
 \If{Packet is an ARP packet}{
 	\If{Packet is not an ARP Probe or Gratuitous ARP}{
-	 	\If{Hardware adress not found in Redis}{
+	 	\If{Hardware address not found in Redis or IP address not found in Redis}{
 	 	RequestService.Register\_a\_new\_host()\;
 	 	}
-	 	\ElseIf{IP address not found in Redis}{
-	 	RequestService.Patch\_an\_existing\_host()\;
-		}
 		Redis.store(Packet.HardwareAddress: \{ip\_address: Packet.IPAddress, ping\_timeouts: 0\})\;
 	}
 }
@@ -61,7 +58,7 @@ Whether the packet's origin host is known or not,    the next step in the functi
 
 Pinger function is started in its own thread in the Network Scanner. Its responsibility is to keep track of the health of the nodes in the network. If Pinger discovers an unreachable node, it is removed from both Redis' and Host-pool service's storage.
 
-Pinger periodically works through a list of known hosts in the network sending an ARP ping to each host. Upon receiving a response it resets the corresponding host's ping timeout counter to zero. If Pinger does not receive a response, it increments the given hosts' ping timeout by one. If after this operation the timeout crosses the given ping timeout threshold, the host is assumed to have disconnected from the network and is removed from the storage. After Pinger has pinged every host in the network, the process waits for a given ping interval after which it restarts the process.
+Pinger periodically works through a list of known hosts in the network sending an ARP ping to each host. Upon receiving a response it resets the corresponding host's ping time-out counter to zero. If Pinger does not receive a response, it increments the given hosts' ping time-out by one. If after this operation the time-out crosses the given ping time-out threshold, the host is assumed to have disconnected from the network and is removed from the storage. After Pinger has pinged every host in the network, the process waits for a given ping interval after which it restarts the process.
 
 The user gives inputs two parameters in a configuration file for Pinger to use: \textit{ping\_timeout\_threshold} and \textit{ping\_interval}. Ping\_timeout\_threshold specifies the maximum consecutive ping failures that can occur before a host is marked unreachable and removed from storage. Ping\_interval is the duration in seconds of which Pinger waits after each round of pinging the network. The more detailed presentation of the function is presented in the algorithm ~\ref{fig:pingeralgo}.
 
@@ -104,7 +101,7 @@ Request Service is responsible of communication between the Discovery Service an
 GET request to /hosts returns a JSON list of hosts and their details. Also accepts certain filters.
 
 \item[\textbf{[POST] /hosts}] \hfill \\
-POST request to /hosts with a valid JSON array will add one or more hosts to Host-Pool service's storage See listing ~\ref{lst:JSONformat} for the JSON schema definition. Returns ID's of the new host or hosts.
+POST request to /hosts with a valid JSON array will add one or more hosts to Host-Pool service's storage See listing ~\ref{lst:JSONformat} for the JSON schema definition. Returns Id’s of the new host or hosts.
 
 \item[\textbf{[GET] /host/{id}}] \hfill \\
 Returns details of a single host corresponding to the ID number.
@@ -119,11 +116,11 @@ Removes the host with given ID from Host-pool service's storage.
 This API call allocates a host to be used by the Cloudify Manager.
 
 \item[\textbf{[DELETE] /host/{id}/deallocate}] \hfill \\
-This returns a previously allocated host back to the hostpool to be reallocated again.
+This returns a previously allocated host back to the host pool to be reallocated again.
 
 \end{description}
 
-Request Service interracts with all of the REST API endpoints except for allocation and deallocation endpoints which are interracted by Cloudify Manager's Host-pool plugin.
+Request Service interacts with all of the REST API endpoints except for allocation and deallocation endpoints which are interacted by Cloudify Manager's Host-pool plugin.
 
 On source code level a typical Request Service function either makes an HTTP request to a certain endpoint, possibly with an ID corresponding to a host in the network, or constructs a JSON payload and sends that along with a POST request. Programmatic challenge in Request Service rises from the fact that the data model Host-pool service accepts is significantly more robust than that of the Discovery service, as can be seen on listing ~\ref{lst:JSONformat}. If Discovery Service's data model as seen on listing ~\ref{lst:discoformat} was a subset of Host-pool service's, handling data in Request Service would be trivial. However as Discovery Service's data model uses hardware addresses as unique identifiers whereas Host-Pool Service attaches a running number to each host. Hardware addresses are used as they are immutable in the cluster use-case and Discovery Service accounts for possibly changing IP addresses. However, Hardware addresses are by to Host-pool Service implicitly, as Discovery Service assigns each host's hardware address as a value for 'name' key. 
 
@@ -160,9 +157,9 @@ NOTES:
 hwaddress: {ip_address: "string", ping_timeouts:  "integer"}
 \end{lstlisting}
 
-\subsubsection{ID checking}
+\subsubsection{Id checking}
 
-Due to differing identifiers, certain functions are implemented to keep the two datastores synchronized. A \verb|get_id()| -function retrieves a JSON object of hosts as depicted in algorithm ~\ref{fig:get_id}. Then it compares stored IP addresses for each host or until a match is found after which the ID is returned. If hardware address is passed as an argument, the function also compares it to \emph{name} -field's value, as Discovery Service names hosts in Host-pool Service after their hardware addresses. Hardware address check is used when Network Scanner finds an already known host with a changed IP address and calls Request Service to patch it to Host-pool Service. The ID itself is used for REST API calls that are directed at a single host.
+Due to differing identifiers, certain functions are implemented to keep the two data stores synchronized. A \verb|get_id()| -function retrieves a JSON object of hosts as depicted in algorithm ~\ref{fig:get_id}. Then it compares stored IP addresses for each host or until a match is found after which the ID is returned. If hardware address is passed as an argument, the function also compares it to \emph{name} -field's value, as Discovery Service names hosts in Host-pool Service after their hardware addresses. Hardware address check is used when Network Scanner finds an already known host with a changed IP address and calls Request Service to patch it to Host-pool Service. The ID itself is used for REST API calls that are directed at a single host.
 
 \begin{algorithm}[H]
 \label{fig:get_id}
@@ -181,7 +178,28 @@ Due to differing identifiers, certain functions are implemented to keep the two 
 \caption{get\_id -function compares stored IP addresses and optionally hardware addresses to find out the corresponding ID number in Host-pool Service.}
 \end{algorithm}
 
-\subsubsection{Adding a new host to Host-pool Service}
+\subsubsection{Adding a new host to Host-pool Service} \label{addtohostpool}
 
-When Network Scanner detects a new host, it adds it to Redis key-value storage and starts a Request Service routine in
-a new thread to add the details also to Host-pool service.
+When Network Scanner detects a new host, it adds it to Redis key-value storage and starts a Request Service routine \verb|register_a_new_host| depicted in algorithm ~\ref{fig:addhost} in
+a new thread to add the details also to Host-pool service. If a new IP address is detected but with an existing hardware address, the same routine is called. The \verb|register_a_new_host| function takes existing hosts into account and branches to patching function if need be. However, IP address changing for a host is a rare occasion and thus the function branching logic is done in Request Service for optimisation and maintaining source code readability.
+
+\begin{algorithm}[H]
+\label{fig:addhost}
+\begin{center}
+\end{center}
+\KwIn{ip\_address}
+\KwIn{hardware\_address = None}
+\ForEach{host in DiscoveryService.get\_hosts()}{
+	\If{host.endpoint.ip is ip\_address or
+		name is not None and 
+		host.name is hardware\_address}{
+	 		\Return{host.id}\;
+	 	}
+}
+\caption{get\_id -function compares stored IP addresses and optionally hardware addresses to find out the corresponding ID number in Host-pool Service.}
+\end{algorithm}
+
+\subsubsection{Limitations and assumptions of the Discovery Service}
+
+At its current prototypical state Discovery Service makes certain assumptions about the current usable physical hosts in the cluster.
+Namely hosts are assumed to have Linux as an operating system and 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.30)  12 NOV 2018 11:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.30)  12 NOV 2018 19:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1504,26 +1504,26 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [14 <./Discovery-service-communication.png>] [15] [16]
-Overfull \hbox (2.84242pt too wide) in paragraph at lines 66--67
+Overfull \hbox (2.84242pt too wide) in paragraph at lines 63--64
 \T1/fve/m/n/10.95 (-20) to use: \T1/fve/m/sl/10.95 (-20) ping_timeout_threshold
  \T1/fve/m/n/10.95 (-20) and \T1/fve/m/sl/10.95 (-20) ping_interval\T1/fve/m/n/
 10.95 (-20) . Ping_timeout_threshold
  []
 
 LaTeX Font Info:    Font shape `T1/fve/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 99.
+(Font)              scaled to size 8.09995pt on input line 96.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 99.
+(Font)              <9> on input line 96.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 99.
+(Font)              <5> on input line 96.
 LaTeX Font Info:    Font shape `T1/fve/m/it' in size <9> not available
-(Font)              Font shape `T1/fve/m/sl' tried instead on input line 99.
+(Font)              Font shape `T1/fve/m/sl' tried instead on input line 96.
 LaTeX Font Info:    Font shape `T1/fve/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 99.
+(Font)              scaled to size 8.09995pt on input line 96.
 [17] [18]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 130.
- [19]) (./futureresearch.tex [20]
+nput line 127.
+ [19] [20]) (./futureresearch.tex
 LaTeX Font Info:    Try loading font information for TS1+fve on input line 6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/bera/ts1fve.fd
@@ -1547,7 +1547,7 @@ babelbib: Using the BibTeX style's default font for `ISBN'.
 babelbib: Using the BibTeX style's default font for `ISSN'.
 babelbib: Using the BibTeX style's default font for `url'.
 babelbib: Using the BibTeX style's default font for `numeral'.
-
+[21]
 Underfull \hbox (badness 10000) in paragraph at lines 39--43
 []\T1/fve/m/sl/10.95 (+20) Docker doc-u-men-ta-tion\T1/fve/m/n/10.95 (+20) .  [
 ]$\T1/fvm/m/n/10.95 https : / / docs . docker . com /
@@ -1577,7 +1577,7 @@ n/10.95 https : / / www . raspberrypi . org/$[]\T1/fve/m/n/10.95 (+20) .  Ac-ce
 ssed:
  []
 
-[21]
+
 Underfull \hbox (badness 10000) in paragraph at lines 94--97
 []\T1/fve/m/sl/10.95 (+20) VMware work-sta-tion\T1/fve/m/n/10.95 (+20) .  []$\T
 1/fvm/m/n/10.95 http : / / www . vmware . com / products /
@@ -1590,13 +1590,13 @@ Underfull \hbox (badness 5316) in paragraph at lines 99--102
 essed:
  []
 
-
+[22]
 Underfull \hbox (badness 10000) in paragraph at lines 151--162
 []$\T1/fvm/m/n/10.95 https : / / www . microsoft . com / en-[]us / research / p
 ublication /
  []
 
-[22]
+
 Underfull \hbox (badness 2503) in paragraph at lines 193--209
 \T1/fve/m/sl/10.95 (+20) op-er-at-ing sys-tem for vir-tual ma-chines\T1/fve/m/n
 /10.95 (+20) .  In \T1/fve/m/sl/10.95 (+20) 2014 USENIX
@@ -1621,31 +1621,43 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 203.
  (./ProGradu.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 203.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 203.
-Package rerunfilecheck Info: File `ProGradu.out' has not changed.
-(rerunfilecheck)             Checksum: C9EEB1B4E9F532BF7B559480070858EF;2099.
 
+
+Package rerunfilecheck Warning: File `ProGradu.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `ProGradu.out':
+(rerunfilecheck)             Before: 459A26976B5884DB2C8454F5BBD66150;2099
+(rerunfilecheck)             After:  BD06952308439895D7DFF2F7A4966FE2;2211.
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 203.
  ) 
 Here is how much of TeX's memory you used:
- 20827 strings out of 493029
- 342980 string characters out of 6136233
- 531097 words of memory out of 5000000
- 23690 multiletter control sequences out of 15000+600000
+ 20833 strings out of 493029
+ 343057 string characters out of 6136233
+ 531238 words of memory out of 5000000
+ 23692 multiletter control sequences out of 15000+600000
  81031 words of font info for 207 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  33i,18n,40p,10378b,1202s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/bera/fveb8a.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/bera/fver8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/bera/fver8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fv
-mr8a.pfb>
-Output written on ProGradu.pdf (27 pages, 280217 bytes).
+pdfTeX warning (dest): name{section*.3} has been referenced but does not exis
+t, replaced by a fixed one
+
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
+texmf-dist/fonts/type1/public/bera/fveb8a.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/bera/fver8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/bera/fver8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fvmr
+8a.pfb>
+Output written on ProGradu.pdf (27 pages, 281573 bytes).
 PDF statistics:
- 513 PDF objects out of 1000 (max. 8388607)
- 466 compressed objects within 5 object streams
- 138 named destinations out of 1000 (max. 500000)
+ 520 PDF objects out of 1000 (max. 8388607)
+ 473 compressed objects within 5 object streams
+ 142 named destinations out of 1000 (max. 500000)
  29463 words of extra memory for PDF output out of 29859 (max. 10000000)
 

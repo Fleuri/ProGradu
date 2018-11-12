@@ -24,8 +24,9 @@
 \BOOKMARK [2][-]{subsection.4.2}{Request Service}{section.4}% 24
 \BOOKMARK [3][-]{subsubsection.4.2.1}{ID checking}{subsection.4.2}% 25
 \BOOKMARK [3][-]{subsubsection.4.2.2}{Adding a new host to Host-pool Service}{subsection.4.2}% 26
-\BOOKMARK [1][-]{section.5}{Experiments and measurements}{}% 27
-\BOOKMARK [1][-]{section.6}{Related work}{}% 28
-\BOOKMARK [1][-]{section.7}{Future Research}{}% 29
-\BOOKMARK [1][-]{section.8}{Conclusions}{}% 30
-\BOOKMARK [1][-]{section*.2}{Sources}{}% 31
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Limitations and assumptions of the Discovery Service}{subsection.4.2}% 27
+\BOOKMARK [1][-]{section.5}{Experiments and measurements}{}% 28
+\BOOKMARK [1][-]{section.6}{Related work}{}% 29
+\BOOKMARK [1][-]{section.7}{Future Research}{}% 30
+\BOOKMARK [1][-]{section.8}{Conclusions}{}% 31
+\BOOKMARK [1][-]{section*.2}{Sources}{}% 32
