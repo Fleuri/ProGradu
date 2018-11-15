@@ -22,7 +22,7 @@
 \BOOKMARK [3][-]{subsubsection.4.1.1}{Sniffer}{subsection.4.1}% 22
 \BOOKMARK [3][-]{subsubsection.4.1.2}{Pinger}{subsection.4.1}% 23
 \BOOKMARK [2][-]{subsection.4.2}{Request Service}{section.4}% 24
-\BOOKMARK [3][-]{subsubsection.4.2.1}{ID checking}{subsection.4.2}% 25
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Id checking}{subsection.4.2}% 25
 \BOOKMARK [3][-]{subsubsection.4.2.2}{Adding a new host to Host-pool Service}{subsection.4.2}% 26
 \BOOKMARK [3][-]{subsubsection.4.2.3}{Limitations and assumptions of the Discovery Service}{subsection.4.2}% 27
 \BOOKMARK [1][-]{section.5}{Experiments and measurements}{}% 28

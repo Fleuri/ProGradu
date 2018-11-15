@@ -148,6 +148,7 @@ NOTES:
 - name is an arbitrary string, but Discovery Service assigns the host's hardware address as the value of name.
 - os can be either 'linux' or 'windows'. Other values are invalid.
 - endpoint.ip has to be a valid IP address range with CIDR notation. If a range is defined, Host-pool Service considers each unique IP address a single host.
+- protocol can be either 'winrm-http', "'winrm-https' or 'ssh', but Host-pool service does not explicitly force this.
 - Host-pool Service manages id, allocated and alive fields. For User, all other fields except credentials.password, credentials.key and tags are obligatory.
 - In addition to 'hosts' key, Host-pool Service also accepts 'defaults' key. 'defaults' can contain the same keys as 'hosts'. If 'defaults' is provided, its values are appended to each host which has respective undefined values. id, allocated and alive cannot be provided as defaults.
 
@@ -167,7 +168,7 @@ Due to differing identifiers, certain functions are implemented to keep the two 
 \end{center}
 \KwIn{ip\_address}
 \KwIn{hardware\_address = None}
-\ForEach{host in DiscoveryService.get\_hosts()}{
+\ForEach{host in RequestService.get\_hosts()}{
 	\If{host.endpoint.ip is ip\_address or
 		name is not None and 
 		host.name is hardware\_address}{
@@ -189,17 +190,21 @@ a new thread to add the details also to Host-pool service. If a new IP address i
 \end{center}
 \KwIn{ip\_address}
 \KwIn{hardware\_address = None}
-\ForEach{host in DiscoveryService.get\_hosts()}{
-	\If{host.endpoint.ip is ip\_address or
-		name is not None and 
-		host.name is hardware\_address}{
-	 		\Return{host.id}\;
-	 	}
+{
+stored\_id = get\_id(ip\_address, hardware\_address)
+\If{stored\_id is None} {
+	data = *formatted json object corresponding to host's details*\;
+	response = *POST request to Host-pool Service with 'data' as payload.*\;
+	\Return{response.json, message}
+} \Else {
+	\Return{RequestService.patch\_a\_host(stored\_id, ip\_address, hardware\_address)}
 }
-\caption{get\_id -function compares stored IP addresses and optionally hardware addresses to find out the corresponding ID number in Host-pool Service.}
+}
+
+\caption{get\_id -function compares stored IP addresses and optionally hardware addresses to find out the corresponding Id number in Host-pool Service.}
 \end{algorithm}
 
 \subsubsection{Limitations and assumptions of the Discovery Service}
 
-At its current prototypical state Discovery Service makes certain assumptions about the current usable physical hosts in the cluster.
-Namely hosts are assumed to have Linux as an operating system and 
+At its current prototypical state Discovery Service makes certain assumptions about the physical hosts in the cluster.
+Namely hosts are assumed to have Linux as an operating system (Distribution can vary) and a default user name and a password, those being 'centos' and 'admin' respectively. In addition hosts are required to be running an SSH server which is a requirement enforced to Linux hosts by Cloudify itself. Discovery Service requires that the standard port 22 for SSH is open.

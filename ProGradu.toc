@@ -23,12 +23,12 @@
 \contentsline {subsubsection}{\numberline {4.1.1}Sniffer}{15}{subsubsection.4.1.1}
 \contentsline {subsubsection}{\numberline {4.1.2}Pinger}{16}{subsubsection.4.1.2}
 \contentsline {subsection}{\numberline {4.2}Request Service}{17}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}ID checking}{20}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.1}Id checking}{20}{subsubsection.4.2.1}
 \contentsline {subsubsection}{\numberline {4.2.2}Adding a new host to Host-pool Service}{20}{subsubsection.4.2.2}
 \contentsline {subsubsection}{\numberline {4.2.3}Limitations and assumptions of the Discovery Service}{21}{subsubsection.4.2.3}
-\contentsline {section}{\numberline {5}Experiments and measurements}{21}{section.5}
-\contentsline {section}{\numberline {6}Related work}{21}{section.6}
-\contentsline {section}{\numberline {7}Future Research}{21}{section.7}
+\contentsline {section}{\numberline {5}Experiments and measurements}{22}{section.5}
+\contentsline {section}{\numberline {6}Related work}{22}{section.6}
+\contentsline {section}{\numberline {7}Future Research}{22}{section.7}
 \contentsline {section}{\numberline {8}Conclusions}{22}{section.8}
 \contentsline {section}{Sources}{22}{section*.2}
 \select@language {english}
