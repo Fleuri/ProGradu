@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.30)  15 NOV 2018 23:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.30)  16 NOV 2018 23:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1151,27 +1151,27 @@ Package tocbibind Note: Using section or other style headings.
  (./ProGradu.aux)
 \openout1 = `ProGradu.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 151.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 151.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 152.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 152.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    ... okay on input line 152.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1201,7 +1201,7 @@ LaTeX Font Info:    ... okay on input line 151.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 151.
+LaTeX Info: Redefining \microtypecontext on input line 152.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1244,7 +1244,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box56
-Package hyperref Info: Link coloring OFF on input line 151.
+Package hyperref Info: Link coloring OFF on input line 152.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1254,9 +1254,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count174
 )
-LaTeX Info: Redefining \ref on input line 151.
-LaTeX Info: Redefining \pageref on input line 151.
-LaTeX Info: Redefining \nameref on input line 151.
+LaTeX Info: Redefining \ref on input line 152.
+LaTeX Info: Redefining \pageref on input line 152.
+LaTeX Info: Redefining \nameref on input line 152.
 
 (./ProGradu.out) (./ProGradu.out)
 \@outlinefile=\write3
@@ -1273,7 +1273,7 @@ babelbib extension \btxifchangecaseon added to \extrasenglish
 babelbib: Load BibTeX extensions \bibsenglish for english
 babelbib: Set language for keywords in the bibliography fixed to english
 babelbib: Set language for keywords in the bibliography fixed to english
-Package hyperref Info: Option `pageanchor' set `false' on input line 157.
+Package hyperref Info: Option `pageanchor' set `false' on input line 158.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: <default>
@@ -1311,16 +1311,16 @@ Package hyperref Info: Option `pageanchor' set `false' on input line 157.
 \sideindent=\skip81
 \lowerspace=\skip82
 LaTeX Font Info:    Font shape `T1/fve/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 157.
+(Font)              scaled to size 10.79993pt on input line 158.
 LaTeX Font Info:    Font shape `T1/fve/m/n' will be
-(Font)              scaled to size 12.9599pt on input line 157.
+(Font)              scaled to size 12.9599pt on input line 158.
 LaTeX Font Info:    Font shape `T1/fve/b/n' will be
-(Font)              scaled to size 12.9599pt on input line 157.
+(Font)              scaled to size 12.9599pt on input line 158.
 [1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Package hyperref Info: Option `pageanchor' set `true' on input line 157.
+Package hyperref Info: Option `pageanchor' set `true' on input line 158.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: <default>
@@ -1354,9 +1354,9 @@ Package hyperref Info: Option `pageanchor' set `true' on input line 157.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Font shape `T1/fve/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 158.
+(Font)              scaled to size 8.99994pt on input line 159.
 LaTeX Font Info:    Font shape `T1/fve/m/n' will be
-(Font)              scaled to size 5.39996pt on input line 158.
+(Font)              scaled to size 5.39996pt on input line 159.
  [1
 
 
@@ -1429,20 +1429,20 @@ LaTeX Font Info:    Font shape `T1/fve/m/it' in size <10.95> not available
 LaTeX Font Info:    Font shape `T1/fve/m/sl' will be
 (Font)              scaled to size 9.85492pt on input line 16.
 ) (./virtualisationtech.tex
-[3] <fullvirt.jpeg, id=220, 485.815pt x 576.1525pt>
+[3] <fullvirt.jpeg, id=225, 485.815pt x 576.1525pt>
 File: fullvirt.jpeg Graphic file (type jpg)
  <use fullvirt.jpeg>
 Package pdftex.def Info: fullvirt.jpeg used on input line 11.
 (pdftex.def)             Requested size: 239.9195pt x 284.53261pt.
 
-[4 <./fullvirt.jpeg>] <hwlayer.jpeg, id=230, 485.815pt x 403.5075pt>
+[4 <./fullvirt.jpeg>] <hwlayer.jpeg, id=235, 485.815pt x 403.5075pt>
 File: hwlayer.jpeg Graphic file (type jpg)
 
 <use hwlayer.jpeg>
 Package pdftex.def Info: hwlayer.jpeg used on input line 24.
 (pdftex.def)             Requested size: 284.52309pt x 236.31877pt.
  [5 <./hwlayer.jpeg>]
-<containers.png, id=245, 683.02235pt x 646.17882pt>
+<containers.png, id=250, 683.02235pt x 646.17882pt>
 File: containers.png Graphic file (type png)
  <use containers.png>
 Package pdftex.def Info: containers.png used on input line 37.
@@ -1465,14 +1465,14 @@ LaTeX Warning: Citation `heat' on page 9 undefined on input line 77.
 LaTeX Warning: Citation `Kubernetes' on page 10 undefined on input line 86.
 
 ) (./systemdesign.tex [10] [11]
-<Cloudify_roles.png, id=312, 442.65375pt x 364.9635pt>
+<Cloudify_roles.png, id=317, 442.65375pt x 364.9635pt>
 File: Cloudify_roles.png Graphic file (type png)
 
 <use Cloudify_roles.png>
 Package pdftex.def Info: Cloudify_roles.png used on input line 24.
 (pdftex.def)             Requested size: 284.54022pt x 234.60051pt.
 
-<Discovery_service.png, id=314, 731.28206pt x 338.31393pt>
+<Discovery_service.png, id=319, 731.28206pt x 338.31393pt>
 File: Discovery_service.png Graphic file (type png)
 
 <use Discovery_service.png>
@@ -1484,7 +1484,7 @@ Overfull \hbox (66.7996pt too wide) in paragraph at lines 37--38
  []
 
 ) (./systemimplementation.tex [12 <./Cloudify_roles.png>]
-<Discovery-service-communication.png, id=323, 723.70375pt x 723.70375pt>
+<Discovery-service-communication.png, id=328, 723.70375pt x 723.70375pt>
 File: Discovery-service-communication.png Graphic file (type png)
 
 <use Discovery-service-communication.png>
@@ -1503,11 +1503,21 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [14 <./Discovery-service-communication.png>] [15] [16]
+ [14 <./Discovery-service-communication.png>] [15]
+Overfull \hbox (0.79999pt too wide) detected at line 55
+|[]|
+ []
+
+[16]
 Overfull \hbox (2.84242pt too wide) in paragraph at lines 63--64
 \T1/fve/m/n/10.95 (-20) to use: \T1/fve/m/sl/10.95 (-20) ping_timeout_threshold
  \T1/fve/m/n/10.95 (-20) and \T1/fve/m/sl/10.95 (-20) ping_interval\T1/fve/m/n/
 10.95 (-20) . Ping_timeout_threshold
+ []
+
+
+Overfull \hbox (0.79999pt too wide) detected at line 92
+|[]|
  []
 
 LaTeX Font Info:    Font shape `T1/fve/m/n' will be
@@ -1523,10 +1533,30 @@ LaTeX Font Info:    Font shape `T1/fve/m/sl' will be
 [17] [18]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 127.
- [19] [20]) (./futureresearch.tex [21]
-LaTeX Font Info:    Try loading font information for TS1+fve on input line 6.
+ [19]
+Overfull \hbox (0.79999pt too wide) detected at line 180
+|[]|
+ []
 
-(/usr/share/texlive/texmf-dist/tex/latex/bera/ts1fve.fd
+[20]
+Overfull \hbox (0.79999pt too wide) detected at line 205
+|[]|
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 239--239
+[]\T1/fve/b/n/10.95 Algorithm 5: \T1/fve/m/n/10.95 (+20) patch_a_host func-tion
+ is called by reg-is-
+ []
+
+
+Overfull \hbox (0.79999pt too wide) detected at line 241
+|[]|
+ []
+
+) (./futureresearch.tex
+LaTeX Font Info:    Try loading font information for TS1+fve on input line 6.
+ (/usr/share/texlive/texmf-dist/tex/latex/bera/ts1fve.fd
 File: ts1fve.fd 2004/09/07 scalable font definitions for TS1/fve.
 )
 LaTeX Font Info:    Font shape `TS1/fve/m/n' will be
@@ -1535,7 +1565,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `fve' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-) (./ProGradu.bbl
+ [22]) (./ProGradu.bbl
 babelbib: Using the BibTeX style's default font for `name'.
 babelbib: Using the BibTeX style's default font for `lastname'.
 babelbib: Using the BibTeX style's default font for `title'.
@@ -1577,13 +1607,13 @@ n/10.95 https : / / www . raspberrypi . org/$[]\T1/fve/m/n/10.95 (+20) .  Ac-ce
 ssed:
  []
 
-[22]
+
 Underfull \hbox (badness 10000) in paragraph at lines 94--97
 []\T1/fve/m/sl/10.95 (+20) VMware work-sta-tion\T1/fve/m/n/10.95 (+20) .  []$\T
 1/fvm/m/n/10.95 http : / / www . vmware . com / products /
  []
 
-
+[23]
 Underfull \hbox (badness 5316) in paragraph at lines 99--102
 []\T1/fve/m/sl/10.95 (+20) Xen project\T1/fve/m/n/10.95 (+20) .  []$\T1/fvm/m/n
 /10.95 https : / / www . xenproject . org / l$[]\T1/fve/m/n/10.95 (+20) .  Ac-c
@@ -1596,7 +1626,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--162
 ublication /
  []
 
-[23]
+[24]
 Underfull \hbox (badness 2503) in paragraph at lines 193--209
 \T1/fve/m/sl/10.95 (+20) op-er-at-ing sys-tem for vir-tual ma-chines\T1/fve/m/n
 /10.95 (+20) .  In \T1/fve/m/sl/10.95 (+20) 2014 USENIX
@@ -1614,15 +1644,15 @@ Underfull \hbox (badness 4846) in paragraph at lines 193--209
 -tion,
  []
 
-[24])
+[25])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 203.
- [25]
+ [26]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 203.
  (./ProGradu.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 203.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 203.
 Package rerunfilecheck Info: File `ProGradu.out' has not changed.
-(rerunfilecheck)             Checksum: AAC1AA801668A538881509A27B43AF83;2211.
+(rerunfilecheck)             Checksum: 768872448C37A1169872E06AEF425681;2286.
 
 
 LaTeX Warning: There were undefined references.
@@ -1630,10 +1660,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 203.
  ) 
 Here is how much of TeX's memory you used:
- 20835 strings out of 493029
- 343089 string characters out of 6136233
- 543238 words of memory out of 5000000
- 23693 multiletter control sequences out of 15000+600000
+ 20841 strings out of 493029
+ 343167 string characters out of 6136233
+ 543283 words of memory out of 5000000
+ 23695 multiletter control sequences out of 15000+600000
  81031 words of font info for 207 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  33i,18n,40p,10378b,1915s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1642,10 +1672,10 @@ e/texmf-dist/fonts/type1/public/bera/fveb8a.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/bera/fver8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/bera/fver8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fv
 mr8a.pfb>
-Output written on ProGradu.pdf (28 pages, 282934 bytes).
+Output written on ProGradu.pdf (29 pages, 286007 bytes).
 PDF statistics:
- 528 PDF objects out of 1000 (max. 8388607)
- 480 compressed objects within 5 object streams
- 143 named destinations out of 1000 (max. 500000)
- 29471 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 543 PDF objects out of 1000 (max. 8388607)
+ 494 compressed objects within 5 object streams
+ 147 named destinations out of 1000 (max. 500000)
+ 29479 words of extra memory for PDF output out of 29859 (max. 10000000)
 

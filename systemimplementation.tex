@@ -208,3 +208,37 @@ stored\_id = get\_id(ip\_address, hardware\_address)
 
 At its current prototypical state Discovery Service makes certain assumptions about the physical hosts in the cluster.
 Namely hosts are assumed to have Linux as an operating system (Distribution can vary) and a default user name and a password, those being 'centos' and 'admin' respectively. In addition hosts are required to be running an SSH server which is a requirement enforced to Linux hosts by Cloudify itself. Discovery Service requires that the standard port 22 for SSH is open.
+
+\subsubsection{Patching a host}
+
+Host-pool Service allows duplicate hosts, a feature which can be regarded as an oversight by the Host-pool Service developers. Discovery Service enforces that single host has only a single recorded IP address stored in the system. Therefore, if Discovery Service detects a host which has an already existing IP or Hardware Address, but the other one differs from the already stored one, Discovery Service will patch the given address with the new one. The patching to Redis is done in the Network Scanner as previously seen in algorithm~\ref{fig:snifferalgo}. The patching to Host-pool Service is depicted in algorithm~\ref{fig:patch}
+
+\begin{algorithm}[H]
+\label{fig:patch}
+\setlength{\AlCapSkip}{1em}
+\begin{center}
+\end{center}
+\KwIn{id}
+\KwIn{ip\_address}
+\KwIn{hardware\_address}
+
+data = \{\}\;
+host = RequestService.get\_a\_host(id)\;
+
+\If{host.ip != ip\_address} {
+	data['ip'] = ip\_address\;
+} 
+\ElseIf{host.name != hardware\_address}{
+	data['name'] = hardware\_address\; 
+}
+\Else { \Return{ \{\}, message}}
+
+response = *PATCH request to Host-pool Service with 'data' as payload.*\;
+\Return {response.json, message}
+
+\caption{patch\_a\_host function is called by register\_a\_new\_host when Discovery Service detacts a host whose IP address has changed or a new host which uses the same IP address as another host previously.}
+
+\end{algorithm}
+\vspace*{1em}
+
+The function \verb|patch_a_host| takes three arguments: The Id of the host in Host-pool Service, host's IP address and its hardware. Then it retrieves the host's details from Host-pool Service in JSON format and compares the IP addresses received as an argument and retrived from Host-pool Service. If they do not match, the argument IP address is patched as the new value to Host-pool Service using the REST function. 
