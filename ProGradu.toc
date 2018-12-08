@@ -28,11 +28,12 @@
 \contentsline {subsubsection}{\numberline {4.2.3}Limitations and assumptions of the Discovery Service}{21}{subsubsection.4.2.3}
 \contentsline {subsubsection}{\numberline {4.2.4}Patching a host}{21}{subsubsection.4.2.4}
 \contentsline {subsection}{\numberline {4.3}Specification retriever}{23}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Technical implementation of the Specification Retriever}{23}{subsubsection.4.3.1}
 \contentsline {section}{\numberline {5}Experiments and measurements}{23}{section.5}
 \contentsline {section}{\numberline {6}Related work}{23}{section.6}
 \contentsline {section}{\numberline {7}Future Research}{23}{section.7}
-\contentsline {section}{\numberline {8}Conclusions}{23}{section.8}
-\contentsline {section}{Sources}{23}{section*.2}
+\contentsline {section}{\numberline {8}Conclusions}{24}{section.8}
+\contentsline {section}{Sources}{24}{section*.2}
 \select@language {english}
 \select@language {english}
 \select@language {english}
