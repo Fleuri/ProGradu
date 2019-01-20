@@ -21,19 +21,19 @@
 \contentsline {section}{\numberline {4}Technical Implementation}{13}{section.4}
 \contentsline {subsection}{\numberline {4.1}Network Scanner}{15}{subsection.4.1}
 \contentsline {subsubsection}{\numberline {4.1.1}Sniffer}{15}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}Pinger}{16}{subsubsection.4.1.2}
-\contentsline {subsection}{\numberline {4.2}Request Service}{17}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Id checking}{20}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Adding a new host to Host-pool Service}{20}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}Limitations and assumptions of the Discovery Service}{21}{subsubsection.4.2.3}
-\contentsline {subsubsection}{\numberline {4.2.4}Patching a host}{21}{subsubsection.4.2.4}
+\contentsline {subsubsection}{\numberline {4.1.2}Pinger}{17}{subsubsection.4.1.2}
+\contentsline {subsection}{\numberline {4.2}Request Service}{18}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Id checking}{21}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Adding a new host to Host-pool Service}{21}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Limitations and assumptions of the Discovery Service}{22}{subsubsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.4}Patching a host}{22}{subsubsection.4.2.4}
 \contentsline {subsection}{\numberline {4.3}Specification retriever}{23}{subsection.4.3}
-\contentsline {subsubsection}{\numberline {4.3.1}Technical implementation of the Specification Retriever}{23}{subsubsection.4.3.1}
-\contentsline {section}{\numberline {5}Experiments and measurements}{23}{section.5}
-\contentsline {section}{\numberline {6}Related work}{23}{section.6}
-\contentsline {section}{\numberline {7}Future Research}{23}{section.7}
-\contentsline {section}{\numberline {8}Conclusions}{24}{section.8}
-\contentsline {section}{Sources}{24}{section*.2}
+\contentsline {subsubsection}{\numberline {4.3.1}Technical implementation of the Specification Retriever}{24}{subsubsection.4.3.1}
+\contentsline {section}{\numberline {5}Experiments}{28}{section.5}
+\contentsline {section}{\numberline {6}Related work}{28}{section.6}
+\contentsline {section}{\numberline {7}Future Research}{28}{section.7}
+\contentsline {section}{\numberline {8}Conclusions}{28}{section.8}
+\contentsline {section}{Sources}{28}{section*.2}
 \select@language {english}
 \select@language {english}
 \select@language {english}

@@ -12,15 +12,17 @@ In addition to Python program, Discovery Service relies on Redis \cite{Redis} as
   \label{fig:communications}
 \end{figure}
 
-On the source code level, Discovery Service consists of two major components: The network scanner and request service. The network scanner is given a subnet as a parameter and it constantly sniffs the network detecting joining and already present devices and keeping track of them. Its other task is to periodically send health checks to known devices and if a health check fails enough times, it removes the given device from the logical host pool. Request service is responsible for sending HTTP requests to the Cloudify Host-pool service. It is called by the request service and it runs asynchronously. In addition to HTTP requests, it performs checks to ensure that the state of Discovery service's and Host-pool service's databases correlate.
+On the source code level, Discovery Service consists of two major components: The network scanner and request service. The network scanner is given a subnet as a parameter and it constantly sniffs the network detecting joining and already present devices and keeping track of them. Its other task is to periodically send health checks to known devices and if a health check fails enough times, it removes the given device from the logical host pool. Request service is responsible for sending HTTP requests to the Cloudify Host-pool service. It is called by the rRquest Service and it runs asynchronously. In addition to HTTP requests, it performs checks to ensure that the state of Discovery service's and Host-pool service's databases correlate.
 
 The communication relationships between different components in the system are depicted in figure \ref{fig:communications}. The source code for Discovery Service as well as the documentation can be found at \url{https://bitbucket.org/Fleuri/discoveryserviceforcloudify/src/master/}
 
 \subsection{Network Scanner}
 
-The Network Scanner has two main functions, sniffer and pinger, and they run concurrently on two threads. Sniffer listens to ARP packets in the network and upon receiving one, stores the details of the sender device. Pinger function periodically sends ARP pings to previously discovered device and keeps track of their successes, eventually removing unresponsive devices from the logical host pool. In addition to two main functions there's a start-up function that initialises both local Redis storage and the Host-pool service's database. It pings all of the IP addresses in the given IP range and stores the found device details to databases.
+The Network Scanner is responsible of monitoring the network allocated for the Cloudify-orchestrated bare-metal cluster. It does so by passively listening to the network traffic but also by actively pinging the already discovered hosts. Network Scanner has two main functions, sniffer and pinger, and they run concurrently on two threads. Sniffer listens to ARP packets in the network and upon receiving one, stores the details of the sender device. Pinger function periodically sends ARP pings to previously discovered device and keeps track of their successes, eventually removing unresponsive devices from the logical host pool. In addition to two main functions there's a start-up function that initialises both local Redis storage and the Host-pool service's database. It pings all of the IP addresses in the given IP range and stores the found device details to databases.
 
 \subsubsection{Sniffer}
+
+Sniffer is the part of the Network Scanner used to passively listen to the network traffic in the cluster's network, and detect and store joining hosts. 
 
 Sniffer is started in its own thread during the start up sequence of the Discovery Service. It uses \textit{Scapy} library \cite{scapy} for Python. Sniffer function is given three arguments: 
 
@@ -38,6 +40,7 @@ Next the function checks whether the packet's origin is an already known host by
 
 Whether the packet's origin host is known or not, the next step in the function is to insert values extracted from the packet to Redis. The data structure Discovery service uses is simple, being a hash table with the devices' hardware address being a key and value being a dictionary object consisting of the given device's IP address and the number of failed ping attempts. See section \ref{pinger} for more details. If the packet's origin is a new host, its key and values are inserted to the data store with number of failed pings always being zero. If a device is already known, its hardware address is already stored to Redis and therefore its values are modified: in most cases only the failed ping count is reset to zero but there could be cases in which the device's IP address has changed and it is updated here accordingly. Algorithm \ref{fig:snifferalgo} details the structure of the function. Note that both adding a new host and patching an already known host is done in the same Request Service function. See section ~\ref{addtohostpool} for details.
 
+\begin{center}
 \begin{algorithm}[H]
 \label{fig:snifferalgo}
 \begin{center}
@@ -53,8 +56,11 @@ Whether the packet's origin host is known or not, the next step in the function 
 }
 \caption{Sniffer Callback Function}
 \end{algorithm}
+\end{center}
 
 \subsubsection{Pinger} \label{pinger}
+
+Pinger is the part of the Network scanner which is used to perform health checks on existing hosts in the network and subsequently remove them from storage were they to fail them a certain number of times.
 
 Pinger function is started in its own thread in the Network Scanner. Its responsibility is to keep track of the health of the nodes in the network. If Pinger discovers an unreachable node, it is removed from both Redis' and Host-pool service's storage.
 
@@ -62,6 +68,7 @@ Pinger periodically works through a list of known hosts in the network sending a
 
 The user gives inputs two parameters in a configuration file for Pinger to use: \textit{ping\_timeout\_threshold} and \textit{ping\_interval}. Ping\_timeout\_threshold specifies the maximum consecutive ping failures that can occur before a host is marked unreachable and removed from storage. Ping\_interval is the duration in seconds of which Pinger waits after each round of pinging the network. The more detailed presentation of the function is presented in the algorithm ~\ref{fig:pingeralgo}.
 
+\begin{center}
 \begin{algorithm}[H]
 \label{fig:pingeralgo}
 \begin{center}
@@ -90,6 +97,7 @@ Sleep(ping\_interval)\;
 \caption{Pinger Algorithm}
 
 \end{algorithm}
+\end{center}
 
 \subsection{Request Service} \label{requestservice}
 
@@ -122,7 +130,7 @@ This returns a previously allocated host back to the host pool to be reallocated
 
 Request Service interacts with all of the REST API endpoints except for allocation and deallocation endpoints which are interacted by Cloudify Manager's Host-pool plugin.
 
-On source code level a typical Request Service function either makes an HTTP request to a certain endpoint, possibly with an ID corresponding to a host in the network, or constructs a JSON payload and sends that along with a POST request. Programmatic challenge in Request Service rises from the fact that the data model Host-pool service accepts is significantly more robust than that of the Discovery service, as can be seen on listing ~\ref{lst:JSONformat}. If Discovery Service's data model as seen on listing ~\ref{lst:discoformat} was a subset of Host-pool service's, handling data in Request Service would be trivial. However as Discovery Service's data model uses hardware addresses as unique identifiers whereas Host-Pool Service attaches a running number to each host. Hardware addresses are used as they are immutable in the cluster use-case and Discovery Service accounts for possibly changing IP addresses. However, Hardware addresses are by to Host-pool Service implicitly, as Discovery Service assigns each host's hardware address as a value for 'name' key. 
+On source code level a typical Request Service function either makes an HTTP request to a certain endpoint, possibly with an ID corresponding to a host in the network, or constructs a JSON payload and sends that along with a POST request. Programmatic challenge in Request Service rises from the fact that the data model Host-pool service accepts is significantly more robust than that of the Discovery service, as can be seen on listing ~\ref{lst:JSONformat}. If Discovery Service's data model as seen on listing ~\ref{lst:discoformat} was a subset of Host-pool service's, handling data in Request Service would be trivial. However as Discovery Service's data model uses hardware addresses as unique identifiers whereas Host-Pool Service attaches a running number to each host. Hardware addresses are used as they are immutable in the cluster use-case and Discovery Service accounts for possibly changing IP addresses. However, Hardware addresses are by to Host-pool Service implicitly, as Discovery Service assigns each host's hardware address as a value for 'name' key. \pagebreak
 
 \begin{lstlisting}[language=json,firstnumber=1, caption={JSON schema accepted by the Host-pool Service for a single host}, captionpos=b, label=lst:JSONformat]
 hosts: {
@@ -143,7 +151,6 @@ hosts: {
 	allocated: Boolean
 	alive: Boolean
 }
-
 NOTES:
 - name is an arbitrary string, but Discovery Service assigns the host's hardware address as the value of name.
 - os can be either 'linux' or 'windows'. Other values are invalid.
@@ -162,6 +169,7 @@ hwaddress: {ip_address: "string", ping_timeouts:  "integer"}
 
 Due to differing identifiers, certain functions are implemented to keep the two data stores synchronized. A \verb|get_id()| -function retrieves a JSON object of hosts as depicted in algorithm ~\ref{fig:get_id}. Then it compares stored IP addresses for each host or until a match is found after which the ID is returned. If hardware address is passed as an argument, the function also compares it to \emph{name} -field's value, as Discovery Service names hosts in Host-pool Service after their hardware addresses. Hardware address check is used when Network Scanner finds an already known host with a changed IP address and calls Request Service to patch it to Host-pool Service. The ID itself is used for REST API calls that are directed at a single host.
 
+\begin{center}
 \begin{algorithm}[H]
 \label{fig:get_id}
 \begin{center}
@@ -178,12 +186,14 @@ Due to differing identifiers, certain functions are implemented to keep the two 
 \Return{None}\;
 \caption{get\_id -function compares stored IP addresses and optionally hardware addresses to find out the corresponding ID number in Host-pool Service.}
 \end{algorithm}
+\end{center}
 
 \subsubsection{Adding a new host to Host-pool Service} \label{addtohostpool}
 
 When Network Scanner detects a new host, it adds it to Redis key-value storage and starts a Request Service routine \verb|register_a_new_host| depicted in algorithm ~\ref{fig:addhost} in
 a new thread to add the details also to Host-pool service. If a new IP address is detected but with an existing hardware address, the same routine is called. The \verb|register_a_new_host| function takes existing hosts into account and branches to patching function if need be. However, IP address changing for a host is a rare occasion and thus the function branching logic is done in Request Service for optimisation and maintaining source code readability.
 
+\begin{center}
 \begin{algorithm}[H]
 \label{fig:addhost}
 \begin{center}
@@ -203,6 +213,7 @@ stored\_id = get\_id(ip\_address, hardware\_address)
 
 \caption{get\_id -function compares stored IP addresses and optionally hardware addresses to find out the corresponding Id number in Host-pool Service.}
 \end{algorithm}
+\end{center}
 
 \subsubsection{Limitations and assumptions of the Discovery Service}
 
@@ -213,6 +224,7 @@ Namely hosts are assumed to have Linux as an operating system (Distribution can 
 
 Host-pool Service allows duplicate hosts, a feature which can be regarded as an oversight by the Host-pool Service developers. Discovery Service enforces that single host has only a single recorded IP address stored in the system. Therefore, if Discovery Service detects a host which has an already existing IP or Hardware Address, but the other one differs from the already stored one, Discovery Service will patch the given address with the new one. The patching to Redis is done in the Network Scanner as previously seen in algorithm~\ref{fig:snifferalgo}. The patching to Host-pool Service is depicted in algorithm~\ref{fig:patch}
 
+\begin{center}
 \begin{algorithm}[H]
 \label{fig:patch}
 \setlength{\AlCapSkip}{1em}
@@ -239,7 +251,7 @@ response = *PATCH request to Host-pool Service with 'data' as payload.*\;
 \caption{patch\_a\_host function is called by register\_a\_new\_host when Discovery Service detacts a host whose IP address has changed or a new host which uses the same IP address as another host previously.}
 
 \end{algorithm}
-\vspace*{1em}
+\end{center}
 
 The function \verb|patch_a_host| takes three arguments: The Id of the host in Host-pool Service, host's IP address and its hardware. Then it retrieves the host's details from Host-pool Service in JSON format and compares the IP addresses received as an argument and retrieved from Host-pool Service. If they do not match, the argument IP address is patched as the new value to Host-pool Service using the REST function. In a rare case in which IP addresses match, but hardware addresses do not, the hardware address is patched to Host-pool Service as a name for the host. This is a highly unlikely event and in most cases happens because there are pre-configured hosts in the Host-pool Service and the database is not formatted before deploying Host-Pool Service causing the hosts to have names that do not conform to format enforced by Discovery Service i.e. names are hardware addresses.
 
@@ -256,3 +268,56 @@ Specification retriever should retrieve actual hardware data from the target hos
 These design goals in mind I have extended the Host-pool Service so that when a host is added to the logical host-pool, Host-pool Service runs a series of scripts on the given host which returns hardware data such as amount of RAM, number of CPUs and available disk space on that host.
 It also adds the received data to Host-pool Service's data format so that it can be queried and patched using Host-pool Service's REST API. The scripts can be run because each host's data record includes their IP address, port and remote access protocol as well as access credentials. Due to prototypical limitations, the Specification Retriever presented in this thesis only works on Linux hosts as it uses Linux commands in the scripts.
 
+\pagebreak
+
+\lstinputlisting[language=python, firstnumber=417, firstline=417, lastline=443, numbers=left,breaklines=true, showstringspaces=false, caption="Hardware spec retriever. This caption needs improvement", captionpos=b, frame=leftline, label=lst:specretriever]{/home/fleuri/Projects/Cloudify/cloudify-host-pool-service/cloudify_hostpool/rest/backend.py}
+
+Specification Retriever is two additional functions implemented in Host-pool Service seen on listing ~\ref{lst:specretriever}. They are called the backend class' \verb|add_host| seen on listing ~\ref{lst:hpsaddhost} which in turn is called whenever a new host is discovered in the network. Before Specification Retriever is run, the \verb|HostAlchemist.parse()| function on line 283 checks the validity of the received host data and makes a couple of additions resulting in a data element similar to one depicted in listing ~\ref{lst:JSONformat}. This element, \textit{hosts} as seen on listing ~\ref{lst:JSONSpecs}, is then passed to Specification retriever in which the hardware data is added to it.
+
+\lstinputlisting[language=python, firstnumber=277, firstline=277, lastline=285, numbers=left,breaklines=true, showstringspaces=false, caption=Host-pool Service's backend's add\_host function makes a call to Specification Retriever, captionpos=b, frame=leftline, label=lst:hpsaddhost]{/home/fleuri/Projects/Cloudify/cloudify-host-pool-service/cloudify_hostpool/rest/backend.py}
+
+Specification Retriever's \verb|retrieve_hardware_specs| function takes the \textit{hosts} object as a parameter as it makes modifications to it and uses its data to perform the remote operations on host machines. After checking if the added host is a Linux host (In Discovery Service's case the OS is forced) the function establishes an SSH connection using the \textit{Paramiko} library\cite{paramiko}. The arguments required to establish the connection, namely the host's IP address, port, user name and password are extracted from \textit{hosts}. Next on line 430 there is a declaration for a key-value list consisting of keys that are to be added to \textit{hosts} and matching Linux commands to extract the value for that key in the host system. Currently Specification Retriever uses the following commands:
+
+\begin{itemize}
+\item[\textbf{lscpu}] to retrieve the number of CPU's in the host system.
+\item[\textbf{free}] to acquire the amount of RAM the host system has.
+\item[\textbf{df}] to list the overall disk space available in the system.
+\end{itemize}
+
+The Specification Retriever is designed so that adding new commands only requires listing them to \verb|command_list| along with the identifying key. 
+
+After connecting to the host, the \verb|run_command| routine on line 417 is ran for each command in the \verb|command_list|. It runs the command on the host and reads the result from the host's standard output stream storing it into the \verb|spec_array| hash table of results. After the for-loop \verb|spec_array| is finally concatenated as a value for the key \verb|hardware_specs| which is returned from the function after the connection is closed. The final list is added to the original data structure on line 284 seen in listing \ref{lst:hpsaddhost}. The resulting data structure can be seen on listing ~\ref{lst:FinalJSON} and it integrates seamlessly to existing data and functionality.
+
+\begin{lstlisting}[language=json,firstnumber=1, caption={An example of additional data inserted by the Specification Retriever}, captionpos=b, label=lst:JSONSpecs]
+"hardware_specs": {
+	"ram": "3219", 
+	"disk_size": "456G", 
+	"cpus": "2"
+	}
+\end{lstlisting}
+
+\begin{lstlisting}[language=json, firstnumber=1, caption={An example of final data structure after the Specification Retriever has inserted hardware data}, captionpos=b, label=lst:FinalJSON]
+{
+	"endpoint": {
+		"ip": "192.168.150.2", 
+		"protocol": "ssh", 
+		"port": 22
+		},
+	"name": "08:9e:01:db:af:61", 
+	"tags": [], 
+	"alive": false, 
+	"hardware_specs": {
+		"ram": "3372", 
+		"disk_size": "455G", 
+		"cpus": "2"
+		}, 
+	"credentials": {
+		"username": "centos", 
+		"password": "admin"
+		}, 
+	"allocated": true, 
+	"os": "linux", 
+	"id": 1
+}
+
+\end{lstlisting}
