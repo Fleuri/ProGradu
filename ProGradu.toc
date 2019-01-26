@@ -8,20 +8,18 @@
 \contentsline {subsubsection}{\numberline {2.2.3}Container-based virtualisation}{6}{subsubsection.2.2.3}
 \contentsline {subsubsection}{\numberline {2.2.4}Paravirtualisation}{7}{subsubsection.2.2.4}
 \contentsline {subsubsection}{\numberline {2.2.5}Unikernels}{7}{subsubsection.2.2.5}
+\contentsline {subsubsection}{\numberline {2.2.6}Bare-metal cloud computing}{8}{subsubsection.2.2.6}
 \contentsline {subsection}{\numberline {2.3}Experiment technologies}{8}{subsection.2.3}
 \contentsline {subsubsection}{\numberline {2.3.1}OpenStack}{8}{subsubsection.2.3.1}
 \contentsline {subsubsection}{\numberline {2.3.2}Cloudify}{8}{subsubsection.2.3.2}
 \contentsline {subsubsection}{\numberline {2.3.3}Comparison of OpenStack and Cloudify}{9}{subsubsection.2.3.3}
 \contentsline {subsubsection}{\numberline {2.3.4}Docker}{9}{subsubsection.2.3.4}
-\contentsline {subsubsection}{\numberline {2.3.5}Xen}{10}{subsubsection.2.3.5}
-\contentsline {subsubsection}{\numberline {2.3.6}KVM}{10}{subsubsection.2.3.6}
-\contentsline {subsubsection}{\numberline {2.3.7}OSv}{10}{subsubsection.2.3.7}
 \contentsline {section}{\numberline {3}System Design and Implementation}{10}{section.3}
 \contentsline {subsection}{\numberline {3.1}Design overview}{11}{subsection.3.1}
 \contentsline {section}{\numberline {4}Technical Implementation}{13}{section.4}
-\contentsline {subsection}{\numberline {4.1}Network Scanner}{15}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.1}Network Scanner}{14}{subsection.4.1}
 \contentsline {subsubsection}{\numberline {4.1.1}Sniffer}{15}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}Pinger}{17}{subsubsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2}Pinger}{16}{subsubsection.4.1.2}
 \contentsline {subsection}{\numberline {4.2}Request Service}{18}{subsection.4.2}
 \contentsline {subsubsection}{\numberline {4.2.1}Id checking}{21}{subsubsection.4.2.1}
 \contentsline {subsubsection}{\numberline {4.2.2}Adding a new host to Host-pool Service}{21}{subsubsection.4.2.2}
@@ -30,6 +28,8 @@
 \contentsline {subsection}{\numberline {4.3}Specification retriever}{23}{subsection.4.3}
 \contentsline {subsubsection}{\numberline {4.3.1}Technical implementation of the Specification Retriever}{24}{subsubsection.4.3.1}
 \contentsline {section}{\numberline {5}Experiments}{28}{section.5}
+\contentsline {subsubsection}{\numberline {5.0.1}Hardware set-up}{28}{subsubsection.5.0.1}
+\contentsline {subsubsection}{\numberline {5.0.2}Software environment set-up}{29}{subsubsection.5.0.2}
 \contentsline {section}{\numberline {6}Related work}{29}{section.6}
 \contentsline {section}{\numberline {7}Future Research}{29}{section.7}
 \contentsline {section}{\numberline {8}Conclusions}{29}{section.8}

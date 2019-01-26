@@ -57,9 +57,11 @@ Optimisation and simplification are not without drawbacks. By definition, uniker
 
 Popular examples of unikernels are \textit{MirageOS}\cite{mirage} and \textit{OSv}\cite{osv}.
 
+\subsubsection{Bare-metal cloud computing}
+
 \subsection{Experiment technologies}
 
-This section discusses the technologies used and studied in the experiment in more detail. Virtualisation technologies are Docker, Xen, KVM and OSv and they are run on an OpenStack testbed.
+THIS SECTION SHOULD BE CHANGED!!!          
 
 \subsubsection{OpenStack}
 
@@ -84,7 +86,4 @@ Docker \cite{docker} is the current flagship of containerised approach to virtua
 Docker is mainly used for running applications in isolated environments. Therefore it can be used to deploy application across different host environments as the isolated container and its settings and dependencies are not affected by those of the host. Docker also encourages component reuse. A container definition can serve as a 'base image' from which more specialised containers can be built. Creating and editing new definitions is also efficient as they are built in layers (a layer denoting a single change): Creating, deleting or changing a layer requires rebuilding only that layer and ones following it.
 
 Managing clusters of Docker containers is possible and used by prominent cloud and service providers \cite{dockerdocumentation}. Docker provides a its own native orchestration tool called Swarm, but there are also other notable tools on the market, \textit{Kubernetes} \cite{Kubernetes} being the most prominent one.
-\subsubsection{Xen}
-\subsubsection{KVM}
-\subsubsection{OSv}
 

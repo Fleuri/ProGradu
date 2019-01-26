@@ -3,8 +3,6 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ProGradu.aux
 The style file: babplain-lf.bst
 Database file #1: references-en.bib
-Warning--I didn't find a database entry for "heat"
-Warning--I didn't find a database entry for "Kubernetes"
 Warning--to sort, need author or key in raspberry
 Warning--to sort, need author or key in VirtualBox
 Warning--to sort, need author or key in WorkStation
@@ -22,7 +20,9 @@ Warning--to sort, need author or key in openstackpartners
 Warning--to sort, need author or key in openstackfeatures
 Warning--to sort, need author or key in cloudify
 Warning--to sort, need author or key in Tosca
+Warning--to sort, need author or key in heat
 Warning--to sort, need author or key in dockerdocumentation
+Warning--to sort, need author or key in Kubernetes
 Warning--to sort, need author or key in host-pool-service
 Warning--to sort, need author or key in Redis
 Warning--to sort, need author or key in scapy
@@ -41,45 +41,45 @@ while executing---line 1379 of file babplain-lf.bst
 Too many commas in name 1 of "Donald E. Porter, Galen Hunt, Jon Howell, Reuben Olinsky, Silas Boyd-Wickizer" for entry libos
 while executing---line 1379 of file babplain-lf.bst
 Warning--empty institution in Mell:2011:SND:2206223
-You've used 35 entries,
+You've used 37 entries,
             2783 wiz_defined-function locations,
-            831 strings with 11628 characters,
-and the built_in function-call counts, 12308 in all, are:
-= -- 1042
-> -- 393
+            835 strings with 11723 characters,
+and the built_in function-call counts, 12732 in all, are:
+= -- 1080
+> -- 395
 < -- 7
-+ -- 167
++ -- 169
 - -- 132
-* -- 1197
-:= -- 1611
-add.period$ -- 95
-call.type$ -- 35
-change.case$ -- 171
+* -- 1219
+:= -- 1661
+add.period$ -- 101
+call.type$ -- 37
+change.case$ -- 177
 chr.to.int$ -- 0
-cite$ -- 58
-duplicate$ -- 652
-empty$ -- 1337
+cite$ -- 62
+duplicate$ -- 674
+empty$ -- 1401
 format.name$ -- 209
-if$ -- 2724
+if$ -- 2830
 int.to.chr$ -- 0
-int.to.str$ -- 35
+int.to.str$ -- 37
 missing$ -- 20
-newline$ -- 179
+newline$ -- 189
 num.names$ -- 34
-pop$ -- 406
+pop$ -- 432
 preamble$ -- 1
-purify$ -- 136
+purify$ -- 140
 quote$ -- 0
-skip$ -- 364
+skip$ -- 378
 stack$ -- 0
-substring$ -- 415
-swap$ -- 271
+substring$ -- 425
+swap$ -- 275
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 136
-warning$ -- 23
+type$ -- 144
+warning$ -- 25
 while$ -- 54
-width$ -- 37
-write$ -- 360
+width$ -- 39
+write$ -- 378
 (There were 6 error messages)
