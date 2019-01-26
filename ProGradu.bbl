@@ -69,6 +69,11 @@
 \newblock \url{https://www.virtualbox.org/}.
 \newblock Accessed: 1.11.2016.
 
+\bibitem {paramiko}
+\btxtitlefont {\btxifchangecase {Paramiko}{Paramiko}}.
+\newblock \url{http://www.paramiko.org/}.
+\newblock Accessed 12.12.2018.
+
 \bibitem {raspberry}
 \btxtitlefont {\btxifchangecase {Raspberry pi}{Raspberry PI}}.
 \newblock \url{https://www.raspberrypi.org/}.
@@ -99,6 +104,14 @@
 \btxtitlefont {\btxifchangecase {Xen project}{Xen Project}}.
 \newblock \url{https://www.xenproject.org/l}.
 \newblock Accessed: 7.11.2016.
+
+\bibitem {Tosca}
+\btxtitlefont {\btxifchangecase {Tosca simple profile in yaml version
+  1.1.}{TOSCA Simple Profile in YAML Version 1.1.}}
+\newblock \btxifchangecase {Oasis standard}{OASIS Standard},
+  \btxprintmonthyear{.}{1}{2018}{long}.
+\newblock Latest version:
+  \url{http://docs.oasis-open.org/tosca/TOSCA-Simple-Profile-YAML/v1.1/TOSCA-Simple-Profile-YAML-v1.1.html}.
 
 \bibitem {anderson2015technology}
 \btxnamefont {\btxlastnamefont {Anderson}, Monica}\btxauthorcolon\

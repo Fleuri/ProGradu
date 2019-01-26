@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.30)  20 JAN 2019 21:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.30)  26 JAN 2019 17:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1452,11 +1452,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--44
 \T1/fve/m/n/10.95 (+20) tech-niques.
  []
 
-[6 <./containers.png>] [7]
-
-LaTeX Warning: Citation `Tosca' on page 8 undefined on input line 73.
-
-[8]
+[6 <./containers.png>] [7] [8]
 
 LaTeX Warning: Citation `heat' on page 9 undefined on input line 77.
 
@@ -1465,14 +1461,14 @@ LaTeX Warning: Citation `heat' on page 9 undefined on input line 77.
 LaTeX Warning: Citation `Kubernetes' on page 10 undefined on input line 86.
 
 ) (./systemdesign.tex [10] [11]
-<Cloudify_roles.png, id=331, 442.65375pt x 364.9635pt>
+<Cloudify_roles.png, id=333, 442.65375pt x 364.9635pt>
 File: Cloudify_roles.png Graphic file (type png)
 
 <use Cloudify_roles.png>
 Package pdftex.def Info: Cloudify_roles.png used on input line 24.
 (pdftex.def)             Requested size: 284.54022pt x 234.60051pt.
 
-<Discovery_service.png, id=333, 731.28206pt x 338.31393pt>
+<Discovery_service.png, id=335, 731.28206pt x 338.31393pt>
 File: Discovery_service.png Graphic file (type png)
 
 <use Discovery_service.png>
@@ -1484,7 +1480,7 @@ Overfull \hbox (66.7996pt too wide) in paragraph at lines 37--38
  []
 
 ) (./systemimplementation.tex [12 <./Cloudify_roles.png>]
-<Discovery-service-communication.png, id=342, 723.70375pt x 723.70375pt>
+<Discovery-service-communication.png, id=344, 723.70375pt x 723.70375pt>
 File: Discovery-service-communication.png Graphic file (type png)
 
 <use Discovery-service-communication.png>
@@ -1561,11 +1557,14 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 (/home/fleuri/Projects/Cloudify/cloudify-host-pool-service/cloudify_hostpool/re
 st/backend.py) [25]
 (/home/fleuri/Projects/Cloudify/cloudify-host-pool-service/cloudify_hostpool/re
-st/backend.py)
-
-LaTeX Warning: Citation `paramiko' on page 26 undefined on input line 279.
-
-[26]) (./experiments.tex) [27] (./futureresearch.tex
+st/backend.py) [26]) (./experiments.tex [27]
+<Network-venn.png, id=556, 526.96875pt x 403.5075pt>
+File: Network-venn.png Graphic file (type png)
+ <use Network-venn.png>
+Package pdftex.def Info: Network-venn.png used on input line 7.
+(pdftex.def)             Requested size: 341.44814pt x 261.45172pt.
+)
+(./futureresearch.tex [28 <./Network-venn.png>]
 LaTeX Font Info:    Try loading font information for TS1+fve on input line 6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/bera/ts1fve.fd
@@ -1606,59 +1605,77 @@ Underfull \hbox (badness 2426) in paragraph at lines 45--49
 vm/m/n/10.95 https : / / technet . microsoft . com / en-[]us /
  []
 
-[28]
+
 Underfull \hbox (badness 7740) in paragraph at lines 62--66
 \T1/fvm/m/n/10.95 org / admin-[]guide / objectstorage-[]features . html$[]\T1/f
 ve/m/n/10.95 (+20) .  Ac-cessed:
  []
 
-
-Underfull \hbox (badness 3209) in paragraph at lines 73--76
+[29]
+Underfull \hbox (badness 3209) in paragraph at lines 78--81
 []\T1/fve/m/sl/10.95 (+20) Raspberry pi\T1/fve/m/n/10.95 (+20) .  []$\T1/fvm/m/
 n/10.95 https : / / www . raspberrypi . org/$[]\T1/fve/m/n/10.95 (+20) .  Ac-ce
 ssed:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--97
+Underfull \hbox (badness 10000) in paragraph at lines 99--102
 []\T1/fve/m/sl/10.95 (+20) VMware work-sta-tion\T1/fve/m/n/10.95 (+20) .  []$\T
 1/fvm/m/n/10.95 http : / / www . vmware . com / products /
  []
 
 
-Underfull \hbox (badness 5316) in paragraph at lines 99--102
+Underfull \hbox (badness 5316) in paragraph at lines 104--107
 []\T1/fve/m/sl/10.95 (+20) Xen project\T1/fve/m/n/10.95 (+20) .  []$\T1/fvm/m/n
 /10.95 https : / / www . xenproject . org / l$[]\T1/fve/m/n/10.95 (+20) .  Ac-c
 essed:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--162
+Underfull \hbox (badness 5756) in paragraph at lines 110--115
+[]\T1/fve/m/sl/10.95 (+20) Tosca sim-ple pro-file in yaml ver-sion 1.1.  \T1/fv
+e/m/n/10.95 (+20) Oa-sis stan-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--115
+\T1/fve/m/n/10.95 (+20) dard, Jan-uary 2018.  Lat-est ver-sion: []$\T1/fvm/m/n/
+10.95 http : / / docs .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--115
+\T1/fvm/m/n/10.95 oasis-[]open . org / tosca / TOSCA-[]Simple-[]Profile-[]YAML 
+/ v1 . 1 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--175
 []$\T1/fvm/m/n/10.95 https : / / www . microsoft . com / en-[]us / research / p
 ublication /
  []
 
-[29]
-Underfull \hbox (badness 2503) in paragraph at lines 193--209
+[30]
+Underfull \hbox (badness 2503) in paragraph at lines 206--222
 \T1/fve/m/sl/10.95 (+20) op-er-at-ing sys-tem for vir-tual ma-chines\T1/fve/m/n
 /10.95 (+20) .  In \T1/fve/m/sl/10.95 (+20) 2014 USENIX
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--209
+Underfull \hbox (badness 10000) in paragraph at lines 206--222
 \T1/fve/m/sl/10.95 (+20) An-nual Tech-ni-cal Con-fer-ence (USENIX ATC 14)\T1/fv
 e/m/n/10.95 (+20) , pages
  []
 
 
-Underfull \hbox (badness 4846) in paragraph at lines 193--209
+Underfull \hbox (badness 4846) in paragraph at lines 206--222
 \T1/fve/m/n/10.95 (+20) 61--72, Philadel-phia, PA, June 2014. USENIX As-so-ci-a
 -tion,
  []
 
-[30])
+[31])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 203.
- [31]
+ [32]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 203.
  (./ProGradu.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 203.
@@ -1672,11 +1689,11 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 203.
  ) 
 Here is how much of TeX's memory you used:
- 21172 strings out of 493029
- 347579 string characters out of 6136233
- 571330 words of memory out of 5000000
- 23940 multiletter control sequences out of 15000+600000
- 81031 words of font info for 207 fonts, out of 8000000 for 9000
+ 21188 strings out of 493029
+ 347794 string characters out of 6136233
+ 571535 words of memory out of 5000000
+ 23945 multiletter control sequences out of 15000+600000
+ 81649 words of font info for 211 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  33i,18n,43p,10378b,1878s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texlive/texmf-
@@ -1685,10 +1702,10 @@ lic/bera/fveb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/share/texmf/f
 onts/type1/public/lm/lmsy10.pfb>
-Output written on ProGradu.pdf (35 pages, 304438 bytes).
+Output written on ProGradu.pdf (36 pages, 340414 bytes).
 PDF statistics:
- 673 PDF objects out of 1000 (max. 8388607)
- 615 compressed objects within 7 object streams
- 219 named destinations out of 1000 (max. 500000)
- 29495 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 691 PDF objects out of 1000 (max. 8388607)
+ 630 compressed objects within 7 object streams
+ 223 named destinations out of 1000 (max. 500000)
+ 29500 words of extra memory for PDF output out of 29859 (max. 10000000)
 
