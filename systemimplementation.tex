@@ -12,7 +12,7 @@ In addition to Python program, Discovery Service relies on Redis \cite{Redis} as
   \label{fig:communications}
 \end{figure}
 
-On the source code level, Discovery Service consists of two major components: The network scanner and request service. The network scanner is given a subnet as a parameter and it constantly sniffs the network detecting joining and already present devices and keeping track of them. Its other task is to periodically send health checks to known devices and if a health check fails enough times, it removes the given device from the logical host pool. Request service is responsible for sending HTTP requests to the Cloudify Host-pool service. It is called by the rRquest Service and it runs asynchronously. In addition to HTTP requests, it performs checks to ensure that the state of Discovery service's and Host-pool service's databases correlate.
+On the source code level, Discovery Service consists of two major components: The network scanner and request service. The network scanner is given a subnet as a parameter and it constantly sniffs the network detecting joining and already present devices and keeping track of them. Its other task is to periodically send health checks to known devices and if a health check fails enough times, it removes the given device from the logical host pool. Request service is responsible for sending HTTP requests to the Cloudify Host-pool service. It is called by the Request Service and it runs asynchronously. In addition to HTTP requests, it performs checks to ensure that the state of Discovery service's and Host-pool service's databases correlate.
 
 The communication relationships between different components in the system are depicted in figure \ref{fig:communications}. The source code for Discovery Service as well as the documentation can be found at \url{https://bitbucket.org/Fleuri/discoveryserviceforcloudify/src/master/}
 
@@ -57,6 +57,20 @@ Whether the packet's origin host is known or not, the next step in the function 
 \caption{Sniffer Callback Function}
 \end{algorithm}
 \end{center}
+
+\subsubsection{Start-up routine} \label{startup}
+
+Related to the sniffer function, when initializing the Discovery service, a start-up routine is run. It has three functions:
+
+\begin{itemize}
+\item It flushes the Redis key-value store
+\item It empties the logical host-pool on the Host-pool Service.
+\item It scans every IP address in the cluster network, adding any device found to the logical host-pool.
+\end{itemize}
+
+The routine follows the steps outlined above. First a flushing call is made to Redis. Then, using the Request Service detailed in the section ~\ref{requestservice}, the start-up routine retrieves the ids of the current hosts in the host-pool service delete the entries one by one.
+
+Finally the routine sends an ARP ping to each hosts (Manually excluded hosts do not apply) and upon receiving a reply, stores the details of the host as described in the section ~\ref{fig:snifferalgo}. At the prototypical state, the network scan waits for every host to either reply or timeout, making the start-up routine slow if subnet's IP range is large. Parallelism and other possible future optimisations are discussed in section ~\ref{future}
 
 \subsubsection{Pinger} \label{pinger}
 

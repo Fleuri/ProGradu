@@ -24,6 +24,12 @@
 \newblock \url{https://github.com/cloudify-cosmo/cloudify-host-pool-service}.
 \newblock Accessed: 11.3.2018.
 
+\bibitem {Nodecellar}
+\btxtitlefont {\btxifchangecase {Cloudify nodecellar example}{Cloudify
+  Nodecellar example}}.
+\newblock \url{https://github.com/cloudify-cosmo/cloudify-nodecellar-example}.
+\newblock Accessed 27.1.2019.
+
 \bibitem {openstackpartners}
 \btxtitlefont {\btxifchangecase {Companies supporting the openstack
   foundational}{Companies Supporting The OpenStack Foundational}}.

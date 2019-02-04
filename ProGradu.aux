@@ -100,8 +100,10 @@
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}Sniffer}{15}{subsubsection.4.1.1}}
 \newlabel{fig:snifferalgo}{{1}{16}{Sniffer}{algocfline.1}{}}
 \@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces Sniffer Callback Function}}{16}{algocf.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.2}Pinger}{16}{subsubsection.4.1.2}}
-\newlabel{pinger}{{4.1.2}{16}{Pinger}{subsubsection.4.1.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.2}Start-up routine}{16}{subsubsection.4.1.2}}
+\newlabel{startup}{{4.1.2}{16}{Start-up routine}{subsubsection.4.1.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.3}Pinger}{17}{subsubsection.4.1.3}}
+\newlabel{pinger}{{4.1.3}{17}{Pinger}{subsubsection.4.1.3}{}}
 \newlabel{fig:pingeralgo}{{2}{18}{Pinger}{algocfline.2}{}}
 \@writefile{loa}{\contentsline {algocf}{\numberline {2}{\ignorespaces Pinger Algorithm}}{18}{algocf.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Request Service}{18}{subsection.4.2}}
@@ -128,27 +130,57 @@
 \citation{paramiko}
 \newlabel{lst:hpsaddhost}{{4}{26}{Host-pool Service's backend's add\_host function makes a call to Specification Retriever}{lstlisting.4}{}}
 \@writefile{lol}{\contentsline {lstlisting}{\numberline {4}Host-pool Service's backend's add\_host function makes a call to Specification Retriever}{26}{lstlisting.4}}
+\citation{Nodecellar}
 \newlabel{lst:JSONSpecs}{{5}{27}{An example of additional data inserted by the Specification Retriever}{lstlisting.5}{}}
 \@writefile{lol}{\contentsline {lstlisting}{\numberline {5}An example of additional data inserted by the Specification Retriever}{27}{lstlisting.5}}
 \newlabel{lst:FinalJSON}{{6}{27}{An example of final data structure after the Specification Retriever has inserted hardware data}{lstlisting.6}{}}
 \@writefile{lol}{\contentsline {lstlisting}{\numberline {6}An example of final data structure after the Specification Retriever has inserted hardware data}{27}{lstlisting.6}}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Experiments}{28}{section.5}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.0.1}Hardware set-up}{28}{subsubsection.5.0.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Hardware set-up}{28}{subsection.5.1}}
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces The testbed hosts are located in a private network but master and slave-3 can also access internet via bastion host wint-13}}{28}{figure.7}}
 \newlabel{fig:network-venn}{{7}{28}{The testbed hosts are located in a private network but master and slave-3 can also access internet via bastion host wint-13}{figure.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces The actual test-bed. Master node on lower shelf on the right, slaves in the upper and lower shelf}}{29}{figure.8}}
+\newlabel{fig:test-bed}{{8}{29}{The actual test-bed. Master node on lower shelf on the right, slaves in the upper and lower shelf}{figure.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Software environment set-up}{30}{subsection.5.2}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Required open ports on the master node. All ports are TCP}}{30}{table.1}}
+\newlabel{table:ports}{{1}{30}{Required open ports on the master node. All ports are TCP}{table.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Test cases}{31}{subsection.5.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1}Discovering hosts at start up}{31}{subsubsection.5.3.1}}
+\@writefile{toc}{\contentsline {subparagraph}{Results}{31}{section*.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2}Detecting a joining host}{31}{subsubsection.5.3.2}}
+\newlabel{joining_host}{{5.3.2}{31}{Detecting a joining host}{subsubsection.5.3.2}{}}
 \bibstyle{babplain-lf}
 \bibdata{references-en}
 \bibcite{cloudify}{1}
 \bibcite{host-pool-service}{2}
-\bibcite{openstackpartners}{3}
-\bibcite{docker}{4}
-\bibcite{dockerdocumentation}{5}
-\bibcite{heat}{6}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.0.2}Software environment set-up}{29}{subsubsection.5.0.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Related work}{29}{section.6}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Future Research}{29}{section.7}}
-\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusions}{29}{section.8}}
-\@writefile{toc}{\contentsline {section}{Sources}{29}{section*.2}}
+\@writefile{toc}{\contentsline {subparagraph}{Results}{32}{section*.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.3}Detecting a parted host}{32}{subsubsection.5.3.3}}
+\@writefile{toc}{\contentsline {subparagraph}{Results}{32}{section*.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.4}Retrieving hardware data from the hosts}{32}{subsubsection.5.3.4}}
+\@writefile{toc}{\contentsline {subparagraph}{Results}{32}{section*.5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.5}Running an example workload in the system}{32}{subsubsection.5.3.5}}
+\@writefile{toc}{\contentsline {subparagraph}{Results}{32}{section*.6}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Related work}{32}{section.6}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Future Research}{32}{section.7}}
+\newlabel{future}{{7}{32}{Future Research}{section.7}{}}
+\bibcite{Nodecellar}{3}
+\bibcite{openstackpartners}{4}
+\bibcite{docker}{5}
+\bibcite{dockerdocumentation}{6}
+\bibcite{heat}{7}
+\bibcite{Kubernetes}{8}
+\bibcite{hyperv}{9}
+\bibcite{mirage}{10}
+\bibcite{openstackproject}{11}
+\bibcite{openstackfeatures}{12}
+\bibcite{VirtualBox}{13}
+\bibcite{paramiko}{14}
+\bibcite{raspberry}{15}
+\bibcite{Redis}{16}
+\bibcite{scapy}{17}
+\bibcite{vsphere}{18}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusions}{33}{section.8}}
+\@writefile{toc}{\contentsline {section}{Sources}{33}{section*.7}}
 \select@language{english}
 \@writefile{toc}{\select@language{english}}
 \@writefile{lof}{\select@language{english}}
@@ -157,37 +189,26 @@
 \@writefile{toc}{\select@language{english}}
 \@writefile{lof}{\select@language{english}}
 \@writefile{lot}{\select@language{english}}
-\bibcite{Kubernetes}{7}
-\bibcite{hyperv}{8}
-\bibcite{mirage}{9}
-\bibcite{openstackproject}{10}
-\bibcite{openstackfeatures}{11}
-\bibcite{VirtualBox}{12}
-\bibcite{paramiko}{13}
-\bibcite{raspberry}{14}
-\bibcite{Redis}{15}
-\bibcite{scapy}{16}
-\bibcite{vsphere}{17}
-\bibcite{WorkStation}{18}
-\bibcite{xen}{19}
-\bibcite{Tosca}{20}
-\bibcite{anderson2015technology}{21}
-\bibcite{ArpaciDusseau14-Book}{22}
-\bibcite{rfc5227}{23}
-\bibcite{Clark05livemigration}{24}
-\bibcite{Heterogeneous}{25}
-\bibcite{libos}{26}
-\bibcite{XaaS}{27}
-\bibcite{eder2016hypervisor}{28}
-\bibcite{cloudcomputingconcepts}{29}
-\bibcite{osv}{30}
-\bibcite{Kurp2008}{31}
-\bibcite{unikernels}{32}
-\bibcite{Mell:2011:SND:2206223}{33}
-\bibcite{Merkeldocker}{34}
-\bibcite{taxonomy}{35}
-\bibcite{openstack}{36}
-\bibcite{Xaviercontainer}{37}
+\bibcite{WorkStation}{19}
+\bibcite{xen}{20}
+\bibcite{Tosca}{21}
+\bibcite{anderson2015technology}{22}
+\bibcite{ArpaciDusseau14-Book}{23}
+\bibcite{rfc5227}{24}
+\bibcite{Clark05livemigration}{25}
+\bibcite{Heterogeneous}{26}
+\bibcite{libos}{27}
+\bibcite{XaaS}{28}
+\bibcite{eder2016hypervisor}{29}
+\bibcite{cloudcomputingconcepts}{30}
+\bibcite{osv}{31}
+\bibcite{Kurp2008}{32}
+\bibcite{unikernels}{33}
+\bibcite{Mell:2011:SND:2206223}{34}
+\bibcite{Merkeldocker}{35}
+\bibcite{taxonomy}{36}
+\bibcite{openstack}{37}
+\bibcite{Xaviercontainer}{38}
 \select@language{english}
 \@writefile{toc}{\select@language{english}}
 \@writefile{lof}{\select@language{english}}
@@ -196,4 +217,4 @@
 \@writefile{toc}{\select@language{english}}
 \@writefile{lof}{\select@language{english}}
 \@writefile{lot}{\select@language{english}}
-\newlabel{lastpage}{{8}{32}{Conclusions}{section*.2}{}}
+\newlabel{lastpage}{{8}{36}{Conclusions}{section*.7}{}}
