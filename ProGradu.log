@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.30)  4 FEB 2019 06:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.30)  10 FEB 2019 22:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1445,20 +1445,20 @@ LaTeX Font Info:    Font shape `T1/fve/m/it' in size <10.95> not available
 LaTeX Font Info:    Font shape `T1/fve/m/sl' will be
 (Font)              scaled to size 9.85492pt on input line 16.
 ) (./virtualisationtech.tex
-[3] <fullvirt.jpeg, id=275, 485.815pt x 576.1525pt>
+[3] <fullvirt.jpeg, id=285, 485.815pt x 576.1525pt>
 File: fullvirt.jpeg Graphic file (type jpg)
  <use fullvirt.jpeg>
 Package pdftex.def Info: fullvirt.jpeg used on input line 11.
 (pdftex.def)             Requested size: 239.9195pt x 284.53261pt.
 
-[4 <./fullvirt.jpeg>] <hwlayer.jpeg, id=284, 485.815pt x 403.5075pt>
+[4 <./fullvirt.jpeg>] <hwlayer.jpeg, id=294, 485.815pt x 403.5075pt>
 File: hwlayer.jpeg Graphic file (type jpg)
 
 <use hwlayer.jpeg>
 Package pdftex.def Info: hwlayer.jpeg used on input line 24.
 (pdftex.def)             Requested size: 284.52309pt x 236.31877pt.
  [5 <./hwlayer.jpeg>]
-<containers.png, id=299, 683.02235pt x 646.17882pt>
+<containers.png, id=309, 683.02235pt x 646.17882pt>
 File: containers.png Graphic file (type png)
  <use containers.png>
 Package pdftex.def Info: containers.png used on input line 37.
@@ -1469,14 +1469,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--44
  []
 
 [6 <./containers.png>] [7] [8] [9]) (./systemdesign.tex [10]
-<Cloudify_roles.png, id=365, 442.65375pt x 364.9635pt>
+<Cloudify_roles.png, id=375, 442.65375pt x 364.9635pt>
 File: Cloudify_roles.png Graphic file (type png)
 
 <use Cloudify_roles.png>
 Package pdftex.def Info: Cloudify_roles.png used on input line 24.
 (pdftex.def)             Requested size: 284.54022pt x 234.60051pt.
  [11]
-<Discovery_service.png, id=374, 731.28206pt x 338.31393pt>
+<Discovery_service.png, id=384, 731.28206pt x 338.31393pt>
 File: Discovery_service.png Graphic file (type png)
 
 <use Discovery_service.png>
@@ -1488,7 +1488,7 @@ Overfull \hbox (66.7996pt too wide) in paragraph at lines 37--38
  []
 
 ) (./systemimplementation.tex [12 <./Cloudify_roles.png>]
-<Discovery-service-communication.png, id=383, 723.70375pt x 723.70375pt>
+<Discovery-service-communication.png, id=393, 723.70375pt x 723.70375pt>
 File: Discovery-service-communication.png Graphic file (type png)
 
 <use Discovery-service-communication.png>
@@ -1576,13 +1576,13 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 st/backend.py) [25]
 (/home/fleuri/Projects/Cloudify/cloudify-host-pool-service/cloudify_hostpool/re
 st/backend.py) [26]) (./experiments.tex [27]
-<Network-venn.png, id=599, 526.96875pt x 403.5075pt>
+<Network-venn.png, id=609, 526.96875pt x 403.5075pt>
 File: Network-venn.png Graphic file (type png)
  <use Network-venn.png>
 Package pdftex.def Info: Network-venn.png used on input line 10.
 (pdftex.def)             Requested size: 341.44814pt x 261.45172pt.
 
-[28 <./Network-venn.png>] <testbed.jpg, id=607, 4075.225pt x 3056.41875pt>
+[28 <./Network-venn.png>] <testbed.jpg, id=617, 4075.225pt x 3056.41875pt>
 File: testbed.jpg Graphic file (type jpg)
 
 <use testbed.jpg>
@@ -1608,7 +1608,12 @@ Underfull \hbox (badness 2744) in paragraph at lines 73--74
 \T1/fve/m/n/10.95 (+20) though Cloud-ify doc-u-
  []
 
-[30] [31]) (./futureresearch.tex) (./ProGradu.bbl
+[30]
+Overfull \hbox (137.99753pt too wide) in paragraph at lines 88--101
+ [][] 
+ []
+
+[31]) (./futureresearch.tex [32]) (./ProGradu.bbl
 babelbib: Using the BibTeX style's default font for `name'.
 babelbib: Using the BibTeX style's default font for `lastname'.
 babelbib: Using the BibTeX style's default font for `title'.
@@ -1620,7 +1625,7 @@ babelbib: Using the BibTeX style's default font for `ISBN'.
 babelbib: Using the BibTeX style's default font for `ISSN'.
 babelbib: Using the BibTeX style's default font for `url'.
 babelbib: Using the BibTeX style's default font for `numeral'.
-[32]
+
 Underfull \hbox (badness 10000) in paragraph at lines 29--32
 []\T1/fve/m/sl/10.95 (+20) Cloudify node-cel-lar ex-am-ple\T1/fve/m/n/10.95 (+2
 0) .  []$\T1/fvm/m/n/10.95 https : / / github . com /
@@ -1655,14 +1660,14 @@ Underfull \hbox (badness 7740) in paragraph at lines 78--82
 ve/m/n/10.95 (+20) .  Ac-cessed:
  []
 
-
+[33]
 Underfull \hbox (badness 3209) in paragraph at lines 94--97
 []\T1/fve/m/sl/10.95 (+20) Raspberry pi\T1/fve/m/n/10.95 (+20) .  []$\T1/fvm/m/
 n/10.95 https : / / www . raspberrypi . org/$[]\T1/fve/m/n/10.95 (+20) .  Ac-ce
 ssed:
  []
 
-[33]
+
 Underfull \hbox (badness 10000) in paragraph at lines 115--118
 []\T1/fve/m/sl/10.95 (+20) VMware work-sta-tion\T1/fve/m/n/10.95 (+20) .  []$\T
 1/fvm/m/n/10.95 http : / / www . vmware . com / products /
@@ -1717,26 +1722,22 @@ Underfull \hbox (badness 4846) in paragraph at lines 222--238
 -tion,
  []
 
-[35])
+[35]) [36] (./measurementResults.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 205.
- [36]
+ [37]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 205.
  (./ProGradu.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 205.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 205.
 Package rerunfilecheck Info: File `ProGradu.out' has not changed.
-(rerunfilecheck)             Checksum: 93639D131B85D0E37D8D1E582BD45E66;3088.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+(rerunfilecheck)             Checksum: D8AC8A06A5BBB045C6288B10E4F504D5;3217.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 205.
  ) 
 Here is how much of TeX's memory you used:
- 21343 strings out of 493029
- 349815 string characters out of 6136233
- 574673 words of memory out of 5000000
- 24069 multiletter control sequences out of 15000+600000
+ 21355 strings out of 493029
+ 350003 string characters out of 6136233
+ 574795 words of memory out of 5000000
+ 24073 multiletter control sequences out of 15000+600000
  81649 words of font info for 211 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  33i,18n,43p,10378b,1878s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1746,10 +1747,10 @@ lic/bera/fveb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/share/texmf/f
 onts/type1/public/lm/lmsy10.pfb>
-Output written on ProGradu.pdf (40 pages, 1097014 bytes).
+Output written on ProGradu.pdf (41 pages, 1098506 bytes).
 PDF statistics:
- 774 PDF objects out of 1000 (max. 8388607)
- 707 compressed objects within 8 object streams
- 244 named destinations out of 1000 (max. 500000)
- 29561 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 793 PDF objects out of 1000 (max. 8388607)
+ 725 compressed objects within 8 object streams
+ 249 named destinations out of 1000 (max. 500000)
+ 29577 words of extra memory for PDF output out of 29859 (max. 10000000)
 

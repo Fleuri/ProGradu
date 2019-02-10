@@ -81,6 +81,27 @@ Finally, the server clocks on master host and slave-3 are synchronized with ntp 
 
 To verify that different parts of the Discovery Service and Specification Retriever work in the real environment, I have come up with five test cases which test how different parts of the software integrate with a real system. First three of the test cases test Discovery Service's ability to monitor  the cluster network and deliver the current cluster status to the Host-pool Service. The fourth test verifies that the Specification Retriever script in the modified Host-pool service collects the hardware data correctly. Finally I am going to run an example workload in the cluster which uses the Discovery Service to manage its logical host-pool. This verifies that the system can be used as an addition to a real Cloudify cluster.
 
+The time measurements from all of the applicable test cases are displayed in table ~\ref{table:measurements}. The table shows the fastest and slowest measured times, average and median times as well as standard deviation. Detailed report of the measurement results can be found in appendix ~\ref{testMeasurements}.
+
+\begin{table}
+\centering
+\begin{tabular}{ | l || l | l | l | l | l |}
+\hline 
+Test-case \& Time & Fastest & Slowest & Average & Median & Standard Deviation \\
+\hline \hline
+Start-up & Some time here & Some other time \\
+\hline
+Joining host \\
+\hline
+Parting host \\
+\hline
+Patching a host \\
+\hline
+\end{tabular}
+\caption{Summary of measurements performed in the test cases}
+\label{table:measurements}
+\end{table}
+
 \subsubsection{Discovering hosts at start up}
 
 As detailed in the section ~\ref{startup}, when Discovery Service is initialised it flushes all of the databases and performs an ARP scan for every IP address in the network. In this experiment I have modified the ARP scanning routine so that it measures the time it takes to scan through the 256 address network. The test is run ten times and the correctness of the scan is checked and the time to completion is measured.
@@ -96,6 +117,11 @@ One of the main features of the Discovery Service is the ability to detect machi
 \subsubsection{Detecting a parted host}
 
 \subparagraph{Results}
+
+\subsubsection{Patching a host}
+
+\subparagraph{Results}
+
 \subsubsection{Retrieving hardware data from the hosts}
 
 Check examples of other cloud providers. Maybe even a table.
