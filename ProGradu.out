@@ -33,7 +33,7 @@
 \BOOKMARK [2][-]{subsection.5.3}{Test cases}{section.5}% 33
 \BOOKMARK [3][-]{subsubsection.5.3.1}{Discovering hosts at start up}{subsection.5.3}% 34
 \BOOKMARK [3][-]{subsubsection.5.3.2}{Detecting a joining host}{subsection.5.3}% 35
-\BOOKMARK [3][-]{subsubsection.5.3.3}{Detecting a parted host}{subsection.5.3}% 36
+\BOOKMARK [3][-]{subsubsection.5.3.3}{Detecting a departed host}{subsection.5.3}% 36
 \BOOKMARK [3][-]{subsubsection.5.3.4}{Patching a host}{subsection.5.3}% 37
 \BOOKMARK [3][-]{subsubsection.5.3.5}{Retrieving hardware data from the hosts}{subsection.5.3}% 38
 \BOOKMARK [3][-]{subsubsection.5.3.6}{Running an example workload in the system}{subsection.5.3}% 39
@@ -42,3 +42,7 @@
 \BOOKMARK [1][-]{section.8}{Conclusions}{}% 42
 \BOOKMARK [1][-]{section*.8}{Sources}{}% 43
 \BOOKMARK [1][-]{appendix.A}{Test measurements}{}% 44
+\BOOKMARK [2][-]{subsection.A.1}{All start-up scan times}{appendix.A}% 45
+\BOOKMARK [2][-]{subsection.A.2}{All host discovery times}{appendix.A}% 46
+\BOOKMARK [2][-]{subsection.A.3}{All host disconnection times}{appendix.A}% 47
+\BOOKMARK [2][-]{subsection.A.4}{All host patching times}{appendix.A}% 48

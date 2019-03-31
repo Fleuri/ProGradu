@@ -74,60 +74,83 @@ Host-pool plugin runs as a Cloudify deployment managed by Cloudify manager. The 
 
 The Discovery Service is also run as standalone program and it doesn't reserve any ports. However the key-value storage the Discovery Service uses, Redis, is run in a docker container using the official Redis docker image. It reserves the standard  Redis port 6379.
 
-Finally, the server clocks on master host and slave-3 are synchronized with ntp against the ntp servers at \verb|fi.pool.ntp.org| as synchronized time is needed for accurate measurement results in experiment ~\ref{joining_host}.
+Finally, the server clocks on master host and slave-3 are synchronized with ntp against the ntp server located in the 86.50.17.1/24 cluster network, as synchronized time is needed for accurate measurement results in experiment ~\ref{joining_host}.
   
 
 \subsection{Test cases}
 
 To verify that different parts of the Discovery Service and Specification Retriever work in the real environment, I have come up with five test cases which test how different parts of the software integrate with a real system. First three of the test cases test Discovery Service's ability to monitor  the cluster network and deliver the current cluster status to the Host-pool Service. The fourth test verifies that the Specification Retriever script in the modified Host-pool service collects the hardware data correctly. Finally I am going to run an example workload in the cluster which uses the Discovery Service to manage its logical host-pool. This verifies that the system can be used as an addition to a real Cloudify cluster.
 
-The time measurements from all of the applicable test cases are displayed in table ~\ref{table:measurements}. The table shows the fastest and slowest measured times, average and median times as well as standard deviation. Detailed report of the measurement results can be found in appendix ~\ref{testMeasurements}.
+The time measurements from all of the applicable test cases are displayed in table ~\ref{table:measurements}. The table shows the fastest and slowest measured times, average and median times as well as standard deviation. All timed tests are run thirty times and the detailed report of the measurement results can be found in appendix ~\ref{testMeasurements}.
 
+\begin{landscape}
 \begin{table}
 \centering
 \begin{tabular}{ | l || l | l | l | l | l |}
 \hline 
-Test-case \& Time & Fastest & Slowest & Average & Median & Standard Deviation \\
+Test-case \& Time in seconds & Fastest & Slowest & Average & Median & Standard Deviation \\
 \hline \hline
-Start-up & Some time here & Some other time \\
+Start-up & 5.402588129 & 5.7881305218 & 5.5874319077 & 5.5766154528 & 0.0941250689 \\
 \hline
-Joining host \\
+Joining host & 0.083220005 & 0.2186000347 & 0.1519426159 & 0.1486098766 & 0.0406485995 \\
+\hline 
+Parting host & 40.3925600052 & 45.1373398304 & 42.5071433465 & 42.4735150337 & 1.3414346833 \\
 \hline
-Parting host \\
-\hline
-Patching a host \\
+Patching a host & 0.0327401161 & 5.7293000221 & 3.4286959569 & 5.1927498579 & 2.6312812131 \\ 
 \hline
 \end{tabular}
 \caption{Summary of measurements performed in the test cases}
 \label{table:measurements}
 \end{table}
+\end{landscape}
 
 \subsubsection{Discovering hosts at start up}
 
-As detailed in the section ~\ref{startup}, when Discovery Service is initialised it flushes all of the databases and performs an ARP scan for every IP address in the network. In this experiment I have modified the ARP scanning routine so that it measures the time it takes to scan through the 256 address network. The test is run ten times and the correctness of the scan is checked and the time to completion is measured.
+As detailed in the section ~\ref{startup}, when Discovery Service is initialised it flushes all of the databases and performs an ARP scan for every IP address in the network. In this experiment I have modified the ARP scanning routine so that it measures the time it takes to scan through the 256 address network. The timing starts when the scan is initialized and stops after the scan. The data stores are reset between every scan.
 
-\subparagraph{Results}
+\subsubsection*{Results}
+
+As seen in the table ~\ref{table:measurements}, scanning through a 256 address network takes approximately 5.6 seconds. This means that it takes approximately 0.022 seconds or 22 milliseconds to send and receive an ARP request for a single host. The real value however varies as the requests may return out of sync and with varying intervals. Also the \verb|timeout| value which denotes the time spent waiting after the last request is set to relatively high value of two seconds.
+
+Overall, all of the runs succeeded and there is no notable deviation in the distribution of times. In comparison to writing and providing host specification in JSON format, automatic scanning is significantly more efficient.
 
 \subsubsection{Detecting a joining host} \label{joining_host}
 
-One of the main features of the Discovery Service is the ability to detect machines joining the network in real time. In this test case slave-3 is not initially connected to the cluster network. I have prepared a script which first returns a current timestamp on slave-3 and then enables the network interface facing the cluster network. The sniffer algorithm on the Discovery Service is modified so that it too returns a timestamp upon detecting  a new host. As both hosts are synced against the same time server, the timestamps are comparable allowing me to measure a time it takes for Discovery Service to detect a host after it has joined the network.
+One of the main features of the Discovery Service is the ability to detect machines joining the network in real time. In this test case Slave-3 is not initially connected to the cluster network. I have prepared a script which first returns a current time stamp on Slave-3 and then enables the network interface facing the cluster network. The sniffer algorithm on the Discovery Service is modified so that it too returns a time stamp upon detecting  a new host. As both hosts are synced against the same time server, the timestamps are comparable allowing me to measure a time it takes for Discovery Service to detect a host after it has joined the network.
 
-\subparagraph{Results}
+\subsubsection*{Results}
 
-\subsubsection{Detecting a parted host}
+As with the start-up scan, the time to detect a joining host is very regular and is more affected by the network speed rather than the implementation overhead. There were however outliers caused by the test implementation. As the network interface on Slave-3 was enabled there was a slight wait in the script execution so that the interface is ready before sending an ARP request. As the script was run multiple times, the ARP cache often did not have time to invalidate and thus no ARP request was automatically sent when the interface was ready. In a real use case, such rapid enabling and disabling of the interface would be unlikely and the cache invalidation a non-issue. In few cases however, the cache was invalidated between a run and the ARP request was sent when interface was ready, causing the Discovery Service to catch the request before the time was recorded on Slave-3 resulting in a negative time in the final results. Those times have been disregarded in the table ~\ref{table:measurements} but are provided in the appendix ~\ref{testMeasurements}.
 
-\subparagraph{Results}
+Overall most of time taken to detect a joining hosts consists of the interval between sending and receiving the ARP request.
+
+\subsubsection{Detecting a departed host}
+
+Similarly to detecting the joining host, detection of a departed host is another major feature of the Discovery Service. The testing procedure is also similar: Slave-3 has a script which drops the host from the network while producing a time stamp for the event. The departure detection in the Discovery Service is modified to return a time stamp when the detection of Slave-3 is detected. The detection is done in the pinger component described in section ~\ref{pinger}, in which a host is declared departed if it fails to reply to a set number of pings. The values for the ping interval and ping failures are five seconds for the interval and three failures. This relatively long interval is likely to cause a wide distribution of time results as the time between Slave-3 getting dropped from the network and the first ping could be five seconds. On the other hand this measurement is representable of a real usage scenario. \newline 
+
+\subsubsection*{Results}
+
+Every execution of the pinging routine consists of two parts which make up the majority of the execution time. First the time out the ARP ping spends waiting for a reply is ten seconds and an interval between pings is five seconds. Depending on how fast a ping routine fires after Slave-3 disconnects, these parts take minimum of forty seconds and maximum of 45 five seconds.
+
+Both extremums are presented in the experiment sampling and both average and median values are close to expected mathematical average. The computational overhead is negligible when compared to the ping interval and time out, but keeping that in mind, the average and median times could have been expected to be slightly over 42,5 seconds. 
+Nevertheless, taking into account the expected five second variability of the beginning of execution, another data sample could result in slightly different times but similar standard deviation.
 
 \subsubsection{Patching a host}
 
-\subparagraph{Results}
+Procedure on this test case is similar to the previous two. A script modifies the IP address of Slave-3 from 192.168.150.4 to 192.168.150.5 and back, each modification producing a time stamp for the . Discovery Service detects the change and applies it to data stores after which a time stamp is provided.
+
+\subsubsection*{Results}
 
 \subsubsection{Retrieving hardware data from the hosts}
 
-Check examples of other cloud providers. Maybe even a table.
+This test case shows, that the modified Host-pool Service retrieves correct hardware data from the host. First the hardware data is listed manually on the target host. Next the start-up routine is run which adds all the hosts in the network to logical host pool. The modified Host-pool Service runs the hardware specification retrieval scripts when the hosts are added. Afterwards Host-pool Service can be queried to confirm that correct data was retrieved.
 
-\subparagraph{Results}
+This test case also demonstrates how easily new commands can be added to the Specification Retriever.
+
+\textbf{Check examples of other cloud providers. Maybe even a table.}
+
+\subsubsection*{Results}
 
 \subsubsection{Running an example workload in the system}
 
-\subparagraph{Results}
+\subsubsection*{Results}
