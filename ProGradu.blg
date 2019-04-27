@@ -28,6 +28,7 @@ Warning--to sort, need author or key in Redis
 Warning--to sort, need author or key in scapy
 Warning--to sort, need author or key in paramiko
 Warning--to sort, need author or key in Nodecellar
+Warning--to sort, need author or key in ironic_troubleshoot
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty language in cloudify
 Warning--empty author in Tosca
@@ -42,45 +43,45 @@ while executing---line 1379 of file babplain-lf.bst
 Too many commas in name 1 of "Donald E. Porter, Galen Hunt, Jon Howell, Reuben Olinsky, Silas Boyd-Wickizer" for entry libos
 while executing---line 1379 of file babplain-lf.bst
 Warning--empty institution in Mell:2011:SND:2206223
-You've used 38 entries,
+You've used 39 entries,
             2783 wiz_defined-function locations,
-            840 strings with 11855 characters,
-and the built_in function-call counts, 12944 in all, are:
-= -- 1099
-> -- 396
+            844 strings with 11988 characters,
+and the built_in function-call counts, 13156 in all, are:
+= -- 1118
+> -- 397
 < -- 7
-+ -- 170
++ -- 171
 - -- 132
-* -- 1230
-:= -- 1686
-add.period$ -- 104
-call.type$ -- 38
-change.case$ -- 180
+* -- 1241
+:= -- 1711
+add.period$ -- 107
+call.type$ -- 39
+change.case$ -- 183
 chr.to.int$ -- 0
-cite$ -- 64
-duplicate$ -- 685
-empty$ -- 1433
+cite$ -- 66
+duplicate$ -- 696
+empty$ -- 1465
 format.name$ -- 209
-if$ -- 2883
+if$ -- 2936
 int.to.chr$ -- 0
-int.to.str$ -- 38
+int.to.str$ -- 39
 missing$ -- 20
-newline$ -- 194
+newline$ -- 199
 num.names$ -- 34
-pop$ -- 445
+pop$ -- 458
 preamble$ -- 1
-purify$ -- 142
+purify$ -- 144
 quote$ -- 0
-skip$ -- 385
+skip$ -- 392
 stack$ -- 0
-substring$ -- 430
-swap$ -- 277
+substring$ -- 435
+swap$ -- 279
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 148
-warning$ -- 26
+type$ -- 152
+warning$ -- 27
 while$ -- 54
-width$ -- 40
-write$ -- 387
+width$ -- 41
+write$ -- 396
 (There were 6 error messages)

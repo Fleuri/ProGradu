@@ -96,7 +96,7 @@ Joining host & 0.083220005 & 0.2186000347 & 0.1519426159 & 0.1486098766 & 0.0406
 \hline 
 Parting host & 40.3925600052 & 45.1373398304 & 42.5071433465 & 42.4735150337 & 1.3414346833 \\
 \hline
-Patching a host & 0.0327401161 & 5.7293000221 & 3.4286959569 & 5.1927498579 & 2.6312812131 \\ 
+Patching a host & 0.0368499756 & 0.0.0572497845 & 0.0481163859 & 0.0482549667 & 0.0044948944 \\ 
 \hline
 \end{tabular}
 \caption{Summary of measurements performed in the test cases}
@@ -137,9 +137,15 @@ Nevertheless, taking into account the expected five second variability of the be
 
 \subsubsection{Patching a host}
 
-Procedure on this test case is similar to the previous two. A script modifies the IP address of Slave-3 from 192.168.150.4 to 192.168.150.5 and back, each modification producing a time stamp for the . Discovery Service detects the change and applies it to data stores after which a time stamp is provided.
+Procedure on this test case is similar to the previous two. A script modifies the IP address of Slave-3 from 192.168.150.4 to 192.168.150.5 and back, each modification producing a time stamp for in Slave-3 and each detected address change producing one on Master. Similarly to \textit{Detecting a joining host} experiment, an ARP request is sent manually as the ARP caches may not have time to be invalidated and thus changing the IP address may not trigger an ARP request automatically.
 
 \subsubsection*{Results}
+
+During the preliminary testing it became apparent that in some cases, as one IP address was unused for a longer time than for example in \textit{Detecting a parting host} experiment, ARP caches became invalidated more frequently. This meant, that changing an IP address triggered an automatic ARP call more frequently than first expected and capturing this behaviour required an another time stamp to be recorded in the script on Slave-3. In the experiment, Slave-3 provided time stamp both when the interface was enabled and also when the ARP request was sent manually. The first time stamp prevented negative times in the results but the time itself didn't reflect a time it takes for the Discovery Service to detect and patch an IP change, but rather the time it takes for a the interface to be ready in this particular case. These values have been omitted from the results in table ~\ref{table:measurements} but they are included in the appendix ~\ref{testMeasurements}.
+
+The tests succeeded on every execution. Patching seemed to be the most lightweight of the operations tested: The slowest execution time was circa 26 milliseconds faster than the fastest execution of the \textit{Detecting a joining host} experiment. This is because changing a single field in an existing data object is computationally significantly less demanding than creating a new data object with multiple fields.
+
+Like the results from the previous experiments, \textit{Patching a host} results also indicate correct, fast and regular execution of the routine.
 
 \subsubsection{Retrieving hardware data from the hosts}
 
@@ -147,10 +153,69 @@ This test case shows, that the modified Host-pool Service retrieves correct hard
 
 This test case also demonstrates how easily new commands can be added to the Specification Retriever.
 
-\textbf{Check examples of other cloud providers. Maybe even a table.}
-
 \subsubsection*{Results}
+
+Openstack's \textit{Ironic} -project\cite{ironic_troubleshoot} retrieves a modest amount of hardware data, namely the Number of CPUs, available RAM, available disk space and CPU architecture. CPU architecture retrieval was not included in the modified Host-pool Service specification detailed in section ~\ref{specification_retriever}, but to demonstrate specification retrievers capabilities and extendibility, I have added it as well as a command to retrieve the host's graphics card model to the list of commands executed on hosts. The commands are as follows:
+
+\begin{itemize}
+\item \verb= lscpu | awk '/Architecture/{ print \$2 }'= which retrieves the cpu architecture.
+\item \verb=lscpu | awk '/Model name/' | sed -e 's/Model name://g' -e 's/^[ \t]*//g'= which retrieves the graphics card model while removing whitespace from the command result.
+\end{itemize}
+
+In the experiment the additional query commands were added to the modified Host-pool service. Discovery Service was ran normally and the Host-Pool Service REST endpoint was queried for Slave-3's data. Figure ~\ref{fig:master_query} is a screenshot of the query result and it shows the hardware data along with the added CPU architecture and graphics card model. Figure ~\ref{fig:slave_3_specs} is a screenshot showing the same data when queried directly on Slave-3 in remote terminal. The data in Host-pool service query is identical to that queried directly on Slave-3, verifying the correctness of the Hardware Specification retrieval operation. It also verifies, that the Hardware Specification retrieval operation can be easily extended with only minor additions to Host-pool Service.
+
+ \begin{figure}[ht!]
+\centering
+  \includegraphics[width=10cm,height=10cm, keepaspectratio]{masterqueryscreenshot.png}%
+  \caption{Host-pool service query returns a json with added new fields cpu\_arch and graph\_card\_model}
+  \label{fig:master_query}
+\end{figure}
+
+ \begin{figure}[ht!]
+\centering
+  \includegraphics[width=10cm,height=10cm, keepaspectratio]{slave_3_specs_screenshot.png}%
+  \caption{The results of individual commands run on Slave-3}
+  \label{fig:slave_3_specs}
+\end{figure}
 
 \subsubsection{Running an example workload in the system}
 
+The final experiment shows, that Discovery Service works seamlessly when running a real workload in the Cloudify cluster. The workload in question is Cloudify's standard example workload Cloudify Nodecellar Example\cite{Nodecellar}. Nodecellar is a web application which simulates a wine inventory system. It is deployed on two separate hosts with the \textit{nodejs\_host} running a webserver and a Node.js based frontend application whereas the second \textit{mongod\_host} houses MongoDB. The figures ~\ref{fig:console_topology} and ~\ref{fig:console_list} are screenshots of the Cloudify console showing the different components of the Nodecellar deployment and the relations between them. The goal of this experiment is to have a functioning Nodecellar application running on two of the slave hosts which were discovered by the Discovery Service and allocated to Cloudify Manager by the Host-Pool Service.
+
+ \begin{figure}[ht!]
+\centering
+  \includegraphics[width=12cm,height=12cm, keepaspectratio]{consoletopology.png}%
+  \caption{Cloudify console shows the topology diagram of the Nodecellar deployment}
+  \label{fig:console_topology}
+\end{figure}
+
+ \begin{figure}[ht!]
+\centering
+  \includegraphics[width=12cm,height=12cm, keepaspectratio]{console_list.png}%
+  \caption{Nodecellar deployment's parts listed in the Cloudify console}
+  \label{fig:console_list}
+\end{figure}
+
+\subsubsection*{Setting up the experiment}
+
+Prior to deploying Nodecellar, I had set up Host-pool Service, Discovery Service and Cloudify Manager. I had also forwarded the port of Cloudify Manager's web console so that I could access it remotely. On Cloudify, every component has to be defined as a Blueprint using TOSCA DSL. When blueprints are uploaded to Cloudify Manager, user can create Deployments of them which in turn create the actual resources.
+
+Before Cloudify Manager could use Host-pool Service to allocate hosts for the deployment, the Host-pool Plugin was required to be installed. The latest version 1.5 was faulty so I downgraded to 1.4. This also meant that I had to manually change Nodecellar Example's blueprint's dependencies to use Host-pool Plugin version 1.4 instead of the default 1.5. After uploading the modified blueprints and creating deployments of them I ran the 'Install' workflow which requested the required hosts from Host-pool Service via Host-pool Plugin and after receiving them installed the required software on them.
+
 \subsubsection*{Results}
+
+As Host-pool Plugin allocates the requested available hosts in order, Slave-1 was designated as the \textit{nodejs\_host} and Slave-2 as \textit{mongod\_host}. To verify that the 
+
+ \begin{figure}[ht!]
+\centering
+  \includegraphics[width=12cm,height=12cm, keepaspectratio]{Nodecellarscreenshot.png}%
+  \caption{Cloudify Nodecellar Example's landing page.}
+  \label{fig:nodecellar}
+\end{figure}
+
+ \begin{figure}[ht!]
+\centering
+  \includegraphics[width=12cm,height=12cm, keepaspectratio]{chateaudiscoveryservice.png}%
+  \caption{Nodecellar allows the user to add their own wines to the list.}
+  \label{fig:chateau}
+\end{figure}

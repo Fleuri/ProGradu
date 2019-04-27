@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.30)  31 MAR 2019 20:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.30)  27 APR 2019 22:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1594,13 +1594,13 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 st/backend.py) [25]
 (/home/fleuri/Projects/Cloudify/cloudify-host-pool-service/cloudify_hostpool/re
 st/backend.py) [26] [27]) (./experiments.tex
-<Network-venn.png, id=630, 526.96875pt x 403.5075pt>
+<Network-venn.png, id=629, 526.96875pt x 403.5075pt>
 File: Network-venn.png Graphic file (type png)
  <use Network-venn.png>
 Package pdftex.def Info: Network-venn.png used on input line 10.
 (pdftex.def)             Requested size: 341.44814pt x 261.45172pt.
 
-[28 <./Network-venn.png>] <testbed.jpg, id=638, 4075.225pt x 3056.41875pt>
+[28 <./Network-venn.png>] <testbed.jpg, id=637, 4075.225pt x 3056.41875pt>
 File: testbed.jpg Graphic file (type jpg)
 
 <use testbed.jpg>
@@ -1627,7 +1627,7 @@ Underfull \hbox (badness 2744) in paragraph at lines 73--74
  []
 
 [30] [31]
-Overfull \hbox (30.6064pt too wide) in paragraph at lines 89--102
+Overfull \hbox (33.74025pt too wide) in paragraph at lines 89--102
  [][] 
  []
 
@@ -1639,7 +1639,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
-[34]) (./futureresearch.tex [35]) (./ProGradu.bbl
+[34] [35]
+Overfull \hbox (92.15176pt too wide) in paragraph at lines 162--163
+[][]\T1/fvm/m/n/10.95 lscpu | awk '/Model name/' | sed -e 's/Model name://g' -e
+ 's/^[ \t]*//g'
+ []
+
+<masterqueryscreenshot.png, id=692, 885.3075pt x 628.3475pt>
+File: masterqueryscreenshot.png Graphic file (type png)
+
+<use masterqueryscreenshot.png>
+Package pdftex.def Info: masterqueryscreenshot.png used on input line 169.
+(pdftex.def)             Requested size: 284.53348pt x 201.9478pt.
+
+<slave_3_specs_screenshot.png, id=693, 1362.08875pt x 242.9075pt>
+File: slave_3_specs_screenshot.png Graphic file (type png)
+
+<use slave_3_specs_screenshot.png>
+Package pdftex.def Info: slave_3_specs_screenshot.png used on input line 176.
+(pdftex.def)             Requested size: 284.52986pt x 50.7415pt.
+ [36]
+<consoletopology.png, id=705, 1371.1225pt x 743.77875pt>
+File: consoletopology.png Graphic file (type png)
+
+<use consoletopology.png>
+Package pdftex.def Info: consoletopology.png used on input line 187.
+(pdftex.def)             Requested size: 341.41988pt x 185.20653pt.
+
+<console_list.png, id=706, 1371.1225pt x 743.77875pt>
+File: console_list.png Graphic file (type png)
+ <use console_list.png>
+Package pdftex.def Info: console_list.png used on input line 194.
+(pdftex.def)             Requested size: 341.41988pt x 185.20653pt.
+
+[37 <./masterqueryscreenshot.png> <./slave_3_specs_screenshot.png>] [38 <./cons
+oletopology.png> <./console_list.png>]
+<Nodecellarscreenshot.png, id=721, 1371.1225pt x 743.77875pt>
+File: Nodecellarscreenshot.png Graphic file (type png)
+
+<use Nodecellarscreenshot.png>
+Package pdftex.def Info: Nodecellarscreenshot.png used on input line 211.
+(pdftex.def)             Requested size: 341.41988pt x 185.20653pt.
+
+<chateaudiscoveryservice.png, id=722, 1371.1225pt x 743.77875pt>
+File: chateaudiscoveryservice.png Graphic file (type png)
+
+<use chateaudiscoveryservice.png>
+Package pdftex.def Info: chateaudiscoveryservice.png used on input line 218.
+(pdftex.def)             Requested size: 341.41988pt x 185.20653pt.
+) (./futureresearch.tex [39 <./Nodecellarscreenshot.png>]) (./ProGradu.bbl
 babelbib: Using the BibTeX style's default font for `name'.
 babelbib: Using the BibTeX style's default font for `lastname'.
 babelbib: Using the BibTeX style's default font for `title'.
@@ -1674,7 +1722,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--49
 \T1/fvm/m/n/10.95 engine / userguide / storagedriver / imagesandcontainers /
  []
 
-
+[40 <./chateaudiscoveryservice.png>]
 Underfull \hbox (badness 2426) in paragraph at lines 61--65
 []\T1/fve/m/sl/10.95 (+20) Microsoft Hyper-V\T1/fve/m/n/10.95 (+20) .  []$\T1/f
 vm/m/n/10.95 https : / / technet . microsoft . com / en-[]us /
@@ -1686,7 +1734,7 @@ Underfull \hbox (badness 7740) in paragraph at lines 78--82
 ve/m/n/10.95 (+20) .  Ac-cessed:
  []
 
-[36]
+
 Underfull \hbox (badness 3209) in paragraph at lines 94--97
 []\T1/fve/m/sl/10.95 (+20) Raspberry pi\T1/fve/m/n/10.95 (+20) .  []$\T1/fvm/m/
 n/10.95 https : / / www . raspberrypi . org/$[]\T1/fve/m/n/10.95 (+20) .  Ac-ce
@@ -1694,61 +1742,61 @@ ssed:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--118
+Underfull \hbox (badness 10000) in paragraph at lines 122--125
 []\T1/fve/m/sl/10.95 (+20) VMware work-sta-tion\T1/fve/m/n/10.95 (+20) .  []$\T
 1/fvm/m/n/10.95 http : / / www . vmware . com / products /
  []
 
 
-Underfull \hbox (badness 5316) in paragraph at lines 120--123
+Underfull \hbox (badness 5316) in paragraph at lines 127--130
 []\T1/fve/m/sl/10.95 (+20) Xen project\T1/fve/m/n/10.95 (+20) .  []$\T1/fvm/m/n
 /10.95 https : / / www . xenproject . org / l$[]\T1/fve/m/n/10.95 (+20) .  Ac-c
 essed:
  []
 
 
-Underfull \hbox (badness 5756) in paragraph at lines 126--131
+Underfull \hbox (badness 5756) in paragraph at lines 133--138
 []\T1/fve/m/sl/10.95 (+20) Tosca sim-ple pro-file in yaml ver-sion 1.1.  \T1/fv
 e/m/n/10.95 (+20) Oa-sis stan-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--131
+Underfull \hbox (badness 10000) in paragraph at lines 133--138
 \T1/fve/m/n/10.95 (+20) dard, Jan-uary 2018.  Lat-est ver-sion: []$\T1/fvm/m/n/
 10.95 http : / / docs .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--131
+Underfull \hbox (badness 10000) in paragraph at lines 133--138
 \T1/fvm/m/n/10.95 oasis-[]open . org / tosca / TOSCA-[]Simple-[]Profile-[]YAML 
 / v1 . 1 /
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 180--191
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 187--198
 []$\T1/fvm/m/n/10.95 https : / / www . microsoft . com / en-[]us / research / p
 ublication /
  []
 
-[37]
-Underfull \hbox (badness 2503) in paragraph at lines 222--238
+
+Underfull \hbox (badness 2503) in paragraph at lines 229--245
 \T1/fve/m/sl/10.95 (+20) op-er-at-ing sys-tem for vir-tual ma-chines\T1/fve/m/n
 /10.95 (+20) .  In \T1/fve/m/sl/10.95 (+20) 2014 USENIX
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--238
+Underfull \hbox (badness 10000) in paragraph at lines 229--245
 \T1/fve/m/sl/10.95 (+20) An-nual Tech-ni-cal Con-fer-ence (USENIX ATC 14)\T1/fv
 e/m/n/10.95 (+20) , pages
  []
 
 
-Underfull \hbox (badness 4846) in paragraph at lines 222--238
+Underfull \hbox (badness 4846) in paragraph at lines 229--245
 \T1/fve/m/n/10.95 (+20) 61--72, Philadel-phia, PA, June 2014. USENIX As-so-ci-a
 -tion,
  []
 
-[38]) [39] (./measurementResults.tex
+[42]) [43] (./measurementResults.tex
 Overfull \hbox (26.29918pt too wide) in alignment at lines 8--10
  [] [] [] [] 
  []
@@ -1768,7 +1816,7 @@ Overfull \hbox (26.29918pt too wide) in alignment at lines 34--44
  [] [] [] [] 
  []
 
-[40]
+[44]
 Overfull \hbox (47.56737pt too wide) in alignment at lines 52--54
  [] [] [] [] [] [] 
  []
@@ -1788,9 +1836,9 @@ Overfull \hbox (47.56737pt too wide) in alignment at lines 78--88
  [] [] [] [] [] [] 
  []
 
-[41
+[45
 
-] [42]
+] [46]
 Overfull \hbox (13.89308pt too wide) in alignment at lines 98--100
  [] [] [] [] [] [] 
  []
@@ -1810,32 +1858,36 @@ Overfull \hbox (13.89308pt too wide) in alignment at lines 124--134
  [] [] [] [] [] [] 
  []
 
-[43
+[47
 
 
-] [44] [45
+] [48] [49
 
 
 ]
 Underfull \vbox (badness 10000) detected at line 196
  []
 
-[46])
+[50])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 207.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 207.
  (./ProGradu.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 207.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 207.
 Package rerunfilecheck Info: File `ProGradu.out' has not changed.
-(rerunfilecheck)             Checksum: 41C54FEEC7C73ABF93266992E82EB3FA;3521.
+(rerunfilecheck)             Checksum: 4B8B6F218468992CD867AE0FCE0AC2D4;3521.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 207.
  ) 
 Here is how much of TeX's memory you used:
- 21464 strings out of 493029
- 351227 string characters out of 6136233
- 579997 words of memory out of 5000000
- 24160 multiletter control sequences out of 15000+600000
- 81649 words of font info for 211 fonts, out of 8000000 for 9000
+ 21522 strings out of 493029
+ 352372 string characters out of 6136233
+ 585583 words of memory out of 5000000
+ 24192 multiletter control sequences out of 15000+600000
+ 82576 words of font info for 217 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  33i,18n,43p,10378b,1878s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texlive/texmf-
@@ -1844,10 +1896,10 @@ lic/bera/fveb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/share/texmf/f
 onts/type1/public/lm/lmsy10.pfb>
-Output written on ProGradu.pdf (50 pages, 1115144 bytes).
+Output written on ProGradu.pdf (54 pages, 2824919 bytes).
 PDF statistics:
- 865 PDF objects out of 1000 (max. 8388607)
- 788 compressed objects within 8 object streams
- 269 named destinations out of 1000 (max. 500000)
- 29609 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 913 PDF objects out of 1000 (max. 8388607)
+ 820 compressed objects within 9 object streams
+ 280 named destinations out of 1000 (max. 500000)
+ 29639 words of extra memory for PDF output out of 29859 (max. 10000000)
 

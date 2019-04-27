@@ -105,6 +105,13 @@
 \newblock \url{https://scapy.net/}.
 \newblock Accessed 27.10.2018.
 
+\bibitem {ironic_troubleshoot}
+\btxtitlefont {\btxifchangecase {Troubleshooting ironic}{Troubleshooting
+  Ironic}}.
+\newblock
+  \url{https://docs.openstack.org/ironic/pike/admin/troubleshooting.html#top}.
+\newblock Accessed 7.4.2019.
+
 \bibitem {vsphere}
 \btxtitlefont {\btxifchangecase {{VMware VSphere Hypervisor}}{{VMware VSphere
   Hypervisor}}}.

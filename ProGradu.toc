@@ -36,18 +36,18 @@
 \contentsline {subsubsection}{\numberline {5.3.2}Detecting a joining host}{33}{subsubsection.5.3.2}
 \contentsline {subsubsection}{\numberline {5.3.3}Detecting a departed host}{34}{subsubsection.5.3.3}
 \contentsline {subsubsection}{\numberline {5.3.4}Patching a host}{35}{subsubsection.5.3.4}
-\contentsline {subsubsection}{\numberline {5.3.5}Retrieving hardware data from the hosts}{35}{subsubsection.5.3.5}
-\contentsline {subsubsection}{\numberline {5.3.6}Running an example workload in the system}{35}{subsubsection.5.3.6}
-\contentsline {section}{\numberline {6}Related work}{35}{section.6}
-\contentsline {section}{\numberline {7}Future Research}{35}{section.7}
-\contentsline {section}{\numberline {8}Conclusions}{36}{section.8}
-\contentsline {section}{Sources}{36}{section*.8}
+\contentsline {subsubsection}{\numberline {5.3.5}Retrieving hardware data from the hosts}{36}{subsubsection.5.3.5}
+\contentsline {subsubsection}{\numberline {5.3.6}Running an example workload in the system}{37}{subsubsection.5.3.6}
+\contentsline {section}{\numberline {6}Related work}{39}{section.6}
+\contentsline {section}{\numberline {7}Future Research}{39}{section.7}
+\contentsline {section}{\numberline {8}Conclusions}{40}{section.8}
+\contentsline {section}{Sources}{40}{section*.9}
 \select@language {english}
 \select@language {english}
 \select@language {english}
 \select@language {english}
-\contentsline {section}{\numberline {A}Test measurements}{40}{appendix.A}
-\contentsline {subsection}{\numberline {A.1}All start-up scan times}{40}{subsection.A.1}
-\contentsline {subsection}{\numberline {A.2}All host discovery times}{41}{subsection.A.2}
-\contentsline {subsection}{\numberline {A.3}All host disconnection times}{43}{subsection.A.3}
-\contentsline {subsection}{\numberline {A.4}All host patching times}{45}{subsection.A.4}
+\contentsline {section}{\numberline {A}Test measurements}{44}{appendix.A}
+\contentsline {subsection}{\numberline {A.1}All start-up scan times}{44}{subsection.A.1}
+\contentsline {subsection}{\numberline {A.2}All host discovery times}{45}{subsection.A.2}
+\contentsline {subsection}{\numberline {A.3}All host disconnection times}{47}{subsection.A.3}
+\contentsline {subsection}{\numberline {A.4}All host patching times}{49}{subsection.A.4}
