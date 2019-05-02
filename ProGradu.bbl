@@ -216,6 +216,12 @@
 \newblock \btxjournalfont {Future Internet (FI) and Innovative Internet
   Technologies and Mobile Communications (IITM)}, 1, 2016.
 
+\bibitem {stateofthecloud}
+\btxnamefont {\btxlastnamefont {Flexera}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {{Rightscale 2019 State of The Cloud Report from
+  Flexera}}{{Rightscale 2019 State of The Cloud Report from Flexera}}}.
+\newblock \btxtechreplong {}, \btxprintmonthyear{.}{02}{2019}{long}.
+
 \bibitem {cloudcomputingconcepts}
 \btxnamefont {\btxlastnamefont {Jadeja}, Y.} \btxandlong {}\ \btxnamefont
   {\btxlastnamefont {Modi}, K.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase

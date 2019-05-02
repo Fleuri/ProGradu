@@ -42,46 +42,47 @@ Too many commas in name 1 of "Donald E. Porter, Galen Hunt, Jon Howell, Reuben O
 while executing---line 1379 of file babplain-lf.bst
 Too many commas in name 1 of "Donald E. Porter, Galen Hunt, Jon Howell, Reuben Olinsky, Silas Boyd-Wickizer" for entry libos
 while executing---line 1379 of file babplain-lf.bst
+Warning--empty institution in stateofthecloud
 Warning--empty institution in Mell:2011:SND:2206223
-You've used 39 entries,
+You've used 40 entries,
             2783 wiz_defined-function locations,
-            844 strings with 11988 characters,
-and the built_in function-call counts, 13156 in all, are:
-= -- 1118
-> -- 397
+            850 strings with 12141 characters,
+and the built_in function-call counts, 13405 in all, are:
+= -- 1141
+> -- 404
 < -- 7
-+ -- 171
-- -- 132
-* -- 1241
-:= -- 1711
-add.period$ -- 107
-call.type$ -- 39
-change.case$ -- 183
++ -- 174
+- -- 134
+* -- 1266
+:= -- 1753
+add.period$ -- 109
+call.type$ -- 40
+change.case$ -- 187
 chr.to.int$ -- 0
-cite$ -- 66
-duplicate$ -- 696
-empty$ -- 1465
-format.name$ -- 209
-if$ -- 2936
+cite$ -- 68
+duplicate$ -- 709
+empty$ -- 1489
+format.name$ -- 212
+if$ -- 2986
 int.to.chr$ -- 0
-int.to.str$ -- 39
+int.to.str$ -- 40
 missing$ -- 20
-newline$ -- 199
-num.names$ -- 34
-pop$ -- 458
+newline$ -- 203
+num.names$ -- 36
+pop$ -- 464
 preamble$ -- 1
-purify$ -- 144
+purify$ -- 147
 quote$ -- 0
-skip$ -- 392
+skip$ -- 399
 stack$ -- 0
-substring$ -- 435
-swap$ -- 279
+substring$ -- 440
+swap$ -- 282
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 152
-warning$ -- 27
-while$ -- 54
-width$ -- 41
-write$ -- 396
+type$ -- 156
+warning$ -- 28
+while$ -- 56
+width$ -- 42
+write$ -- 405
 (There were 6 error messages)

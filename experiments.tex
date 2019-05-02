@@ -204,7 +204,9 @@ Before Cloudify Manager could use Host-pool Service to allocate hosts for the de
 
 \subsubsection*{Results}
 
-As Host-pool Plugin allocates the requested available hosts in order, Slave-1 was designated as the \textit{nodejs\_host} and Slave-2 as \textit{mongod\_host}. To verify that the 
+As Host-pool Plugin allocates the requested available hosts in order, Slave-1 was designated as the \textit{nodejs\_host} and Slave-2 as \textit{mongod\_host}. To verify that the application is usable and served correctly I forwarded another port via wint-13 bastion host and Master host so that I could  view the web page on my local machine. Figure ~\ref{fig:nodecellar} shows a screenshot of the Nodecellar application. I could also add and remove wines to and from the system as seen on figure ~\ref{fig:chateau}. This validated that the MongoDB database on the second host as well as the connection between the hosts functioned correctly.
+
+Overall it can be concluded that Discovery Service and the modified Host-pool Service function correctly in the experimental scope of this thesis.
 
  \begin{figure}[ht!]
 \centering
@@ -216,6 +218,6 @@ As Host-pool Plugin allocates the requested available hosts in order, Slave-1 wa
  \begin{figure}[ht!]
 \centering
   \includegraphics[width=12cm,height=12cm, keepaspectratio]{chateaudiscoveryservice.png}%
-  \caption{Nodecellar allows the user to add their own wines to the list.}
+  \caption{Nodecellar allows the user to add their own wines to the list. This particular vintage is a real labour of love.}
   \label{fig:chateau}
 \end{figure}
