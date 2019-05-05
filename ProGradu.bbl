@@ -52,6 +52,12 @@
 \newblock \url{https://docs.openstack.org/heat/latest/}.
 \newblock Accessed 26.1.2019.
 
+\bibitem {ibmmulticloud}
+\btxtitlefont {\btxifchangecase {Ibm hybrid, multicloud management}{IBM Hybrid,
+  multicloud management}}.
+\newblock \url{https://www.ibm.com/cloud/management}.
+\newblock Accessed 5.5.2019.
+
 \bibitem {Kubernetes}
 \btxtitlefont {\btxifchangecase {Kubernetes}{Kubernetes}}.
 \newblock \url{https://kubernetes.io/}.
@@ -84,6 +90,11 @@
 \btxtitlefont {\btxifchangecase {{Oracle VirtualBox}}{{Oracle VirtualBox}}}.
 \newblock \url{https://www.virtualbox.org/}.
 \newblock Accessed: 1.11.2016.
+
+\bibitem {packet}
+\btxtitlefont {\btxifchangecase {Packet}{Packet}}.
+\newblock \url{https://packet.com/}.
+\newblock Accessed 5.5.2019.
 
 \bibitem {paramiko}
 \btxtitlefont {\btxifchangecase {Paramiko}{Paramiko}}.
@@ -123,6 +134,11 @@
 \newblock \url{http://www.vmware.com/products/workstation.html}.
 \newblock Accessed: 1.11.2016.
 
+\bibitem {vultr}
+\btxtitlefont {\btxifchangecase {Vultr}{Vultr}}.
+\newblock \url{https://vultr.com/}.
+\newblock Accessed 5.5.2019.
+
 \bibitem {xen}
 \btxtitlefont {\btxifchangecase {Xen project}{Xen Project}}.
 \newblock \url{https://www.xenproject.org/l}.
@@ -135,11 +151,6 @@
   \btxprintmonthyear{.}{1}{2018}{long}.
 \newblock Latest version:
   \url{http://docs.oasis-open.org/tosca/TOSCA-Simple-Profile-YAML/v1.1/TOSCA-Simple-Profile-YAML-v1.1.html}.
-
-\bibitem {anderson2015technology}
-\btxnamefont {\btxlastnamefont {Anderson}, Monica}\btxauthorcolon\
-  \btxpublisherfont {\btxtitlefont {Technology Device Ownership, 2015}}.
-\newblock 2015.
 
 \bibitem {ArpaciDusseau14-Book}
 \btxnamefont {\btxlastnamefont {Arpaci-Dusseau}, Remzi\btxfnamespacelong H.}
@@ -230,6 +241,13 @@
 \newblock \Btxinlong {}\ \btxtitlefont {2012 International Conference on
   Computing, Electronics and Electrical Technologies (ICCEET)}, \btxpageslong
   {}\ 877--880, \btxprintmonthyear{.}{March}{2012}{long}.
+
+\bibitem {openstacksurvey}
+\btxnamefont {\btxlastnamefont {Jimmy~McArthur}, Alison\btxfnamespacelong
+  Price\btxfnamespacelong et\btxfnamespacelong al.}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {2018 openstack user survey report}{2018
+  OpenStack User Survey Report}}.
+\newblock \btxtechreplong {}, 2018.
 
 \bibitem {osv}
 \btxnamefont {\btxlastnamefont {Kivity}, Avi}, \btxnamefont {\btxlastnamefont

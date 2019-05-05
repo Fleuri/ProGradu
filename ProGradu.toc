@@ -1,53 +1,53 @@
 \select@language {english}
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}
-\contentsline {section}{\numberline {2}Background}{1}{section.2}
-\contentsline {subsection}{\numberline {2.1}Heterogeneous clouds, bare-metal and hybrid}{3}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Virtualisation Techniques}{4}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Full virtualisation}{4}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Hardware-Layer virtualisation}{4}{subsubsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.3}Container-based virtualisation}{5}{subsubsection.2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.4}Paravirtualisation}{7}{subsubsection.2.2.4}
-\contentsline {subsubsection}{\numberline {2.2.5}Unikernels}{7}{subsubsection.2.2.5}
-\contentsline {subsubsection}{\numberline {2.2.6}Bare-metal cloud computing}{8}{subsubsection.2.2.6}
-\contentsline {subsection}{\numberline {2.3}Experiment technologies}{8}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}OpenStack}{8}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}Cloudify}{8}{subsubsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3}Comparison of OpenStack and Cloudify}{9}{subsubsection.2.3.3}
-\contentsline {subsubsection}{\numberline {2.3.4}Docker}{9}{subsubsection.2.3.4}
-\contentsline {section}{\numberline {3}System Design and Implementation}{10}{section.3}
-\contentsline {subsection}{\numberline {3.1}Design overview}{11}{subsection.3.1}
-\contentsline {section}{\numberline {4}Technical Implementation}{13}{section.4}
-\contentsline {subsection}{\numberline {4.1}Network Scanner}{15}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}Sniffer}{15}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}Start-up routine}{17}{subsubsection.4.1.2}
-\contentsline {subsubsection}{\numberline {4.1.3}Pinger}{17}{subsubsection.4.1.3}
-\contentsline {subsection}{\numberline {4.2}Request Service}{18}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Id checking}{21}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Adding a new host to Host-pool Service}{21}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}Limitations and assumptions of the Discovery Service}{22}{subsubsection.4.2.3}
-\contentsline {subsubsection}{\numberline {4.2.4}Patching a host}{22}{subsubsection.4.2.4}
-\contentsline {subsection}{\numberline {4.3}Specification retriever}{23}{subsection.4.3}
-\contentsline {subsubsection}{\numberline {4.3.1}Technical implementation of the Specification Retriever}{24}{subsubsection.4.3.1}
-\contentsline {section}{\numberline {5}Experiments}{28}{section.5}
-\contentsline {subsection}{\numberline {5.1}Hardware set-up}{28}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Software environment set-up}{30}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Test cases}{31}{subsection.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}Discovering hosts at start up}{33}{subsubsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.2}Detecting a joining host}{33}{subsubsection.5.3.2}
-\contentsline {subsubsection}{\numberline {5.3.3}Detecting a departed host}{34}{subsubsection.5.3.3}
-\contentsline {subsubsection}{\numberline {5.3.4}Patching a host}{35}{subsubsection.5.3.4}
-\contentsline {subsubsection}{\numberline {5.3.5}Retrieving hardware data from the hosts}{36}{subsubsection.5.3.5}
-\contentsline {subsubsection}{\numberline {5.3.6}Running an example workload in the system}{37}{subsubsection.5.3.6}
-\contentsline {section}{\numberline {6}Related work}{40}{section.6}
-\contentsline {section}{\numberline {7}Future Research}{40}{section.7}
-\contentsline {section}{\numberline {8}Conclusions}{40}{section.8}
-\contentsline {section}{Sources}{40}{section*.9}
+\contentsline {section}{\numberline {2}Background}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Heterogeneous clouds, bare-metal and hybrid}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Virtualisation Techniques}{5}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Full virtualisation}{5}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Hardware-Layer virtualisation}{5}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Container-based virtualisation}{6}{subsubsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.4}Paravirtualisation}{8}{subsubsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.5}Unikernels}{8}{subsubsection.2.2.5}
+\contentsline {subsubsection}{\numberline {2.2.6}Bare-metal cloud computing}{9}{subsubsection.2.2.6}
+\contentsline {subsection}{\numberline {2.3}Experiment technologies}{9}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}OpenStack}{9}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Cloudify}{9}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Comparison of OpenStack and Cloudify}{10}{subsubsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.4}Docker}{10}{subsubsection.2.3.4}
+\contentsline {section}{\numberline {3}System Design and Implementation}{11}{section.3}
+\contentsline {subsection}{\numberline {3.1}Design overview}{12}{subsection.3.1}
+\contentsline {section}{\numberline {4}Technical Implementation}{14}{section.4}
+\contentsline {subsection}{\numberline {4.1}Network Scanner}{16}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Sniffer}{16}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Start-up routine}{18}{subsubsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.3}Pinger}{18}{subsubsection.4.1.3}
+\contentsline {subsection}{\numberline {4.2}Request Service}{20}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Id checking}{23}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Adding a new host to Host-pool Service}{23}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Limitations and assumptions of the Discovery Service}{24}{subsubsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.4}Patching a host}{24}{subsubsection.4.2.4}
+\contentsline {subsection}{\numberline {4.3}Specification retriever}{25}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Technical implementation of the Specification Retriever}{26}{subsubsection.4.3.1}
+\contentsline {section}{\numberline {5}Experiments}{30}{section.5}
+\contentsline {subsection}{\numberline {5.1}Hardware set-up}{30}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Software environment set-up}{32}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Test cases}{33}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Discovering hosts at start up}{35}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Detecting a joining host}{35}{subsubsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.3}Detecting a departed host}{36}{subsubsection.5.3.3}
+\contentsline {subsubsection}{\numberline {5.3.4}Patching a host}{37}{subsubsection.5.3.4}
+\contentsline {subsubsection}{\numberline {5.3.5}Retrieving hardware data from the hosts}{38}{subsubsection.5.3.5}
+\contentsline {subsubsection}{\numberline {5.3.6}Running an example workload in the system}{39}{subsubsection.5.3.6}
+\contentsline {section}{\numberline {6}Related work}{42}{section.6}
+\contentsline {section}{\numberline {7}Future Research}{42}{section.7}
+\contentsline {section}{\numberline {8}Conclusions}{42}{section.8}
+\contentsline {section}{Sources}{42}{section*.9}
 \select@language {english}
 \select@language {english}
 \select@language {english}
 \select@language {english}
-\contentsline {section}{\numberline {A}Test measurements}{45}{appendix.A}
-\contentsline {subsection}{\numberline {A.1}All start-up scan times}{45}{subsection.A.1}
-\contentsline {subsection}{\numberline {A.2}All host discovery times}{46}{subsection.A.2}
-\contentsline {subsection}{\numberline {A.3}All host disconnection times}{48}{subsection.A.3}
-\contentsline {subsection}{\numberline {A.4}All host patching times}{50}{subsection.A.4}
+\contentsline {section}{\numberline {A}Test measurements}{47}{appendix.A}
+\contentsline {subsection}{\numberline {A.1}All start-up scan times}{47}{subsection.A.1}
+\contentsline {subsection}{\numberline {A.2}All host discovery times}{48}{subsection.A.2}
+\contentsline {subsection}{\numberline {A.3}All host disconnection times}{50}{subsection.A.3}
+\contentsline {subsection}{\numberline {A.4}All host patching times}{52}{subsection.A.4}

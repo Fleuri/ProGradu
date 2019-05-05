@@ -3,6 +3,11 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ProGradu.aux
 The style file: babplain-lf.bst
 Database file #1: references-en.bib
+Warning--to sort, need author or key in vultr
+Warning--to sort, need author or key in packet
+Warning--to sort, need author or key in ibmmulticloud
+Warning--to sort, need author or key in Kubernetes
+Warning--to sort, need author or key in cloudify
 Warning--to sort, need author or key in raspberry
 Warning--to sort, need author or key in VirtualBox
 Warning--to sort, need author or key in WorkStation
@@ -18,11 +23,9 @@ Warning--to sort, need author or key in mirage
 Warning--to sort, need author or key in openstackproject
 Warning--to sort, need author or key in openstackpartners
 Warning--to sort, need author or key in openstackfeatures
-Warning--to sort, need author or key in cloudify
 Warning--to sort, need author or key in Tosca
 Warning--to sort, need author or key in heat
 Warning--to sort, need author or key in dockerdocumentation
-Warning--to sort, need author or key in Kubernetes
 Warning--to sort, need author or key in host-pool-service
 Warning--to sort, need author or key in Redis
 Warning--to sort, need author or key in scapy
@@ -33,7 +36,6 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty language in cloudify
 Warning--empty author in Tosca
 Warning--empty institution in Tosca
-Warning--empty publisher in anderson2015technology
 Too many commas in name 1 of "Donald E. Porter, Galen Hunt, Jon Howell, Reuben Olinsky, Silas Boyd-Wickizer" for entry libos
 while executing---line 1379 of file babplain-lf.bst
 Too many commas in name 1 of "Donald E. Porter, Galen Hunt, Jon Howell, Reuben Olinsky, Silas Boyd-Wickizer" for entry libos
@@ -43,46 +45,47 @@ while executing---line 1379 of file babplain-lf.bst
 Too many commas in name 1 of "Donald E. Porter, Galen Hunt, Jon Howell, Reuben Olinsky, Silas Boyd-Wickizer" for entry libos
 while executing---line 1379 of file babplain-lf.bst
 Warning--empty institution in stateofthecloud
+Warning--empty institution in openstacksurvey
 Warning--empty institution in Mell:2011:SND:2206223
-You've used 40 entries,
+You've used 43 entries,
             2783 wiz_defined-function locations,
-            850 strings with 12141 characters,
-and the built_in function-call counts, 13405 in all, are:
-= -- 1141
-> -- 404
+            861 strings with 12397 characters,
+and the built_in function-call counts, 14027 in all, are:
+= -- 1200
+> -- 407
 < -- 7
-+ -- 174
++ -- 177
 - -- 134
-* -- 1266
-:= -- 1753
-add.period$ -- 109
-call.type$ -- 40
-change.case$ -- 187
+* -- 1302
+:= -- 1832
+add.period$ -- 118
+call.type$ -- 43
+change.case$ -- 197
 chr.to.int$ -- 0
-cite$ -- 68
-duplicate$ -- 709
-empty$ -- 1489
+cite$ -- 74
+duplicate$ -- 738
+empty$ -- 1578
 format.name$ -- 212
-if$ -- 2986
+if$ -- 3138
 int.to.chr$ -- 0
-int.to.str$ -- 40
-missing$ -- 20
-newline$ -- 203
+int.to.str$ -- 43
+missing$ -- 18
+newline$ -- 218
 num.names$ -- 36
-pop$ -- 464
+pop$ -- 498
 preamble$ -- 1
-purify$ -- 147
+purify$ -- 153
 quote$ -- 0
-skip$ -- 399
+skip$ -- 419
 stack$ -- 0
-substring$ -- 440
-swap$ -- 282
+substring$ -- 455
+swap$ -- 287
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 156
-warning$ -- 28
+type$ -- 170
+warning$ -- 31
 while$ -- 56
-width$ -- 42
-write$ -- 405
+width$ -- 45
+write$ -- 433
 (There were 6 error messages)
