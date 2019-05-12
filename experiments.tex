@@ -1,4 +1,4 @@
-\section{Experiments}
+\section{Experiments} \label{experiments}
 
 During development, the Discovery Service and Specification Retriever software were tested separately by mocking other elements in the Cloudify cluster. This section describes the experiments and their set-ups used to verify that different components integrate and work together flawlessly in a full environment built on real machines. The components in question are the aforementioned Discovery Service and Specification Retriever in addition to Host-Pool Service, Cloudify Manager, Host-Pool Plugin and the test workload, Cloudify Nodecellar Example\cite{Nodecellar}.
 
@@ -211,7 +211,7 @@ Overall it can be concluded that Discovery Service and the modified Host-pool Se
  \begin{figure}[ht!]
 \centering
   \includegraphics[width=12cm,height=12cm, keepaspectratio]{Nodecellarscreenshot.png}%
-  \caption{Cloudify Nodecellar Example's landing page.}
+  \caption{Cloudify Nodecellar Example's landing page when deployed on the test bed cluster. The localhost IP address is due to port being forwarded to the \textit{node\_js} host.}
   \label{fig:nodecellar}
 \end{figure}
 

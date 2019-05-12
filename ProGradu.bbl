@@ -101,6 +101,11 @@
 \newblock \url{http://www.paramiko.org/}.
 \newblock Accessed 12.12.2018.
 
+\bibitem {rancher}
+\btxtitlefont {\btxifchangecase {Rancher}{Rancher}}.
+\newblock \url{https://www.rancher.com}.
+\newblock Accessed 5.5.2019.
+
 \bibitem {raspberry}
 \btxtitlefont {\btxifchangecase {Raspberry pi}{Raspberry PI}}.
 \newblock \url{https://www.raspberrypi.org/}.

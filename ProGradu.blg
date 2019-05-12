@@ -6,6 +6,7 @@ Database file #1: references-en.bib
 Warning--to sort, need author or key in vultr
 Warning--to sort, need author or key in packet
 Warning--to sort, need author or key in ibmmulticloud
+Warning--to sort, need author or key in rancher
 Warning--to sort, need author or key in Kubernetes
 Warning--to sort, need author or key in cloudify
 Warning--to sort, need author or key in raspberry
@@ -47,45 +48,45 @@ while executing---line 1379 of file babplain-lf.bst
 Warning--empty institution in stateofthecloud
 Warning--empty institution in openstacksurvey
 Warning--empty institution in Mell:2011:SND:2206223
-You've used 43 entries,
+You've used 44 entries,
             2783 wiz_defined-function locations,
-            861 strings with 12397 characters,
-and the built_in function-call counts, 14027 in all, are:
-= -- 1200
-> -- 407
+            864 strings with 12440 characters,
+and the built_in function-call counts, 14239 in all, are:
+= -- 1219
+> -- 408
 < -- 7
-+ -- 177
++ -- 178
 - -- 134
-* -- 1302
-:= -- 1832
-add.period$ -- 118
-call.type$ -- 43
-change.case$ -- 197
+* -- 1313
+:= -- 1857
+add.period$ -- 121
+call.type$ -- 44
+change.case$ -- 200
 chr.to.int$ -- 0
-cite$ -- 74
-duplicate$ -- 738
-empty$ -- 1578
+cite$ -- 76
+duplicate$ -- 749
+empty$ -- 1610
 format.name$ -- 212
-if$ -- 3138
+if$ -- 3191
 int.to.chr$ -- 0
-int.to.str$ -- 43
+int.to.str$ -- 44
 missing$ -- 18
-newline$ -- 218
+newline$ -- 223
 num.names$ -- 36
-pop$ -- 498
+pop$ -- 511
 preamble$ -- 1
-purify$ -- 153
+purify$ -- 155
 quote$ -- 0
-skip$ -- 419
+skip$ -- 426
 stack$ -- 0
-substring$ -- 455
-swap$ -- 287
+substring$ -- 460
+swap$ -- 289
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 170
-warning$ -- 31
+type$ -- 174
+warning$ -- 32
 while$ -- 56
-width$ -- 45
-write$ -- 433
+width$ -- 46
+write$ -- 442
 (There were 6 error messages)
