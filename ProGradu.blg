@@ -48,45 +48,45 @@ while executing---line 1379 of file babplain-lf.bst
 Warning--empty institution in stateofthecloud
 Warning--empty institution in openstacksurvey
 Warning--empty institution in Mell:2011:SND:2206223
-You've used 44 entries,
+You've used 46 entries,
             2783 wiz_defined-function locations,
-            864 strings with 12440 characters,
-and the built_in function-call counts, 14239 in all, are:
-= -- 1219
-> -- 408
-< -- 7
-+ -- 178
-- -- 134
-* -- 1313
-:= -- 1857
-add.period$ -- 121
-call.type$ -- 44
-change.case$ -- 200
+            882 strings with 13388 characters,
+and the built_in function-call counts, 15993 in all, are:
+= -- 1345
+> -- 511
+< -- 9
++ -- 215
+- -- 169
+* -- 1576
+:= -- 2078
+add.period$ -- 128
+call.type$ -- 46
+change.case$ -- 216
 chr.to.int$ -- 0
-cite$ -- 76
-duplicate$ -- 749
-empty$ -- 1610
-format.name$ -- 212
-if$ -- 3191
+cite$ -- 78
+duplicate$ -- 851
+empty$ -- 1753
+format.name$ -- 275
+if$ -- 3543
 int.to.chr$ -- 0
-int.to.str$ -- 44
-missing$ -- 18
-newline$ -- 223
-num.names$ -- 36
-pop$ -- 511
+int.to.str$ -- 46
+missing$ -- 20
+newline$ -- 232
+num.names$ -- 42
+pop$ -- 532
 preamble$ -- 1
-purify$ -- 155
+purify$ -- 169
 quote$ -- 0
-skip$ -- 426
+skip$ -- 463
 stack$ -- 0
-substring$ -- 460
-swap$ -- 289
-text.length$ -- 7
+substring$ -- 526
+swap$ -- 361
+text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 174
+type$ -- 182
 warning$ -- 32
-while$ -- 56
-width$ -- 46
-write$ -- 442
+while$ -- 67
+width$ -- 48
+write$ -- 470
 (There were 6 error messages)

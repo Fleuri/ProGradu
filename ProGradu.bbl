@@ -280,6 +280,32 @@
   \mbox{\btxISSN~\btxISSNfont {0001-0782}}}.
 \newblock {\latintext \btxurlfont{http://doi.acm.org/10.1145/1400181.1400186}}.
 
+\bibitem {virtualisation_overhead}
+\btxnamefont {\btxlastnamefont {Luszczek}, Piotr}, \btxnamefont
+  {\btxlastnamefont {Meek}, Eric}, \btxnamefont {\btxlastnamefont {Moore},
+  Shirley}, \btxnamefont {\btxlastnamefont {Terpstra}, Dan}, \btxnamefont
+  {\btxlastnamefont {Weaver}, Vincent\btxfnamespacelong M.}\btxandcomma {}
+  \btxandlong {}\ \btxnamefont {\btxlastnamefont {Dongarra},
+  Jack}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Evaluation of the hpc
+  challenge benchmarks in virtualized environments}{Evaluation of the HPC
+  Challenge Benchmarks in Virtualized Environments}}.
+\newblock \Btxinlong {}\ \btxnamefont {\btxlastnamefont {Alexander}, Michael},
+  \btxnamefont {\btxlastnamefont {D'Ambra}, Pasqua}, \btxnamefont
+  {\btxlastnamefont {Belloum}, Adam}, \btxnamefont {\btxlastnamefont {Bosilca},
+  George}, \btxnamefont {\btxlastnamefont {Cannataro}, Mario}, \btxnamefont
+  {\btxlastnamefont {Danelutto}, Marco}, \btxnamefont {\btxlastnamefont
+  {Di~Martino}, Beniamino}, \btxnamefont {\btxlastnamefont {Gerndt}, Michael},
+  \btxnamefont {\btxlastnamefont {Jeannot}, Emmanuel}, \btxnamefont
+  {\btxlastnamefont {Namyst}, Raymond}, \btxnamefont {\btxlastnamefont {Roman},
+  Jean}, \btxnamefont {\btxlastnamefont {Scott}, Stephen\btxfnamespacelong L.},
+  \btxnamefont {\btxlastnamefont {Traff}, Jesper\btxfnamespacelong Larsson},
+  \btxnamefont {\btxlastnamefont {Vall{\'e}e}, Geoffroy}\btxandcomma {}
+  \btxandlong {}\ \btxnamefont {\btxlastnamefont {Weidendorfer}, Josef}\
+  (\btxeditorslong {}): \btxtitlefont {Euro-Par 2011: Parallel Processing
+  Workshops}, \btxpageslong {}\ 436--445, Berlin, Heidelberg, 2012.
+  \btxpublisherfont {Springer Berlin Heidelberg}\ifbtxprintISBN {,
+  \mbox{\btxISBN~\btxISBNfont {978-3-642-29740-3}}}.
+
 \bibitem {unikernels}
 \btxnamefont {\btxlastnamefont {Madhavapeddy}, Anil}, \btxnamefont
   {\btxlastnamefont {Mortier}, Richard}, \btxnamefont {\btxlastnamefont
@@ -334,6 +360,20 @@
   {\btxifchangecase {Openstack: Toward an open-source solution for cloud
   computing}{OpenStack: Toward an Open-Source Solution for Cloud Computing}},
   2012.
+
+\bibitem {legoos}
+\btxnamefont {\btxlastnamefont {Shan}, Yizhou}, \btxnamefont {\btxlastnamefont
+  {Huang}, Yutong}, \btxnamefont {\btxlastnamefont {Chen}, Yilun}\btxandcomma
+  {} \btxandlong {}\ \btxnamefont {\btxlastnamefont {Zhang},
+  Yiying}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Legoos: A
+  disseminated, distributed {OS} for hardware resource disaggregation}{LegoOS:
+  A Disseminated, Distributed {OS} for Hardware Resource Disaggregation}}.
+\newblock \Btxinlong {}\ \btxtitlefont {2019 {USENIX} Annual Technical
+  Conference ({USENIX} {ATC} 19)}, \btxpageslong {}\ 69--87, Renton, WA, 2019.
+  \btxpublisherfont {{USENIX} Association}\ifbtxprintISBN {,
+  \mbox{\btxISBN~\btxISBNfont {978-1-931971-47-8}}}.
+\newblock {\latintext
+  \btxurlfont{https://www.usenix.org/conference/atc19/presentation/shan}}.
 
 \bibitem {Xaviercontainer}
 \btxnamefont {\btxlastnamefont {Xavier}, M.\btxfnamespacelong G.}, \btxnamefont
