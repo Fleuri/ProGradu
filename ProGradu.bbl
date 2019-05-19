@@ -13,6 +13,11 @@
   \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
 
 \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem {MaaS}
+\btxtitlefont {\btxifchangecase {Canonical maas}{Canonical MaaS}}.
+\newblock \url{https://maas.io/}.
+\newblock Accessed 19.5.2019.
+
 \bibitem {cloudify}
 \btxtitlefont {\btxifchangecase {Cloudify}{Cloudify}}.
 \newblock \url{https://cloudify.co/}.
@@ -57,6 +62,11 @@
   multicloud management}}.
 \newblock \url{https://www.ibm.com/cloud/management}.
 \newblock Accessed 5.5.2019.
+
+\bibitem {ironic}
+\btxtitlefont {\btxifchangecase {ironic}{ironic}}.
+\newblock \url{https://wiki.openstack.org/wiki/Ironicl}.
+\newblock Accessed 19.5.2019.
 
 \bibitem {Kubernetes}
 \btxtitlefont {\btxifchangecase {Kubernetes}{Kubernetes}}.
@@ -110,6 +120,11 @@
 \btxtitlefont {\btxifchangecase {Raspberry pi}{Raspberry PI}}.
 \newblock \url{https://www.raspberrypi.org/}.
 \newblock Accessed: 21.5.2017.
+
+\bibitem {razor}
+\btxtitlefont {\btxifchangecase {Razor}{Razor}}.
+\newblock \url{https://puppet.com/docs/pe/2017.1/razor_intro.html}.
+\newblock Accessed 19.5.2019.
 
 \bibitem {Redis}
 \btxtitlefont {\btxifchangecase {Redis}{Redis}}.
@@ -339,6 +354,18 @@
   \mbox{\btxISSN~\btxISSNfont {1075-3583}}}.
 \newblock {\latintext
   \btxurlfont{http://dl.acm.org/citation.cfm?id=2600239.2600241}}.
+
+\bibitem {baremetal}
+\btxnamefont {\btxlastnamefont {{Rad}}, P.}, \btxnamefont {\btxlastnamefont
+  {{Chronopoulos}}, A.\btxfnamespacelong T.}, \btxnamefont {\btxlastnamefont
+  {{Lama}}, P.}, \btxnamefont {\btxlastnamefont {{Madduri}}, P.}\btxandcomma {}
+  \btxandlong {}\ \btxnamefont {\btxlastnamefont {{Loader}},
+  C.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Benchmarking bare metal
+  cloud servers for hpc applications}{Benchmarking Bare Metal Cloud Servers for
+  HPC Applications}}.
+\newblock \Btxinlong {}\ \btxtitlefont {2015 IEEE International Conference on
+  Cloud Computing in Emerging Markets (CCEM)}, \btxpageslong {}\ 153--159,
+  \btxprintmonthyear{.}{Nov}{2015}{long}.
 
 \bibitem {taxonomy}
 \btxnamefont {\btxlastnamefont {Sahoo}, J.}, \btxnamefont {\btxlastnamefont

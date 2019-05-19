@@ -9,9 +9,9 @@
 \BOOKMARK [3][-]{subsubsection.2.3.4}{Paravirtualisation}{subsection.2.3}% 9
 \BOOKMARK [3][-]{subsubsection.2.3.5}{Unikernels}{subsection.2.3}% 10
 \BOOKMARK [3][-]{subsubsection.2.3.6}{Bare-metal cloud computing}{subsection.2.3}% 11
-\BOOKMARK [2][-]{subsection.2.4}{Experiment technologies}{section.2}% 12
-\BOOKMARK [3][-]{subsubsection.2.4.1}{OpenStack}{subsection.2.4}% 13
-\BOOKMARK [3][-]{subsubsection.2.4.2}{Cloudify}{subsection.2.4}% 14
+\BOOKMARK [2][-]{subsection.2.4}{Cloudify and Cloud Management Platforms}{section.2}% 12
+\BOOKMARK [3][-]{subsubsection.2.4.1}{Cloudify}{subsection.2.4}% 13
+\BOOKMARK [3][-]{subsubsection.2.4.2}{OpenStack}{subsection.2.4}% 14
 \BOOKMARK [3][-]{subsubsection.2.4.3}{Comparison of OpenStack and Cloudify}{subsection.2.4}% 15
 \BOOKMARK [3][-]{subsubsection.2.4.4}{Docker}{subsection.2.4}% 16
 \BOOKMARK [1][-]{section.3}{System Design and Implementation}{}% 17

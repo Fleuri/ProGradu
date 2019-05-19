@@ -17,7 +17,7 @@ The main advantage of full virtualisation is that it is easy to deploy and shoul
 
 \subsubsection{Hardware-Layer virtualisation}
 
-Hardware-Layer virtualisation is also a type of full virtualisation, but unlike Type 2 hypervisors, the so called \textit{Type 1 Hypervisors} (also \textit{native} and \textit{bare metal}) run directly on hardware. As seen on figure ~\ref{fig:hardware} there's no Host OS per se. Instead the Guest OSs access to hardware resources is controlled by the hypervisor.
+Hardware-Layer virtualisation is also a type of full virtualisation, but unlike Type 2 hypervisors, the so called \textit{Type 1 Hypervisors} (also \textit{native} and \textit{bare metal}) run directly on hardware. As seen in figure ~\ref{fig:hardware}, there's no Host OS per se. Instead the Guest OSes access to hardware resources is controlled by the hypervisor.
 
 \begin{figure}[ht!]
 \centering
@@ -26,7 +26,7 @@ Hardware-Layer virtualisation is also a type of full virtualisation, but unlike 
   \label{fig:hardware}
 \end{figure}
 
-Running directly on hardware, Hardware-Layer virtualisation techniques suffer less performance overhead than their OS-layer counterparts. On the other hand, Type 2 hypervisors being essentially applications themselves can be ran in parallel on the host OS whereas Type 1 hypervisors can not. For an average user, setting up a Type 1 hypervisor can be more difficult than Type 2. Commercial examples of Type 1 Hypervisors include Microsoft's \textit{Hyper-V}\cite{hyperv} and VMware's \textit{VSphere} \cite{vsphere}.
+Running directly on hardware, Hardware-Layer virtualisation techniques suffer less performance overhead than their OS-layer counterparts \cite{taxonomy}. On the other hand, Type 2 hypervisors being essentially applications themselves can be ran in parallel on the host OS whereas Type 1 hypervisors can not. For an average user, setting up a Type 1 hypervisor can be more difficult than Type 2. Commercial examples of Type 1 Hypervisors include Microsoft's \textit{Hyper-V}\cite{hyperv} and VMware's \textit{VSphere} \cite{vsphere}.
 
 \subsubsection{Container-based virtualisation}
 
@@ -45,7 +45,7 @@ The obvious drawback of the technique is that the kernel of the virtualised OS h
 
 \subsubsection{Paravirtualisation}
 
-Paravirtualisation differs from full virtualisation by requiring the Guest OS to be modified in order to accommodate the virtual environment in which it is ran. Otherwise the architecture is similar to that of full virtualisation, but with thinner hypervisor allowing performance close to that of a non-virtualised environment. A well-known example of a paravirtualisation hypervisor is \textit{Xen}\cite{xen}.
+Paravirtualisation differs from full virtualisation by requiring the Guest OS to be modified in order to accommodate the virtual environment in which it is ran. Otherwise the architecture is similar to that of full virtualisation, but with thinner hypervisor allowing performance close to that of a non-virtualised environment. A well-known example of a paravirtualisation hypervisor is \textit{Xen} \cite{xen}.
 
 \subsubsection{Unikernels}
 
@@ -59,20 +59,23 @@ Popular examples of unikernels are \textit{MirageOS}\cite{mirage} and \textit{OS
 
 \subsubsection{Bare-metal cloud computing}
 
-\subsection{Experiment technologies}
+While virtualisation is often desirable for its flexibility, multi-tenancy and other attributes, there are use cases in the cloud where a user would rather forego virtualisation. Bare-metal cloud computing refers to a practice of running distributed workloads directly on  cloud's physical servers much like one would with virtualised servers: Similar elements include for example abstraction and on-demand provisioning. Bare-metal is often preferred in High Powered Computing (HPC) use cases for maximum utilisation of computing power. Bare-metal's benefits include non-existent virtualisation overhead, ability to choose the hardware the workload runs on and can tune it for maximum performance, and single-tenancy ensuring that no other users are running workloads on the same physical machine which could interfere with each other \cite{baremetal}. On the other hand the aforementioned flexibility is lost and single-tenancy poses challenges on workloads if maximum resource usage is desired. 
 
-THIS SECTION SHOULD BE CHANGED!!!          
+Prominent bare-metal provisioning platforms include Openstack Ironic \cite{ironic}, Canonical Maas \cite{MaaS} and Razor \cite{razor}.
+
+\subsection{Cloudify and Cloud Management Platforms}
+
+TBD          
+
+\subsubsection{Cloudify}
+
+Cloudify \cite{cloudify} is an open-source orchestration software aiming to provide a unified control and modelling layer for common cloud computing platforms. Cloudify can be used to uniformly orchestrate heterogeneous sets of both virtual and physical cloud resources such as networking, computing and storage resources. They can also be provided from different environments such as OpenStack, AWS, Google Cloud Platform (GCP), Kubernetes and even bare-metal clouds. Orchestrating different versions of the same underlying cloud environment is also possible. The applications, workflows and the cloud infrastructure itself is described with OASIS TOSCA \cite{Tosca} based Domain Specific Language (DSL) in configuration files called \textit{blueprints} in Cloudify jargon. Configuration files are vendor-agnostic, meaning the same configuration can be reused with different underlying infrastructure. Cloudify \textit{plugins} act as an abstraction layer between the generic blueprints and cloud environments' more speclialised APIs. The generalising approach makes Cloudify suitable for hybrid clouds and allows seamless migration of resources between different environments.
 
 \subsubsection{OpenStack}
 
 OpenStack \cite{openstackproject} is an open-source software platform for cloud computing. A project originally founded by NASA and Rackspace Inc. now has a large base of supporting companies  \cite{openstackpartners} and a thriving community.
 	OpenStack allows its users to deploy a full-fledged cloud computing infrastructure. User can control pools of both physical and virtual computing, storage and networking resources. It can be run on commodity hardware and supports a plethora of enterprise- and open source technologies making it possible to use heterogeneous physical and software environments.
 	OpenStack consists of different projects that provide services for the system. A user can freely choose which services to deploy. Project range from essential \textit{Core Services} like computing, block storage, identity service and networking to more specific and specialised such as MapReduce and Bare-metal provisioning\cite{openstackproject}. OpenStack boasts many features: It is massively scalable supporting up to million physical and 80 million virtual machines \cite{openstack}. It also supports a wide array of market-leading virtualisation technologies such as QEMU, KVM and Xen and it is fully open-source with thriving community and industry backing \cite{openstackpartners}. Other features include fine-grained access control and multi-tenancy, fault-tolerance and self-healing \cite{openstackfeatures}.
-
-
-\subsubsection{Cloudify}
-
-Cloudify \cite{cloudify} is an open-source orchestration software aiming to provide a unified control and modelling layer for common cloud computing platforms. Cloudify can be used to uniformly orchestrate heterogeneous sets of both virtual and physical cloud resources such as networking, computing and storage resources. They can also be provided from different environments such as OpenStack, AWS, Google Cloud Platform (GCP), Kubernetes and even bare-metal clouds. Orchestrating different versions of the same underlying cloud environment is also possible. The applications, workflows and the cloud infrastructure itself is described with OASIS TOSCA \cite{Tosca} based Domain Specific Language (DSL) in configuration files called \textit{blueprints} in Cloudify jargon. Configuration files are vendor-agnostic, meaning the same configuration can be reused with different underlying infrastructure. Cloudify \textit{plugins} act as an abstraction layer between the generic blueprints and cloud environments' more speclialised APIs. The generalising approach makes Cloudify suitable for hybrid clouds and allows seamless migration of resources between different environments.
 
 \subsubsection{Comparison of OpenStack and Cloudify}
 

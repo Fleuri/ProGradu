@@ -21,10 +21,13 @@ while executing---line 1324 of file babplain-lf.bst
 Too many commas in name 1 of "Donald E. Porter, Galen Hunt, Jon Howell, Reuben Olinsky, Silas Boyd-Wickizer" for entry libos
 while executing---line 1324 of file babplain-lf.bst
 Warning--to sort, need author or key in mirage
+Warning--to sort, need author or key in ironic
+Warning--to sort, need author or key in MaaS
+Warning--to sort, need author or key in razor
+Warning--to sort, need author or key in Tosca
 Warning--to sort, need author or key in openstackproject
 Warning--to sort, need author or key in openstackpartners
 Warning--to sort, need author or key in openstackfeatures
-Warning--to sort, need author or key in Tosca
 Warning--to sort, need author or key in heat
 Warning--to sort, need author or key in dockerdocumentation
 Warning--to sort, need author or key in host-pool-service
@@ -34,7 +37,7 @@ Warning--to sort, need author or key in paramiko
 Warning--to sort, need author or key in Nodecellar
 Warning--to sort, need author or key in ironic_troubleshoot
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Warning--empty language in cloudify
+Warning--empty language in MaaS
 Warning--empty author in Tosca
 Warning--empty institution in Tosca
 Too many commas in name 1 of "Donald E. Porter, Galen Hunt, Jon Howell, Reuben Olinsky, Silas Boyd-Wickizer" for entry libos
@@ -48,45 +51,45 @@ while executing---line 1379 of file babplain-lf.bst
 Warning--empty institution in stateofthecloud
 Warning--empty institution in openstacksurvey
 Warning--empty institution in Mell:2011:SND:2206223
-You've used 46 entries,
+You've used 50 entries,
             2783 wiz_defined-function locations,
-            882 strings with 13388 characters,
-and the built_in function-call counts, 15993 in all, are:
-= -- 1345
-> -- 511
-< -- 9
-+ -- 215
-- -- 169
-* -- 1576
-:= -- 2078
-add.period$ -- 128
-call.type$ -- 46
-change.case$ -- 216
+            898 strings with 13804 characters,
+and the built_in function-call counts, 17277 in all, are:
+= -- 1455
+> -- 542
+< -- 10
++ -- 229
+- -- 179
+* -- 1681
+:= -- 2234
+add.period$ -- 139
+call.type$ -- 50
+change.case$ -- 233
 chr.to.int$ -- 0
-cite$ -- 78
-duplicate$ -- 851
-empty$ -- 1753
-format.name$ -- 275
-if$ -- 3543
+cite$ -- 85
+duplicate$ -- 921
+empty$ -- 1908
+format.name$ -- 291
+if$ -- 3844
 int.to.chr$ -- 0
-int.to.str$ -- 46
-missing$ -- 20
-newline$ -- 232
-num.names$ -- 42
-pop$ -- 532
+int.to.str$ -- 50
+missing$ -- 21
+newline$ -- 251
+num.names$ -- 44
+pop$ -- 585
 preamble$ -- 1
-purify$ -- 169
+purify$ -- 182
 quote$ -- 0
-skip$ -- 463
+skip$ -- 506
 stack$ -- 0
-substring$ -- 526
-swap$ -- 361
-text.length$ -- 9
+substring$ -- 574
+swap$ -- 389
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 182
-warning$ -- 32
-while$ -- 67
-width$ -- 48
-write$ -- 470
+type$ -- 198
+warning$ -- 35
+while$ -- 71
+width$ -- 52
+write$ -- 507
 (There were 6 error messages)
