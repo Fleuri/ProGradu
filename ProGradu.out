@@ -13,37 +13,35 @@
 \BOOKMARK [3][-]{subsubsection.2.4.1}{Cloudify}{subsection.2.4}% 13
 \BOOKMARK [3][-]{subsubsection.2.4.2}{OpenStack}{subsection.2.4}% 14
 \BOOKMARK [3][-]{subsubsection.2.4.3}{Comparison of OpenStack and Cloudify}{subsection.2.4}% 15
-\BOOKMARK [3][-]{subsubsection.2.4.4}{Docker}{subsection.2.4}% 16
-\BOOKMARK [1][-]{section.3}{System Design and Implementation}{}% 17
-\BOOKMARK [2][-]{subsection.3.1}{Design overview}{section.3}% 18
-\BOOKMARK [1][-]{section.4}{Technical Implementation}{}% 19
-\BOOKMARK [2][-]{subsection.4.1}{Network Scanner}{section.4}% 20
-\BOOKMARK [3][-]{subsubsection.4.1.1}{Sniffer}{subsection.4.1}% 21
-\BOOKMARK [3][-]{subsubsection.4.1.2}{Start-up routine}{subsection.4.1}% 22
-\BOOKMARK [3][-]{subsubsection.4.1.3}{Pinger}{subsection.4.1}% 23
-\BOOKMARK [2][-]{subsection.4.2}{Request Service}{section.4}% 24
-\BOOKMARK [3][-]{subsubsection.4.2.1}{Id checking}{subsection.4.2}% 25
-\BOOKMARK [3][-]{subsubsection.4.2.2}{Adding a new host to Host-pool Service}{subsection.4.2}% 26
-\BOOKMARK [3][-]{subsubsection.4.2.3}{Limitations and assumptions of the Discovery Service}{subsection.4.2}% 27
-\BOOKMARK [3][-]{subsubsection.4.2.4}{Patching a host}{subsection.4.2}% 28
-\BOOKMARK [2][-]{subsection.4.3}{Specification retriever}{section.4}% 29
-\BOOKMARK [3][-]{subsubsection.4.3.1}{Technical implementation of the Specification Retriever}{subsection.4.3}% 30
-\BOOKMARK [1][-]{section.5}{Experiments}{}% 31
-\BOOKMARK [2][-]{subsection.5.1}{Hardware set-up}{section.5}% 32
-\BOOKMARK [2][-]{subsection.5.2}{Software environment set-up}{section.5}% 33
-\BOOKMARK [2][-]{subsection.5.3}{Test cases}{section.5}% 34
-\BOOKMARK [3][-]{subsubsection.5.3.1}{Discovering hosts at start up}{subsection.5.3}% 35
-\BOOKMARK [3][-]{subsubsection.5.3.2}{Detecting a joining host}{subsection.5.3}% 36
-\BOOKMARK [3][-]{subsubsection.5.3.3}{Detecting a departed host}{subsection.5.3}% 37
-\BOOKMARK [3][-]{subsubsection.5.3.4}{Patching a host}{subsection.5.3}% 38
-\BOOKMARK [3][-]{subsubsection.5.3.5}{Retrieving hardware data from the hosts}{subsection.5.3}% 39
-\BOOKMARK [3][-]{subsubsection.5.3.6}{Running an example workload in the system}{subsection.5.3}% 40
-\BOOKMARK [1][-]{section.6}{Related work}{}% 41
-\BOOKMARK [1][-]{section.7}{Future Research}{}% 42
-\BOOKMARK [1][-]{section.8}{Conclusions}{}% 43
-\BOOKMARK [1][-]{section*.12}{Sources}{}% 44
-\BOOKMARK [1][-]{appendix.A}{Test measurements}{}% 45
-\BOOKMARK [2][-]{subsection.A.1}{All start-up scan times}{appendix.A}% 46
-\BOOKMARK [2][-]{subsection.A.2}{All host discovery times}{appendix.A}% 47
-\BOOKMARK [2][-]{subsection.A.3}{All host disconnection times}{appendix.A}% 48
-\BOOKMARK [2][-]{subsection.A.4}{All host patching times}{appendix.A}% 49
+\BOOKMARK [1][-]{section.3}{System Design and Implementation}{}% 16
+\BOOKMARK [2][-]{subsection.3.1}{Design overview}{section.3}% 17
+\BOOKMARK [1][-]{section.4}{Technical Implementation}{}% 18
+\BOOKMARK [2][-]{subsection.4.1}{Network Scanner}{section.4}% 19
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Sniffer}{subsection.4.1}% 20
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Start-up routine}{subsection.4.1}% 21
+\BOOKMARK [3][-]{subsubsection.4.1.3}{Pinger}{subsection.4.1}% 22
+\BOOKMARK [2][-]{subsection.4.2}{Request Service}{section.4}% 23
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Id checking}{subsection.4.2}% 24
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Adding a new host to Host-pool Service}{subsection.4.2}% 25
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Limitations and assumptions of the Discovery Service}{subsection.4.2}% 26
+\BOOKMARK [3][-]{subsubsection.4.2.4}{Patching a host}{subsection.4.2}% 27
+\BOOKMARK [2][-]{subsection.4.3}{Specification retriever}{section.4}% 28
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Technical implementation of the Specification Retriever}{subsection.4.3}% 29
+\BOOKMARK [1][-]{section.5}{Experiments}{}% 30
+\BOOKMARK [2][-]{subsection.5.1}{Hardware set-up}{section.5}% 31
+\BOOKMARK [2][-]{subsection.5.2}{Software environment set-up}{section.5}% 32
+\BOOKMARK [2][-]{subsection.5.3}{Test cases}{section.5}% 33
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Discovering hosts at start up}{subsection.5.3}% 34
+\BOOKMARK [3][-]{subsubsection.5.3.2}{Detecting a joining host}{subsection.5.3}% 35
+\BOOKMARK [3][-]{subsubsection.5.3.3}{Detecting a departed host}{subsection.5.3}% 36
+\BOOKMARK [3][-]{subsubsection.5.3.4}{Patching a host}{subsection.5.3}% 37
+\BOOKMARK [3][-]{subsubsection.5.3.5}{Retrieving hardware data from the hosts}{subsection.5.3}% 38
+\BOOKMARK [3][-]{subsubsection.5.3.6}{Running an example workload in the system}{subsection.5.3}% 39
+\BOOKMARK [1][-]{section.6}{Future Research}{}% 40
+\BOOKMARK [1][-]{section.7}{Conclusions}{}% 41
+\BOOKMARK [1][-]{section*.12}{Sources}{}% 42
+\BOOKMARK [1][-]{appendix.A}{Test measurements}{}% 43
+\BOOKMARK [2][-]{subsection.A.1}{All start-up scan times}{appendix.A}% 44
+\BOOKMARK [2][-]{subsection.A.2}{All host discovery times}{appendix.A}% 45
+\BOOKMARK [2][-]{subsection.A.3}{All host disconnection times}{appendix.A}% 46
+\BOOKMARK [2][-]{subsection.A.4}{All host patching times}{appendix.A}% 47

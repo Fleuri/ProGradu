@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.30)  19 MAY 2019 18:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.30)  21 MAY 2019 09:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1465,48 +1465,51 @@ LaTeX Font Info:    Font shape `T1/fve/m/sl' will be
 LaTeX Font Info:    Font shape `T1/fve/b/n' will be
 (Font)              scaled to size 10.79993pt on input line 7.
  [3] [4])
-(./virtualisationtech.tex [5] <fullvirt.jpeg, id=347, 485.815pt x 576.1525pt>
+(./virtualisationtech.tex [5] <fullvirt.jpeg, id=342, 485.815pt x 576.1525pt>
 File: fullvirt.jpeg Graphic file (type jpg)
 
 <use fullvirt.jpeg>
 Package pdftex.def Info: fullvirt.jpeg used on input line 11.
 (pdftex.def)             Requested size: 239.9195pt x 284.53261pt.
- <hwlayer.jpeg, id=352, 485.815pt x 403.5075pt>
+ <hwlayer.jpeg, id=347, 485.815pt x 403.5075pt>
 File: hwlayer.jpeg Graphic file (type jpg)
 
 <use hwlayer.jpeg>
 Package pdftex.def Info: hwlayer.jpeg used on input line 24.
 (pdftex.def)             Requested size: 284.52309pt x 236.31877pt.
- [6] <containers.png, id=370, 683.02235pt x 646.17882pt>
+ [6] <containers.png, id=365, 683.02235pt x 646.17882pt>
 File: containers.png Graphic file (type png)
 
 <use containers.png>
 Package pdftex.def Info: containers.png used on input line 37.
-(pdftex.def)             Requested size: 284.53288pt x 269.18463pt.
+(pdftex.def)             Requested size: 108.0011pt x 102.16809pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 42--44
 \T1/fve/m/n/10.95 (+20) tech-niques.
  []
 
-[7 <./fullvirt.jpeg>]
-
-LaTeX Warning: Text page 8 contains only floats.
-
-[8 <./hwlayer.jpeg> <./containers.png>] [9]
+[7 <./fullvirt.jpeg>] [8 <./hwlayer.jpeg> <./containers.png>] [9]
 Overfull \hbox (0.19632pt too wide) in paragraph at lines 64--65
 []\T1/fve/m/n/10.95 (-20) Prominent bare-metal pro-vi-sion-ing plat-forms in-cl
 ude Open-stack Ironic
  []
 
-[10] [11]) (./systemdesign.tex [12] [13]
-<Cloudify_roles.png, id=451, 442.65375pt x 364.9635pt>
+
+LaTeX Warning: Citation `multicloudprovisioning' on page 10 undefined on input 
+line 68.
+
+
+LaTeX Warning: Citation `jclouds' on page 10 undefined on input line 68.
+
+[10]) (./systemdesign.tex [11] [12]
+<Cloudify_roles.png, id=437, 442.65375pt x 364.9635pt>
 File: Cloudify_roles.png Graphic file (type png)
 
 <use Cloudify_roles.png>
 Package pdftex.def Info: Cloudify_roles.png used on input line 24.
 (pdftex.def)             Requested size: 284.54022pt x 234.60051pt.
 
-<Discovery_service.png, id=453, 731.28206pt x 338.31393pt>
+<Discovery_service.png, id=439, 731.28206pt x 338.31393pt>
 File: Discovery_service.png Graphic file (type png)
 
 <use Discovery_service.png>
@@ -1517,16 +1520,16 @@ Overfull \hbox (66.7996pt too wide) in paragraph at lines 37--38
  [][] 
  []
 
-) (./systemimplementation.tex [14] [15 <./Cloudify_roles.png> <./Discovery_serv
+) (./systemimplementation.tex [13] [14 <./Cloudify_roles.png> <./Discovery_serv
 ice.png>]
-<Discovery-service-communication.png, id=470, 723.70375pt x 723.70375pt>
+<Discovery-service-communication.png, id=454, 723.70375pt x 723.70375pt>
 File: Discovery-service-communication.png Graphic file (type png)
 
 <use Discovery-service-communication.png>
 Package pdftex.def Info: Discovery-service-communication.png used on input line
  10.
 (pdftex.def)             Requested size: 341.43282pt x 341.43282pt.
- [16 <./Discovery-service-communication.png>]
+ [15 <./Discovery-service-communication.png>]
 LaTeX Font Info:    Try loading font information for T1+fvm on input line 17.
  (/usr/share/texlive/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
@@ -1537,12 +1540,12 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [17]
+ [16]
 Overfull \hbox (0.79999pt too wide) detected at line 58
 |[]|
  []
 
-[18]
+[17]
 LaTeX Font Info:    Try loading font information for TS1+fve on input line 66.
  (/usr/share/texlive/texmf-dist/tex/latex/bera/ts1fve.fd
 File: ts1fve.fd 2004/09/07 scalable font definitions for TS1/fve.
@@ -1553,7 +1556,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `fve' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [19]
+ [18]
 Overfull \hbox (2.84242pt too wide) in paragraph at lines 83--84
 \T1/fve/m/n/10.95 (-20) to use: \T1/fve/m/sl/10.95 (-20) ping_timeout_threshold
  \T1/fve/m/n/10.95 (-20) and \T1/fve/m/sl/10.95 (-20) ping_interval\T1/fve/m/n/
@@ -1565,7 +1568,7 @@ Overfull \hbox (0.79999pt too wide) detected at line 113
 |[]|
  []
 
-[20]
+[19]
 LaTeX Font Info:    Font shape `T1/fve/m/n' will be
 (Font)              scaled to size 7.19995pt on input line 118.
 LaTeX Font Info:    Font shape `T1/fve/m/n' will be
@@ -1578,15 +1581,15 @@ LaTeX Font Info:    Font shape `T1/fve/m/it' in size <9> not available
 (Font)              Font shape `T1/fve/m/sl' tried instead on input line 118.
 LaTeX Font Info:    Font shape `T1/fve/m/sl' will be
 (Font)              scaled to size 8.09995pt on input line 118.
- [21] [22]
+ [20] [21]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 149.
- [23]
+ [22]
 Overfull \hbox (0.79999pt too wide) detected at line 202
 |[]|
  []
 
-[24]
+[23]
 Overfull \hbox (0.79999pt too wide) detected at line 229
 |[]|
  []
@@ -1602,26 +1605,26 @@ Overfull \hbox (0.79999pt too wide) detected at line 267
 |[]|
  []
 
-[25] [26] [27] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+[24] [25] [26] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (/home/fleuri/Projects/Cloudify/cloudify-host-pool-service/cloudify_hostpool/re
-st/backend.py) [28]
+st/backend.py) [27]
 (/home/fleuri/Projects/Cloudify/cloudify-host-pool-service/cloudify_hostpool/re
-st/backend.py) [29] [30]) (./experiments.tex
-<Network-venn.png, id=685, 526.96875pt x 403.5075pt>
+st/backend.py) [28] [29]) (./experiments.tex
+<Network-venn.png, id=670, 526.96875pt x 403.5075pt>
 File: Network-venn.png Graphic file (type png)
  <use Network-venn.png>
 Package pdftex.def Info: Network-venn.png used on input line 10.
 (pdftex.def)             Requested size: 341.44814pt x 261.45172pt.
 
-[31 <./Network-venn.png>] <testbed.jpg, id=693, 4075.225pt x 3056.41875pt>
+[30 <./Network-venn.png>] <testbed.jpg, id=679, 4075.225pt x 3056.41875pt>
 File: testbed.jpg Graphic file (type jpg)
 
 <use testbed.jpg>
 Package pdftex.def Info: testbed.jpg used on input line 19.
 (pdftex.def)             Requested size: 341.38383pt x 256.03787pt.
- [32 <./testbed.jpg>]
+ [31 <./testbed.jpg>]
 Overfull \hbox (4.37888pt too wide) in paragraph at lines 45--66
  [][] 
  []
@@ -1641,12 +1644,12 @@ Underfull \hbox (badness 2744) in paragraph at lines 73--74
 \T1/fve/m/n/10.95 (+20) though Cloud-ify doc-u-
  []
 
-[33] [34]
+[32] [33]
 Overfull \hbox (33.74025pt too wide) in paragraph at lines 89--102
  [][] 
  []
 
-[35] [36
+[34] [35
 
 
 ]
@@ -1654,55 +1657,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
-[37] [38]
+[36] [37]
 Overfull \hbox (92.15176pt too wide) in paragraph at lines 162--163
 [][]\T1/fvm/m/n/10.95 lscpu | awk '/Model name/' | sed -e 's/Model name://g' -e
  's/^[ \t]*//g'
  []
 
-<masterqueryscreenshot.png, id=747, 885.3075pt x 628.3475pt>
+<masterqueryscreenshot.png, id=733, 885.3075pt x 628.3475pt>
 File: masterqueryscreenshot.png Graphic file (type png)
 
 <use masterqueryscreenshot.png>
 Package pdftex.def Info: masterqueryscreenshot.png used on input line 169.
 (pdftex.def)             Requested size: 284.53348pt x 201.9478pt.
 
-<slave_3_specs_screenshot.png, id=748, 1362.08875pt x 242.9075pt>
+<slave_3_specs_screenshot.png, id=734, 1362.08875pt x 242.9075pt>
 File: slave_3_specs_screenshot.png Graphic file (type png)
 
 <use slave_3_specs_screenshot.png>
 Package pdftex.def Info: slave_3_specs_screenshot.png used on input line 176.
 (pdftex.def)             Requested size: 284.52986pt x 50.7415pt.
- [39]
-<consoletopology.png, id=761, 1371.1225pt x 743.77875pt>
+ [38]
+<consoletopology.png, id=746, 1371.1225pt x 743.77875pt>
 File: consoletopology.png Graphic file (type png)
 
 <use consoletopology.png>
 Package pdftex.def Info: consoletopology.png used on input line 187.
 (pdftex.def)             Requested size: 341.41988pt x 185.20653pt.
 
-<console_list.png, id=762, 1371.1225pt x 743.77875pt>
+<console_list.png, id=747, 1371.1225pt x 743.77875pt>
 File: console_list.png Graphic file (type png)
  <use console_list.png>
 Package pdftex.def Info: console_list.png used on input line 194.
 (pdftex.def)             Requested size: 341.41988pt x 185.20653pt.
 
-[40 <./masterqueryscreenshot.png> <./slave_3_specs_screenshot.png>] [41 <./cons
+[39 <./masterqueryscreenshot.png> <./slave_3_specs_screenshot.png>] [40 <./cons
 oletopology.png> <./console_list.png>]
-<Nodecellarscreenshot.png, id=779, 1371.1225pt x 743.77875pt>
+<Nodecellarscreenshot.png, id=765, 1371.1225pt x 743.77875pt>
 File: Nodecellarscreenshot.png Graphic file (type png)
 
 <use Nodecellarscreenshot.png>
 Package pdftex.def Info: Nodecellarscreenshot.png used on input line 213.
 (pdftex.def)             Requested size: 341.41988pt x 185.20653pt.
 
-<chateaudiscoveryservice.png, id=780, 1371.1225pt x 743.77875pt>
+<chateaudiscoveryservice.png, id=766, 1371.1225pt x 743.77875pt>
 File: chateaudiscoveryservice.png Graphic file (type png)
 
 <use chateaudiscoveryservice.png>
 Package pdftex.def Info: chateaudiscoveryservice.png used on input line 220.
 (pdftex.def)             Requested size: 341.41988pt x 185.20653pt.
-) (./futureresearch.tex [42 <./Nodecellarscreenshot.png>]) (./ProGradu.bbl
+) (./futureresearch.tex [41 <./Nodecellarscreenshot.png>]) (./ProGradu.bbl
 babelbib: Using the BibTeX style's default font for `name'.
 babelbib: Using the BibTeX style's default font for `lastname'.
 babelbib: Using the BibTeX style's default font for `title'.
@@ -1714,7 +1717,7 @@ babelbib: Using the BibTeX style's default font for `ISBN'.
 babelbib: Using the BibTeX style's default font for `ISSN'.
 babelbib: Using the BibTeX style's default font for `url'.
 babelbib: Using the BibTeX style's default font for `numeral'.
-[43 <./chateaudiscoveryservice.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 34--37
 []\T1/fve/m/sl/10.95 (+20) Cloudify node-cel-lar ex-am-ple\T1/fve/m/n/10.95 (+2
 0) .  []$\T1/fvm/m/n/10.95 https : / / github . com /
@@ -1726,7 +1729,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--37
 m/n/10.95 (+20) .  Ac-cessed
  []
 
-
+[42 <./chateaudiscoveryservice.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 50--54
 []\T1/fve/m/sl/10.95 (+20) Docker doc-u-men-ta-tion\T1/fve/m/n/10.95 (+20) .  [
 ]$\T1/fvm/m/n/10.95 https : / / docs . docker . com /
@@ -1756,7 +1759,7 @@ n/10.95 https : / / www . raspberrypi . org/$[]\T1/fve/m/n/10.95 (+20) .  Ac-ce
 ssed:
  []
 
-[44]
+[43]
 Underfull \hbox (badness 10000) in paragraph at lines 153--156
 []\T1/fve/m/sl/10.95 (+20) VMware work-sta-tion\T1/fve/m/n/10.95 (+20) .  []$\T
 1/fvm/m/n/10.95 http : / / www . vmware . com / products /
@@ -1793,7 +1796,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 218--229
 ublication /
  []
 
-[45]
+[44]
 Underfull \hbox (badness 2503) in paragraph at lines 273--289
 \T1/fve/m/sl/10.95 (+20) op-er-at-ing sys-tem for vir-tual ma-chines\T1/fve/m/n
 /10.95 (+20) .  In \T1/fve/m/sl/10.95 (+20) 2014 USENIX
@@ -1811,7 +1814,7 @@ Underfull \hbox (badness 4846) in paragraph at lines 273--289
 -tion,
  []
 
-[46] [47]) [48] (./measurementResults.tex
+[45] [46]) [47] (./measurementResults.tex
 Overfull \hbox (26.29918pt too wide) in alignment at lines 8--10
  [] [] [] [] 
  []
@@ -1831,7 +1834,7 @@ Overfull \hbox (26.29918pt too wide) in alignment at lines 34--44
  [] [] [] [] 
  []
 
-[49]
+[48]
 Overfull \hbox (47.56737pt too wide) in alignment at lines 52--54
  [] [] [] [] [] [] 
  []
@@ -1851,9 +1854,9 @@ Overfull \hbox (47.56737pt too wide) in alignment at lines 78--88
  [] [] [] [] [] [] 
  []
 
-[50
+[49
 
-] [51]
+] [50]
 Overfull \hbox (13.89308pt too wide) in alignment at lines 98--100
  [] [] [] [] [] [] 
  []
@@ -1873,44 +1876,60 @@ Overfull \hbox (13.89308pt too wide) in alignment at lines 124--134
  [] [] [] [] [] [] 
  []
 
-[52
+[51
 
 
-] [53] [54
+] [52] [53
 
 
 ]
 Underfull \vbox (badness 10000) detected at line 196
  []
 
-[55])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 209.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 209.
+[54])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 208.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 208.
  (./ProGradu.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 209.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 209.
-Package rerunfilecheck Info: File `ProGradu.out' has not changed.
-(rerunfilecheck)             Checksum: AC427063792199DD242FA4734A17A14B;3602.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 209.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 208.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 208.
+
+
+Package rerunfilecheck Warning: File `ProGradu.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `ProGradu.out':
+(rerunfilecheck)             Before: E460BE7C12E5692CE7A9A24E68E282E7;3554
+(rerunfilecheck)             After:  9278ED5B05A9BA70357942725A9EAF41;3488.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 208.
  ) 
 Here is how much of TeX's memory you used:
- 21571 strings out of 493029
- 352927 string characters out of 6136233
- 587160 words of memory out of 5000000
- 24208 multiletter control sequences out of 15000+600000
+ 21570 strings out of 493029
+ 352933 string characters out of 6136233
+ 587199 words of memory out of 5000000
+ 24209 multiletter control sequences out of 15000+600000
  83677 words of font info for 225 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  33i,18n,43p,10378b,1878s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texlive/texmf-
-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/bera/fveb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver
-8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/share/texmf/f
-onts/type1/public/lm/lmsy10.pfb>
-Output written on ProGradu.pdf (59 pages, 2836783 bytes).
+pdfTeX warning (dest): name{subsubsection.2.4.4} has been referenced but does
+ not exist, replaced by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texlive/texmf-di
+st/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/publi
+c/bera/fveb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver8a
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/share/texmf/fon
+ts/type1/public/lm/lmsy10.pfb>
+Output written on ProGradu.pdf (58 pages, 2835009 bytes).
 PDF statistics:
- 994 PDF objects out of 1000 (max. 8388607)
- 896 compressed objects within 9 object streams
- 302 named destinations out of 1000 (max. 500000)
- 29647 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 981 PDF objects out of 1000 (max. 8388607)
+ 884 compressed objects within 9 object streams
+ 300 named destinations out of 1000 (max. 500000)
+ 29639 words of extra memory for PDF output out of 29859 (max. 10000000)
 
