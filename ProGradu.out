@@ -37,11 +37,10 @@
 \BOOKMARK [3][-]{subsubsection.5.3.4}{Patching a host}{subsection.5.3}% 37
 \BOOKMARK [3][-]{subsubsection.5.3.5}{Retrieving hardware data from the hosts}{subsection.5.3}% 38
 \BOOKMARK [3][-]{subsubsection.5.3.6}{Running an example workload in the system}{subsection.5.3}% 39
-\BOOKMARK [1][-]{section.6}{Future Research}{}% 40
-\BOOKMARK [1][-]{section.7}{Conclusions}{}% 41
-\BOOKMARK [1][-]{section*.12}{Sources}{}% 42
-\BOOKMARK [1][-]{appendix.A}{Test measurements}{}% 43
-\BOOKMARK [2][-]{subsection.A.1}{All start-up scan times}{appendix.A}% 44
-\BOOKMARK [2][-]{subsection.A.2}{All host discovery times}{appendix.A}% 45
-\BOOKMARK [2][-]{subsection.A.3}{All host disconnection times}{appendix.A}% 46
-\BOOKMARK [2][-]{subsection.A.4}{All host patching times}{appendix.A}% 47
+\BOOKMARK [1][-]{section.6}{Future Research and Conclusions}{}% 40
+\BOOKMARK [1][-]{section*.12}{Sources}{}% 41
+\BOOKMARK [1][-]{appendix.A}{Test measurements}{}% 42
+\BOOKMARK [2][-]{subsection.A.1}{All start-up scan times}{appendix.A}% 43
+\BOOKMARK [2][-]{subsection.A.2}{All host discovery times}{appendix.A}% 44
+\BOOKMARK [2][-]{subsection.A.3}{All host disconnection times}{appendix.A}% 45
+\BOOKMARK [2][-]{subsection.A.4}{All host patching times}{appendix.A}% 46

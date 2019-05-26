@@ -13,9 +13,11 @@ In this thesis I identify shortcomings related to Cloudify's capability of manag
 \item A modification to Cloudify's Host-pool service so that it retrieves and stores hardware data and performance capabilities of the hosts. In the future Cloudify Manager can use this data to optimise resource usage and make more intelligent workload allocation choices.
 \end{enumerate}
 
-Both of the solutions integrate seamlessly with the existing Cloudify components. I also perform experiments on real machines to showcase and validate the capabilities and correctness of my solutions within the scope of this thesis.
+Both of the solutions integrate seamlessly with the existing Cloudify components. I also perform experiments on real machines to showcase and validate the capabilities and correctness of my solutions within the scope of this thesis. The features I am addressing are lacking likely because Cloudify's develpment team's focus has been on integrations with the major cloud platforms and generic hardware provisioning is a niche use case compared to them.
 
 The remainder of this thesis is structured as follows: First in section~\ref{background} I give a background overview of common cloud computing concepts. Then I follow with the background review of Cloudify, comparing it conceptually to OpenStack which serves as an example of a typical Cloud computing platform. I also provide a quick overview of hybrid cloud and bare-metal management tools similar to Cloudify.
 From section~\ref{systemdesign_and_implementation} onwards I focus on identifying the scope of the prototype and the shortcomings of Cloudify I set out to correct. I provide an overview of the parts in Cloudify with which my proposed system interacts with and detail a high level design of my solutions for automating host detection and retrieval and storage of hardware data. Section~\ref{technical_implementation} presents the lower level details of solutions' implementation followed by the experiments in section~\ref{experiments} showcasing and validating the solutions' capabilities. Finally in chapter~\ref{future} I review future work and research required to fully develop the system beyond the prototype.
+
+Both solutions, Discovery Service and Modified Host-pool Service, presented in this thesis are open source and can be found at \url{https://bitbucket.org/Fleuri/discoveryserviceforcloudify/src/master/}  and \url{https://github.com/Fleuri/cloudify-host-pool-service} respectively.
 
 \pagebreak

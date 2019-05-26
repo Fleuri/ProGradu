@@ -1,13 +1,15 @@
-\section{Future Research} \label{future}
+\section{Future Research and Conclusions} \label{future}
 
-Topics to be handled in this section
+As seen in the previous section, Discovery Service and Modified Host-pool Service work well within their their limited prototypical scope. There are however both major and minor assumptions, lacking features and programming solutions that should be addressed before the software could be regarded as a mature, full-fledged solution.
 
-\begin{itemize}
-\item {Robuster  error checking}
-\item {Check if linux commands exist}
-\item {Possibly unifying the data formats}
-\item {Key handling}
-\item {Support for windows hosts}
-\item {Robuster logging}
-\item {Sending ARP requests at the simultaneously during the start-up routine. Could also add a look-up range to speed up starting.}
-\end{itemize}
+As of now, Discovery Service does the bare minimum of error checking and. While no errors or bugs were detected while evaluating the system, there are some known possibilities for failure e.g. network communication failure between Discovery Service and Host-pool service would prevent Host-pool service from updating. There's also no robust logging in the system.
+Maybe the most major design issue in the system is the two different data formats with Redis having their own data for hosts and Host-pool service their own. This decision was made early in the project and its implications became apparent only later on. Granted, Discovery Service does not need as much data on the hosts than the Host-pool Service, but redesigning its data format to resemble that of Host-pool Service's could bring clarity to the source code and eliminate the need to match different primary keys (MAC addresses in Discovery Service, running count in Host-pool Service).
+The major assumptions of Discovery Service are that hosts are Linux hosts and that they have a common username and password. To mature Discovery Service, it should also work with Windows hosts. Key and credentials handling is a larger and more complex challenge and would likely require preparing the hosts somehow, like installing software on them beforehand.
+
+The Modified Host-pool Service's Specification Retriever also relies on assumption that the hosts in the network run Linux, but it does check for the fact before trying to run scripts on them. However it also makes an assumption that the commands it runs on the hosts exist on them. A production ready version should check if the command can be run before attempting to run it. It should also be able to support Windows hosts.
+
+An issue I noticed while working with Host-pool Service is that the \textit{alive} field is never used and by default all hosts are marked dead. Discovery Service could, instead of immediately removing an entry when a host leaves the network, manipulate the alive field.
+
+To be more in the line with other Cloudify components, Discovery Service should be packaged as a Cloudify Blueprint. 
+
+Finally, a larger scale performance testing could uncover issues that are not apparent in the prototypical scope of the works. Another project could be work on the Cloudify Manager to leverage on more detailed hardware data Host-pool Service now provides so that it could make more intelligent scheduling and provisioning decisions.
