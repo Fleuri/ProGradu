@@ -8,7 +8,7 @@ To verify that the Discovery Service and the Specification retriever function co
  \begin{figure}[ht!]
 \centering
   \includegraphics[width=12cm,height=12cm, keepaspectratio]{Network-venn.png}%
-  \caption{The testbed hosts are located in a private network but master and slave-3 can also access internet via bastion host wint-13}
+  \caption{The testbed hosts are located in a private network but master and slave-3 are also directly connected to network A.}
   \label{fig:network-venn}
 \end{figure}
 
@@ -21,24 +21,34 @@ The test-bed consist of a Lenovo Thinkpad T420S 4173L7G laptop computer with  4-
   \label{fig:test-bed}
 \end{figure}
 
-As seen on figure ~\ref{fig:network-venn}, the test-bed set up has two different networks. The Master can be accessed remotely via a bastion host \textit{wint-13}. Wint-13 itself is not a part of the test-bed set up, but it is used to access the testbed remotely and allow internet access for the master host.
+As seen on figure ~\ref{fig:network-venn}, the test-bed set up has two different networks. The Master can be accessed remotely via a bastion host \textit{wint-13}. Wint-13 itself is not a part of the test-bed set up, but it is used to access the testbed remotely and allow internet access for and through the master host.
 
-Master host has two network interfaces configure for each network it's a part of: The subnet 83.50.17.1 for outside access and 192.168.150.1 which is the subnet dedicated for the Cloudify cluster. Master also serves as a default gateway for all of the slaves. Figure ~\ref{fig:network-venn} shows how slave machines are part of the cluster subnet with static IP addresses. In addition slave-3 is also connected to the 83.50.17.1 subnet. This is to provide a way to drop the host off and connect it back the cluster network but still be able to access it remotely via external network. The physical network is wired with Ethernet cables connected to an HP 5412 zl V2 switch.
+Master host has two network interfaces configured for each network it's a part of: The subnet A for outside access and B which is the subnet dedicated for the Cloudify cluster. Master also serves as a default gateway for all of the slaves. Figure ~\ref{fig:network-venn} shows how slave machines are part of the cluster subnet with static IP addresses. In addition slave-3 is also connected to the A subnet. This is to provide a way to drop the host off and connect it back the cluster network but still be able to access it remotely via external network. The physical network is wired with Ethernet cables connected to an HP 5412 zl V2 switch.
 
 \subsection{Software environment set-up}
 
 As mentioned previously, slave hosts do not have many software requirements besides running a Linux distribution as an operating system and having an SSH server installed and accepting connections on the standard port 22. In the test-bed they also have their IP addresses and network interfaces configured statically.
 
-Master node is more intricate than slaves in addition to being more powerful. It has the similar requirements to slaves when it comes to SSH server, but additionally it also runs the following programs:
+Master node is more intricate than slaves in addition to being more powerful. It has the similar requirements to slaves when it comes to SSH server, but additionally it also runs the programs listed on table ~\ref{table:software}. 
 
-\begin{itemize}
-\item Cloudify Manager
-\item Host-pool Plugin within Cloudify Manager
-\item Modified Host-pool Service containing Specification Retriever
-\item Discovery service
-\item Docker
-\item Redis running in a Docker container
-\end{itemize}
+\begin{wraptable}{r}{\textwidth}
+\begin{tabular}{|l|l|}
+\hline
+Software & Version \\
+\hline
+Cloudify Manager & 18.10.4~community \\
+Host-pool Plugin within Cloudify Manager & 1.4 \\
+Modified Host-pool Service & 1.2 \\
+Discovery service & N/A \\
+Docker & 1.13.1 \\
+Redis running in a Docker container & 5.0.0 \\
+\hline
+\end{tabular}
+\label{table:software}
+\caption{List of software and their versions used in the experiment setup}
+\vspace{10pt}
+\end{wraptable}
+
 
 \begin{wraptable}{r}{8cm}
 \centering
@@ -74,12 +84,12 @@ Host-pool plugin runs as a Cloudify deployment managed by Cloudify manager. The 
 
 The Discovery Service is also run as standalone program and it doesn't reserve any ports. However the key-value storage the Discovery Service uses, Redis, is run in a docker container using the official Redis docker image. It reserves the standard  Redis port 6379.
 
-Finally, the server clocks on master host and slave-3 are synchronized with ntp against the ntp server located in the 86.50.17.1/24 cluster network, as synchronized time is needed for accurate measurement results in experiment ~\ref{joining_host}.
+Finally, the server clocks on master host and slave-3 are synchronized with ntp against the ntp server located in network A, as synchronized time is needed for accurate measurement results in the experiments.
   
 
 \subsection{Test cases}
 
-To verify that different parts of the Discovery Service and Specification Retriever work in the real environment, I have come up with five test cases which test how different parts of the software integrate with a real system. First three of the test cases test Discovery Service's ability to monitor  the cluster network and deliver the current cluster status to the Host-pool Service. The fourth test verifies that the Specification Retriever script in the modified Host-pool service collects the hardware data correctly. Finally I am going to run an example workload in the cluster which uses the Discovery Service to manage its logical host-pool. This verifies that the system can be used as an addition to a real Cloudify cluster.
+To verify that different parts of the Discovery Service and Specification Retriever work in a real environment, I have come up with six test cases which test how different parts of the software integrate with a real system. First four of the test cases test Discovery Service's ability to monitor  the cluster network and deliver the current cluster status to the Host-pool Service. The fifth test verifies that the Specification Retriever script in the Modified Host-pool service collects the hardware data correctly and also showcases its expandability. Finally I am going to run an example workload in the cluster which uses the Discovery Service to manage its logical host-pool. This verifies that the system can be used as an addition in a real Cloudify cluster.
 
 The time measurements from all of the applicable test cases are displayed in table ~\ref{table:measurements}. The table shows the fastest and slowest measured times, average and median times as well as standard deviation. All timed tests are run thirty times and the detailed report of the measurement results can be found in appendix ~\ref{testMeasurements}.
 
@@ -88,7 +98,7 @@ The time measurements from all of the applicable test cases are displayed in tab
 \centering
 \begin{tabular}{ | l || l | l | l | l | l |}
 \hline 
-Test-case \& Time in seconds & Fastest & Slowest & Average & Median & Standard Deviation \\
+Test-case \& Time in seconds & Min & Max & Average & Median & Standard Deviation \\
 \hline \hline
 Start-up & 5.402588129 & 5.7881305218 & 5.5874319077 & 5.5766154528 & 0.0941250689 \\
 \hline
@@ -106,11 +116,15 @@ Patching a host & 0.0368499756 & 0.0.0572497845 & 0.0481163859 & 0.0482549667 & 
 
 \subsubsection{Discovering hosts at start up}
 
-As detailed in the section ~\ref{startup}, when Discovery Service is initialised it flushes all of the databases and performs an ARP scan for every IP address in the network. In this experiment I have modified the ARP scanning routine so that it measures the time it takes to scan through the 256 address network. The timing starts when the scan is initialized and stops after the scan. The data stores are reset between every scan.
+As detailed in the section ~\ref{startup}, when Discovery Service is initialised it flushes all of the databases and performs an ARP scan for every IP address in the network. The time taking starts when the ARP scan itself starts and finishes after. The flushing of Host-pool Service's database and Redis are not included in the results. The scanning function imposes a two second wait time after the last packet is sent and the interval between each sent packet is 0,001 seconds.
+
+\subsubsection*{Setting up the experiment}
+
+ In this experiment I have modified the ARP scanning routine so that it measures the time it takes to scan through the 256 address network. The network itself contains three other hosts besides the master host which is ignored in the scan. This experiment does not require measurements from other servers and therefore no modifications or scripts are run on them. Additionally, the main function of Discovery Service is modified so that it runs the start-up routine thirty times and exits right after.
 
 \subsubsection*{Results}
 
-As seen in the table ~\ref{table:measurements}, scanning through a 256 address network takes approximately 5.6 seconds. This means that it takes approximately 0.022 seconds or 22 milliseconds to send and receive an ARP request for a single host. The real value however varies as the requests may return out of sync and with varying intervals. Also the \verb|timeout| value which denotes the time spent waiting after the last request is set to relatively high value of two seconds.
+As seen in the table ~\ref{table:measurements}, scanning through a 256 address network takes approximately 5.6 seconds. This means that it takes approximately 22 milliseconds to send and receive an ARP request for a single host. The real value however varies as the requests may return out of sync and with varying intervals. Also the \verb|timeout| value which denotes the time spent waiting after the last request is set to relatively high value of two seconds.
 
 Overall, all of the runs succeeded and there is no notable deviation in the distribution of times. In comparison to writing and providing host specification in JSON format, automatic scanning is significantly more efficient.
 

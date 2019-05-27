@@ -284,7 +284,7 @@ It also adds the received data to Host-pool Service's data format so that it can
 
 \pagebreak
 
-\lstinputlisting[language=python, firstnumber=417, firstline=417, lastline=443, numbers=left,breaklines=true, showstringspaces=false, caption="Hardware spec retriever. This caption needs improvement", captionpos=b, frame=leftline, label=lst:specretriever]{/home/fleuri/Projects/Cloudify/cloudify-host-pool-service/cloudify_hostpool/rest/backend.py}
+\lstinputlisting[language=python, firstnumber=417, firstline=417, lastline=443, numbers=left,breaklines=true, showstringspaces=false, caption="Hardware specification retriever is an addition to Host-pool Service. Source code is more expressive than pseudocode in this particular case.", captionpos=b, frame=leftline, label=lst:specretriever]{/home/fleuri/Projects/Cloudify/cloudify-host-pool-service/cloudify_hostpool/rest/backend.py}
 
 Specification Retriever is two additional functions implemented in Host-pool Service seen on listing ~\ref{lst:specretriever}. They are called the backend class' \verb|add_host| seen on listing ~\ref{lst:hpsaddhost} which in turn is called whenever a new host is discovered in the network. Before Specification Retriever is run, the \verb|HostAlchemist.parse()| function on line 283 checks the validity of the received host data and makes a couple of additions resulting in a data element similar to one depicted in listing ~\ref{lst:JSONformat}. This element, \textit{hosts} as seen on listing ~\ref{lst:JSONSpecs}, is then passed to Specification retriever in which the hardware data is added to it.
 

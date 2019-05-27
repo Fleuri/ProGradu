@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.30)  25 MAY 2019 21:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.30)  26 MAY 2019 18:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1653,27 +1653,32 @@ File: testbed.jpg Graphic file (type jpg)
 Package pdftex.def Info: testbed.jpg used on input line 19.
 (pdftex.def)             Requested size: 341.38383pt x 256.03787pt.
  [32 <./testbed.jpg>]
-Overfull \hbox (4.37888pt too wide) in paragraph at lines 45--66
+
+Package wrapfig Warning: Collision between wrapping environments on input line 
+53.
+
+
+Overfull \hbox (4.37888pt too wide) in paragraph at lines 55--76
  [][] 
  []
 
 
-Underfull \hbox (badness 3158) in paragraph at lines 73--74
+Underfull \hbox (badness 3158) in paragraph at lines 83--84
 \T1/fve/m/n/10.95 (+20) as a Cloud-ify de-ploy-
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 73--74
+Underfull \hbox (badness 1442) in paragraph at lines 83--84
 \T1/fve/m/n/10.95 (+20) runs as a stand-alone
  []
 
 
-Underfull \hbox (badness 2744) in paragraph at lines 73--74
+Underfull \hbox (badness 2744) in paragraph at lines 83--84
 \T1/fve/m/n/10.95 (+20) though Cloud-ify doc-u-
  []
 
 [33] [34]
-Overfull \hbox (33.74025pt too wide) in paragraph at lines 89--102
+Overfull \hbox (33.74025pt too wide) in paragraph at lines 99--112
  [][] 
  []
 
@@ -1681,57 +1686,57 @@ Overfull \hbox (33.74025pt too wide) in paragraph at lines 89--102
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
 
 [37] [38]
-Overfull \hbox (92.15176pt too wide) in paragraph at lines 162--163
+Overfull \hbox (92.15176pt too wide) in paragraph at lines 172--173
 [][]\T1/fvm/m/n/10.95 lscpu | awk '/Model name/' | sed -e 's/Model name://g' -e
  's/^[ \t]*//g'
  []
 
-<masterqueryscreenshot.png, id=732, 885.3075pt x 628.3475pt>
+<masterqueryscreenshot.png, id=733, 885.3075pt x 628.3475pt>
 File: masterqueryscreenshot.png Graphic file (type png)
 
 <use masterqueryscreenshot.png>
-Package pdftex.def Info: masterqueryscreenshot.png used on input line 169.
+Package pdftex.def Info: masterqueryscreenshot.png used on input line 179.
 (pdftex.def)             Requested size: 284.53348pt x 201.9478pt.
 
-<slave_3_specs_screenshot.png, id=733, 1362.08875pt x 242.9075pt>
+<slave_3_specs_screenshot.png, id=734, 1362.08875pt x 242.9075pt>
 File: slave_3_specs_screenshot.png Graphic file (type png)
 
 <use slave_3_specs_screenshot.png>
-Package pdftex.def Info: slave_3_specs_screenshot.png used on input line 176.
+Package pdftex.def Info: slave_3_specs_screenshot.png used on input line 186.
 (pdftex.def)             Requested size: 284.52986pt x 50.7415pt.
  [39]
-<consoletopology.png, id=746, 1371.1225pt x 743.77875pt>
+<consoletopology.png, id=747, 1371.1225pt x 743.77875pt>
 File: consoletopology.png Graphic file (type png)
 
 <use consoletopology.png>
-Package pdftex.def Info: consoletopology.png used on input line 187.
+Package pdftex.def Info: consoletopology.png used on input line 197.
 (pdftex.def)             Requested size: 341.41988pt x 185.20653pt.
 
-<console_list.png, id=747, 1371.1225pt x 743.77875pt>
+<console_list.png, id=748, 1371.1225pt x 743.77875pt>
 File: console_list.png Graphic file (type png)
  <use console_list.png>
-Package pdftex.def Info: console_list.png used on input line 194.
+Package pdftex.def Info: console_list.png used on input line 204.
 (pdftex.def)             Requested size: 341.41988pt x 185.20653pt.
 
 [40 <./masterqueryscreenshot.png> <./slave_3_specs_screenshot.png>] [41 <./cons
 oletopology.png> <./console_list.png>]
-<Nodecellarscreenshot.png, id=764, 1371.1225pt x 743.77875pt>
+<Nodecellarscreenshot.png, id=765, 1371.1225pt x 743.77875pt>
 File: Nodecellarscreenshot.png Graphic file (type png)
 
 <use Nodecellarscreenshot.png>
-Package pdftex.def Info: Nodecellarscreenshot.png used on input line 213.
+Package pdftex.def Info: Nodecellarscreenshot.png used on input line 223.
 (pdftex.def)             Requested size: 341.41988pt x 185.20653pt.
 
-<chateaudiscoveryservice.png, id=765, 1371.1225pt x 743.77875pt>
+<chateaudiscoveryservice.png, id=766, 1371.1225pt x 743.77875pt>
 File: chateaudiscoveryservice.png Graphic file (type png)
 
 <use chateaudiscoveryservice.png>
-Package pdftex.def Info: chateaudiscoveryservice.png used on input line 220.
+Package pdftex.def Info: chateaudiscoveryservice.png used on input line 230.
 (pdftex.def)             Requested size: 341.41988pt x 185.20653pt.
 ) (./futureresearch.tex [42 <./Nodecellarscreenshot.png>] [43 <./chateaudiscove
 ryservice.png>]) (./ProGradu.bbl
@@ -1933,10 +1938,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 207.
  ) 
 Here is how much of TeX's memory you used:
- 21568 strings out of 493029
- 352909 string characters out of 6136233
- 587220 words of memory out of 5000000
- 24211 multiletter control sequences out of 15000+600000
+ 21570 strings out of 493029
+ 352932 string characters out of 6136233
+ 587278 words of memory out of 5000000
+ 24212 multiletter control sequences out of 15000+600000
  83368 words of font info for 223 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  33i,18n,43p,10378b,1878s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1946,10 +1951,10 @@ lic/bera/fveb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/share/texmf/f
 onts/type1/public/lm/lmsy10.pfb>
-Output written on ProGradu.pdf (59 pages, 2838605 bytes).
+Output written on ProGradu.pdf (59 pages, 2839187 bytes).
 PDF statistics:
- 980 PDF objects out of 1000 (max. 8388607)
- 882 compressed objects within 9 object streams
- 299 named destinations out of 1000 (max. 500000)
+ 981 PDF objects out of 1000 (max. 8388607)
+ 883 compressed objects within 9 object streams
+ 300 named destinations out of 1000 (max. 500000)
  29623 words of extra memory for PDF output out of 29859 (max. 10000000)
 
