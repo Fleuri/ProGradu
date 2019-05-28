@@ -8,7 +8,7 @@ In full virtualisation, the hypervisor runs on top of the host OS. The guest OSe
 
 \begin{figure}[ht!]
 \centering
-  \includegraphics[width=\textwidth, keepaspectratio]{fullvirt.jpeg}%
+  \includegraphics[width=0.7\textwidth, keepaspectratio]{fullvirt.png}%
   \caption{Full virtualisation architecture}
   \label{fig:full}
 \end{figure}
@@ -21,7 +21,7 @@ Hardware-Layer virtualisation is also a type of full virtualisation, but unlike 
 
 \begin{figure}[ht!]
 \centering
-  \includegraphics[width=\textwidth, keepaspectratio]{hwlayer.jpeg}%
+  \includegraphics[width=0.7\textwidth, keepaspectratio]{hwlayer.png}%
   \caption{Hardware-Layer virtualisation architecture}
   \label{fig:hardware}
 \end{figure}
@@ -34,13 +34,13 @@ Instead of virtualising the underlying hardware, container-based virtualisation 
 
 \begin{figure}[ht!]
 \centering
-  \includegraphics[width=\textwidth, keepaspectratio]{containers.png}%
+  \includegraphics[width=0.7\textwidth, keepaspectratio]{containers.png}%
   \caption{Container-based architecture}
   \label{fig:container}
 \end{figure}
 
 Container-based virtualisation does not need to emulate the hardware as containers communicate directly with the host kernel \cite{eder2016hypervisor} and are thus very fast to start. They also do not require all of the components a fully virtualised environment would need to run and therefore their resource fingerprint is minimal when compared to hypervisor-based virtualisation techniques. \linebreak
-The obvious drawback of the technique is that the kernel of the virtualised OS has to be the same as that of Host OS e.g. In a situation depicted in figure ~\ref{fig:container} operating systems based on  Linux kernel could be ran on Ubuntu Host OS but OSs like Windows or OSX could not. On certain virtualisation platforms resource-intensive containers can also affect other containers detrimentally as the shared host OS's kernel is forced to spend its execution time on handling the instructions from the stressed container \cite{Xaviercontainer}.
+The obvious drawback of the technique is that the kernel of the virtualised OS has to be the same as that of Host OS e.g. In a situation depicted in figure ~\ref{fig:container} operating systems based on Linux kernel could be ran on Ubuntu Host OS but OSs like Windows or OSX could not. On certain virtualisation platforms resource-intensive containers can also affect other containers detrimentally as the shared host OS's kernel is forced to spend its execution time on handling the instructions from the stressed container \cite{Xaviercontainer}.
 
 
 \subsubsection{Paravirtualisation}

@@ -12,7 +12,7 @@
 \BOOKMARK [2][-]{subsection.2.4}{Cloudify and Cloud Management Platforms}{section.2}% 12
 \BOOKMARK [3][-]{subsubsection.2.4.1}{Cloudify}{subsection.2.4}% 13
 \BOOKMARK [3][-]{subsubsection.2.4.2}{OpenStack}{subsection.2.4}% 14
-\BOOKMARK [3][-]{subsubsection.2.4.3}{Comparison of OpenStack and Cloudify}{subsection.2.4}% 15
+\BOOKMARK [3][-]{subsubsection.2.4.3}{Comparison of OpenStack and other Cloud Management Platforms}{subsection.2.4}% 15
 \BOOKMARK [1][-]{section.3}{System Design and Implementation}{}% 16
 \BOOKMARK [2][-]{subsection.3.1}{Design overview}{section.3}% 17
 \BOOKMARK [1][-]{section.4}{Technical Implementation}{}% 18
