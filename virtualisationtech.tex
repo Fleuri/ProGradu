@@ -8,7 +8,7 @@ In full virtualisation, the hypervisor runs on top of the host OS. The guest OSe
 
 \begin{figure}[ht!]
 \centering
-  \includegraphics[width=10cm,height=10cm, keepaspectratio]{fullvirt.jpeg}%
+  \includegraphics[width=\textwidth, keepaspectratio]{fullvirt.jpeg}%
   \caption{Full virtualisation architecture}
   \label{fig:full}
 \end{figure}
@@ -21,7 +21,7 @@ Hardware-Layer virtualisation is also a type of full virtualisation, but unlike 
 
 \begin{figure}[ht!]
 \centering
-  \includegraphics[width=10cm,height=10cm, keepaspectratio]{hwlayer.jpeg}%
+  \includegraphics[width=\textwidth, keepaspectratio]{hwlayer.jpeg}%
   \caption{Hardware-Layer virtualisation architecture}
   \label{fig:hardware}
 \end{figure}
@@ -34,7 +34,7 @@ Instead of virtualising the underlying hardware, container-based virtualisation 
 
 \begin{figure}[ht!]
 \centering
-  \includegraphics[width=10cm,height=10cm, keepaspectratio]{containers.png}%
+  \includegraphics[width=\textwidth, keepaspectratio]{containers.png}%
   \caption{Container-based architecture}
   \label{fig:container}
 \end{figure}
@@ -65,7 +65,9 @@ Prominent bare-metal provisioning platforms include Openstack Ironic \cite{ironi
 
 \subsection{Cloudify and Cloud Management Platforms}
 
-As enterprises are using increasingly more distinct clouds simultaneously \cite{stateofthecloud} and the clouds themselves are becoming bigger and more complex. Different clouds have different features and capabilities, are used differently and are not always interoperable \cite{multicloudprovisioning}. This has created demand for tools to manage the scale and complexity of these systems. These range from integration libraries like \textit{jclouds} \cite{jclouds} to full-fledged management frameworks like IBM Multicloud Manager, Cloud Foundry and Cloudify \cite{ibmmulticloud,cloudfoundry,cloudify} which offer unified resource abstraction, orchestration and deployment capabilities among others. What makes Cloudify stand out however is its broadness, generality and expandability. Other frameworks like Cloud Foundry focus on common application stacks and mechanisms to streamline application development and deployment work while Cloudify allows user to orchestrate complex workflows on practically any platform, starting from infrastructure management ending as low as a single BASH script \cite{cloudifyfaq}. Among these capabilities is the ability to provision generic host machines as cloud resources without using a cloud platform. There are other systems which can provision generic hosts similarly, such as Red Hat Satellite \cite{redhatsatellite} or Docker Machine \cite{dockermachine} but unlike them Cloudify does not require installation of any additional software on the hosts. Additionally preparing the hosts for provisioning seems to require human intervention in most cases, including Cloudify. Simplifying and automating this task is one of the main focuses of this thesis.
+Enterprises are using increasingly more distinct clouds simultaneously \cite{stateofthecloud} and the clouds themselves are becoming bigger and more complex. Different clouds have different features and capabilities, are used differently and are not always interoperable \cite{multicloudprovisioning}. This has created demand for tools to manage the scale and complexity of these systems. These range from integration libraries like \textit{jclouds} \cite{jclouds} to full-fledged management frameworks like IBM Multicloud Manager, Cloud Foundry and Cloudify \cite{ibmmulticloud,cloudfoundry,cloudify} which offer unified resource abstraction, orchestration and deployment capabilities among others.
+
+In the following sections I provide background to Cloudify and motivate its use in this thesis. I also discuss Openstack as an example of a typical Cloud Platform and compare it to Cloudify to point out the differences and similarities between them and other cloud platforms and cloud management platforms in general.
 
 \subsubsection{Cloudify}
 
@@ -77,9 +79,11 @@ OpenStack \cite{openstackproject} is an open-source software platform for cloud 
 	OpenStack allows its users to deploy a full-fledged cloud computing infrastructure. User can control pools of both physical and virtual computing, storage and networking resources. It can be run on commodity hardware and supports a plethora of enterprise- and open source technologies making it possible to use heterogeneous physical and software environments.
 	OpenStack consists of different projects that provide services for the system. A user can freely choose which services to deploy. Project range from essential \textit{Core Services} like computing, block storage, identity service and networking to more specific and specialised such as MapReduce and Bare-metal provisioning\cite{openstackproject}. OpenStack boasts many features: It is massively scalable supporting up to million physical and 80 million virtual machines \cite{openstack}. It also supports a wide array of market-leading virtualisation technologies such as QEMU, KVM and Xen and it is fully open-source with thriving community and industry backing \cite{openstackpartners}. Other features include fine-grained access control and multi-tenancy, fault-tolerance and self-healing \cite{openstackfeatures}.
 
-\subsubsection{Comparison of OpenStack and Cloudify}
+\subsubsection{Comparison of OpenStack and other Cloud Management Platforms}
 
 Both OpenStack and Cloudify are used to operate a large number of computing, networking and storage resources. However, they are not directly comparable. While Cloudify can be used to orchestrate resources and applications on a cloud platform, OpenStack is a cloud platform. Similar orchestration project within OpenStack is Heat \cite{heat}, which can be used similarly to Cloudify's DSL to write human-readable templates (\textit{HOTs -- Heat Orchestration Templates} as they are called in the Heat project) to automate deployments of applications and cloud resources. Heat orchestration is of course limited to OpenStack itself. Even though there are drivers which allow OpenStack to manage resources from major public clouds such as AWS and GCP (and thus allowing a public/private hybrid cloud), the resources are abstracted to those common to OpenStack: Heat cannot orchestrate them independently of an OpenStack deployment. Cloudify however is cloud-platform agnostic and it can manage multiple different cloud environments simultaneously, including OpenStack. On the subject of hybrid clouds, Cloudify supports bare-metal deployments by default and OpenStack's project \textit{Ironic} for provisioning bare-metal instances has  been integrated to OpenStack since 'Kilo' development cycle.
 Both Cloudify and OpenStack are open-source projects with notable contributing community but OpenStack has more industrial partners than Cloudify. 
+
+What makes Cloudify stand out however is its broadness, generality and expandability. Other frameworks like Cloud Foundry focus on common application stacks and mechanisms to streamline application development and deployment work while Cloudify allows user to orchestrate complex workflows on practically any platform, starting from infrastructure management ending as low as a single BASH script \cite{cloudifyfaq}. Among these capabilities is the ability to provision generic host machines as cloud resources without using a cloud platform. There are other systems which can provision generic hosts similarly, such as Red Hat Satellite \cite{redhatsatellite} or Docker Machine \cite{dockermachine} but unlike them Cloudify does not require installation of any additional software on the hosts. Additionally preparing the hosts for provisioning seems to require human intervention in most cases, including Cloudify. Simplifying and automating this task as well as providing more insight to the hosts' capabilities  are the main focuses of this thesis.
 
 \pagebreak

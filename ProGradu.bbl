@@ -18,10 +18,20 @@
 \newblock \url{https://maas.io/}.
 \newblock Accessed 19.5.2019.
 
+\bibitem {cloudfoundry}
+\btxtitlefont {\btxifchangecase {Cloud foundry}{Cloud Foundry}}.
+\newblock \url{https://www.cloudfoundry.org}.
+\newblock Accessed 25.5.2019.
+
 \bibitem {cloudify}
 \btxtitlefont {\btxifchangecase {Cloudify}{Cloudify}}.
 \newblock \url{https://cloudify.co/}.
 \newblock Accessed: 11.3.2018.
+
+\bibitem {cloudifyfaq}
+\btxtitlefont {\btxifchangecase {Cloudify faq}{Cloudify FAQ}}.
+\newblock \url{https://cloudify.co/FAQ_cloud_devops_automation#q05A}.
+\newblock Accessed 25.5.2019.
 
 \bibitem {host-pool-service}
 \btxtitlefont {\btxifchangecase {Cloudify host-pool service}{Cloudify Host-pool
@@ -46,11 +56,10 @@
 \newblock \url{https://www.docker.com}.
 \newblock Accessed: 3.11.2016.
 
-\bibitem {dockerdocumentation}
-\btxtitlefont {\btxifchangecase {Docker documentation}{Docker Documentation}}.
-\newblock
-  \url{https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/#container-and-layers}.
-\newblock Accessed: 10.4.2017.
+\bibitem {dockermachine}
+\btxtitlefont {\btxifchangecase {Docker machine}{Docker Machine}}.
+\newblock \url{https://docs.docker.com/machine/}.
+\newblock Accessed 25.5.2019.
 
 \bibitem {heat}
 \btxtitlefont {\btxifchangecase {Heat}{Heat}}.
@@ -65,8 +74,13 @@
 
 \bibitem {ironic}
 \btxtitlefont {\btxifchangecase {ironic}{ironic}}.
-\newblock \url{https://wiki.openstack.org/wiki/Ironicl}.
+\newblock \url{https://wiki.openstack.org/wiki/Ironic}.
 \newblock Accessed 19.5.2019.
+
+\bibitem {jclouds}
+\btxtitlefont {\btxifchangecase {jclouds}{jclouds}}.
+\newblock \url{https://jclouds.apache.org/}.
+\newblock Accessed 25.5.2019.
 
 \bibitem {Kubernetes}
 \btxtitlefont {\btxifchangecase {Kubernetes}{Kubernetes}}.
@@ -125,6 +139,14 @@
 \btxtitlefont {\btxifchangecase {Razor}{Razor}}.
 \newblock \url{https://puppet.com/docs/pe/2017.1/razor_intro.html}.
 \newblock Accessed 19.5.2019.
+
+\bibitem {redhatsatellite}
+\btxtitlefont {\btxifchangecase {Red hat satellite documentation: Provisioning
+  guide chapter 5: Provisioning bare metal hosts}{Red Hat Satellite
+  Documentation: Provisioning Guide Chapter 5: Provisioning Bare Metal Hosts}}.
+\newblock
+  \url{https://access.redhat.com/documentation/en-us/red_hat_satellite/6.4/html/provisioning_guide/provisioning_bare_metal_hosts}.
+\newblock Accessed 25.5.2019.
 
 \bibitem {Redis}
 \btxtitlefont {\btxifchangecase {Redis}{Redis}}.
@@ -247,6 +269,18 @@
 \newblock \btxjournalfont {Future Internet (FI) and Innovative Internet
   Technologies and Mobile Communications (IITM)}, 1, 2016.
 
+\bibitem {multicloudprovisioning}
+\btxnamefont {\btxlastnamefont {{Ferry}}, N.}, \btxnamefont {\btxlastnamefont
+  {{Rossini}}, A.}, \btxnamefont {\btxlastnamefont {{Chauvel}}, F.},
+  \btxnamefont {\btxlastnamefont {{Morin}}, B.}\btxandcomma {} \btxandlong {}\
+  \btxnamefont {\btxlastnamefont {{Solberg}}, A.}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Towards model-driven provisioning, deployment, monitoring,
+  and adaptation of multi-cloud systems}{Towards Model-Driven Provisioning,
+  Deployment, Monitoring, and Adaptation of Multi-cloud Systems}}.
+\newblock \Btxinlong {}\ \btxtitlefont {2013 IEEE Sixth International
+  Conference on Cloud Computing}, \btxpageslong {}\ 887--894,
+  \btxprintmonthyear{.}{June}{2013}{long}.
+
 \bibitem {stateofthecloud}
 \btxnamefont {\btxlastnamefont {Flexera}}\btxauthorcolon\ \btxtitlefont
   {\btxifchangecase {{Rightscale 2019 State of The Cloud Report from
@@ -343,17 +377,6 @@
   \btxtitlefont {\btxifchangecase {Sp 800-145. the nist definition of cloud
   computing}{SP 800-145. The NIST Definition of Cloud Computing}}.
 \newblock \btxtechreplong {}, Gaithersburg, MD, United States, 2011.
-
-\bibitem {Merkeldocker}
-\btxnamefont {\btxlastnamefont {Merkel}, Dirk}\btxauthorcolon\ \btxjtitlefont
-  {\btxifchangecase {Docker: Lightweight linux containers for consistent
-  development and deployment}{Docker: Lightweight Linux Containers for
-  Consistent Development and Deployment}}.
-\newblock \btxjournalfont {Linux J.}, 2014(239),
-  \btxprintmonthyear{.}{3}{2014}{long}\ifbtxprintISSN {,
-  \mbox{\btxISSN~\btxISSNfont {1075-3583}}}.
-\newblock {\latintext
-  \btxurlfont{http://dl.acm.org/citation.cfm?id=2600239.2600241}}.
 
 \bibitem {baremetal}
 \btxnamefont {\btxlastnamefont {{Rad}}, P.}, \btxnamefont {\btxlastnamefont

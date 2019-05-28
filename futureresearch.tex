@@ -1,8 +1,10 @@
+\newpage
+
 \section{Future Research and Conclusions} \label{future}
 
 As seen in the previous section, Discovery Service and Modified Host-pool Service work well within their their limited prototypical scope. There are however both major and minor assumptions, lacking features and programming solutions that should be addressed before the software could be regarded as a mature, full-fledged solution.
 
-As of now, Discovery Service does the bare minimum of error checking and. While no errors or bugs were detected while evaluating the system, there are some known possibilities for failure e.g. network communication failure between Discovery Service and Host-pool service would prevent Host-pool service from updating. There's also no robust logging in the system.
+As of now, Discovery Service does the bare minimum of error checking and, while no errors or bugs were detected while evaluating the system, there are some known possibilities for failure e.g. network communication failure between Discovery Service and Host-pool service would prevent Host-pool service from updating. There's also no robust logging in the system.
 Maybe the most major design issue in the system is the two different data formats with Redis having their own data for hosts and Host-pool service their own. This decision was made early in the project and its implications became apparent only later on. Granted, Discovery Service does not need as much data on the hosts than the Host-pool Service, but redesigning its data format to resemble that of Host-pool Service's could bring clarity to the source code and eliminate the need to match different primary keys (MAC addresses in Discovery Service, running count in Host-pool Service).
 The major assumptions of Discovery Service are that hosts are Linux hosts and that they have a common username and password. To mature Discovery Service, it should also work with Windows hosts. Key and credentials handling is a larger and more complex challenge and would likely require preparing the hosts somehow, like installing software on them beforehand.
 

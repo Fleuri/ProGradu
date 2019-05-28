@@ -24,12 +24,16 @@ Warning--to sort, need author or key in mirage
 Warning--to sort, need author or key in ironic
 Warning--to sort, need author or key in MaaS
 Warning--to sort, need author or key in razor
+Warning--to sort, need author or key in jclouds
+Warning--to sort, need author or key in cloudfoundry
+Warning--to sort, need author or key in cloudifyfaq
+Warning--to sort, need author or key in redhatsatellite
+Warning--to sort, need author or key in dockermachine
 Warning--to sort, need author or key in Tosca
 Warning--to sort, need author or key in openstackproject
 Warning--to sort, need author or key in openstackpartners
 Warning--to sort, need author or key in openstackfeatures
 Warning--to sort, need author or key in heat
-Warning--to sort, need author or key in dockerdocumentation
 Warning--to sort, need author or key in host-pool-service
 Warning--to sort, need author or key in Redis
 Warning--to sort, need author or key in scapy
@@ -51,45 +55,45 @@ while executing---line 1379 of file babplain-lf.bst
 Warning--empty institution in stateofthecloud
 Warning--empty institution in openstacksurvey
 Warning--empty institution in Mell:2011:SND:2206223
-You've used 50 entries,
+You've used 54 entries,
             2783 wiz_defined-function locations,
-            898 strings with 13804 characters,
-and the built_in function-call counts, 17277 in all, are:
-= -- 1455
-> -- 542
-< -- 10
-+ -- 229
-- -- 179
-* -- 1681
-:= -- 2234
-add.period$ -- 139
-call.type$ -- 50
-change.case$ -- 233
+            905 strings with 14201 characters,
+and the built_in function-call counts, 18484 in all, are:
+= -- 1557
+> -- 567
+< -- 11
++ -- 241
+- -- 187
+* -- 1762
+:= -- 2369
+add.period$ -- 150
+call.type$ -- 54
+change.case$ -- 249
 chr.to.int$ -- 0
-cite$ -- 85
-duplicate$ -- 921
-empty$ -- 1908
-format.name$ -- 291
-if$ -- 3844
+cite$ -- 93
+duplicate$ -- 987
+empty$ -- 2067
+format.name$ -- 304
+if$ -- 4138
 int.to.chr$ -- 0
-int.to.str$ -- 50
-missing$ -- 21
-newline$ -- 251
+int.to.str$ -- 54
+missing$ -- 20
+newline$ -- 270
 num.names$ -- 44
-pop$ -- 585
+pop$ -- 649
 preamble$ -- 1
-purify$ -- 182
+purify$ -- 194
 quote$ -- 0
-skip$ -- 506
+skip$ -- 546
 stack$ -- 0
-substring$ -- 574
-swap$ -- 389
-text.length$ -- 10
+substring$ -- 622
+swap$ -- 415
+text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 198
-warning$ -- 35
-while$ -- 71
-width$ -- 52
-write$ -- 507
+type$ -- 214
+warning$ -- 39
+while$ -- 73
+width$ -- 56
+write$ -- 540
 (There were 6 error messages)

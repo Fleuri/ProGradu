@@ -7,7 +7,7 @@ To verify that the Discovery Service and the Specification retriever function co
 
  \begin{figure}[ht!]
 \centering
-  \includegraphics[width=12cm,height=12cm, keepaspectratio]{Network-venn.png}%
+  \includegraphics[width=\textwidth, keepaspectratio]{Network-venn.png}%
   \caption{The testbed hosts are located in a private network but master and slave-3 are also directly connected to network A.}
   \label{fig:network-venn}
 \end{figure}
@@ -16,7 +16,7 @@ The test-bed consist of a Lenovo Thinkpad T420S 4173L7G laptop computer with  4-
 
 \begin{figure}
 \centering
-  \includegraphics[width=12cm,height=12cm, keepaspectratio]{testbed.jpg}%
+  \includegraphics[width=12cm, height=12cm, keepaspectratio]{testbed.jpg}%
   \caption{The actual test-bed. Master node on lower shelf on the right, slaves in the upper and lower shelf}
   \label{fig:test-bed}
 \end{figure}
@@ -31,7 +31,7 @@ As mentioned previously, slave hosts do not have many software requirements besi
 
 Master node is more intricate than slaves in addition to being more powerful. It has the similar requirements to slaves when it comes to SSH server, but additionally it also runs the programs listed on table ~\ref{table:software}. 
 
-\begin{wraptable}{r}{\textwidth}
+\begin{wraptable}{R}{\textwidth}
 \begin{tabular}{|l|l|}
 \hline
 Software & Version \\
@@ -50,7 +50,7 @@ Redis running in a Docker container & 5.0.0 \\
 \end{wraptable}
 
 
-\begin{wraptable}{r}{8cm}
+\begin{wraptable}{R}{8cm}
 \centering
 \begin{tabular}{ | l | p{2cm} | }
 \hline
@@ -132,15 +132,23 @@ Overall, all of the runs succeeded and there is no notable deviation in the dist
 
 One of the main features of the Discovery Service is the ability to detect machines joining the network in real time. In this test case Slave-3 is not initially connected to the cluster network. I have prepared a script which first returns a current time stamp on Slave-3 and then enables the network interface facing the cluster network. The sniffer algorithm on the Discovery Service is modified so that it too returns a time stamp upon detecting  a new host. As both hosts are synced against the same time server, the timestamps are comparable allowing me to measure a time it takes for Discovery Service to detect a host after it has joined the network.
 
+\subsubsection*{Setting up the experiment}
+
+This experiment required only a minor modification to Discovery Service's \verb|register_a_new_host| function which printed the timestamp to a file whenever Slave-3 was detected as a new host. Slave-3 was initially disconnected from the cluster network. On slave-3 a BASH script was run which first turns on the network interface to network B, sleeps fifteen seconds and sends an ARP request to the network while recording the timestamp. Then the script sleeps for a minute, turns off the interface and waits another minute until and starts over. The function was repeated thirty times.
+
 \subsubsection*{Results}
 
-As with the start-up scan, the time to detect a joining host is very regular and is more affected by the network speed rather than the implementation overhead. There were however outliers caused by the test implementation. As the network interface on Slave-3 was enabled there was a slight wait in the script execution so that the interface is ready before sending an ARP request. As the script was run multiple times, the ARP cache often did not have time to invalidate and thus no ARP request was automatically sent when the interface was ready. In a real use case, such rapid enabling and disabling of the interface would be unlikely and the cache invalidation a non-issue. In few cases however, the cache was invalidated between a run and the ARP request was sent when interface was ready, causing the Discovery Service to catch the request before the time was recorded on Slave-3 resulting in a negative time in the final results. Those times have been disregarded in the table ~\ref{table:measurements} but are provided in the appendix ~\ref{testMeasurements}.
+As with the start-up scan, the time to detect a joining host is very regular and is more affected by the network speed rather than the implementation overhead. There were however outliers caused by the test implementation. As the network interface on Slave-3 was enabled there was a slight wait in the script execution so that the interface is ready before sending an ARP request. As the script was run multiple times, the ARP cache often did not have time to invalidate and thus no ARP request was automatically sent when the interface was ready, so manually sending the ARP request was necessary. In a real use case, such rapid enabling and disabling of the interface would be unlikely and the cache invalidation a non-issue. In few cases however, the cache was invalidated between a run and the ARP request was sent when interface was ready, causing the Discovery Service to catch the request before the time was recorded on Slave-3 resulting in a negative time in the final results. Those times have been disregarded in the table ~\ref{table:measurements} but are provided in the appendix ~\ref{testMeasurements}.
 
 Overall most of time taken to detect a joining hosts consists of the interval between sending and receiving the ARP request.
 
 \subsubsection{Detecting a departed host}
 
 Similarly to detecting the joining host, detection of a departed host is another major feature of the Discovery Service. The testing procedure is also similar: Slave-3 has a script which drops the host from the network while producing a time stamp for the event. The departure detection in the Discovery Service is modified to return a time stamp when the detection of Slave-3 is detected. The detection is done in the pinger component described in section ~\ref{pinger}, in which a host is declared departed if it fails to reply to a set number of pings. The values for the ping interval and ping failures are five seconds for the interval and three failures. This relatively long interval is likely to cause a wide distribution of time results as the time between Slave-3 getting dropped from the network and the first ping could be five seconds. On the other hand this measurement is representable of a real usage scenario. \newline 
+
+\subsubsection*{Setting up the experiment}
+
+As in the previous experiment, only modification done to Discovery Service is producing a timestamp when Slave-3 is declared to have left the network. The script run on Slave-3 is also virtually identical to that of experiment ~\ref{joining_host} with the exception that the time stamp is recorded when the network interface is disabled. Slave-3 started disconnected from the cluster network in this case also.
 
 \subsubsection*{Results}
 
@@ -151,11 +159,17 @@ Nevertheless, taking into account the expected five second variability of the be
 
 \subsubsection{Patching a host}
 
-Procedure on this test case is similar to the previous two. A script modifies the IP address of Slave-3 from 192.168.150.4 to 192.168.150.5 and back, each modification producing a time stamp for in Slave-3 and each detected address change producing one on Master. Similarly to \textit{Detecting a joining host} experiment, an ARP request is sent manually as the ARP caches may not have time to be invalidated and thus changing the IP address may not trigger an ARP request automatically.
+Procedure on this test case is similar to the previous two. A script modifies the IP address of Slave-3 from B.B.B.4 to B.B.B.5 and back, each modification producing a time stamp for in Slave-3 and each detected address change producing one on Master. Similarly to \textit{Detecting a joining host} experiment, an ARP request is sent manually as the ARP caches may not have time to be invalidated and thus changing the IP address may not trigger an ARP request automatically.
+
+\subsubsection*{Setting up the experiment}
+
+The experiment setup started similarly to previous two but instead of one function on Slave-3 to turn the network interface on and off, there needed to be two to alternate between .4 and .5 IP addresses using the network manager. Discovery Service's \verb|patch_a_host| function was modified to produce a timestamp whenever Slave-3's IP address was edited.
+
+During the preliminary testing it became apparent that in some cases, as one IP address was unused for a longer time than for example in \textit{Detecting a parting host} experiment, ARP caches became invalidated more frequently. This meant, that changing an IP address triggered an automatic ARP call more frequently than first expected and capturing this behaviour required an another time stamp to be recorded in the script on Slave-3.
 
 \subsubsection*{Results}
 
-During the preliminary testing it became apparent that in some cases, as one IP address was unused for a longer time than for example in \textit{Detecting a parting host} experiment, ARP caches became invalidated more frequently. This meant, that changing an IP address triggered an automatic ARP call more frequently than first expected and capturing this behaviour required an another time stamp to be recorded in the script on Slave-3. In the experiment, Slave-3 provided time stamp both when the interface was enabled and also when the ARP request was sent manually. The first time stamp prevented negative times in the results but the time itself didn't reflect a time it takes for the Discovery Service to detect and patch an IP change, but rather the time it takes for a the interface to be ready in this particular case. These values have been omitted from the results in table ~\ref{table:measurements} but they are included in the appendix ~\ref{testMeasurements}.
+In the experiment, Slave-3 provided time stamp both when the interface was enabled and also when the ARP request was sent manually. The first time stamp prevented negative times in the results but the time itself didn't reflect a time it takes for the Discovery Service to detect and patch an IP change, but rather the time it takes for a the interface to be ready in this particular case. These values have been omitted from the results in table ~\ref{table:measurements} but they are included in the appendix ~\ref{testMeasurements}.
 
 The tests succeeded on every execution. Patching seemed to be the most lightweight of the operations tested: The slowest execution time was circa 26 milliseconds faster than the fastest execution of the \textit{Detecting a joining host} experiment. This is because changing a single field in an existing data object is computationally significantly less demanding than creating a new data object with multiple fields.
 
@@ -167,50 +181,71 @@ This test case shows, that the modified Host-pool Service retrieves correct hard
 
 This test case also demonstrates how easily new commands can be added to the Specification Retriever.
 
+\subsubsection*{Setting up the experiment}
+
+This experiment did not require any additional modifications apart from additional commands described in the next section. However, correct values from Slave-3 were retrieved by hand as seen on figure ~\ref{fig:slave_3_specs} so that the values produced by the Specification Retriever could be verified. As values were static and slave hosts identical, the experiment was run only once.
+
 \subsubsection*{Results}
-
-Openstack's \textit{Ironic} -project\cite{ironic_troubleshoot} retrieves a modest amount of hardware data, namely the Number of CPUs, available RAM, available disk space and CPU architecture. CPU architecture retrieval was not included in the modified Host-pool Service specification detailed in section ~\ref{specification_retriever}, but to demonstrate specification retrievers capabilities and extendibility, I have added it as well as a command to retrieve the host's graphics card model to the list of commands executed on hosts. The commands are as follows:
-
-\begin{itemize}
-\item \verb= lscpu | awk '/Architecture/{ print \$2 }'= which retrieves the cpu architecture.
-\item \verb=lscpu | awk '/Model name/' | sed -e 's/Model name://g' -e 's/^[ \t]*//g'= which retrieves the graphics card model while removing whitespace from the command result.
-\end{itemize}
-
-In the experiment the additional query commands were added to the modified Host-pool service. Discovery Service was ran normally and the Host-Pool Service REST endpoint was queried for Slave-3's data. Figure ~\ref{fig:master_query} is a screenshot of the query result and it shows the hardware data along with the added CPU architecture and graphics card model. Figure ~\ref{fig:slave_3_specs} is a screenshot showing the same data when queried directly on Slave-3 in remote terminal. The data in Host-pool service query is identical to that queried directly on Slave-3, verifying the correctness of the Hardware Specification retrieval operation. It also verifies, that the Hardware Specification retrieval operation can be easily extended with only minor additions to Host-pool Service.
 
  \begin{figure}[ht!]
 \centering
-  \includegraphics[width=10cm,height=10cm, keepaspectratio]{masterqueryscreenshot.png}%
+  \includegraphics[width=\textwidth, keepaspectratio]{masterqueryscreenshot.png}%
   \caption{Host-pool service query returns a json with added new fields cpu\_arch and graph\_card\_model}
   \label{fig:master_query}
 \end{figure}
 
  \begin{figure}[ht!]
 \centering
-  \includegraphics[width=10cm,height=10cm, keepaspectratio]{slave_3_specs_screenshot.png}%
+  \includegraphics[width=\textwidth, keepaspectratio]{slave_3_specs_screenshot.png}%
   \caption{The results of individual commands run on Slave-3}
   \label{fig:slave_3_specs}
 \end{figure}
 
-\subsubsection{Running an example workload in the system}
+Openstack's \textit{Ironic} -project\cite{ironic_troubleshoot} retrieves a modest amount of hardware data, namely the Number of CPUs, available RAM, available disk space and CPU architecture. CPU architecture retrieval was not included in the modified Host-pool Service specification detailed in section ~\ref{specification_retriever}, but to demonstrate specification retrievers capabilities and extendibility, I have added it as well as a command to retrieve the host's graphics card model to the list of commands executed on hosts. The commands are as follows:
 
-The final experiment shows, that Discovery Service works seamlessly when running a real workload in the Cloudify cluster. The workload in question is Cloudify's standard example workload Cloudify Nodecellar Example\cite{Nodecellar}. Nodecellar is a web application which simulates a wine inventory system. It is deployed on two separate hosts with the \textit{nodejs\_host} running a webserver and a Node.js based frontend application whereas the second \textit{mongod\_host} houses MongoDB. The figures ~\ref{fig:console_topology} and ~\ref{fig:console_list} are screenshots of the Cloudify console showing the different components of the Nodecellar deployment and the relations between them. The goal of this experiment is to have a functioning Nodecellar application running on two of the slave hosts which were discovered by the Discovery Service and allocated to Cloudify Manager by the Host-Pool Service.
+\begin{itemize}
+\item \verb= lscpu | awk '/Architecture/{ print \$2 }'= which retrieves the cpu architecture.
+\item \verb=lscpu | awk '/Model name/' |= \linebreak \verb=sed -e 's/Model name://g' -e 's/^[ \t]*//g'= which retrieves the graphics card model while removing whitespace from the command result.
+\end{itemize}
+
+In the experiment the additional query commands were added to the modified Host-pool service. Discovery Service was ran normally and the Host-Pool Service REST endpoint was queried for Slave-3's data. Figure ~\ref{fig:master_query} is a screenshot of the query result and it shows the hardware data along with the added CPU architecture and graphics card model. Figure ~\ref{fig:slave_3_specs} is a screenshot showing the same data when queried directly on Slave-3 in remote terminal. The data in Host-pool service query is identical to that queried directly on Slave-3, verifying the correctness of the Hardware Specification retrieval operation. It also verifies, that the Hardware Specification retrieval operation can be easily extended with only minor additions to Host-pool Service.
+
+
+\subsubsection{Running an example workload in the system}
 
  \begin{figure}[ht!]
 \centering
-  \includegraphics[width=12cm,height=12cm, keepaspectratio]{consoletopology.png}%
+  \includegraphics[width=\textwidth, keepaspectratio]{consoletopology.png}%
   \caption{Cloudify console shows the topology diagram of the Nodecellar deployment}
   \label{fig:console_topology}
 \end{figure}
 
  \begin{figure}[ht!]
 \centering
-  \includegraphics[width=12cm,height=12cm, keepaspectratio]{console_list.png}%
+  \includegraphics[width=\textwidth, keepaspectratio]{console_list.png}%
   \caption{Nodecellar deployment's parts listed in the Cloudify console}
   \label{fig:console_list}
 \end{figure}
 
+The final experiment shows, that Discovery Service works seamlessly when running a real workload in the Cloudify cluster. The workload in question is Cloudify's standard example workload Cloudify Nodecellar Example\cite{Nodecellar}. Nodecellar is a web application which simulates a wine inventory system. It is deployed on two separate hosts with the \textit{nodejs\_host} running a webserver and a Node.js based frontend application whereas the second \textit{mongod\_host} houses MongoDB. The figures ~\ref{fig:console_topology} and ~\ref{fig:console_list} are screenshots of the Cloudify console showing the different components of the Nodecellar deployment and the relations between them. The goal of this experiment is to have a functioning Nodecellar application running on two of the slave hosts which were discovered by the Discovery Service and allocated to Cloudify Manager by the Host-Pool Service.
+
+
 \subsubsection*{Setting up the experiment}
+
+
+ \begin{figure}[ht!]
+\centering
+  \includegraphics[width=\textwidth, keepaspectratio]{Nodecellarscreenshot.png}%
+  \caption{Cloudify Nodecellar Example's landing page when deployed on the test bed cluster. The localhost IP address is due to port being forwarded to the \textit{node\_js} host.}
+  \label{fig:nodecellar}
+\end{figure}
+
+ \begin{figure}[ht!]
+\centering
+  \includegraphics[width=\textwidth, keepaspectratio]{chateaudiscoveryservice.png}%
+  \caption{Nodecellar allows the user to add their own wines to the list. This particular vintage is a real labour of love.}
+  \label{fig:chateau}
+\end{figure}
 
 Prior to deploying Nodecellar, I had set up Host-pool Service, Discovery Service and Cloudify Manager. I had also forwarded the port of Cloudify Manager's web console so that I could access it remotely. On Cloudify, every component has to be defined as a Blueprint using TOSCA DSL. When blueprints are uploaded to Cloudify Manager, user can create Deployments of them which in turn create the actual resources.
 
@@ -222,16 +257,5 @@ As Host-pool Plugin allocates the requested available hosts in order, Slave-1 wa
 
 Overall it can be concluded that Discovery Service and the modified Host-pool Service function correctly in the experimental scope of this thesis.
 
- \begin{figure}[ht!]
-\centering
-  \includegraphics[width=12cm,height=12cm, keepaspectratio]{Nodecellarscreenshot.png}%
-  \caption{Cloudify Nodecellar Example's landing page when deployed on the test bed cluster. The localhost IP address is due to port being forwarded to the \textit{node\_js} host.}
-  \label{fig:nodecellar}
-\end{figure}
 
- \begin{figure}[ht!]
-\centering
-  \includegraphics[width=12cm,height=12cm, keepaspectratio]{chateaudiscoveryservice.png}%
-  \caption{Nodecellar allows the user to add their own wines to the list. This particular vintage is a real labour of love.}
-  \label{fig:chateau}
-\end{figure}
+\newpage
