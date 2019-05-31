@@ -14,7 +14,9 @@ An issue I noticed while working with Host-pool Service is that the \textit{aliv
 
 To be more in the line with other Cloudify components, Discovery Service should be packaged as a Cloudify Blueprint. 
 
-Finally, a larger scale performance testing could uncover issues that are not apparent in the prototypical scope of the works. Another project could be work on the Cloudify Manager to leverage on more detailed hardware data Host-pool Service now provides so that it could make more intelligent scheduling and provisioning decisions.
+Finally, a larger scale performance testing could uncover issues that are not apparent in the prototypical scope of the works. Another project could be work on the Cloudify Manager to leverage on more detailed hardware data Host-pool Service now provides so that it could make more intelligent scheduling and provisioning decisions. 
+
+Otherwise I have created groundwork for automatising and managing a Cloudify cluster consisting of generic and heterogeneous hosts and provided a mechanism to gather performance and hardware related data from them. This allows users to easily introduce varied infrastructure to their cloud computing cluster and account for hardware differences between the hosts while eliminating some aspects of manual work in the cluster management and enabling 'plug-and-play' approach to adding and removing hosts. The possibility to use heterogeneous hardware allows user to size their hardware capabilities, heat and energy efficiency and costs to fit their workloads with Cloudify enabling operation in hybrid environments.
 
 \clearpage
 \newpage
