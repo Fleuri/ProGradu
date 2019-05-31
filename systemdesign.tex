@@ -40,3 +40,5 @@ The role of the Discovery service is twofold as seen on figure ~\ref{fig:discove
 \end{figure}
 
 The Discovery Service constantly monitors the network and its devices and keeps track of discovered devices and their health. When a new device is detected in the network its details are added to Discovery Service's local memory and a REST API call to add the device to the logical pool of hosts is made to Host-pool Service. Device health is monitored periodically and after a set number of failed health checks are detected, the device is removed from Discovery Service's memory and a REST API call to remove the host from the logical pool is made.
+
+\newpage
