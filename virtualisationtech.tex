@@ -1,6 +1,6 @@
 \subsection{Virtualisation Techniques}
 
-Traditionally virtualisation has referred to a software abstraction layer residing between the computer hardware and the operating system \cite{taxonomy}. This layer has been called Virtual Machine Monitor (VMM) or more recently a hypervisor and it hides and abstracts the computing resources from the OS, allowing multiple OSs to run simultaneously on the same hardware. There are multiple ways to run hypervisor-based virtualisation. Lately a technology called container-based virtualisation has been gaining popularity. Instead of emulating whole hardware, containers make use of features provided by the host operating system to isolate processes from each other and other containers \cite{eder2016hypervisor}. Cloud computing in which the host machines are not virtualised is known as bare-metal computing \cite{virtualisation_overhead}.
+Traditionally virtualisation has referred to a software abstraction layer residing between the computer hardware and the operating system \cite{taxonomy}. This layer has been called Virtual Machine Monitor (VMM) or more recently a hypervisor and it hides and abstracts the computing resources from the OS, allowing multiple OSes to run simultaneously on the same hardware. There are multiple ways to run hypervisor-based virtualisation. Lately a technology called container-based virtualisation has been gaining popularity. Instead of emulating whole hardware, containers make use of features provided by the host operating system to isolate processes from each other and other containers \cite{eder2016hypervisor}. Cloud computing in which the host machines are not virtualised is known as bare-metal computing \cite{virtualisation_overhead}.
 
 \begin{figure}[t]
 	\begin{subfigure}[b]{0.32\textwidth}  
@@ -23,13 +23,13 @@ Traditionally virtualisation has referred to a software abstraction layer residi
   \caption{Container-based}
   \label{fig:container}
 \end{subfigure}
-\caption{{\bf Popular virtualisation techniques}. {\sl Along with a) full virtulisation, b) hardware-layer virtualisation, and c) container-based virtulisation, other virtualisation techniques include unikernels and paravirtualisation. Bare-metal computing which gives the users complete control over the computing resources is also getting popular.}}
+\caption{{\bf Popular virtualisation techniques}. {\sl Along with a) full virtualisation, b) hardware-layer virtualisation, and c) container-based virtualisation, other virtualisation techniques include unikernels and paravirtualisation. Bare-metal computing which gives the users complete control over the computing resources is also getting popular.}}
 \label{fig:virtualisationtechs}
 \end{figure}
 
 \subsubsection{Full virtualisation}
 
-In full virtualisation, the hypervisor runs on top of the host OS. The guest OSes run on top of the hypervisor which in turn emulates the underlying real hardware to them. The hypervisors running on top of the host OS are generally referred as \textit{Type 2 Hypervisors} \cite{eder2016hypervisor}. The guest OSs can be arbitrary. Figure ~\ref{fig:full} shows the full virtualisation architecture with the hypervisor running on top of the Host OS and Guest OSs on top of the hypervisor using their emulated hardware. 
+In full virtualisation, the hypervisor runs on top of the host OS. The guest OSes run on top of the hypervisor which in turn emulates the underlying real hardware to them. The hypervisors running on top of the host OS are generally referred as \textit{Type 2 Hypervisors} \cite{eder2016hypervisor}. The guest OSes can be arbitrary. Figure ~\ref{fig:full} shows the full virtualisation architecture with the hypervisor running on top of the Host OS and Guest OSes on top of the hypervisor using their emulated hardware. 
 
 
 
@@ -68,7 +68,7 @@ Instead of virtualising the underlying hardware, container-based virtualisation 
 %\end{figure}
 
 Container-based virtualisation does not need to emulate the hardware as containers communicate directly with the host kernel \cite{eder2016hypervisor} and are thus very fast to start. They also do not require all of the components a fully virtualised environment would need to run and therefore their resource fingerprint is minimal when compared to hypervisor-based virtualisation techniques. \linebreak
-The obvious drawback of the technique is that the kernel of the virtualised OS has to be the same as that of Host OS e.g. In a situation depicted in figure ~\ref{fig:container} operating systems based on Linux kernel could be ran on Ubuntu Host OS but OSs like Windows or OSX could not. On certain virtualisation platforms resource-intensive containers can also affect other containers detrimentally as the shared host OS's kernel is forced to spend its execution time on handling the instructions from the stressed container \cite{Xaviercontainer}.
+The obvious drawback of the technique is that the kernel of the virtualised OS has to be the same as that of Host OS e.g. In a situation depicted in figure ~\ref{fig:container} operating systems based on Linux kernel could be ran on Ubuntu Host OS but OSes like Windows or OSX could not. On certain virtualisation platforms resource-intensive containers can also affect other containers detrimentally as the shared host OS's kernel is forced to spend its execution time on handling the instructions from the stressed container \cite{Xaviercontainer}.
 
 
 \subsubsection{Paravirtualisation}
@@ -89,17 +89,17 @@ Popular examples of unikernels are \textit{MirageOS}\cite{mirage} and \textit{OS
 
 While virtualisation is often desirable for its flexibility, multi-tenancy and other attributes, there are use cases in the cloud where a user would rather forego virtualisation. Bare-metal cloud computing refers to a practice of running distributed workloads directly on  cloud's physical servers much like one would with virtualised servers: Similar elements include for example abstraction and on-demand provisioning. Bare-metal is often preferred in High Powered Computing (HPC) use cases for maximum utilisation of computing power. Bare-metal's benefits include non-existent virtualisation overhead, ability to choose the hardware the workload runs on and can tune it for maximum performance, and single-tenancy ensuring that no other users are running workloads on the same physical machine which could interfere with each other \cite{baremetal}. On the other hand the aforementioned flexibility is lost and single-tenancy poses challenges on workloads if maximum resource usage is desired. 
 
-Prominent bare-metal provisioning platforms include Openstack Ironic \cite{ironic}, Canonical Maas \cite{MaaS} and Razor \cite{razor}.
+Prominent bare-metal provisioning platforms include OpenStack Ironic \cite{ironic}, Canonical Maas \cite{MaaS} and Razor \cite{razor}.
 
 \subsection{Cloudify and Cloud Management Platforms}
 
 Enterprises are using increasingly more distinct clouds simultaneously \cite{stateofthecloud} and the clouds themselves are becoming bigger and more complex. Different clouds have different features and capabilities, are used differently and are not always interoperable \cite{multicloudprovisioning}. This has created demand for tools to manage the scale and complexity of these systems. These range from integration libraries like \textit{jclouds} \cite{jclouds} to full-fledged management frameworks like IBM Multicloud Manager, Cloud Foundry and Cloudify \cite{ibmmulticloud,cloudfoundry,cloudify} which offer unified resource abstraction, orchestration and deployment capabilities among others.
 
-In the following sections I provide background to Cloudify and motivate its use in this thesis. I also discuss Openstack as an example of a typical Cloud Platform and compare it to Cloudify to point out the differences and similarities between them and other cloud platforms and cloud management platforms in general.
+In the following sections I provide background to Cloudify and motivate its use in this thesis. I also discuss OpenStack as an example of a typical Cloud Platform and compare it to Cloudify to point out the differences and similarities between them and other cloud platforms and cloud management platforms in general.
 
 \subsubsection{Cloudify}
 
-Cloudify \cite{cloudify} is an open-source orchestration software aiming to provide a unified control and modelling layer for common cloud computing platforms. Cloudify can be used to uniformly orchestrate heterogeneous sets of both virtual and physical cloud resources such as networking, computing and storage resources and even pieces of software. They can also be provided from different environments such as OpenStack, AWS, Google Cloud Platform (GCP), Kubernetes and even bare-metal clouds. Orchestrating different versions of the same underlying cloud environment is also possible. The applications, workflows and the cloud infrastructure itself is described with OASIS TOSCA \cite{Tosca} based Domain Specific Language (DSL) in configuration files called \textit{blueprints} in Cloudify jargon. Configuration files are vendor-agnostic, meaning the same configuration can be reused with different underlying infrastructure. Cloudify \textit{plugins} act as an abstraction layer between the generic blueprints and cloud environments' more speclialised APIs. The generalising approach makes Cloudify suitable for hybrid clouds and allows seamless migration of resources between different environments.
+Cloudify \cite{cloudify} is an open-source orchestration software aiming to provide a unified control and modelling layer for common cloud computing platforms. Cloudify can be used to uniformly orchestrate heterogeneous sets of both virtual and physical cloud resources such as networking, computing and storage resources and even pieces of software. They can also be provided from different environments such as OpenStack, AWS, Google Cloud Platform (GCP), Kubernetes and even bare-metal clouds. Orchestrating different versions of the same underlying cloud environment is also possible. The applications, workflows and the cloud infrastructure itself is described with OASIS TOSCA \cite{Tosca} based Domain Specific Language (DSL) in configuration files called \textit{blueprints} in Cloudify jargon. Configuration files are vendor-agnostic, meaning the same configuration can be reused with different underlying infrastructure. Cloudify \textit{plugins} act as an abstraction layer between the generic blueprints and cloud environments' more specialised APIs. The generalising approach makes Cloudify suitable for hybrid clouds and allows seamless migration of resources between different environments.
 
 \subsubsection{OpenStack}
 

@@ -60,7 +60,7 @@ Whether the packet's origin host is known or not, the next step in the function 
 
 \subsubsection{Start-up routine} \label{startup}
 
-Related to the sniffer function, when initializing the Discovery service, a start-up routine is run. It has three functions:
+Related to the sniffer function, when initialising the Discovery service, a start-up routine is run. It has three functions:
 
 \begin{itemize}
 \item It flushes the Redis key-value store
@@ -181,7 +181,7 @@ hwaddress: {ip_address: "string", ping_timeouts:  "integer"}
 
 \subsubsection{Id checking}
 
-Due to differing identifiers, certain functions are implemented to keep the two data stores synchronized. A \verb|get_id()| -function retrieves a JSON object of hosts as depicted in algorithm ~\ref{fig:get_id}. Then it compares stored IP addresses for each host or until a match is found after which the ID is returned. If hardware address is passed as an argument, the function also compares it to \emph{name} -field's value, as Discovery Service names hosts in Host-pool Service after their hardware addresses. Hardware address check is used when Network Scanner finds an already known host with a changed IP address and calls Request Service to patch it to Host-pool Service. The ID itself is used for REST API calls that are directed at a single host.
+Due to differing identifiers, certain functions are implemented to keep the two data stores synchronised. A \verb|get_id()| -function retrieves a JSON object of hosts as depicted in algorithm ~\ref{fig:get_id}. Then it compares stored IP addresses for each host or until a match is found after which the ID is returned. If hardware address is passed as an argument, the function also compares it to \emph{name} -field's value, as Discovery Service names hosts in Host-pool Service after their hardware addresses. Hardware address check is used when Network Scanner finds an already known host with a changed IP address and calls Request Service to patch it to Host-pool Service. The ID itself is used for REST API calls that are directed at a single host.
 
 \begin{center}
 \begin{algorithm}[H]
@@ -262,7 +262,7 @@ host = RequestService.get\_a\_host(id)\;
 response = *PATCH request to Host-pool Service with 'data' as payload.*\;
 \Return {response.json, message}
 
-\caption{patch\_a\_host function is called by register\_a\_new\_host when Discovery Service detacts a host whose IP address has changed or a new host which uses the same IP address as another host previously.}
+\caption{patch\_a\_host function is called by register\_a\_new\_host when Discovery Service detects a host whose IP address has changed or a new host which uses the same IP address as another host previously.}
 
 \end{algorithm}
 \end{center}

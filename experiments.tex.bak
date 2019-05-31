@@ -84,7 +84,7 @@ Host-pool plugin runs as a Cloudify deployment managed by Cloudify manager. The 
 
 The Discovery Service is also run as standalone program and it doesn't reserve any ports. However the key-value storage the Discovery Service uses, Redis, is run in a docker container using the official Redis docker image. It reserves the standard  Redis port 6379.
 
-Finally, the server clocks on master host and slave-3 are synchronised with ntp against the ntp server located in network A, as synchronised time is needed for accurate measurement results in the experiments.
+Finally, the server clocks on master host and slave-3 are synchronized with ntp against the ntp server located in network A, as synchronized time is needed for accurate measurement results in the experiments.
   
 
 \subsection{Test cases}

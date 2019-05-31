@@ -1,85 +1,117 @@
 \subsection{Virtualisation Techniques}
 
-Traditionally virtualisation has referred to a software abstraction layer residing between the computer hardware and the operating system. \cite{taxonomy} This layer has been called Virtual Machine Monitor (VMM) or more recently a hypervisor and it hides and abstracts the computing resources from the OS, allowing multiple OSs to run simultaneously on the same hardware. There are multiple ways to run hypervisor-based virtualisation. Lately a technology called container-based virtualisation has been gaining popularity. Instead of emulating whole hardware, containers make use of features provided by the host operating system to isolate processes from each other and other containers \cite{eder2016hypervisor}.
+Traditionally virtualisation has referred to a software abstraction layer residing between the computer hardware and the operating system \cite{taxonomy}. This layer has been called Virtual Machine Monitor (VMM) or more recently a hypervisor and it hides and abstracts the computing resources from the OS, allowing multiple OSes to run simultaneously on the same hardware. There are multiple ways to run hypervisor-based virtualisation. Lately a technology called container-based virtualisation has been gaining popularity. Instead of emulating whole hardware, containers make use of features provided by the host operating system to isolate processes from each other and other containers \cite{eder2016hypervisor}. Cloud computing in which the host machines are not virtualised is known as bare-metal computing \cite{virtualisation_overhead}.
+
+\begin{figure}[t]
+	\begin{subfigure}[b]{0.32\textwidth}  
+	\centering
+\includegraphics[width=\textwidth, keepaspectratio]{fullvirt.png}%
+  \caption{Full }
+  \label{fig:full}
+ \end{subfigure} 
+ \hfill
+ \begin{subfigure}[b]{0.32\textwidth}  
+ \centering
+  \includegraphics[width=\textwidth, keepaspectratio]{hwlayer.png}%
+  \caption{Hardware-Layer }
+  \label{fig:hardware}
+   \end{subfigure} 
+   \hfill
+    \begin{subfigure}[b]{0.32\textwidth}  
+   \centering
+  \includegraphics[width=\textwidth, keepaspectratio]{containers.png}%
+  \caption{Container-based}
+  \label{fig:container}
+\end{subfigure}
+\caption{{\bf Popular virtualisation techniques}. {\sl Along with a) full virtualisation, b) hardware-layer virtualisation, and c) container-based virtualisation, other virtualisation techniques include unikernels and paravirtualisation. Bare-metal computing which gives the users complete control over the computing resources is also getting popular.}}
+\label{fig:virtualisationtechs}
+\end{figure}
 
 \subsubsection{Full virtualisation}
 
-In full virtualisation, the hypervisor runs on top of the host OS. The guest OSs run on top of the hypervisor which in turn emulates the underlying real hardware to them. The hypervisors running on top of the host OS are generally referred as \textit{Type 2 Hypervisors} \cite{eder2016hypervisor}. The guest OSs can be arbitrary. Figure ~\ref{fig:full} shows the full virtualisation architecture with the hypervisor running on top of the Host OS and Guest OSs on top of the hypervisor using their emulated hardware. 
+In full virtualisation, the hypervisor runs on top of the host OS. The guest OSes run on top of the hypervisor which in turn emulates the underlying real hardware to them. The hypervisors running on top of the host OS are generally referred as \textit{Type 2 Hypervisors} \cite{eder2016hypervisor}. The guest OSes can be arbitrary. Figure ~\ref{fig:full} shows the full virtualisation architecture with the hypervisor running on top of the Host OS and Guest OSes on top of the hypervisor using their emulated hardware. 
 
-\begin{figure}[ht!]
-\centering
-  \includegraphics[width=10cm,height=10cm, keepaspectratio]{fullvirt.jpeg}%
-  \caption{Full virtualisation architecture}
-  \label{fig:full}
-\end{figure}
 
-The main advantage of full virtualisation is that it is easy to deploy and should not pose problems to an average user but the virtualisation overhead results in significantly reduced performance when compared to running directly on hardware. Popular examples of full virtualisation applications are Oracle's \textit{VirtualBox}\cite{VirtualBox} and \textit{VMware Workstation}\cite{WorkStation}. 
+
+
+%\begin{figure}[ht!]
+%\centering
+%  \includegraphics[width=0.7\textwidth, keepaspectratio]{fullvirt.png}%
+%  \caption{Full virtualisation architecture}
+%  \label{fig:full}
+%\end{figure}
+
+The main advantage of full virtualisation is that it is easy to deploy and should not pose problems to an average user but the virtualisation overhead results in significantly reduced performance when compared to running directly on hardware \cite{taxonomy}. Popular examples of full virtualisation applications are Oracle's \textit{VirtualBox}\cite{VirtualBox} and \textit{VMware Workstation}\cite{WorkStation}. 
 
 \subsubsection{Hardware-Layer virtualisation}
 
-Hardware-Layer virtualisation is also a type of full virtualisation, but unlike Type 2 hypervisors, the so called \textit{Type 1 Hypervisors} (also \textit{native} and \textit{bare metal}) run directly on hardware. As seen on figure ~\ref{fig:hardware} there's no Host OS per se. Instead the Guest OSs access to hardware resources is controlled by the hypervisor.
+Hardware-Layer virtualisation is also a type of full virtualisation, but unlike Type 2 hypervisors, the so called \textit{Type 1 Hypervisors} (also \textit{native} and \textit{bare metal}) run directly on hardware. As seen in figure ~\ref{fig:hardware}, there's no Host OS per se. Instead the Guest OSes access to hardware resources is controlled by the hypervisor.
 
-\begin{figure}[ht!]
-\centering
-  \includegraphics[width=10cm,height=10cm, keepaspectratio]{hwlayer.jpeg}%
-  \caption{Hardware-Layer virtualisation architecture}
-  \label{fig:hardware}
-\end{figure}
+%\begin{figure}[ht!]
+%\centering
+%  \includegraphics[width=0.7\textwidth, keepaspectratio]{hwlayer.png}%
+%  \caption{Hardware-Layer virtualisation architecture}
+%  \label{fig:hardware}
+%\end{figure}
 
-Running directly on hardware, Hardware-Layer virtualisation techniques suffer less performance overhead than their OS-layer counterparts. On the other hand, Type 2 hypervisors being essentially applications themselves can be ran in parallel on the host OS whereas Type 1 hypervisors can not. For an average user, setting up a Type 1 hypervisor can be more difficult than Type 2. Commercial examples of Type 1 Hypervisors include Microsoft's \textit{Hyper-V}\cite{hyperv} and VMware's \textit{VSphere} \cite{vsphere}.
+Running directly on hardware, Hardware-Layer virtualisation techniques suffer less performance overhead than their OS-layer counterparts \cite{taxonomy}. On the other hand, Type 2 hypervisors being essentially applications themselves can be ran in parallel on the host OS whereas Type 1 hypervisors can not. For an average user, setting up a Type 1 hypervisor can be more difficult than Type 2. Commercial examples of Type 1 Hypervisors include Microsoft's \textit{Hyper-V}\cite{hyperv} and VMware's \textit{VSphere} \cite{vsphere}.
 
 \subsubsection{Container-based virtualisation}
 
 Instead of virtualising the underlying hardware, container-based virtualisation also known as OS-Layer virtualisation \cite{taxonomy} focuses on user space and allows running multiple operating systems in parallel as applications using the same kernel as the host operating system. A prime example of a popular container-based virtualisation platform is \textit{Docker} \cite{docker} which leverages on native Linux kernel features to virtualise and isolate OS instances. Figure ~\ref{fig:container} shows a container-based virtualisation architecture in which containerised environments are running operating systems on host OS's kernel. 
 
-\begin{figure}[ht!]
-\centering
-  \includegraphics[width=10cm,height=10cm, keepaspectratio]{containers.png}%
-  \caption{Container-based architecture}
-  \label{fig:container}
-\end{figure}
+%\begin{figure}[ht!]
+%\centering
+%  \includegraphics[width=0.7\textwidth, keepaspectratio]{containers.png}%
+%  \caption{Container-based architecture}
+%  \label{fig:container}
+%\end{figure}
 
 Container-based virtualisation does not need to emulate the hardware as containers communicate directly with the host kernel \cite{eder2016hypervisor} and are thus very fast to start. They also do not require all of the components a fully virtualised environment would need to run and therefore their resource fingerprint is minimal when compared to hypervisor-based virtualisation techniques. \linebreak
-The obvious drawback of the technique is that the kernel of the virtualised OS has to be the same as that of Host OS e.g. In a situation depicted in figure ~\ref{fig:container} operating systems based on  Linux kernel could be ran on Ubuntu Host OS but OSs like Windows or OSX could not. On certain virtualisation platforms resource-intensive containers can also affect other containers detrimentally as the shared host OS's kernel is forced to spend its execution time on handling the instructions from the stressed container \cite{Xaviercontainer}.
+The obvious drawback of the technique is that the kernel of the virtualised OS has to be the same as that of Host OS e.g. In a situation depicted in figure ~\ref{fig:container} operating systems based on Linux kernel could be ran on Ubuntu Host OS but OSes like Windows or OSX could not. On certain virtualisation platforms resource-intensive containers can also affect other containers detrimentally as the shared host OS's kernel is forced to spend its execution time on handling the instructions from the stressed container \cite{Xaviercontainer}.
 
 
 \subsubsection{Paravirtualisation}
 
-Paravirtualisation differs from full virtualisation by requiring the Guest OS to be modified in order to accomodate the virtual environment in which it is ran. Otherwise the architecture is similar to that of full virtualisation, but with thinner hypervisor allowing performance close to that of a non-virtualised environment. A well-known example of a paravirtualisation hypervisor is \textit{Xen}\cite{xen}.
+Paravirtualisation differs from full virtualisation by requiring the Guest OS to be modified in order to accommodate the virtual environment in which it is ran. Otherwise the architecture is similar to that of full virtualisation, but with thinner hypervisor allowing performance close to that of a non-virtualised environment. A well-known example of a paravirtualisation hypervisor is \textit{Xen} \cite{xen}.
 
 \subsubsection{Unikernels}
 
 Unikernels are a relatively recent take on virtualising services. Building on the notion that in cloud environments each VM usually specialises to provide only one service even if each VM contains a full-fledged general computer \cite{unikernels}. Unikernels are essentially minimal single-purpose library operating system (\textit{LibOS})\cite{libos} VMs with a single address space. They contain only the minimal set of services, implemented as libraries, built and sealed against modification to run the one application. Unlike the earlier LibOSes unikernels do not require a host OS to run but run directly on a VM hypervisor, such as Xen.
 
-Some benefits of unikernels are obvious. Constructing VMs with minimal set of service libraries results in small images and resource footprints as well as fast boot times. Other benefits include reduced attack surface due to smaller codebase and sealing preventing any code not compiled during the creation of the VM from running. Single-address space improves context switching and eliminates the need for privilege transitions making system calls as efficient as function calls \cite{osv}. Running directly on the hypervisor instead of a host OS eliminates superfluous levels of hardware abstraction.
+Some benefits of unikernels are obvious. Constructing VMs with minimal set of service libraries results in small images and resource footprints as well as fast boot times. Other benefits include reduced attack surface due to smaller code base and sealing preventing any code not compiled during the creation of the VM from running. Single-address space improves context switching and eliminates the need for privilege transitions making system calls as efficient as function calls \cite{osv}. Running directly on the hypervisor instead of a host OS eliminates superfluous levels of hardware abstraction.
 
 Optimisation and simplification are not without drawbacks. By definition, unikernels are not intended for general-purpose multi-user computing but for microservice cloud environments. Running multiple applications on a single VM is risky due single-address space does not offer any inherent resource isolation. As unikernels are sealed during compiling, it is not possible to do changes to them afterwards. User is instead required to compile and launch a completely new modified VM.
 
 Popular examples of unikernels are \textit{MirageOS}\cite{mirage} and \textit{OSv}\cite{osv}.
 
-\subsection{Experiment technologies}
+\subsubsection{Bare-metal cloud computing}
 
-This section discusses the technologies used and studied in the experiment in more detail. Virtualisation technologies are Docker, Xen, KVM and OSv and they are run on an OpenStack testbed.
+While virtualisation is often desirable for its flexibility, multi-tenancy and other attributes, there are use cases in the cloud where a user would rather forego virtualisation. Bare-metal cloud computing refers to a practice of running distributed workloads directly on  cloud's physical servers much like one would with virtualised servers: Similar elements include for example abstraction and on-demand provisioning. Bare-metal is often preferred in High Powered Computing (HPC) use cases for maximum utilisation of computing power. Bare-metal's benefits include non-existent virtualisation overhead, ability to choose the hardware the workload runs on and can tune it for maximum performance, and single-tenancy ensuring that no other users are running workloads on the same physical machine which could interfere with each other \cite{baremetal}. On the other hand the aforementioned flexibility is lost and single-tenancy poses challenges on workloads if maximum resource usage is desired. 
 
-\subsubsection{Openstack}
+Prominent bare-metal provisioning platforms include Openstack Ironic \cite{ironic}, Canonical Maas \cite{MaaS} and Razor \cite{razor}.
 
-Openstack \cite{openstackproject} is an open-source software platform for cloud computing. A project originally founded by NASA and Rackspace Inc. now has a large base of supporting companies  \cite{openstackpartners} and a thriving community.
-	Openstack allows its users to deploy a full-fledged cloud computing infrastructure. User can control pools of both physical and virtual computing, storage and networking resources. It can be run on commodity hardware and supports a plethora of enterprise- and open source technologies making it possible to use heterogeneous physical and software environments.
-	Openstack consists of different projects that provide services for the system. A user can freely choose which services to deploy. Project range from essential \textit{Core Services} like computing, block storage, identity service and networking to more specific and specialised such as MapReduce and Bare-metal provisioning\cite{openstackproject}. Openstack boasts many features: It is massively scalable supporting up to million physical and 80 million virtual machines \cite{openstack}. It also supports a wide array of market-leading virtualisation technologies such as QEMU, KVM and Xen and it is fully open-source with thriving community and industry backing \cite{openstackpartners}. Other features include fine-grained access control and multi-tenancy, fault-tolerance and self-healing \cite{openstackfeatures}.
+\subsection{Cloudify and Cloud Management Platforms}
 
+Enterprises are using increasingly more distinct clouds simultaneously \cite{stateofthecloud} and the clouds themselves are becoming bigger and more complex. Different clouds have different features and capabilities, are used differently and are not always interoperable \cite{multicloudprovisioning}. This has created demand for tools to manage the scale and complexity of these systems. These range from integration libraries like \textit{jclouds} \cite{jclouds} to full-fledged management frameworks like IBM Multicloud Manager, Cloud Foundry and Cloudify \cite{ibmmulticloud,cloudfoundry,cloudify} which offer unified resource abstraction, orchestration and deployment capabilities among others.
+
+In the following sections I provide background to Cloudify and motivate its use in this thesis. I also discuss Openstack as an example of a typical Cloud Platform and compare it to Cloudify to point out the differences and similarities between them and other cloud platforms and cloud management platforms in general.
 
 \subsubsection{Cloudify}
 
-Cloudify \cite{cloudify} is an open-source orchestration software aiming to provide a unified control and modelling layer for common cloud computing platforms. Cloudify can be used to uniformly orchestrate heterogeneous sets of both virtual and physical cloud resources such as networking, computing and storage resources. They can also be provided from different environments such as OpenStack, AWS, Google Cloud Platform (GCP), Kubernetes and even bare-metal clouds. Orchestrating different versions of the same underlying cloud environment is also possible. The applications, workflows and the cloud infrastructure itself is described with OASIS TOSCA \cite{Tosca} based Domain Specific Language (DSL) in configuration files called \textit{blueprints} in Cloudify jargon. Configuration files are vendor-agnostic, meaning the same configuration can be reused with different underlying infrastructure. Cloudify \textit{plugins} act as an abstraction layer between the generic blueprints and cloud environments' more speclialised APIs. The generalising approach makes cloudify suitable for hybrid clouds and allows seamless migration of resources between different environments.
+Cloudify \cite{cloudify} is an open-source orchestration software aiming to provide a unified control and modelling layer for common cloud computing platforms. Cloudify can be used to uniformly orchestrate heterogeneous sets of both virtual and physical cloud resources such as networking, computing and storage resources and even pieces of software. They can also be provided from different environments such as OpenStack, AWS, Google Cloud Platform (GCP), Kubernetes and even bare-metal clouds. Orchestrating different versions of the same underlying cloud environment is also possible. The applications, workflows and the cloud infrastructure itself is described with OASIS TOSCA \cite{Tosca} based Domain Specific Language (DSL) in configuration files called \textit{blueprints} in Cloudify jargon. Configuration files are vendor-agnostic, meaning the same configuration can be reused with different underlying infrastructure. Cloudify \textit{plugins} act as an abstraction layer between the generic blueprints and cloud environments' more specialised APIs. The generalising approach makes Cloudify suitable for hybrid clouds and allows seamless migration of resources between different environments.
 
-\subsubsection{Comparison of Openstack and Cloudify}
+\subsubsection{OpenStack}
 
-Both Openstack and Cloudify are used to operate a large number of computing, networking and storage resources. However, they are not directly comparable. While Cloudify can be used to orchestrate resources and applications on a cloud platform, OpenStack is a cloud platform. Similar orchestration project within OpenStack is Heat \cite{heat}, which can be used similarly to Cloudify's DSL to write human-readable templates (\textit{HOTs -- Heat Orchestration Templates} as they are called in the Heat project) to automate deployments of applications and cloud resources. Heat orchestration is of course limited to OpenStack itself. Even though there are drivers which allow OpenStack to manage resources from major public clouds such as AWS and GCP (and thus allowing a public/private hybrid cloud), the resources are abstracted to those common to OpenStack: Heat cannot orchestrate them independently of an OpenStack deployment. Cloudify however is cloud-platform agnostic and it can manage multiple different cloud environments simultaneously, including OpenStack. On the subject of hybrid clouds, Cloudify supports bare-metal deployments by default and OpenStack's project \textit{Ironic} for provisioning bare-metal instances has  been integrated to OpenStack since 'Kilo' development cycle. 
+OpenStack \cite{openstackproject} is an open-source software platform for cloud computing. A project originally founded by NASA and Rackspace Inc. now has a large base of supporting companies  \cite{openstackpartners} and a thriving community.
+	OpenStack allows its users to deploy a full-fledged cloud computing infrastructure. User can control pools of both physical and virtual computing, storage and networking resources. It can be run on commodity hardware and supports a plethora of enterprise- and open source technologies making it possible to use heterogeneous physical and software environments.
+	OpenStack consists of different projects that provide services for the system. A user can freely choose which services to deploy. Project range from essential \textit{Core Services} like computing, block storage, identity service and networking to more specific and specialised such as MapReduce and Bare-metal provisioning\cite{openstackproject}. OpenStack boasts many features: It is massively scalable supporting up to million physical and 80 million virtual machines \cite{openstack}. It also supports a wide array of market-leading virtualisation technologies such as QEMU, KVM and Xen and it is fully open-source with thriving community and industry backing \cite{openstackpartners}. Other features include fine-grained access control and multi-tenancy, fault-tolerance and self-healing \cite{openstackfeatures}.
 
+\subsubsection{Comparison of OpenStack and other Cloud Management Platforms}
 
+Both OpenStack and Cloudify are used to operate a large number of computing, networking and storage resources. However, they are not directly comparable. While Cloudify can be used to orchestrate resources and applications on a cloud platform, OpenStack is a cloud platform. Similar orchestration project within OpenStack is Heat \cite{heat}, which can be used similarly to Cloudify's DSL to write human-readable templates (\textit{HOTs -- Heat Orchestration Templates} as they are called in the Heat project) to automate deployments of applications and cloud resources. Heat orchestration is of course limited to OpenStack itself. Even though there are drivers which allow OpenStack to manage resources from major public clouds such as AWS and GCP (and thus allowing a public/private hybrid cloud), the resources are abstracted to those common to OpenStack: Heat cannot orchestrate them independently of an OpenStack deployment. Cloudify however is cloud-platform agnostic and it can manage multiple different cloud environments simultaneously, including OpenStack. On the subject of hybrid clouds, Cloudify supports bare-metal deployments by default and OpenStack's project \textit{Ironic} for provisioning bare-metal instances has  been integrated to OpenStack since 'Kilo' development cycle.
+Both Cloudify and OpenStack are open-source projects with notable contributing community but OpenStack has more industrial partners than Cloudify. 
 
-\subsubsection{Docker}
-\subsubsection{Xen}
-\subsubsection{KVM}
-\subsubsection{OSv}
+What makes Cloudify stand out however is its broadness, generality and expandability. Other frameworks like Cloud Foundry focus on common application stacks and mechanisms to streamline application development and deployment work while Cloudify allows user to orchestrate complex workflows on practically any platform, starting from infrastructure management ending as low as a single BASH script \cite{cloudifyfaq}. Among these capabilities is the ability to provision generic host machines as cloud resources without using a cloud platform. There are other systems which can provision generic hosts similarly, such as Red Hat Satellite \cite{redhatsatellite} or Docker Machine \cite{dockermachine} but unlike them Cloudify does not require installation of any additional software on the hosts. Additionally preparing the hosts for provisioning seems to require human intervention in most cases, including Cloudify. Simplifying and automating this task as well as providing more insight to the hosts' capabilities  are the main focuses of this thesis.
 
+\pagebreak
