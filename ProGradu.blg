@@ -45,7 +45,7 @@ Warning--empty institution in openstacksurvey
 Warning--empty institution in Mell:2011:SND:2206223
 You've used 54 entries,
             2783 wiz_defined-function locations,
-            905 strings with 14213 characters,
+            899 strings with 14129 characters,
 and the built_in function-call counts, 18670 in all, are:
 = -- 1566
 > -- 588

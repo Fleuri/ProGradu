@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.30)  31 MAY 2019 20:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.30)  31 MAY 2019 22:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1547,9 +1547,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--72
  []
 
 [7] [8]
-Overfull \hbox (0.19632pt too wide) in paragraph at lines 92--93
+Overfull \hbox (1.85747pt too wide) in paragraph at lines 92--93
 []\T1/fve/m/n/10.95 (-20) Prominent bare-metal pro-vi-sion-ing plat-forms in-cl
-ude Open-stack Ironic
+ude Open-Stack Ironic
  []
 
 [9] [10]) [11] (./systemdesign.tex [12]
@@ -1777,95 +1777,93 @@ m/n/10.95 (+20) .  Ac-cessed
  []
 
 
-Underfull \hbox (badness 2426) in paragraph at lines 91--95
+Underfull \hbox (badness 10000) in paragraph at lines 91--95
 []\T1/fve/m/sl/10.95 (+20) Microsoft Hyper-V\T1/fve/m/n/10.95 (+20) .  []$\T1/f
-vm/m/n/10.95 https : / / technet . microsoft . com / en-[]us /
+vm/m/n/10.95 https : / / docs . microsoft .
  []
 
 
-Underfull \hbox (badness 7740) in paragraph at lines 108--112
-\T1/fvm/m/n/10.95 org / admin-[]guide / objectstorage-[]features . html$[]\T1/f
-ve/m/n/10.95 (+20) .  Ac-cessed:
+Underfull \hbox (badness 10000) in paragraph at lines 91--95
+\T1/fvm/m/n/10.95 com / en-[]us / previous-[]versions / windows / it-[]pro /
+ []
+
+
+Underfull \hbox (badness 5359) in paragraph at lines 91--95
+\T1/fvm/m/n/10.95 windows-[]server-[]2012-[]R2-[]and-[]2012 / mt169373(v = ws .
+ 11)$[]\T1/fve/m/n/10.95 (+20) .  Ac-
  []
 
 [45
 
 ]
-Underfull \hbox (badness 3209) in paragraph at lines 134--137
+Underfull \hbox (badness 3209) in paragraph at lines 133--136
 []\T1/fve/m/sl/10.95 (+20) Raspberry pi\T1/fve/m/n/10.95 (+20) .  []$\T1/fvm/m/
 n/10.95 https : / / www . raspberrypi . org/$[]\T1/fve/m/n/10.95 (+20) .  Ac-ce
 ssed:
  []
 
 
-Underfull \hbox (badness 1406) in paragraph at lines 146--150
+Underfull \hbox (badness 1406) in paragraph at lines 145--149
 \T1/fve/m/sl/10.95 (+20) 5: Pro-vi-sion-ing bare metal hosts\T1/fve/m/n/10.95 (
 +20) .  []$\T1/fvm/m/n/10.95 https : / / access . redhat .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--150
+Underfull \hbox (badness 10000) in paragraph at lines 145--149
 \T1/fvm/m/n/10.95 com / documentation / en-[]us / red _ hat _ satellite / 6 . 4
  / html /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--150
+Underfull \hbox (badness 10000) in paragraph at lines 145--149
 \T1/fvm/m/n/10.95 provisioning _ guide / provisioning _ bare _ metal _ hosts$[]
 \T1/fve/m/n/10.95 (+20) .  Ac-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--178
+Underfull \hbox (badness 10000) in paragraph at lines 174--177
 []\T1/fve/m/sl/10.95 (+20) VMware work-sta-tion\T1/fve/m/n/10.95 (+20) .  []$\T
 1/fvm/m/n/10.95 http : / / www . vmware . com / products /
  []
 
 
-Underfull \hbox (badness 5316) in paragraph at lines 185--188
-[]\T1/fve/m/sl/10.95 (+20) Xen project\T1/fve/m/n/10.95 (+20) .  []$\T1/fvm/m/n
-/10.95 https : / / www . xenproject . org / l$[]\T1/fve/m/n/10.95 (+20) .  Ac-c
-essed:
- []
-
-
-Underfull \hbox (badness 5756) in paragraph at lines 191--196
+Underfull \hbox (badness 5756) in paragraph at lines 190--195
 []\T1/fve/m/sl/10.95 (+20) Tosca sim-ple pro-file in yaml ver-sion 1.1.  \T1/fv
 e/m/n/10.95 (+20) Oa-sis stan-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--196
+Underfull \hbox (badness 10000) in paragraph at lines 190--195
 \T1/fve/m/n/10.95 (+20) dard, Jan-uary 2018.  Lat-est ver-sion: []$\T1/fvm/m/n/
 10.95 http : / / docs .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--196
+Underfull \hbox (badness 10000) in paragraph at lines 190--195
 \T1/fvm/m/n/10.95 oasis-[]open . org / tosca / TOSCA-[]Simple-[]Profile-[]YAML 
 / v1 . 1 /
  []
 
 [46]
-Underfull \hbox (badness 2503) in paragraph at lines 294--310
+Underfull \hbox (badness 2503) in paragraph at lines 293--309
 \T1/fve/m/sl/10.95 (+20) op-er-at-ing sys-tem for vir-tual ma-chines\T1/fve/m/n
 /10.95 (+20) .  In \T1/fve/m/sl/10.95 (+20) 2014 USENIX
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--310
+Underfull \hbox (badness 10000) in paragraph at lines 293--309
 \T1/fve/m/sl/10.95 (+20) An-nual Tech-ni-cal Con-fer-ence (USENIX ATC 14)\T1/fv
 e/m/n/10.95 (+20) , pages
  []
 
 
-Underfull \hbox (badness 4846) in paragraph at lines 294--310
+Underfull \hbox (badness 4846) in paragraph at lines 293--309
 \T1/fve/m/n/10.95 (+20) 61--72, Philadel-phia, PA, June 2014. USENIX As-so-ci-a
 -tion,
  []
 
 [47]
-Underfull \hbox (badness 10000) in paragraph at lines 369--381
+Underfull \hbox (badness 10000) in paragraph at lines 368--380
 []$\T1/fvm/m/n/10.95 https : / / www . microsoft . com / en-[]us / research / p
 ublication /
  []
@@ -1950,18 +1948,14 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 208.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 208.
 Package rerunfilecheck Info: File `ProGradu.out' has not changed.
 (rerunfilecheck)             Checksum: 4E85B5AC06982C169BE8CCE35A0E145D;3481.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 208.
  ) 
 Here is how much of TeX's memory you used:
- 22691 strings out of 493029
- 373493 string characters out of 6136233
- 600607 words of memory out of 5000000
+ 22694 strings out of 493029
+ 373523 string characters out of 6136233
+ 600609 words of memory out of 5000000
  25306 multiletter control sequences out of 15000+600000
- 85718 words of font info for 229 fonts, out of 8000000 for 9000
+ 86027 words of font info for 231 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,18n,43p,10378b,1904s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texlive/texmf-
@@ -1970,10 +1964,10 @@ lic/bera/fveb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/share/texmf/f
 onts/type1/public/lm/lmsy10.pfb>
-Output written on ProGradu.pdf (60 pages, 3734544 bytes).
+Output written on ProGradu.pdf (60 pages, 3735288 bytes).
 PDF statistics:
- 1009 PDF objects out of 1200 (max. 8388607)
- 909 compressed objects within 10 object streams
+ 1010 PDF objects out of 1200 (max. 8388607)
+ 910 compressed objects within 10 object streams
  309 named destinations out of 1000 (max. 500000)
  32183 words of extra memory for PDF output out of 35830 (max. 10000000)
 

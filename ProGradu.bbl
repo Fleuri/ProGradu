@@ -26,7 +26,7 @@
 \bibitem {cloudify}
 \btxtitlefont {\btxifchangecase {Cloudify}{Cloudify}}.
 \newblock \url{https://cloudify.co/}.
-\newblock Accessed: 11.3.2018.
+\newblock Accessed: 31.5.2019.
 
 \bibitem {cloudifyfaq}
 \btxtitlefont {\btxifchangecase {Cloudify faq}{Cloudify FAQ}}.
@@ -37,7 +37,7 @@
 \btxtitlefont {\btxifchangecase {Cloudify host-pool service}{Cloudify Host-pool
   Service}}.
 \newblock \url{https://github.com/cloudify-cosmo/cloudify-host-pool-service}.
-\newblock Accessed: 11.3.2018.
+\newblock Accessed: 31.5.2019.
 
 \bibitem {Nodecellar}
 \btxtitlefont {\btxifchangecase {Cloudify nodecellar example}{Cloudify
@@ -49,12 +49,12 @@
 \btxtitlefont {\btxifchangecase {Companies supporting the openstack
   foundational}{Companies Supporting The OpenStack Foundational}}.
 \newblock \url{https://www.openstack.org/foundation/companies/}.
-\newblock Accessed: 9.4.2017.
+\newblock Accessed: 31.5.2019.
 
 \bibitem {docker}
 \btxtitlefont {\btxifchangecase {Docker}{Docker}}.
 \newblock \url{https://www.docker.com}.
-\newblock Accessed: 3.11.2016.
+\newblock Accessed: 31.5.2019.
 
 \bibitem {dockermachine}
 \btxtitlefont {\btxifchangecase {Docker machine}{Docker Machine}}.
@@ -90,30 +90,29 @@
 \bibitem {hyperv}
 \btxtitlefont {\btxifchangecase {{Microsoft Hyper-V}}{{Microsoft Hyper-V}}}.
 \newblock
-  \url{https://technet.microsoft.com/en-us/library/mt169373(v=ws.11).aspx}.
-\newblock Accessed: 7.11.2016.
+  \url{https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/mt169373(v=ws.11)}.
+\newblock Accessed: 31.5.2019.
 
 \bibitem {mirage}
 \btxtitlefont {\btxifchangecase {Mirage{OS}}{Mirage{OS}}}.
 \newblock \url{https://mirage.io/}.
-\newblock Accessed: 19.12.2016.
+\newblock Accessed: 31.5.2019.
 
 \bibitem {openstackproject}
 \btxtitlefont {\btxifchangecase {Openstack}{OpenStack}}.
 \newblock \url{https://www.openstack.org/}.
-\newblock Accessed: 9.4.2017.
+\newblock Accessed: 31.5.2019.
 
 \bibitem {openstackfeatures}
 \btxtitlefont {\btxifchangecase {Openstack: Features and benefits}{Openstack:
   Features and benefits}}.
-\newblock
-  \url{https://docs.openstack.org/admin-guide/objectstorage-features.html}.
-\newblock Accessed: 9.4.2017.
+\newblock \url{https://docs.openstack.org/swift/stein/admin/}.
+\newblock Accessed: 31.5.2019.
 
 \bibitem {VirtualBox}
 \btxtitlefont {\btxifchangecase {{Oracle VirtualBox}}{{Oracle VirtualBox}}}.
 \newblock \url{https://www.virtualbox.org/}.
-\newblock Accessed: 1.11.2016.
+\newblock Accessed: 31.5.2019.
 
 \bibitem {packet}
 \btxtitlefont {\btxifchangecase {Packet}{Packet}}.
@@ -133,7 +132,7 @@
 \bibitem {raspberry}
 \btxtitlefont {\btxifchangecase {Raspberry pi}{Raspberry PI}}.
 \newblock \url{https://www.raspberrypi.org/}.
-\newblock Accessed: 21.5.2017.
+\newblock Accessed: 31.5.2019.
 
 \bibitem {razor}
 \btxtitlefont {\btxifchangecase {Razor}{Razor}}.
@@ -151,7 +150,7 @@
 \bibitem {Redis}
 \btxtitlefont {\btxifchangecase {Redis}{Redis}}.
 \newblock \url{https://redis.io/}.
-\newblock Accessed 21.10.2018.
+\newblock Accessed 31.5.2019.
 
 \bibitem {scapy}
 \btxtitlefont {\btxifchangecase {Scapy}{Scapy}}.
@@ -169,12 +168,12 @@
 \btxtitlefont {\btxifchangecase {{VMware VSphere Hypervisor}}{{VMware VSphere
   Hypervisor}}}.
 \newblock \url{http://www.vmware.com/products/vsphere-hypervisor.html}.
-\newblock Accessed: 7.11.2016.
+\newblock Accessed: 31.5.2019.
 
 \bibitem {WorkStation}
 \btxtitlefont {\btxifchangecase {{VMware} workstation}{{VMware} Workstation}}.
-\newblock \url{http://www.vmware.com/products/workstation.html}.
-\newblock Accessed: 1.11.2016.
+\newblock \url{http://www.vmware.com/products/workstation-pro.html}.
+\newblock Accessed: 31.5.2019.
 
 \bibitem {vultr}
 \btxtitlefont {\btxifchangecase {Vultr}{Vultr}}.
@@ -183,8 +182,8 @@
 
 \bibitem {xen}
 \btxtitlefont {\btxifchangecase {Xen project}{Xen Project}}.
-\newblock \url{https://www.xenproject.org/l}.
-\newblock Accessed: 7.11.2016.
+\newblock \url{https://www.xenproject.org/}.
+\newblock Accessed: 31.5.2019.
 
 \bibitem {Tosca}
 \btxtitlefont {\btxifchangecase {Tosca simple profile in yaml version
