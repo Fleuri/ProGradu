@@ -236,19 +236,6 @@
   Cluster Computing}, \btxpageslong {}\ 378--385,
   \btxprintmonthyear{.}{Sept}{2011}{long}.
 
-\bibitem {libos}
-\btxnamefont {\btxlastnamefont {Donald E.~Porter},~Galen~Hunt,
-  Jon\btxfnamespacelong Howell\btxfnamespacelong Reuben\btxfnamespacelong
-  Olinsky\btxfnamespacelong Silas\btxfnamespacelong Boyd\btxfnamespacelong
-  Wickizer}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Rethinking the
-  library os from the top down}{Rethinking the Library OS from the Top Down}}.
-\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the 16th International
-  Conference on Architectural Support for Programming Languages and Operating
-  Systems (ASPLOS)}. \btxpublisherfont {Association for Computing Machinery,
-  Inc.}, \btxprintmonthyear{.}{March}{2011}{long}.
-\newblock {\latintext
-  \btxurlfont{https://www.microsoft.com/en-us/research/publication/rethinking-the-library-os-from-the-top-down/}}.
-
 \bibitem {XaaS}
 \btxnamefont {\btxlastnamefont {Duan}, Y.}, \btxnamefont {\btxlastnamefont
   {Fu}, G.}, \btxnamefont {\btxlastnamefont {Zhou}, N.}, \btxnamefont
@@ -377,6 +364,20 @@
   \btxtitlefont {\btxifchangecase {Sp 800-145. the nist definition of cloud
   computing}{SP 800-145. The NIST Definition of Cloud Computing}}.
 \newblock \btxtechreplong {}, Gaithersburg, MD, United States, 2011.
+
+\bibitem {libos}
+\btxnamefont {\btxlastnamefont {Porter}, Donald\btxfnamespacelong E.},
+  \btxnamefont {\btxlastnamefont {Hunt}, Galen}, \btxnamefont {\btxlastnamefont
+  {Howell}, Jon}, \btxnamefont {\btxlastnamefont {Olinsky}, Reuben}\btxandcomma
+  {} \btxandlong {}\ \btxnamefont {\btxlastnamefont {Boyd-Wickizer},
+  Silas}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Rethinking the
+  library os from the top down}{Rethinking the Library OS from the Top Down}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the 16th International
+  Conference on Architectural Support for Programming Languages and Operating
+  Systems (ASPLOS)}. \btxpublisherfont {Association for Computing Machinery,
+  Inc.}, \btxprintmonthyear{.}{March}{2011}{long}.
+\newblock {\latintext
+  \btxurlfont{https://www.microsoft.com/en-us/research/publication/rethinking-the-library-os-from-the-top-down/}}.
 
 \bibitem {baremetal}
 \btxnamefont {\btxlastnamefont {{Rad}}, P.}, \btxnamefont {\btxlastnamefont
